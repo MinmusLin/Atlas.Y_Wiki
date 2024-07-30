@@ -1,2 +1,0 @@
-# Tongji_Software_2024_iGEM_Wiki
-Tongji_Software_2024_iGEM_Wiki
