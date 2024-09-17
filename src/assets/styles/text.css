@@ -1,0 +1,9 @@
+.text-area {
+    background-color: #FFFCEF;
+    border: #5182F8 5px solid;
+    border-radius: 15px;
+}
+
+.text-area p {
+    color: red;
+}
