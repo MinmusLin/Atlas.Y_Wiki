@@ -131,6 +131,7 @@ function scrollToSection(sectionId: string) {
 
 onMounted(() => {
   const headings = document.querySelectorAll('h1')
+  // @ts-ignore
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
@@ -139,8 +140,8 @@ onMounted(() => {
     })
   }, {
     root: null,
-    threshold: 0.1,
-    rootMargin: '0px 0px -80% 0px'
+    rootMargin: '0px 0px -80% 0px',
+    threshold: 0.1
   })
   headings.forEach(heading => {
     observer.observe(heading)

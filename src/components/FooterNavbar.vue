@@ -2,13 +2,15 @@
   <div class='footer-navbar'>
     <img src='/Logos/TongjiUniversityLogo.png'
          alt='TongjiUniversityLogo'
-         style='top: 50px; left: 102px'>
+         style='top: 50px; left: 102px; cursor: pointer'
+         @click="goToLink('https://en.tongji.edu.cn')">
     <img src='/Logos/TongjiSoftwareLogo.png'
          alt='TongjiSoftwareLogo'
          style='top: 90px; left: 306px'>
     <img src='/Logos/LightLogo.png'
          alt='LightLogo'
-         style='top: 93px; left: 547px'>
+         style='top: 93px; left: 547px; cursor: pointer'
+         @click="goToLink('http://47.91.92.143')">
     <div class='notes'>
       <p>
         © 2024 - Content on this site is licensed under a
@@ -39,6 +41,9 @@
 </template>
 
 <script setup lang='ts'>
+function goToLink(link: string) {
+  window.open(link, '_blank')
+}
 </script>
 
 <style scoped>
@@ -46,6 +51,7 @@
   background-color: #16396E;
   height: 430px;
   position: relative;
+  -webkit-user-select: none;
 }
 
 p {

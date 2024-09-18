@@ -14,6 +14,7 @@
     justify-content: center;
     margin-top: 32px;
     margin-bottom: 87px;
+    -webkit-user-select: none;
 }
 
 .top-right-image {
@@ -21,6 +22,7 @@
     right: 0;
     width: 59%;
     height: auto;
+    -webkit-user-select: none;
 }
 
 .bottom-left-image {
@@ -29,4 +31,5 @@
     bottom: 0;
     width: 59%;
     height: auto;
+    -webkit-user-select: none;
 }

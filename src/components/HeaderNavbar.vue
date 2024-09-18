@@ -1,5 +1,5 @@
 <template>
-  <header class='navbar'>
+  <header class='header-navbar'>
     <nav class='nav-items'>
       <img src='/Logos/DefaultLogo.png' alt='DefaultLogo' class='logo'>
       <div v-for='item in navItems'
@@ -70,10 +70,11 @@ const hideDropdown = (item: any) => item.isOpen = false
 </script>
 
 <style scoped>
-.navbar {
+.header-navbar {
   background-color: white;
   height: 80px;
   border-bottom: 4px #5182F8 solid;
+  -webkit-user-select: none;
 }
 
 .nav-items {

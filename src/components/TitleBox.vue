@@ -21,6 +21,7 @@ defineProps<{
   flex-direction: column;
   align-items: center;
   text-align: center;
+  -webkit-user-select: none;
 }
 
 .image-container {
