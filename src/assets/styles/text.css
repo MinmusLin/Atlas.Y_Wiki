@@ -129,7 +129,7 @@
     text-decoration: underline;
 }
 
-.text-area ul.custom-ul {
+.text-area ul {
     list-style-type: disc;
     padding-left: 20px;
     font-family: 'Inter', sans-serif;
@@ -139,7 +139,7 @@
     text-align: justify;
 }
 
-.text-area ol.custom-ol {
+.text-area ol {
     list-style-type: decimal;
     padding-left: 20px;
     font-family: 'Inter', sans-serif;
