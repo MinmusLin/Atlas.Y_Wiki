@@ -13,9 +13,11 @@
             mdi-chevron-down
           </v-icon>
         </button>
-        <ul v-if='item.subItems && item.isOpen' class='dropdown-menu'>
-          <li v-for='subItem in item.subItems' :key='subItem' class='dropdown-item'>{{ subItem }}</li>
-        </ul>
+        <transition name='fade'>
+          <ul v-show='item.subItems && item.isOpen' class='dropdown-menu'>
+            <li v-for='subItem in item.subItems' :key='subItem' class='dropdown-item'>{{ subItem }}</li>
+          </ul>
+        </transition>
       </div>
     </nav>
   </header>
@@ -47,7 +49,7 @@ const navItems = ref([
   },
   {
     title: 'HUMAN PRACTICES',
-    subItems: ['Integrated Human Practice', 'Entrepreneurship', 'Education', 'Inclusivity'],
+    subItems: ['Integrated Human Practice', 'Entrepreneurship', 'Education'],
     isOpen: false
   },
   {
@@ -145,10 +147,26 @@ const hideDropdown = (item: any) => item.isOpen = false
   transform: translateY(33px) translateX(25px);
   height: 4px;
   background-color: #FFCA31;
+  border-radius: 2px;
   transition: width 0.3s ease;
 }
 
 .dropdown-item:hover::after {
   width: calc(100% - 50px);
+}
+
+/* noinspection CssUnusedSymbol */
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 0.3s;
+}
+
+/* noinspection CssUnusedSymbol */
+.fade-enter-from, .fade-leave-to {
+  opacity: 0;
+}
+
+/* noinspection CssUnusedSymbol */
+.fade-enter-to, .fade-leave-from {
+  opacity: 1;
 }
 </style>
