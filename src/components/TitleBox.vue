@@ -25,7 +25,7 @@ defineProps<{
 
 .image-container {
   position: relative;
-  width: 1209px;
+  width: 1240px;
   height: 281px;
 }
 
