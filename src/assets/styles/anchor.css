@@ -1,23 +1,25 @@
 nav {
     position: sticky;
     top: 32px;
-    left: calc(50% + 384px);
+    left: calc(50% + 383px);
     width: 237px;
     background-color: #FFFCEF;
     border: #5182F8 4px solid;
     border-radius: 0 20px 20px 0;
-    padding: 20px;
     box-shadow: 12px 20px 0 0 #5182F8;
     z-index: 999;
     display: flex;
     flex-direction: column;
     align-items: center;
     cursor: pointer;
+    gap: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    transform: translateY(26px);
 }
 
 nav a {
     display: block;
-    margin-bottom: 10px;
     color: #C5C9CD;
     text-decoration: none;
     font-size: 24px;
