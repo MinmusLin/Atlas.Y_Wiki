@@ -64,6 +64,6 @@ const router = useRouter()
 
 .go-back-button:hover {
   box-shadow: none;
-  transform: translateY(3px);
+  transform: translateY(5px) translateX(3px);
 }
 </style>
