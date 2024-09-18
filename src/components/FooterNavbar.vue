@@ -54,12 +54,12 @@ function goToLink(link: string) {
   -webkit-user-select: none;
 }
 
-p {
+.notes p {
   color: white;
   font-family: 'Futura Bk BT Book', serif;
   font-weight: 500;
   line-height: 34px;
-  font-size: 20px;
+  font-size: 18px;
   white-space: nowrap;
 }
 
@@ -72,6 +72,7 @@ p {
   font-weight: 700;
   right: 333px;
   top: 135px;
+  white-space: nowrap;
 }
 
 img {
@@ -91,7 +92,7 @@ img {
 
 .notes {
   position: absolute;
-  top: 290px;
+  top: 284px;
   left: 108px;
 }
 

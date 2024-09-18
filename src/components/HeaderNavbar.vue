@@ -77,6 +77,7 @@ const hideDropdown = (item: any) => item.isOpen = false
   top: 0;
   left: 0;
   width: 100%;
+  min-width: 1440px;
   background-color: white;
   height: 80px;
   border-bottom: 4px #5182F8 solid;
