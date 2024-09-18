@@ -121,6 +121,7 @@ const hideDropdown = (item: any) => item.isOpen = false
   padding: 13px 30px 12px;
   right: 0;
   top: 33px;
+  z-index: 1000;
 }
 
 .dropdown-item {
