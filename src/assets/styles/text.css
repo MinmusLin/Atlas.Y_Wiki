@@ -1,6 +1,6 @@
 .text-area {
     position: relative;
-    width: 994px;
+    width: 1000px;
     height: auto;
     background-color: #FFFCEF;
     border: #5182F8 4px solid;
@@ -8,7 +8,7 @@
     padding: 40px;
     box-shadow: 12px 20px 0 0 #5182F8;
     margin-top: -155px;
-    margin-left: -220px;
+    margin-left: -240px;
 }
 
 .text-area h1 {
@@ -17,7 +17,7 @@
     font-weight: 400;
     margin: 8px 0;
     position: relative;
-    padding-left: 35px;
+    padding-left: 30px;
 }
 
 .text-area h1::before {
@@ -25,7 +25,7 @@
     position: absolute;
     left: 0;
     top: 50%;
-    transform: translateX(-10px) translateY(-50%);
+    transform: translateX(-15px) translateY(-50%);
     width: 36px;
     height: 36px;
     background-image: url('public/DesignMaterials/DefaultMapMarker.png');
@@ -47,7 +47,7 @@
     position: absolute;
     left: 0;
     top: 50%;
-    transform: rotate(-90deg) translateY(-4px);
+    transform: rotate(-90deg) translateY(-6px);
     width: 20px;
     height: 5px;
     background-color: #5182F8;
@@ -68,7 +68,7 @@
     position: absolute;
     left: 0;
     top: 50%;
-    transform: rotate(-90deg) translateY(-2px);
+    transform: rotate(-90deg) translateY(-4px);
     width: 15px;
     height: 5px;
     background-color: #5182F8;
@@ -89,7 +89,7 @@
     position: absolute;
     left: 0;
     top: 50%;
-    transform: translateY(-50%) rotate(-90deg);
+    transform: rotate(-90deg) translateY(-1px);
     width: 11px;
     height: 5px;
     background-color: #7AA8F3;
@@ -159,33 +159,43 @@
     height: auto;
 }
 
-table {
-    border-collapse: collapse;
+.text-area table {
+    border-collapse: separate;
+    border-spacing: 0;
     margin: 25px 0;
     font-size: 20px;
     font-family: 'Inter', sans-serif;
     min-width: 400px;
     width: 100%;
     border-radius: 20px;
+    border: 2px solid #5182F8;
     overflow: hidden;
 }
 
-table thead tr {
+.text-area table thead tr {
     background-color: #2F62D7;
     color: #FFFFFF;
     text-align: center;
 }
 
-table th, table td {
+.text-area table th, table td {
     padding: 12px 15px;
     text-align: center;
     vertical-align: middle;
 }
 
-table tbody tr {
-    border-bottom: 1px solid #2F62D7;
+.text-area table tbody td {
+    border-bottom: 2px solid #5182F8;
 }
 
-table tbody tr:last-of-type {
-    border-bottom: 2px solid #5182F8;
+.text-area table tbody tr:last-of-type td {
+    border-bottom: none;
+}
+
+.text-area table tbody tr:last-of-type td:first-child {
+    border-bottom-left-radius: 20px;
+}
+
+.text-area table tbody tr:last-of-type td:last-child {
+    border-bottom-right-radius: 20px;
 }

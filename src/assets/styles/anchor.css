@@ -1,8 +1,8 @@
 nav {
     position: sticky;
     top: 32px;
-    left: calc(50% + 383px);
-    width: 237px;
+    left: calc(50% + 377px);
+    width: 243px;
     background-color: #FFFCEF;
     border: #5182F8 4px solid;
     border-radius: 0 20px 20px 0;
@@ -27,30 +27,13 @@ nav a {
     font-weight: 700;
     text-align: center;
     width: 100%;
-    transition: color 0.3s;
+    transition: opacity 0.5s ease;
 }
 
 nav a::before {
     content: '';
     display: inline-block;
-    width: 20px;
-    height: 20px;
-    margin-right: 5px;
-    margin-bottom: 5px;
-    vertical-align: middle;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-nav a:hover {
-    color: #FFCA31;
-    position: relative;
-}
-
-nav a:hover::before {
-    content: '';
-    display: inline-block;
-    background-image: url('public/DesignMaterials/ActiveMapMarker.png');
+    background-image: url('public/DesignMaterials/DefaultMapMarker.png');
     background-size: contain;
     background-repeat: no-repeat;
     width: 20px;
@@ -58,12 +41,14 @@ nav a:hover::before {
     margin-right: 5px;
     margin-bottom: 5px;
     vertical-align: middle;
-    opacity: 1;
+    opacity: 0;
+    transition: opacity 0.5s ease;
 }
 
 nav a.active {
     color: #7AA8F3;
     position: relative;
+    transition: color 0.5s ease;
 }
 
 nav a.active::before {
@@ -78,5 +63,5 @@ nav a.active::before {
     margin-bottom: 5px;
     vertical-align: middle;
     opacity: 1;
-    transition: opacity 0.3s ease;
+    transition: opacity 0.5s ease;
 }
