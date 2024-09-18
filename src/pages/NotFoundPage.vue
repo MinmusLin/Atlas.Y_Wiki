@@ -1,19 +1,16 @@
 <template>
-  <div class="container">
-    <img src='/DesignMaterials/404.png' class='Image404' alt='404NotFound'>
-    <p class='NotFoundText1'>Sorry, page not found</p>
-    <p class='NotFoundText2'>The page is missing or you assembled the link incorrectly.</p>
-    <button class="GoBackButton" @click="goBack">GO BACK</button>
+  <div class='container'>
+    <img src='/DesignMaterials/404.png' class='image-404' alt='404'>
+    <p class='not-found-text-1'>Sorry, page not found</p>
+    <p class='not-found-text-2'>The page is missing or you assembled the link incorrectly</p>
+    <button class='go-back-button' @click="router.push('/')">GO BACK</button>
   </div>
 </template>
 
 <script setup lang='ts'>
-import { useRouter } from 'vue-router'
+import {useRouter} from 'vue-router'
 
 const router = useRouter()
-const goBack = () => {
-  router.push('/')
-}
 </script>
 
 <style scoped>
@@ -22,15 +19,16 @@ const goBack = () => {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: calc(100vh - 510px);
+  padding: 20px;
 }
 
-.Image404 {
+.image-404 {
   width: 430px;
   height: auto;
 }
 
-.NotFoundText1 {
+.not-found-text-1 {
   margin-top: 10px;
   font-size: 42px;
   font-weight: 700;
@@ -39,7 +37,7 @@ const goBack = () => {
   text-align: center;
 }
 
-.NotFoundText2 {
+.not-found-text-2 {
   font-size: 16px;
   font-weight: 400;
   font-family: 'Futura Md BT', sans-serif;
@@ -47,7 +45,7 @@ const goBack = () => {
   text-align: center;
 }
 
-.GoBackButton {
+.go-back-button {
   width: 143px;
   height: 56px;
   margin-top: 20px;
@@ -64,7 +62,7 @@ const goBack = () => {
   transition: background-color 0.3s, color 0.3s, box-shadow 0.1s, transform 0.1s;
 }
 
-.GoBackButton:hover {
+.go-back-button:hover {
   box-shadow: none;
   transform: translateY(3px);
 }
