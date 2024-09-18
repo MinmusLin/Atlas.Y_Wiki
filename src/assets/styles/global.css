@@ -3,6 +3,10 @@ html, body {
     padding: 0;
 }
 
+img {
+    pointer-events: none;
+}
+
 @font-face {
     font-family: 'Inter';
     src: url('@/assets/fonts/Inter.ttf') format('truetype');

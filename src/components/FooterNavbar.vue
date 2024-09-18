@@ -12,17 +12,17 @@
     <div class='notes'>
       <p>
         © 2024 - Content on this site is licensed under a
-        <a>Creative Commons Attribution 4.0 International license</a>
-        .
+        <a href='https://creativecommons.org/licenses/by/4.0' target='_blank'>
+          Creative Commons Attribution 4.0 International license</a>.
       </p>
       <p>
         The repository used to create this website is available at
-        <a>gitlab.igem.org/2024/tongji-software</a>
-        .
+        <a href='https://gitlab.igem.org/2024/tongji-software' target='_blank'>
+          gitlab.igem.org/2024/tongji-software</a>.
       </p>
     </div>
     <p class='contact-us'>Contact Us</p>
-    <p class='email'>tongji_china2019@163.com</p>
+    <a class='email' href='mailto:tongji_china2019@163.com'>tongji_china2019@163.com</a>
     <img src='/DesignMaterials/Email.png'
          alt='Email'
          style='top: 225px; right: 442px'>
@@ -79,12 +79,22 @@ img {
   font-size: 20px;
   font-weight: 500;
   right: 170px;
-  top: 224px;
+  top: 225px;
+  text-decoration: none;
 }
 
 .notes {
   position: absolute;
   top: 290px;
   left: 108px;
+}
+
+a {
+  color: white;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #AACAF9;
 }
 </style>
