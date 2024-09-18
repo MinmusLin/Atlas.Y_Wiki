@@ -1,8 +1,11 @@
-* {
-    font-family: 'Inter', sans-serif !important;
-}
-
 html, body {
     margin: 0;
     padding: 0;
+}
+
+@font-face {
+    font-family: 'Futura Md BT';
+    src: url('@/assets/fonts/Futura_Md_BT.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
