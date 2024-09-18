@@ -7,6 +7,11 @@ const routes: Array<RouteRecordRaw> = [
     redirect: '/404'
   },
   {
+    path: '/404',
+    component: () => import('@/pages/NotFoundPage.vue'),
+    meta: {title: '404 Not Found'}
+  },
+  {
     path: '/',
     component: () => import('@/pages/HomePage.vue'),
     meta: {title: 'Home'}
