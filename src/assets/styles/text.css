@@ -1,9 +1,191 @@
 .text-area {
+    position: relative;
+    width: 994px;
+    height: auto;
     background-color: #FFFCEF;
-    border: #5182F8 5px solid;
-    border-radius: 15px;
+    border: #5182F8 4px solid;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 12px 20px 0 0 #5182F8;
+    margin-top: -155px;
+    margin-left: -220px;
+}
+
+.text-area h1 {
+    font-size: 44px;
+    font-family: 'Futura Md BT', sans-serif;
+    font-weight: 400;
+    margin: 8px 0;
+    position: relative;
+    padding-left: 35px;
+}
+
+.text-area h1::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateX(-10px) translateY(-50%);
+    width: 36px;
+    height: 36px;
+    background-image: url('public/DesignMaterials/DefaultMapMarker.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.text-area h2 {
+    font-size: 36px;
+    font-family: 'Futura Md BT', sans-serif;
+    font-weight: 400;
+    margin: 8px 0;
+    padding-left: 20px;
+    position: relative;
+}
+
+.text-area h2::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: rotate(-90deg) translateY(-4px);
+    width: 20px;
+    height: 5px;
+    background-color: #5182F8;
+    border-radius: 2px;
+}
+
+.text-area h3 {
+    font-size: 32px;
+    font-family: 'Futura Md BT', sans-serif;
+    font-weight: 400;
+    margin: 8px 0;
+    padding-left: 20px;
+    position: relative;
+}
+
+.text-area h3::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: rotate(-90deg) translateY(-2px);
+    width: 15px;
+    height: 5px;
+    background-color: #5182F8;
+    border-radius: 2px;
+}
+
+.text-area h4 {
+    font-size: 24px;
+    font-family: 'Futura Md BT', sans-serif;
+    font-weight: 400;
+    margin: 8px 0;
+    padding-left: 20px;
+    position: relative;
+}
+
+.text-area h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%) rotate(-90deg);
+    width: 11px;
+    height: 5px;
+    background-color: #7AA8F3;
+    border-radius: 2px;
+}
+
+.text-area h5 {
+    font-size: 20px;
+    color: #5182F8;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    margin-top: 25px;
 }
 
 .text-area p {
-    color: red;
+    font-size: 20px;
+    font-family: 'Inter', sans-serif;
+    line-height: 30px;
+    margin: 8px 0;
+    text-align: justify;
+}
+
+.text-area p.bold {
+    font-weight: 600;
+}
+
+.text-area p.strikethrough {
+    text-decoration: line-through;
+}
+
+.text-area p.italic {
+    font-style: italic;
+}
+
+.text-area p.underline {
+    text-decoration: underline;
+}
+
+.text-area ul.custom-ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    margin: 8px 0;
+    text-align: justify;
+}
+
+.text-area ol.custom-ol {
+    list-style-type: decimal;
+    padding-left: 20px;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    margin: 8px 0;
+    text-align: justify;
+}
+
+.text-area img {
+    border: 4px solid #7AA8F3;
+    border-radius: 20px;
+    box-shadow: 12px 20px 0 0 #7AA8F3;
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 20px;
+    font-family: 'Inter', sans-serif;
+    min-width: 400px;
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+table thead tr {
+    background-color: #2F62D7;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+table th, table td {
+    padding: 12px 15px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+table tbody tr {
+    border-bottom: 1px solid #2F62D7;
+}
+
+table tbody tr:last-of-type {
+    border-bottom: 2px solid #5182F8;
 }

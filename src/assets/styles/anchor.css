@@ -1,0 +1,80 @@
+nav {
+    position: sticky;
+    top: 0;
+    left: calc(50% + 384px);
+    width: 237px;
+    background-color: #FFFCEF;
+    border: #5182F8 4px solid;
+    border-radius: 0 20px 20px 0;
+    padding: 20px;
+    box-shadow: 12px 20px 0 0 #5182F8;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+nav a {
+    display: block;
+    margin-bottom: 10px;
+    color: #C5C9CD;
+    text-decoration: none;
+    font-size: 24px;
+    font-family: 'Futura Md BT', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    width: 100%;
+    transition: color 0.3s;
+}
+
+nav a::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    vertical-align: middle;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+nav a:hover {
+    color: #FFCA31;
+    position: relative;
+}
+
+nav a:hover::before {
+    content: '';
+    display: inline-block;
+    background-image: url('public/DesignMaterials/ActiveMapMarker.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    vertical-align: middle;
+    opacity: 1;
+}
+
+nav a.active {
+    color: #7AA8F3;
+    position: relative;
+}
+
+nav a.active::before {
+    content: '';
+    display: inline-block;
+    background-image: url('public/DesignMaterials/DefaultMapMarker.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    vertical-align: middle;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}

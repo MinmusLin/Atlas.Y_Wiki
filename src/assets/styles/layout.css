@@ -1,0 +1,32 @@
+.content-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #7AA8F3;
+    position: relative;
+    padding-bottom: 80px;
+}
+
+.title-box-container {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    margin-bottom: 100px;
+}
+
+.top-right-image {
+    position: absolute;
+    right: 0;
+    width: 59%;
+    height: auto;
+}
+
+.bottom-left-image {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 59%;
+    height: auto;
+}
