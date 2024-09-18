@@ -4,6 +4,13 @@ html, body {
 }
 
 @font-face {
+    font-family: 'Inter';
+    src: url('@/assets/fonts/Inter.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'Futura Md BT';
     src: url('@/assets/fonts/Futura_Md_BT.ttf') format('truetype');
     font-weight: normal;
@@ -11,8 +18,8 @@ html, body {
 }
 
 @font-face {
-    font-family: 'Inter';
-    src: url('@/assets/fonts/Inter.ttf') format('truetype');
+    font-family: 'Futura Bk BT Book';
+    src: url('@/assets/fonts/Futura_Bk_BT_Book.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
