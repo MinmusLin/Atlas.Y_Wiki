@@ -21,6 +21,7 @@ const router = useRouter()
   align-items: center;
   min-height: calc(100vh - 510px);
   padding: 20px;
+  margin-top: 80px;
   -webkit-user-select: none;
 }
 

@@ -1,14 +1,12 @@
 .text-area {
     position: relative;
     width: 1000px;
-    height: auto;
     background-color: #FFFCEF;
     border: #5182F8 4px solid;
     border-radius: 20px;
     padding: 40px;
     box-shadow: 12px 20px 0 0 #5182F8;
-    margin-top: -155px;
-    margin-left: -240px;
+    transform: translateX(-120px);
 }
 
 .text-area h1 {

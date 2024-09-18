@@ -1,7 +1,7 @@
 <template>
   <header class='header-navbar'>
     <nav class='nav-items'>
-      <img src='/Logos/DefaultLogo.png' alt='DefaultLogo' class='logo'>
+      <img src='/Logos/DefaultLogo.png' alt='DefaultLogo' class='logo' @click="router.push('/')">
       <div v-for='item in navItems'
            :key='item.title'
            class='nav-item'
@@ -25,7 +25,9 @@
 
 <script setup lang='ts'>
 import {ref} from 'vue'
+import {useRouter} from 'vue-router'
 
+const router = useRouter()
 const navItems = ref([
   {
     title: 'HOME',
@@ -71,10 +73,15 @@ const hideDropdown = (item: any) => item.isOpen = false
 
 <style scoped>
 .header-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   background-color: white;
   height: 80px;
   border-bottom: 4px #5182F8 solid;
   -webkit-user-select: none;
+  z-index: 1000;
 }
 
 .nav-items {
@@ -87,6 +94,7 @@ const hideDropdown = (item: any) => item.isOpen = false
   margin-right: auto;
   width: 140px;
   margin-left: 36px;
+  cursor: pointer;
 }
 
 .nav-item {

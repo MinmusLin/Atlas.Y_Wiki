@@ -5,12 +5,14 @@
     <div class='title-box-container'>
       <TitleBox imageSrc='https://th.bing.com/th/id/OIP.tmvIu57hTRpXhPRWkBDDEQHaEK?rs=1&pid=ImgDetMain'/>
     </div>
-    <nav>
-      <a :class="{ active: activeAnchor == '#title1.1' }" @click.prevent="scrollToSection('title1.1')">Title 1.1</a>
-      <a :class="{ active: activeAnchor == '#title1.2' }" @click.prevent="scrollToSection('title1.2')">Title 1.2</a>
+    <nav ref='navRef'>
+      <a :class="{ active: activeAnchor == '#Title1' }" @click.prevent="scrollToSection('Title1')">Title1</a>
+      <a :class="{ active: activeAnchor == '#Title2' }" @click.prevent="scrollToSection('Title2')">Title2</a>
+      <a :class="{ active: activeAnchor == '#Title3' }" @click.prevent="scrollToSection('Title3')">Title3</a>
+      <a :class="{ active: activeAnchor == '#Title4' }" @click.prevent="scrollToSection('Title4')">Title4</a>
     </nav>
-    <div class='text-area'>
-      <h1 id='title1.1'>Title1.1</h1>
+    <div class='text-area' :style="{ marginTop: (-navHeight-22) + 'px' }">
+      <h1 id='Title1'>Title1</h1>
       <p>By visiting the WIKI, you can gain insight into the entire development process, explore our technical details
         and the thinking behind our decisions, and access a wealth of background information and resource support.</p>
       <p>By visiting the WIKI, you can gain insight into the entire development process, explore our technical details
@@ -25,7 +27,37 @@
         and the thinking behind our decisions, and access a wealth of background information and resource support.</p>
       <p>By visiting the WIKI, you can gain insight into the entire development process, explore our technical details
         and the thinking behind our decisions, and access a wealth of background information and resource support.</p>
-      <h1 id='title1.2'>Title1.2</h1>
+      <h1 id='Title2'>Title2</h1>
+      <p>By visiting the WIKI, you can gain insight into the entire development process, explore our technical details
+        and the thinking behind our decisions, and access a wealth of background information and resource support.</p>
+      <p>By visiting the WIKI, you can gain insight into the entire development process, explore our technical details
+        and the thinking behind our decisions, and access a wealth of background information and resource support.</p>
+      <p>By visiting the WIKI, you can gain insight into the entire development process, explore our technical details
+        and the thinking behind our decisions, and access a wealth of background information and resource support.</p>
+      <p>By visiting the WIKI, you can gain insight into the entire development process, explore our technical details
+        and the thinking behind our decisions, and access a wealth of background information and resource support.</p>
+      <p>By visiting the WIKI, you can gain insight into the entire development process, explore our technical details
+        and the thinking behind our decisions, and access a wealth of background information and resource support.</p>
+      <p>By visiting the WIKI, you can gain insight into the entire development process, explore our technical details
+        and the thinking behind our decisions, and access a wealth of background information and resource support.</p>
+      <p>By visiting the WIKI, you can gain insight into the entire development process, explore our technical details
+        and the thinking behind our decisions, and access a wealth of background information and resource support.</p>
+      <h1 id='Title3'>Title3</h1>
+      <p>By visiting the WIKI, you can gain insight into the entire development process, explore our technical details
+        and the thinking behind our decisions, and access a wealth of background information and resource support.</p>
+      <p>By visiting the WIKI, you can gain insight into the entire development process, explore our technical details
+        and the thinking behind our decisions, and access a wealth of background information and resource support.</p>
+      <p>By visiting the WIKI, you can gain insight into the entire development process, explore our technical details
+        and the thinking behind our decisions, and access a wealth of background information and resource support.</p>
+      <p>By visiting the WIKI, you can gain insight into the entire development process, explore our technical details
+        and the thinking behind our decisions, and access a wealth of background information and resource support.</p>
+      <p>By visiting the WIKI, you can gain insight into the entire development process, explore our technical details
+        and the thinking behind our decisions, and access a wealth of background information and resource support.</p>
+      <p>By visiting the WIKI, you can gain insight into the entire development process, explore our technical details
+        and the thinking behind our decisions, and access a wealth of background information and resource support.</p>
+      <p>By visiting the WIKI, you can gain insight into the entire development process, explore our technical details
+        and the thinking behind our decisions, and access a wealth of background information and resource support.</p>
+      <h1 id='Title4'>Title4</h1>
       <h2>Title2</h2>
       <p>By visiting the WIKI, you can gain insight into the entire development process, explore our technical details
         and the thinking behind our decisions, and access a wealth of background information and resource support.</p>
@@ -121,13 +153,22 @@ import {ref, onMounted, onUnmounted} from 'vue'
 import TitleBox from '@/components/TitleBox.vue'
 
 const activeAnchor = ref<string | null>(null)
+const navRef = ref(null)
+const navHeight = ref(0)
 
 function scrollToSection(sectionId: string) {
   const element = document.getElementById(sectionId)
   if (element) {
-    element.scrollIntoView({behavior: 'smooth'})
+    const y = element.getBoundingClientRect().top + window.scrollY - 80
+    window.scrollTo({top: y, behavior: 'smooth'})
   }
 }
+
+onMounted(() => {
+  if (navRef.value) {
+    navHeight.value = navRef.value.offsetHeight
+  }
+})
 
 onMounted(() => {
   const headings = document.querySelectorAll('h1')
@@ -140,7 +181,7 @@ onMounted(() => {
     })
   }, {
     root: null,
-    rootMargin: '0px 0px -80% 0px',
+    rootMargin: '0px 0px -50% 0px',
     threshold: 0.1
   })
   headings.forEach(heading => {

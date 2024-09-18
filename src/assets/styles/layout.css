@@ -5,6 +5,7 @@
     background-color: #7AA8F3;
     position: relative;
     padding-bottom: 68px;
+    padding-top: 80px;
 }
 
 .title-box-container {
@@ -12,8 +13,8 @@
     max-width: 600px;
     display: flex;
     justify-content: center;
-    margin-top: 32px;
-    margin-bottom: 87px;
+    margin-top: 48px;
+    margin-bottom: 90px;
     -webkit-user-select: none;
 }
 

@@ -3,6 +3,11 @@ html, body {
     padding: 0;
 }
 
+html {
+    min-width: 1440px;
+    overflow-x: auto;
+}
+
 img {
     -webkit-user-drag: none;
 }

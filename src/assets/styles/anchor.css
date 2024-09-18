@@ -1,8 +1,8 @@
 nav {
     position: sticky;
-    top: 32px;
-    left: calc(50% + 377px);
-    width: 243px;
+    top: 128px;
+    transform: translateX(498px);
+    width: 244px;
     background-color: #FFFCEF;
     border: #5182F8 4px solid;
     border-radius: 0 20px 20px 0;
@@ -15,7 +15,6 @@ nav {
     gap: 20px;
     padding-top: 30px;
     padding-bottom: 30px;
-    transform: translateY(26px);
     -webkit-user-select: none;
 }
 
