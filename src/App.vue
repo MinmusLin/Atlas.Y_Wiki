@@ -8,3 +8,6 @@
 import HeaderNavbar from '@/components/HeaderNavbar.vue'
 import FooterNavbar from '@/components/FooterNavbar.vue'
 </script>
+
+<style scoped>
+</style>
