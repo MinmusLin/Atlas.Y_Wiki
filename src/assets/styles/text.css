@@ -168,7 +168,7 @@
     min-width: 400px;
     width: 100%;
     border-radius: 20px;
-    border: 2px solid #5182F8;
+    border: 2px solid #2F62D7;
     overflow: hidden;
 }
 
@@ -185,7 +185,7 @@
 }
 
 .text-area table tbody td {
-    border-bottom: 2px solid #5182F8;
+    border-bottom: 2px solid #2F62D7;
 }
 
 .text-area table tbody tr:last-of-type td {
