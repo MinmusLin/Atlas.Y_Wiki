@@ -1,8 +1,10 @@
 <template>
-  <HeaderNavbar/>
-  <router-view/>
-  <FooterNavbar/>
-  <el-backtop :right='60' :bottom='60'/>
+  <v-app>
+    <HeaderNavbar/>
+    <router-view/>
+    <FooterNavbar/>
+    <el-backtop :right='60' :bottom='60'/>
+  </v-app>
 </template>
 
 <script setup lang='ts'>
