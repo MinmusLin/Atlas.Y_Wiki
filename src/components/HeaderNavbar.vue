@@ -163,11 +163,11 @@ onBeforeUnmount(() => window.removeEventListener('scroll', handleScroll))
   align-items: center;
   color: #2F3235;
   font-family: 'Futura Md BT', serif;
-  transition: color 0.3s ease;
+  transition: color 0.2s ease;
 }
 
 .dropdown-arrow {
-  transition: transform 0.3s ease, color 0.3s ease;
+  transition: transform 0.3s ease;
 }
 
 .rotated {
@@ -196,11 +196,11 @@ onBeforeUnmount(() => window.removeEventListener('scroll', handleScroll))
   font-weight: 600;
   white-space: nowrap;
   width: auto;
+  transition: color 0.3s ease;
 }
 
 .dropdown-item:hover {
   color: #FFCA31;
-  transition: color 0.3s ease;
 }
 
 .dropdown-item::after {
@@ -229,7 +229,7 @@ onBeforeUnmount(() => window.removeEventListener('scroll', handleScroll))
 
 /* noinspection CssUnusedSymbol */
 .fade-enter-active, .fade-leave-active {
-  transition: opacity 0.3s;
+  transition: opacity 0.2s;
 }
 
 /* noinspection CssUnusedSymbol */
