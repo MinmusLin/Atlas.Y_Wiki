@@ -1,7 +1,7 @@
 <template>
   <TextContent image-src='https://th.bing.com/th/id/OIP.tmvIu57hTRpXhPRWkBDDEQHaEK?rs=1&pid=ImgDetMain'
-               :title-list="['EducationPage']">
-    <h1 id='EducationPage'>EducationPage</h1>
+               :title-list="['Education']">
+    <h1 id='Education'>Education</h1>
     <p>By visiting the WIKI, you can gain insight into the entire development process, explore our technical details
       and the thinking behind our decisions, and access a wealth of background information and resource support.</p>
   </TextContent>
