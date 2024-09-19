@@ -1,11 +1,18 @@
-<script setup lang="ts">
-
-</script>
-
 <template>
-
+  <TextContent image-src='https://th.bing.com/th/id/OIP.tmvIu57hTRpXhPRWkBDDEQHaEK?rs=1&pid=ImgDetMain'
+               :title-list="['DesignPage']">
+    <h1 id='DesignPage'>DesignPage</h1>
+    <p>By visiting the WIKI, you can gain insight into the entire development process, explore our technical details
+      and the thinking behind our decisions, and access a wealth of background information and resource support.</p>
+  </TextContent>
 </template>
 
-<style scoped>
+<script setup lang='ts'>
+import TextContent from '@/components/TextContent.vue'
+</script>
 
+<style scoped>
+@import '@/assets/styles/text.css';
+@import '@/assets/styles/anchor.css';
+@import '@/assets/styles/layout.css';
 </style>
