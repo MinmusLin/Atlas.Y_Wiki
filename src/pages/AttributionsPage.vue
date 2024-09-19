@@ -1,5 +1,5 @@
 <template>
-  <TextContent image-src='https://th.bing.com/th/id/OIP.tmvIu57hTRpXhPRWkBDDEQHaEK?rs=1&pid=ImgDetMain'
+  <TextContent image-src='/DesignMaterials/MetabolicEngineering.png'
                :title-list="['Attributions']">
     <h1 id='Attributions'>Attributions</h1>
     <p>
