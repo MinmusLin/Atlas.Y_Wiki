@@ -2,6 +2,7 @@
   <HeaderNavbar/>
   <router-view/>
   <FooterNavbar/>
+  <el-backtop :right='60' :bottom='60'/>
 </template>
 
 <script setup lang='ts'>
