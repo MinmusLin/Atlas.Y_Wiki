@@ -24,7 +24,7 @@
 </template>
 
 <script setup lang='ts'>
-import {ref} from 'vue'
+import {ref, onMounted, onBeforeUnmount} from 'vue'
 import {useRouter} from 'vue-router'
 
 const router = useRouter()
@@ -69,6 +69,19 @@ const navItems = ref([
 const showDropdown = (item: any) => item.isOpen = true
 
 const hideDropdown = (item: any) => item.isOpen = false
+
+const handleScroll = () => {
+  const header = document.querySelector('.header-navbar') as HTMLElement
+  header.style.transform = `translateX(${-window.scrollX}px)`
+}
+
+onMounted(() => {
+  window.addEventListener('scroll', handleScroll)
+})
+
+onBeforeUnmount(() => {
+  window.removeEventListener('scroll', handleScroll)
+})
 </script>
 
 <style scoped>
