@@ -27,15 +27,12 @@ nav a {
     font-weight: 700;
     text-align: center;
     width: 100%;
-    transition: opacity 0.5s ease;
+    transition: color 0.5s ease, opacity 0.5s ease;
 }
 
 nav a::before {
     content: '';
     display: inline-block;
-    background-image: url('public/DesignMaterials/DefaultMapMarker.png');
-    background-size: contain;
-    background-repeat: no-repeat;
     width: 20px;
     height: 20px;
     margin-right: 5px;
@@ -43,6 +40,24 @@ nav a::before {
     vertical-align: middle;
     opacity: 0;
     transition: opacity 0.5s ease;
+}
+
+nav a:hover, a.active:hover {
+    color: #FFCA31;
+}
+
+nav a:hover::before {
+    content: '';
+    display: inline-block;
+    background-image: url('public/DesignMaterials/ActiveMapMarker.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    vertical-align: middle;
+    opacity: 1;
 }
 
 nav a.active {
@@ -64,4 +79,8 @@ nav a.active::before {
     vertical-align: middle;
     opacity: 1;
     transition: opacity 0.5s ease;
+}
+
+nav a.active:hover::before {
+    background-image: url('public/DesignMaterials/ActiveMapMarker.png');
 }
