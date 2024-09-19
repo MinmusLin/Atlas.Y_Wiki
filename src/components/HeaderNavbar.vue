@@ -100,13 +100,9 @@ function goToPage(url?: string) {
   }
 }
 
-onMounted(() => {
-  window.addEventListener('scroll', handleScroll)
-})
+onMounted(() => window.addEventListener('scroll', handleScroll))
 
-onBeforeUnmount(() => {
-  window.removeEventListener('scroll', handleScroll)
-})
+onBeforeUnmount(() => window.removeEventListener('scroll', handleScroll))
 </script>
 
 <style scoped>
