@@ -26,7 +26,7 @@
     transform: translateX(-15px) translateY(-50%);
     width: 36px;
     height: 36px;
-    background-image: url('public/DesignMaterials/DefaultMapMarker.png');
+    background-image: url('/DesignMaterials/DefaultMapMarker.png');
     background-size: contain;
     background-repeat: no-repeat;
 }

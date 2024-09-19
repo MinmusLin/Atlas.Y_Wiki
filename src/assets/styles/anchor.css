@@ -46,7 +46,7 @@ nav a:hover, a.active:hover {
 nav a:hover::before {
     content: '';
     display: inline-block;
-    background-image: url('public/DesignMaterials/ActiveMapMarker.png');
+    background-image: url('/DesignMaterials/ActiveMapMarker.png');
     background-size: contain;
     background-repeat: no-repeat;
     width: 20px;
@@ -64,7 +64,7 @@ nav a.active {
 nav a.active::before {
     content: '';
     display: inline-block;
-    background-image: url('public/DesignMaterials/DefaultMapMarker.png');
+    background-image: url('/DesignMaterials/DefaultMapMarker.png');
     background-size: contain;
     background-repeat: no-repeat;
     width: 20px;
@@ -75,5 +75,5 @@ nav a.active::before {
 }
 
 nav a.active:hover::before {
-    background-image: url('public/DesignMaterials/ActiveMapMarker.png');
+    background-image: url('/DesignMaterials/ActiveMapMarker.png');
 }
