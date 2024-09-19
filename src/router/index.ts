@@ -113,6 +113,7 @@ const router: Router = createRouter({
 })
 
 router.beforeEach((to, _, next) => {
+  document.documentElement.scrollTop = 0
   if (to.meta && to.meta.title) {
     document.title = to.meta.title as string + ' | Tongji-Software - iGEM 2024'
   } else {
