@@ -27,7 +27,6 @@ nav a {
     font-weight: 700;
     text-align: center;
     width: 100%;
-    transition: color 0.5s ease, opacity 0.5s ease;
 }
 
 nav a::before {
@@ -38,8 +37,6 @@ nav a::before {
     margin-right: 5px;
     margin-bottom: 5px;
     vertical-align: middle;
-    opacity: 0;
-    transition: opacity 0.5s ease;
 }
 
 nav a:hover, a.active:hover {
@@ -57,13 +54,11 @@ nav a:hover::before {
     margin-right: 5px;
     margin-bottom: 5px;
     vertical-align: middle;
-    opacity: 1;
 }
 
 nav a.active {
     color: #7AA8F3;
     position: relative;
-    transition: color 0.5s ease;
 }
 
 nav a.active::before {
@@ -77,8 +72,6 @@ nav a.active::before {
     margin-right: 5px;
     margin-bottom: 5px;
     vertical-align: middle;
-    opacity: 1;
-    transition: opacity 0.5s ease;
 }
 
 nav a.active:hover::before {
