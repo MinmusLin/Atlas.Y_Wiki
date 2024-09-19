@@ -7,9 +7,15 @@
            class='nav-item'
            @mouseover='showDropdown(item)'
            @mouseleave='hideDropdown(item)'>
-        <button class='nav-title' @click='goToPage(item.url)'>
+        <!--suppress JSIncompatibleTypesComparison-->
+        <button class='nav-title'
+                @click='goToPage(item.url)'
+                :class="{ 'hover-effect': hoveredItem == item.title, 'active-effect': isActive(item) }">
           {{ item.title }}
-          <v-icon v-if='item.subItems' :class=" {'rotated': item.isOpen} " class='dropdown-arrow'>
+          <!--suppress JSIncompatibleTypesComparison-->
+          <v-icon v-if='item.subItems'
+                  :class=" {'rotated': item.isOpen, 'hover-effect': hoveredItem == item.title, 'active-effect': isActive(item) }"
+                  class='dropdown-arrow'>
             mdi-chevron-down
           </v-icon>
         </button>
@@ -30,9 +36,11 @@
 
 <script setup lang='ts'>
 import {ref, onMounted, onBeforeUnmount} from 'vue'
-import {useRouter} from 'vue-router'
+import {useRoute, useRouter} from 'vue-router'
 
+const route = useRoute()
 const router = useRouter()
+const hoveredItem = ref(null)
 const navItems = ref([
   {
     title: 'HOME',
@@ -85,9 +93,19 @@ const navItems = ref([
   }
 ])
 
-const showDropdown = (item: any) => item.isOpen = true
+const showDropdown = (item: any) => {
+  item.isOpen = true
+  hoveredItem.value = item.title
+}
 
-const hideDropdown = (item: any) => item.isOpen = false
+const hideDropdown = (item: any) => {
+  item.isOpen = false
+  hoveredItem.value = null
+}
+
+const isActive = (item: any) => {
+  return route.path == item.url || (item.subUrls && item.subUrls.includes(route.path))
+}
 
 const handleScroll = () => {
   const header = document.querySelector('.header-navbar') as HTMLElement
@@ -145,10 +163,11 @@ onBeforeUnmount(() => window.removeEventListener('scroll', handleScroll))
   align-items: center;
   color: #2F3235;
   font-family: 'Futura Md BT', serif;
+  transition: color 0.3s ease;
 }
 
 .dropdown-arrow {
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .rotated {
@@ -198,6 +217,14 @@ onBeforeUnmount(() => window.removeEventListener('scroll', handleScroll))
 
 .dropdown-item:hover::after {
   width: calc(100% - 50px);
+}
+
+.hover-effect {
+  color: #7AA8F3;
+}
+
+.active-effect {
+  color: #5182F8;
 }
 
 /* noinspection CssUnusedSymbol */
