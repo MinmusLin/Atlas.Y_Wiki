@@ -100,7 +100,7 @@
     font-weight: 400;
     font-family: 'Inter', sans-serif;
     text-align: center;
-    margin-top: 25px;
+    margin-bottom: 12px;
 }
 
 .text-area p {
@@ -152,22 +152,21 @@
     border-radius: 20px;
     box-shadow: 12px 20px 0 0 #7AA8F3;
     display: block;
-    margin: 0 auto;
     max-width: 100%;
     height: auto;
+    margin: 20px auto 26px;
 }
 
 .text-area table {
     border-collapse: separate;
     border-spacing: 0;
-    margin: 25px 0;
     font-size: 20px;
     font-family: 'Inter', sans-serif;
-    min-width: 400px;
     width: 100%;
     border-radius: 20px;
     border: 2px solid #2F62D7;
     overflow: hidden;
+    margin-bottom: 26px;
 }
 
 .text-area table thead tr {
