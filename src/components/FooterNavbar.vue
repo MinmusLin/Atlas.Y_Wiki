@@ -59,7 +59,7 @@ function goToLink(link: string) {
   font-family: 'Futura Bk BT Book', serif;
   font-weight: 500;
   line-height: 34px;
-  font-size: 18px;
+  font-size: 20px;
   white-space: nowrap;
 }
 
