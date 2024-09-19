@@ -9,7 +9,7 @@
            @mouseleave='hideDropdown(item)'>
         <!--suppress JSIncompatibleTypesComparison-->
         <button class='nav-title'
-                @click='goToPage(item.url)'
+                @click='item.url ? goToPage(item.url) : undefined'
                 :class="{ 'hover-effect': hoveredItem == item.title, 'active-effect': isActive(item) }">
           {{ item.title }}
           <!--suppress JSIncompatibleTypesComparison-->
@@ -24,7 +24,7 @@
             <li v-for='(subItem, index) in item.subItems'
                 :key='index'
                 class='dropdown-item'
-                @click='goToPage(item.subUrls[index])'>
+                @click='item.subUrls ? goToPage(item.subUrls[index]) : undefined'>
               {{ subItem }}
             </li>
           </ul>
@@ -112,10 +112,8 @@ const handleScroll = () => {
   header.style.transform = `translateX(${-window.scrollX}px)`
 }
 
-function goToPage(url?: string) {
-  if (url) {
-    router.push(url)
-  }
+function goToPage(url: string) {
+  router.push(url)
 }
 
 onMounted(() => window.addEventListener('scroll', handleScroll))
