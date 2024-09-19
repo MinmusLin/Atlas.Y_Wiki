@@ -12,6 +12,7 @@ declare module 'vue' {
     HeaderNavbar: typeof import('./src/components/HeaderNavbar.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    TextContent: typeof import('./src/components/TextContent.vue')['default']
     TitleBox: typeof import('./src/components/TitleBox.vue')['default']
   }
 }
