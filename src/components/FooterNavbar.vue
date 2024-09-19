@@ -2,14 +2,14 @@
   <div class='footer-navbar'>
     <img src='/Logos/TongjiUniversityLogo.png'
          alt='TongjiUniversityLogo'
-         style='top: 50px; left: 100px; cursor: pointer'
+         style='top: 50px; left: 100px; cursor: pointer; width: 140px'
          @click="goToLink('https://en.tongji.edu.cn')">
     <img src='/Logos/TongjiSoftwareLogo.png'
          alt='TongjiSoftwareLogo'
-         style='top: 90px; left: 304px'>
+         style='top: 90px; left: 304px; width: 183px'>
     <img src='/Logos/LightLogo.png'
          alt='LightLogo'
-         style='top: 93px; left: 545px; cursor: pointer'
+         style='top: 93px; left: 545px; cursor: pointer; width: 243px'
          @click="goToLink('http://47.91.92.143')">
     <div class='notes'>
       <p>
@@ -27,16 +27,16 @@
     <a class='email' href='mailto:tongji_china2019@163.com'>tongji_china2019@163.com</a>
     <img src='/DesignMaterials/Email.png'
          alt='Email'
-         style='top: 225px; right: 439px'>
+         style='top: 225px; right: 439px; width: 51px'>
     <img src='/DesignMaterials/TikTok.png'
          alt='TikTok'
-         style='top: 298px; right: 447px'>
+         style='top: 298px; right: 447px; width: 42px'>
     <img src='/DesignMaterials/WeChat.png'
          alt='WeChat'
-         style='top: 296px; right: 321px'>
+         style='top: 296px; right: 321px; width: 64px'>
     <img src='/DesignMaterials/Bilibili.png'
          alt='Bilibili'
-         style='top: 302px; right: 100px'>
+         style='top: 302px; right: 100px; width: 159px'>
   </div>
 </template>
 
