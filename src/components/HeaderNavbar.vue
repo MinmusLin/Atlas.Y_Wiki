@@ -7,7 +7,7 @@
            class='nav-item'
            @mouseover='showDropdown(item)'
            @mouseleave='hideDropdown(item)'>
-        <button class='nav-title'>
+        <button class='nav-title' @click='goToPage(item.url)'>
           {{ item.title }}
           <v-icon v-if='item.subItems' :class=" {'rotated': item.isOpen} " class='dropdown-arrow'>
             mdi-chevron-down
@@ -15,7 +15,12 @@
         </button>
         <transition name='fade'>
           <ul v-show='item.subItems && item.isOpen' class='dropdown-menu'>
-            <li v-for='subItem in item.subItems' :key='subItem' class='dropdown-item'>{{ subItem }}</li>
+            <li v-for='(subItem, index) in item.subItems'
+                :key='index'
+                class='dropdown-item'
+                @click='goToPage(item.subUrls[index])'>
+              {{ subItem }}
+            </li>
           </ul>
         </transition>
       </div>
@@ -31,37 +36,51 @@ const router = useRouter()
 const navItems = ref([
   {
     title: 'HOME',
+    url: '/',
     subItems: null,
+    subUrls: null,
     isOpen: false
   },
   {
     title: 'PROJECT',
+    url: null,
     subItems: ['Description', 'Design', 'Engineering', 'Implementation', 'Proof of Concept', 'Notebook'],
+    subUrls: ['/description', '/design', '/engineering', '/implementation', '/proof-of-concept', '/notebook'],
     isOpen: false
   },
   {
     title: 'SOFTWARE',
+    url: null,
     subItems: ['Contribution', 'Web Application'],
+    subUrls: ['/contribution', '/web-application'],
     isOpen: false
   },
   {
     title: 'MODEL',
+    url: '/model',
     subItems: null,
+    subUrls: null,
     isOpen: false
   },
   {
     title: 'HUMAN PRACTICES',
-    subItems: ['Integrated Human Practice', 'Entrepreneurship', 'Education'],
+    url: null,
+    subItems: ['Integrated Human Practices', 'Entrepreneurship', 'Education', 'Promotion Video'],
+    subUrls: ['/human-practices', '/entrepreneurship', '/education', '/promotion-video'],
     isOpen: false
   },
   {
     title: 'SAFETY',
+    url: '/safety',
     subItems: null,
+    subUrls: null,
     isOpen: false
   },
   {
     title: 'TEAM',
+    url: null,
     subItems: ['Roster', 'Attributions'],
+    subUrls: ['/team', '/attributions'],
     isOpen: false
   }
 ])
@@ -73,6 +92,12 @@ const hideDropdown = (item: any) => item.isOpen = false
 const handleScroll = () => {
   const header = document.querySelector('.header-navbar') as HTMLElement
   header.style.transform = `translateX(${-window.scrollX}px)`
+}
+
+function goToPage(url?: string) {
+  if (url) {
+    router.push(url)
+  }
 }
 
 onMounted(() => {
