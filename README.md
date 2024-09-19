@@ -6,9 +6,9 @@ Atlas.Y_Wiki
 
 ## 项目简介
 
-Atlas.Y: Advanced targeting and localization assistance system for yeast (Tongji-Software 2024 iGEM Wiki).
+Atlas.Y: Advanced targeting and localization assistance system for yeast ([Tongji-Software 2024 iGEM Wiki](https://2024.igem.wiki/tongji-software)).
 
-Atlas.Y: 用于优化酵母菌亚细胞定位的分子标签设计软件（Tongji-Software 2024 iGEM Wiki）。
+Atlas.Y: 用于优化酵母菌亚细胞定位的分子标签设计软件（[Tongji-Software 2024 iGEM Wiki](https://2024.igem.wiki/tongji-software)）。
 
 ## 联系我们
 
