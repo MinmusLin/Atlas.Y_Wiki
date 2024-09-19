@@ -32,3 +32,14 @@ img {
     font-weight: normal;
     font-style: normal;
 }
+
+::-webkit-scrollbar {
+    width: 8px;
+    background-color: white;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #C1C1C1;
+    border-radius: 4px;
+    cursor: pointer;
+}
