@@ -1097,16 +1097,11 @@ onMounted(() => {
   transition: opacity 0.6s ease, transform 0.6s ease;
 }
 
-.promote8.active,
+.promote4.active, .promote8.active,
 .promote10.active, .promote11.active,
 .promote12.active, .promote15.active,
 .promote16.active, .dot1.active,
 .dot2.active, .dot3.active {
-  opacity: 1;
-  transform: translateX(-50%) translateY(0);
-}
-
-.promote4.active {
   opacity: 1;
   transform: translateX(-50%) translateY(0);
 }
