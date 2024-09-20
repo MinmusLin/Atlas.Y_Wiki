@@ -5,7 +5,7 @@
 </template>
 
 <script setup lang='ts'>
-import { onMounted, onBeforeUnmount } from 'vue';
+import {onMounted, onBeforeUnmount} from 'vue';
 
 let current_line = 300; // 初始值为300
 let lines = [300, 180, 1040, 180, 1120, 480, 700, 180, 600, 180, 210, 180, 630, 1120, 260, 180];
@@ -16,8 +16,7 @@ let top_screen: number;
 let bottom_screen: number;
 
 function canDraw(y1: number, y2: number): boolean {
-  if (y2 < top_screen || y1 > bottom_screen) return false;
-  else return true;
+  return !(y2 < top_screen || y1 > bottom_screen);
 }
 
 function verticalLine(x: number, y1: number, y2: number, ctx: CanvasRenderingContext2D, canvas_h: number) {
@@ -203,7 +202,7 @@ function draw() {
   const ctx = canvas.getContext("2d");
   if (!ctx) return;
 
-  var gradient = ctx.createLinearGradient(0, 0, 0, 13370);
+  const gradient = ctx.createLinearGradient(0, 0, 0, 13370);
   gradient.addColorStop(0, "#2B5D6F");
   gradient.addColorStop(0.36, "#2B5D6F");
   gradient.addColorStop(0.373, "#FFFFFF");
@@ -320,7 +319,6 @@ onBeforeUnmount(() => {
   margin: 0 auto;
   width: max(100%, 1300px);
   height: 14500px;
-  background-color: black;
   display: flex;
   flex-wrap: wrap;
   position: relative;
