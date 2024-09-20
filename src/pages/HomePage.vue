@@ -530,175 +530,10 @@
 .label {
   width: 150%;
   font-family: 'Futura Md BT', sans-serif;
-  font-size: 20px;
+  font-size: calc(20 / 1920 * 100vw);
   font-weight: 400;
   color: #16396E;
   margin-top: 20px;
-}
-
-.promote1 {
-  position: absolute;
-  top: 9.2%;
-  left: 21%;
-  width: 500px;
-  height: auto;
-}
-
-.promote2 {
-  position: absolute;
-  top: 12.2%;
-  left: 44%;
-  width: 500px;
-  height: auto;
-}
-
-.promote3 {
-  position: absolute;
-  top: 16.3%;
-  left: 52.5%;
-  width: 500px;
-  height: auto;
-}
-
-.promote1-1, .promote2-1, .promote3-1 {
-  font-family: 'Futura Md BT', sans-serif;
-  font-size: 24px;
-  font-weight: 700;
-  color: #FFFFFF;
-}
-
-.promote1-2, .promote2-2, .promote3-2 {
-  font-family: 'Futura Md BT', sans-serif;
-  font-size: 24px;
-  font-weight: 400;
-  color: #FFFFFF;
-}
-
-.promote4 {
-  position: absolute;
-  top: 20.2%;
-  left: 50%;
-  transform: translateX(-45%);
-  width: 1378px;
-  height: auto;
-  font-family: 'Futura Md BT', sans-serif;
-  font-size: 50px;
-  font-weight: 700;
-  color: white;
-}
-
-.highlight-yellow {
-  color: #FDE162;
-}
-
-.promote5 {
-  position: absolute;
-  top: 33.7%;
-  left: 53.5%;
-  width: 526px;
-  height: auto;
-}
-
-.promote5-1, .promote6-1 {
-  font-family: 'Futura Md BT', sans-serif;
-  font-size: 24px;
-  font-weight: 700;
-  color: #193B6F;
-}
-
-.promote5-2, .promote6-2 {
-  font-family: 'Futura Md BT', sans-serif;
-  font-size: 24px;
-  font-weight: 400;
-  color: #193B6F;
-}
-
-.promote6 {
-  position: absolute;
-  top: 36.8%;
-  left: 38.5%;
-  width: 1000px;
-  height: auto;
-}
-
-.promote7 {
-  position: absolute;
-  top: 43.2%;
-  left: 13.5%;
-  width: 1384px;
-  height: auto;
-}
-
-.promote7-1 {
-  font-family: 'Futura Md BT', sans-serif;
-  font-size: 30px;
-  font-weight: 700;
-  color: #193B6F;
-}
-
-.promote7-2 {
-  font-family: 'Futura Md BT', sans-serif;
-  font-size: 30px;
-  font-weight: 400;
-  color: #193B6F;
-}
-
-.highlight-blue {
-  color: #5486FA;
-}
-
-.promote8 {
-  position: absolute;
-  top: 46.5%;
-  left: 50%;
-  transform: translateX(-45%);
-  width: 1165px;
-  height: 171px;
-  font-family: 'Futura Md BT', sans-serif;
-  font-size: 40px;
-  font-weight: 400;
-  color: #E9AD01;
-  text-align: center;
-}
-
-.promote9 {
-  position: absolute;
-  top: 53.5%;
-  right: 20%;
-  width: 540px;
-  height: 171px;
-  font-family: 'Futura Md BT', sans-serif;
-  font-size: 24px;
-  font-weight: 400;
-  color: #16396E;
-}
-
-.promote10 {
-  position: absolute;
-  top: 59%;
-  left: 50%;
-  transform: translateX(-45%);
-  width: 1165px;
-  height: 171px;
-  font-family: 'Futura Md BT', sans-serif;
-  font-size: 40px;
-  font-weight: 400;
-  color: #2F62D7;
-  text-align: center;
-}
-
-.promote11 {
-  position: absolute;
-  top: 61%;
-  left: 50%;
-  transform: translateX(-45%);
-  width: 800px;
-  height: 171px;
-  font-family: 'Futura Md BT', sans-serif;
-  font-size: 24px;
-  font-weight: 400;
-  color: #16396E;
-  text-align: center;
 }
 
 .cell {
@@ -733,7 +568,7 @@
 }
 
 .image-label {
-  font-size: 20px;
+  font-size: calc(20 / 1920 * 100vw);
   font-weight: 400;
   margin-top: 30px;
   text-align: center;
@@ -741,31 +576,6 @@
   color: #16396E;
 }
 
-.promote12 {
-  position: absolute;
-  top: 66%;
-  left: 50%;
-  transform: translateX(-45%);
-  width: 815px;
-  height: 171px;
-  font-family: 'Futura Md BT', sans-serif;
-  font-size: 24px;
-  font-weight: 400;
-  color: #16396E;
-  text-align: center;
-}
-
-.promote13 {
-  position: absolute;
-  top: 70%;
-  left: 10%;
-  width: 860px;
-  height: 171px;
-  font-family: 'Futura Md BT', sans-serif;
-  font-size: 40px;
-  font-weight: 700;
-  color: #2F62D7;
-}
 
 .default-logo{
   position: absolute;
@@ -808,45 +618,6 @@
   height: auto;
 }
 
-.promote14 {
-  position: absolute;
-  top: 78.35%;
-  left: 43%;
-  width: 400px;
-  height: auto;
-  font-family: 'Futura Md BT', sans-serif;
-  font-size: 40px;
-  font-weight: 700;
-  color: #2F62D7;
-}
-
-.promote15 {
-  position: absolute;
-  top: 87%;
-  left: 50%;
-  transform: translateX(-45%);
-  width: 1200px;
-  height: auto;
-  font-family: 'Futura Md BT', sans-serif;
-  font-size: 40px;
-  font-weight: 400;
-  color: #16396E;
-}
-
-.promote16 {
-  position: absolute;
-  top: 92%;
-  left: 50%;
-  transform: translateX(-45%);
-  width: 1000px;
-  height: auto;
-  font-family: 'Futura Md BT', sans-serif;
-  font-size: 40px;
-  font-weight: 400;
-  color: #16396E;
-  text-align: center;
-}
-
 .dot1 {
   position: absolute;
   top: 93.5%;
@@ -878,5 +649,235 @@
   height: 10px;
   background-color: #16396E;
   border-radius: 50%;
+}
+
+.promote1 {
+  position: absolute;
+  top: 9.2%;
+  left: 21%;
+  width: 500px;
+  height: auto;
+}
+
+.promote2 {
+  position: absolute;
+  top: 12.2%;
+  left: 44%;
+  width: 500px;
+  height: auto;
+}
+
+.promote3 {
+  position: absolute;
+  top: 16.3%;
+  left: 52.5%;
+  width: 500px;
+  height: auto;
+}
+
+.promote1-1, .promote2-1, .promote3-1 {
+  font-family: 'Futura Md BT', sans-serif;
+  font-size:  calc(24 / 1920 * 100vw);
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+.promote1-2, .promote2-2, .promote3-2 {
+  font-family: 'Futura Md BT', sans-serif;
+  font-size:  calc(24 / 1920 * 100vw);
+  font-weight: 400;
+  color: #FFFFFF;
+}
+
+.promote4 {
+  position: absolute;
+  top: 20.2%;
+  left: 50%;
+  transform: translateX(-45%);
+  width: 1378px;
+  height: auto;
+  font-family: 'Futura Md BT', sans-serif;
+  font-size:  calc(50 / 1920 * 100vw);
+  font-weight: 700;
+  color: white;
+}
+
+.highlight-yellow {
+  color: #FDE162;
+}
+
+.promote5 {
+  position: absolute;
+  top: 33.7%;
+  left: 53.5%;
+  width: 526px;
+  height: auto;
+}
+
+.promote5-1, .promote6-1 {
+  font-family: 'Futura Md BT', sans-serif;
+  font-size:  calc(24 / 1920 * 100vw);
+  font-weight: 700;
+  color: #193B6F;
+}
+
+.promote5-2, .promote6-2 {
+  font-family: 'Futura Md BT', sans-serif;
+  font-size:  calc(24 / 1920 * 100vw);
+  font-weight: 400;
+  color: #193B6F;
+}
+
+.promote6 {
+  position: absolute;
+  top: 36.8%;
+  left: 38.5%;
+  width: 1000px;
+  height: auto;
+}
+
+.promote7 {
+  position: absolute;
+  top: 43.2%;
+  left: 13.5%;
+  width: 1384px;
+  height: auto;
+}
+
+.promote7-1 {
+  font-family: 'Futura Md BT', sans-serif;
+  font-size:  calc(30 / 1920 * 100vw);
+  font-weight: 700;
+  color: #193B6F;
+}
+
+.promote7-2 {
+  font-family: 'Futura Md BT', sans-serif;
+  font-size:  calc(30 / 1920 * 100vw);
+  font-weight: 400;
+  color: #193B6F;
+}
+
+.highlight-blue {
+  color: #5486FA;
+}
+
+.promote8 {
+  position: absolute;
+  top: 46.5%;
+  left: 50%;
+  transform: translateX(-45%);
+  width: 1165px;
+  height: 171px;
+  font-family: 'Futura Md BT', sans-serif;
+  font-size:  calc(40 / 1920 * 100vw);
+  font-weight: 400;
+  color: #E9AD01;
+  text-align: center;
+}
+
+.promote9 {
+  position: absolute;
+  top: 53.5%;
+  right: 20%;
+  width: 540px;
+  height: 171px;
+  font-family: 'Futura Md BT', sans-serif;
+  font-size:  calc(24 / 1920 * 100vw);
+  font-weight: 400;
+  color: #16396E;
+}
+
+.promote10 {
+  position: absolute;
+  top: 59%;
+  left: 50%;
+  transform: translateX(-45%);
+  width: 1165px;
+  height: 171px;
+  font-family: 'Futura Md BT', sans-serif;
+  font-size:  calc(40 / 1920 * 100vw);
+  font-weight: 400;
+  color: #2F62D7;
+  text-align: center;
+}
+
+.promote11 {
+  position: absolute;
+  top: 61%;
+  left: 50%;
+  transform: translateX(-45%);
+  width: 41.7%;
+  height: 171px;
+  font-family: 'Futura Md BT', sans-serif;
+  font-size:  calc(24 / 1920 * 100vw);
+  font-weight: 400;
+  color: #16396E;
+  text-align: center;
+}
+
+.promote12 {
+  position: absolute;
+  top: 66%;
+  left: 50%;
+  transform: translateX(-45%);
+  width: 42.4%;
+  height: 171px;
+  font-family: 'Futura Md BT', sans-serif;
+  font-size:  calc(24 / 1920 * 100vw);
+  font-weight: 400;
+  color: #16396E;
+  text-align: center;
+}
+
+.promote13 {
+  position: absolute;
+  top: 70%;
+  left: 10%;
+  width: 45%;
+  height: 171px;
+  font-family: 'Futura Md BT', sans-serif;
+  font-size:  calc(40 / 1920 * 100vw);
+  font-weight: 700;
+  color: #2F62D7;
+}
+
+.promote14 {
+  position: absolute;
+  top: 78.35%;
+  left: 43%;
+  width: 21%;
+  height: auto;
+  font-family: 'Futura Md BT', sans-serif;
+  font-size:  calc(40 / 1920 * 100vw);
+  font-weight: 700;
+  color: #2F62D7;
+}
+
+.promote15 {
+  position: absolute;
+  top: 87%;
+  left: 50%;
+  transform: translateX(-45%);
+  width: 62.5%;
+  height: auto;
+  font-family: 'Futura Md BT', sans-serif;
+  font-size:  calc(40 / 1920 * 100vw);
+  font-weight: 400;
+  color: #16396E;
+}
+
+.promote16 {
+  position: absolute;
+  top: 92%;
+  left: 50%;
+  transform: translateX(-45%);
+  width: 52%;
+  height: auto;
+  font-family: 'Futura Md BT', sans-serif;
+  font-size:  calc(40 / 1920 * 100vw);
+  font-weight: 400;
+  color: #16396E;
+  text-align: center;
 }
 </style>
