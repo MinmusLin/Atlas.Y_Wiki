@@ -1,136 +1,136 @@
 <template>
-  <div class="background-container">
-    <img src="/DesignMaterials/Background1.png" alt="Background1" class="background">
-    <img src="/DesignMaterials/Background2.png" alt="Background2" class="background">
+  <div class='background-container'>
+    <img src='/DesignMaterials/Background1.png' alt='Background1' class='background'>
+    <img src='/DesignMaterials/Background2.png' alt='Background2' class='background'>
 
-    <img src="/DesignMaterials/Title.png" alt="Title" class="title">
+    <img src='/DesignMaterials/Title.png' alt='Title' class='title'>
 
-    <img src="/DesignMaterials/MotileCell1.png" alt="MotileCell1" class="motile-cell1">
-    <img src="/DesignMaterials/MotileCell2.png" alt="MotileCell2" class="motile-cell2">
-    <img src="/DesignMaterials/MotileCell3.png" alt="MotileCell3" class="motile-cell3">
-    <img src="/DesignMaterials/MotileCell4.png" alt="MotileCell4" class="motile-cell4">
-    <img src="/DesignMaterials/MotileCell5.png" alt="MotileCell5" class="motile-cell5">
-    <img src="/DesignMaterials/MotileCell7.png" alt="MotileCell7" class="motile-cell7">
-    <img src="/DesignMaterials/MotileCell6.png" alt="MotileCell6" class="motile-cell6">
+    <img src='/DesignMaterials/MotileCell1.png' alt='MotileCell1' class='motile-cell1'>
+    <img src='/DesignMaterials/MotileCell2.png' alt='MotileCell2' class='motile-cell2'>
+    <img src='/DesignMaterials/MotileCell3.png' alt='MotileCell3' class='motile-cell3'>
+    <img src='/DesignMaterials/MotileCell4.png' alt='MotileCell4' class='motile-cell4'>
+    <img src='/DesignMaterials/MotileCell5.png' alt='MotileCell5' class='motile-cell5'>
+    <img src='/DesignMaterials/MotileCell7.png' alt='MotileCell7' class='motile-cell7'>
+    <img src='/DesignMaterials/MotileCell6.png' alt='MotileCell6' class='motile-cell6'>
 
-    <div class="promote1">
-      <p class="promote1-1">
-        <span class="highlight-yellow">2600</span> years ago,
+    <div class='promote1'>
+      <p class='promote1-1'>
+        <span class='highlight-yellow'>2600</span> years ago,
       </p>
-      <p class="promote1-2">
+      <p class='promote1-2'>
         Anaximander of Miletus drew the first map of the world. Back then, he thought Delphi was the center of the
         world.</p>
     </div>
 
-    <div class="promote2">
-      <p class="promote2-1">
-        <span class="highlight-yellow">2300</span> years ago,
+    <div class='promote2'>
+      <p class='promote2-1'>
+        <span class='highlight-yellow'>2300</span> years ago,
       </p>
-      <p class="promote2-2">
+      <p class='promote2-2'>
         Eratosthenes first calculated the circumference of the Earth with some accuracy.</p>
     </div>
 
-    <img src="/DesignMaterials/WorldMap.png" alt="WorldMap" class="world-map">
-    <img src="/DesignMaterials/Anaximander.png" alt="Anaximander" class="Anaximander">
-    <img src="/DesignMaterials/Eratosthenes.png" alt="Eratosthenes" class="Eratosthenes">
-    <img src="/DesignMaterials/Newton.png" alt="Newton" class="Newton">
-    <img src="/DesignMaterials/Planet1.png" alt="Planet1" class="planet1">
-    <img src="/DesignMaterials/Planet2.png" alt="Planet2" class="planet2">
-    <img src="/DesignMaterials/Planet3.png" alt="Planet2" class="planet3">
+    <img src='/DesignMaterials/WorldMap.png' alt='WorldMap' class='world-map'>
+    <img src='/DesignMaterials/Anaximander.png' alt='Anaximander' class='Anaximander'>
+    <img src='/DesignMaterials/Eratosthenes.png' alt='Eratosthenes' class='Eratosthenes'>
+    <img src='/DesignMaterials/Newton.png' alt='Newton' class='Newton'>
+    <img src='/DesignMaterials/Planet1.png' alt='Planet1' class='planet1'>
+    <img src='/DesignMaterials/Planet2.png' alt='Planet2' class='planet2'>
+    <img src='/DesignMaterials/Planet3.png' alt='Planet2' class='planet3'>
 
-    <div class="promote3">
-      <p class="promote3-1">
-        <span class="highlight-yellow">700</span> years ago,
+    <div class='promote3'>
+      <p class='promote3-1'>
+        <span class='highlight-yellow'>700</span> years ago,
       </p>
-      <p class="promote3-2">
+      <p class='promote3-2'>
         Newton's law of gravity revealed the laws that govern the operation of celestial bodies.</p>
     </div>
 
-    <p class="promote4">
-      Humanity has never stopped exploring the <span class="highlight-yellow">Macrocosm</span>
+    <p class='promote4'>
+      Humanity has never stopped exploring the <span class='highlight-yellow'>Macrocosm</span>
     </p>
 
-    <img src="/DesignMaterials/DistantCloud.png" alt="DistantCloud" class="distant-cloud">
-    <img src="/DesignMaterials/PlainEarth.png" alt="PlainEarth" class="plain-earth">
-    <img src="/DesignMaterials/LeftCloud.png" alt="LeftCloud" class="left-cloud">
-    <img src="/DesignMaterials/RightCloud.png " alt="RightCloud" class="right-cloud">
-    <img src="/DesignMaterials/Clouds.png" alt="Clouds" class="clouds">
+    <img src='/DesignMaterials/DistantCloud.png' alt='DistantCloud' class='distant-cloud'>
+    <img src='/DesignMaterials/PlainEarth.png' alt='PlainEarth' class='plain-earth'>
+    <img src='/DesignMaterials/LeftCloud.png' alt='LeftCloud' class='left-cloud'>
+    <img src='/DesignMaterials/RightCloud.png ' alt='RightCloud' class='right-cloud'>
+    <img src='/DesignMaterials/Clouds.png' alt='Clouds' class='clouds'>
 
-    <div class="promote5">
-      <p class="promote5-1">
-        In the <span class="highlight-blue">17th century,</span>
+    <div class='promote5'>
+      <p class='promote5-1'>
+        In the <span class='highlight-blue'>17th century,</span>
       </p>
-      <p class="promote5-2">
+      <p class='promote5-2'>
         British scientist Robert Hooke used a microscope to observe and discover the cell, the basic unit of life.</p>
     </div>
 
-    <img src="/DesignMaterials/Cell1.png" alt="Cell1" class="cell1">
-    <img src="/DesignMaterials/Cell2.png" alt="Cell1" class="cell2">
-    <img src="/DesignMaterials/Cell3.png" alt="Cell1" class="cell3">
-    <img src="/DesignMaterials/Cell2.png" alt="Cell1" class="cell4">
-    <img src="/DesignMaterials/Cell1.png" alt="Cell1" class="cell5">
-    <img src="/DesignMaterials/Cell2.png" alt="Cell1" class="cell6">
-    <img src="/DesignMaterials/Robert.png" alt="Robert" class="Robert">
+    <img src='/DesignMaterials/Cell1.png' alt='Cell1' class='cell1'>
+    <img src='/DesignMaterials/Cell2.png' alt='Cell1' class='cell2'>
+    <img src='/DesignMaterials/Cell3.png' alt='Cell1' class='cell3'>
+    <img src='/DesignMaterials/Cell2.png' alt='Cell1' class='cell4'>
+    <img src='/DesignMaterials/Cell1.png' alt='Cell1' class='cell5'>
+    <img src='/DesignMaterials/Cell2.png' alt='Cell1' class='cell6'>
+    <img src='/DesignMaterials/Robert.png' alt='Robert' class='Robert'>
 
-    <div class="promote6">
-      <p class="promote6-1">
-        In the <span class="highlight-blue">20th century,</span>
+    <div class='promote6'>
+      <p class='promote6-1'>
+        In the <span class='highlight-blue'>20th century,</span>
       </p>
-      <p class="promote6-2">
+      <p class='promote6-2'>
         the invention of the electron microscope allowed scientists to observe the internal structure of cells, and
         human eyes gradually looked into the microcosmic universe inside the cell - Subcellular Structure.
       </p>
     </div>
 
-    <div class="container microscope-container">
-      <img src="/DesignMaterials/SuperResolutionMicroscope.png" alt="SuperResolutionMicroscope"
-           class="super-resolution-microscope">
-      <div class="label">Super-Resolution Microscope</div>
+    <div class='container2 microscope-container'>
+      <img src='/DesignMaterials/SuperResolutionMicroscope.png' alt='SuperResolutionMicroscope'
+           class='super-resolution-microscope'>
+      <div class='label'>Super-Resolution Microscope</div>
     </div>
 
-    <div class="container sequencing-container">
-      <img src="/DesignMaterials/SingleCellSequencingTechnology.png" alt="SingleCellSequencingTechnology"
-           class="sequencing-technology">
-      <img src="/DesignMaterials/SingleCellSequencingTechnologyTable.png" alt="SingleCellSequencingTechnologyTable"
-           class="sequencing-technology-table">
-      <div class="label">Single-Cell Sequencing Technology</div>
+    <div class='container2 sequencing-container'>
+      <img src='/DesignMaterials/SingleCellSequencingTechnology.png' alt='SingleCellSequencingTechnology'
+           class='sequencing-technology'>
+      <img src='/DesignMaterials/SingleCellSequencingTechnologyTable.png' alt='SingleCellSequencingTechnologyTable'
+           class='sequencing-technology-table'>
+      <div class='label'>Single-Cell Sequencing Technology</div>
     </div>
 
-    <div class="container proteomics-container">
-      <img src="/DesignMaterials/DefaultQuantitativeProteomics.png" alt="DefaultQuantitativeProteomics"
-           class="default-quantitative-proteomics">
-      <img src="/DesignMaterials/ActiveQuantitativeProteomics.png" alt="ActiveQuantitativeProteomics"
-           class="active-quantitative-proteomics">
-      <div class="label">Quantitative Proteomics</div>
+    <div class='container2 proteomics-container'>
+      <img src='/DesignMaterials/DefaultQuantitativeProteomics.png' alt='DefaultQuantitativeProteomics'
+           class='default-quantitative-proteomics'>
+      <img src='/DesignMaterials/ActiveQuantitativeProteomics.png' alt='ActiveQuantitativeProteomics'
+           class='active-quantitative-proteomics'>
+      <div class='label'>Quantitative Proteomics</div>
     </div>
 
-    <div class="container bioinformatics-container1">
-      <img src="/DesignMaterials/BioinformaticsTools.png" alt="BioinformaticsTools" class="bioinformatics-tools">
-      <div class="container bioinformatics-container2">
-        <img src="/DesignMaterials/DeepLoc.png" alt="DeepLoc" class="deep-loc">
-        <img src="/DesignMaterials/OrganelleDB.png" alt="OrganelleDB" class="organelle-db">
-        <img src="/DesignMaterials/CellProfiler.png" alt="CellProfiler" class="cell-profiler">
+    <div class='container2 bioinformatics-container1'>
+      <img src='/DesignMaterials/BioinformaticsTools.png' alt='BioinformaticsTools' class='bioinformatics-tools'>
+      <div class='container2 bioinformatics-container2'>
+        <img src='/DesignMaterials/DeepLoc.png' alt='DeepLoc' class='deep-loc'>
+        <img src='/DesignMaterials/OrganelleDB.png' alt='OrganelleDB' class='organelle-db'>
+        <img src='/DesignMaterials/CellProfiler.png' alt='CellProfiler' class='cell-profiler'>
       </div>
-      <div class="label">Bioinformatics Tools</div>
+      <div class='label'>Bioinformatics Tools</div>
     </div>
 
-    <div class="promote7">
-      <p class="promote7-1">
-        In <span class="highlight-blue">modern times,</span>
+    <div class='promote7'>
+      <p class='promote7-1'>
+        In <span class='highlight-blue'>modern times,</span>
       </p>
-      <p class="promote7-2">
+      <p class='promote7-2'>
         it has been possible to achieve in-depth studies of subcellular structures using many advanced instruments,
         techniques, and tools.
       </p>
     </div>
 
-    <p class="promote8">
+    <p class='promote8'>
       Research into subcellular localisation has not only driven scientific progress, but has also
       demonstrated great economic potential in the biomanufacturing industry.</p>
 
-    <img src="/DesignMaterials/Cell.png" alt="Cell" class="cell">
+    <img src='/DesignMaterials/Cell.png' alt='Cell' class='cell'>
 
-    <p class="promote9">
+    <p class='promote9'>
       By precisely controlling the subcellular localisation of proteins or enzymes within the cell,
       scientists can achieve ‘compartmentalised production’ within the cell, i.e. segregation of different biosynthetic
       reactions in specific organelles.
@@ -139,71 +139,71 @@
       and optimise the yield and purity of target products.
     </p>
 
-    <p class="promote10">
+    <p class='promote10'>
       Precise targeting of proteins to specific organelles in yeast is of paramount importance in the rapid development
       of scientific research, biomanufacturing and synthetic biology.
     </p>
 
-    <p class="promote11">
+    <p class='promote11'>
       Yeast is an important model organism widely used in metabolic engineering, drug production and industrial
       fermentation.
     </p>
 
-    <div class="image-gallery">
-      <div class="image-item">
-        <img src="/DesignMaterials/MetabolicEngineering.png" alt="Metabolic Engineering" class="image"/>
-        <div class="image-label">Metabolic Engineering</div>
+    <div class='image-gallery'>
+      <div class='image-item'>
+        <img src='/DesignMaterials/MetabolicEngineering.png' alt='Metabolic Engineering' class='image'/>
+        <div class='image-label'>Metabolic Engineering</div>
       </div>
-      <div class="image-item">
-        <img src="/DesignMaterials/DrugProduction.png" alt="Drug Production" class="image"/>
-        <div class="image-label">Drug Production</div>
+      <div class='image-item'>
+        <img src='/DesignMaterials/DrugProduction.png' alt='Drug Production' class='image'/>
+        <div class='image-label'>Drug Production</div>
       </div>
-      <div class="image-item">
-        <img src="/DesignMaterials/IndustrialFermentation.png" alt="Industrial Fermentation" class="image"/>
-        <div class="image-label">Industrial Fermentation</div>
+      <div class='image-item'>
+        <img src='/DesignMaterials/IndustrialFermentation.png' alt='Industrial Fermentation' class='image'/>
+        <div class='image-label'>Industrial Fermentation</div>
       </div>
     </div>
 
-    <div class="promote12">
+    <div class='promote12'>
       <p>Through in-depth study of protein subcellular localisation, scientists can precisely direct target proteins to
-      specific organelles, and such localisation design is decisive for optimising biological reaction pathways.</p>
+        specific organelles, and such localisation design is decisive for optimising biological reaction pathways.</p>
       <p>How to control the precise localisation of proteins becomes crucial.</p>
     </div>
 
-    <p class="promote13">
+    <p class='promote13'>
       So this is why we have launched a molecular tag design software for yeast protein subcellular localisation.
     </p>
 
-    <img src="/Logos/DefaultLogo.png" alt="DefaultLogo" class="default-logo">
+    <img src='/Logos/DefaultLogo.png' alt='DefaultLogo' class='default-logo'>
 
-    <img src="/DesignMaterials/Protein1.png" alt="Protein1" class="protein1">
-    <img src="/DesignMaterials/Protein2.png" alt="Protein2" class="protein2">
-    <img src="/DesignMaterials/Yeast.png" alt="Yeast" class="yeast">
-    <img src="/DesignMaterials/Dialog.png" alt="Dialog" class="dialog">
+    <img src='/DesignMaterials/Protein1.png' alt='Protein1' class='protein1'>
+    <img src='/DesignMaterials/Protein2.png' alt='Protein2' class='protein2'>
+    <img src='/DesignMaterials/Yeast.png' alt='Yeast' class='yeast'>
+    <img src='/DesignMaterials/Dialog.png' alt='Dialog' class='dialog'>
 
-    <p class="promote14">
+    <p class='promote14'>
       Do you know what Atlas.Y does?
     </p>
 
-    <p class="promote15">
+    <p class='promote15'>
       The function of Atlas.Y is not only a protein map inside the yeast,
     </p>
 
-    <p class="promote16">
+    <p class='promote16'>
       but also a scientific research map for mankind to unravel the code of nature step by step
     </p>
 
     <!-- 容器包含三个点 -->
-    <div class="vertical-dots">
-      <span class="dot1"></span>
-      <span class="dot2"></span>
-      <span class="dot3"></span>
+    <div class='vertical-dots'>
+      <span class='dot1'></span>
+      <span class='dot2'></span>
+      <span class='dot3'></span>
     </div>
   </div>
 
 </template>
 
-<script lang="ts" setup>
+<script lang='ts' setup>
 </script>
 
 <style scoped>
@@ -440,9 +440,11 @@
   width: 13.5%;
 }
 
-.container {
+.container2 {
   position: absolute;
-  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .microscope-container {
@@ -474,33 +476,33 @@
 .super-resolution-microscope {
   position: relative;
   width: 100%;
-  margin: 15px 0;
+  margin: 7.8% 0;
 }
 
 .sequencing-technology, .sequencing-technology-table {
   position: relative;
   width: 100%;
-  margin: 21px 0;
+  margin: 10.5% 0;
 }
 
 .default-quantitative-proteomics, .active-quantitative-proteomics {
   position: relative;
   width: 100%;
-  margin: 26px 0;
+  margin: 15% 0;
 }
 
 .bioinformatics-tools {
   width: 100%;
   height: auto;
-  margin-bottom: 45px;
+  margin-bottom: 27%;
 }
 
 .bioinformatics-container2 {
   position: relative;
   width: 100%;
   height: auto;
-  margin-top: 10px;
-  margin-bottom: 50px;
+  margin-top: 8%;
+  margin-bottom: 28%;
 }
 
 .deep-loc {
@@ -577,7 +579,7 @@
 }
 
 
-.default-logo{
+.default-logo {
   position: absolute;
   top: 72.5%;
   right: 10%;
@@ -586,7 +588,7 @@
   opacity: 0.5;
 }
 
-.protein1{
+.protein1 {
   position: absolute;
   top: 74%;
   left: 5%;
@@ -594,7 +596,7 @@
   height: auto;
 }
 
-.protein2{
+.protein2 {
   position: absolute;
   top: 81.5%;
   right: 0;
@@ -602,7 +604,7 @@
   height: auto;
 }
 
-.yeast{
+.yeast {
   position: absolute;
   top: 79%;
   left: 20%;
@@ -610,7 +612,7 @@
   height: auto;
 }
 
-.dialog{
+.dialog {
   position: absolute;
   top: 77.8%;
   left: 40%;
@@ -655,7 +657,7 @@
   position: absolute;
   top: 9.2%;
   left: 21%;
-  width: 500px;
+  width: 26%;
   height: auto;
 }
 
@@ -663,7 +665,7 @@
   position: absolute;
   top: 12.2%;
   left: 44%;
-  width: 500px;
+  width: 26%;
   height: auto;
 }
 
@@ -671,20 +673,20 @@
   position: absolute;
   top: 16.3%;
   left: 52.5%;
-  width: 500px;
+  width: 26%;
   height: auto;
 }
 
 .promote1-1, .promote2-1, .promote3-1 {
   font-family: 'Futura Md BT', sans-serif;
-  font-size:  calc(24 / 1920 * 100vw);
+  font-size: calc(24 / 1920 * 100vw);
   font-weight: 700;
   color: #FFFFFF;
 }
 
 .promote1-2, .promote2-2, .promote3-2 {
   font-family: 'Futura Md BT', sans-serif;
-  font-size:  calc(24 / 1920 * 100vw);
+  font-size: calc(24 / 1920 * 100vw);
   font-weight: 400;
   color: #FFFFFF;
 }
@@ -694,10 +696,10 @@
   top: 20.2%;
   left: 50%;
   transform: translateX(-45%);
-  width: 1378px;
+  width: 72%;
   height: auto;
   font-family: 'Futura Md BT', sans-serif;
-  font-size:  calc(50 / 1920 * 100vw);
+  font-size: calc(50 / 1920 * 100vw);
   font-weight: 700;
   color: white;
 }
@@ -710,20 +712,20 @@
   position: absolute;
   top: 33.7%;
   left: 53.5%;
-  width: 526px;
+  width: 27.4%;
   height: auto;
 }
 
 .promote5-1, .promote6-1 {
   font-family: 'Futura Md BT', sans-serif;
-  font-size:  calc(24 / 1920 * 100vw);
+  font-size: calc(24 / 1920 * 100vw);
   font-weight: 700;
   color: #193B6F;
 }
 
 .promote5-2, .promote6-2 {
   font-family: 'Futura Md BT', sans-serif;
-  font-size:  calc(24 / 1920 * 100vw);
+  font-size: calc(24 / 1920 * 100vw);
   font-weight: 400;
   color: #193B6F;
 }
@@ -732,7 +734,7 @@
   position: absolute;
   top: 36.8%;
   left: 38.5%;
-  width: 1000px;
+  width: 52.1%;
   height: auto;
 }
 
@@ -740,20 +742,20 @@
   position: absolute;
   top: 43.2%;
   left: 13.5%;
-  width: 1384px;
+  width: 72.1%;
   height: auto;
 }
 
 .promote7-1 {
   font-family: 'Futura Md BT', sans-serif;
-  font-size:  calc(30 / 1920 * 100vw);
+  font-size: calc(30 / 1920 * 100vw);
   font-weight: 700;
   color: #193B6F;
 }
 
 .promote7-2 {
   font-family: 'Futura Md BT', sans-serif;
-  font-size:  calc(30 / 1920 * 100vw);
+  font-size: calc(30 / 1920 * 100vw);
   font-weight: 400;
   color: #193B6F;
 }
@@ -767,10 +769,10 @@
   top: 46.5%;
   left: 50%;
   transform: translateX(-45%);
-  width: 1165px;
+  width: 60.7%;
   height: 171px;
   font-family: 'Futura Md BT', sans-serif;
-  font-size:  calc(40 / 1920 * 100vw);
+  font-size: calc(40 / 1920 * 100vw);
   font-weight: 400;
   color: #E9AD01;
   text-align: center;
@@ -780,10 +782,10 @@
   position: absolute;
   top: 53.5%;
   right: 20%;
-  width: 540px;
+  width: 28.1%;
   height: 171px;
   font-family: 'Futura Md BT', sans-serif;
-  font-size:  calc(24 / 1920 * 100vw);
+  font-size: calc(24 / 1920 * 100vw);
   font-weight: 400;
   color: #16396E;
 }
@@ -793,10 +795,10 @@
   top: 59%;
   left: 50%;
   transform: translateX(-45%);
-  width: 1165px;
+  width: 60.7%;
   height: 171px;
   font-family: 'Futura Md BT', sans-serif;
-  font-size:  calc(40 / 1920 * 100vw);
+  font-size: calc(40 / 1920 * 100vw);
   font-weight: 400;
   color: #2F62D7;
   text-align: center;
@@ -810,7 +812,7 @@
   width: 41.7%;
   height: 171px;
   font-family: 'Futura Md BT', sans-serif;
-  font-size:  calc(24 / 1920 * 100vw);
+  font-size: calc(24 / 1920 * 100vw);
   font-weight: 400;
   color: #16396E;
   text-align: center;
@@ -824,7 +826,7 @@
   width: 42.4%;
   height: 171px;
   font-family: 'Futura Md BT', sans-serif;
-  font-size:  calc(24 / 1920 * 100vw);
+  font-size: calc(24 / 1920 * 100vw);
   font-weight: 400;
   color: #16396E;
   text-align: center;
@@ -837,7 +839,7 @@
   width: 45%;
   height: 171px;
   font-family: 'Futura Md BT', sans-serif;
-  font-size:  calc(40 / 1920 * 100vw);
+  font-size: calc(40 / 1920 * 100vw);
   font-weight: 700;
   color: #2F62D7;
 }
@@ -849,7 +851,7 @@
   width: 21%;
   height: auto;
   font-family: 'Futura Md BT', sans-serif;
-  font-size:  calc(40 / 1920 * 100vw);
+  font-size: calc(40 / 1920 * 100vw);
   font-weight: 700;
   color: #2F62D7;
 }
@@ -862,7 +864,7 @@
   width: 62.5%;
   height: auto;
   font-family: 'Futura Md BT', sans-serif;
-  font-size:  calc(40 / 1920 * 100vw);
+  font-size: calc(40 / 1920 * 100vw);
   font-weight: 400;
   color: #16396E;
 }
@@ -875,7 +877,7 @@
   width: 52%;
   height: auto;
   font-family: 'Futura Md BT', sans-serif;
-  font-size:  calc(40 / 1920 * 100vw);
+  font-size: calc(40 / 1920 * 100vw);
   font-weight: 400;
   color: #16396E;
   text-align: center;
