@@ -1,5 +1,5 @@
 <template>
-  <header class='header-navbar'>
+  <header :class="['header-navbar', isHomePage ? 'homepage' : '']">
     <nav class='nav-items'>
       <img src='/Logos/DefaultLogo.png' alt='DefaultLogo' class='logo' @click="router.push('/')">
       <div v-for='item in navItems'
@@ -10,11 +10,11 @@
         <!--suppress JSIncompatibleTypesComparison-->
         <button class='nav-title'
                 @click='item.url ? goToPage(item.url) : undefined'
-                :class="{ 'hover-effect': hoveredItem == item.title, 'active-effect': isActive(item) }">
+                :class="['nav-title', isHomePage ? 'homepage' : '', { 'hover-effect': hoveredItem == item.title, 'active-effect': isActive(item) }]">
           {{ item.title }}
           <!--suppress JSIncompatibleTypesComparison-->
           <v-icon v-if='item.subItems'
-                  :class=" {'rotated': item.isOpen, 'hover-effect': hoveredItem == item.title, 'active-effect': isActive(item) }"
+                  :class=" {'rotated': item.isOpen, 'hover-effect': hoveredItem == item.title && !isHomePage, 'active-effect': isActive(item) }"
                   class='dropdown-arrow'>
             mdi-chevron-down
           </v-icon>
@@ -35,12 +35,13 @@
 </template>
 
 <script setup lang='ts'>
-import {ref, onMounted, onBeforeUnmount} from 'vue'
+import {ref, onMounted, onBeforeUnmount, watch} from 'vue'
 import {useRoute, useRouter} from 'vue-router'
 
 const route = useRoute()
 const router = useRouter()
 const hoveredItem = ref(null)
+const isHomePage = ref(route.path == '/')
 const navItems = ref([
   {
     title: 'HOME',
@@ -103,6 +104,10 @@ const hideDropdown = (item: any) => {
   hoveredItem.value = null
 }
 
+const updateNavbarStyle = () => {
+  isHomePage.value = route.path == '/'
+}
+
 const isActive = (item: any) => {
   return route.path == item.url || (item.subUrls && item.subUrls.includes(route.path))
 }
@@ -116,9 +121,15 @@ function goToPage(url: string) {
   router.push(url)
 }
 
-onMounted(() => window.addEventListener('scroll', handleScroll))
+onMounted(() => {
+  window.addEventListener('scroll', handleScroll)
+  updateNavbarStyle()
+  watch(() => route.path, updateNavbarStyle)
+})
 
-onBeforeUnmount(() => window.removeEventListener('scroll', handleScroll))
+onBeforeUnmount(() => {
+  window.removeEventListener('scroll', handleScroll)
+})
 </script>
 
 <style scoped>
@@ -133,6 +144,13 @@ onBeforeUnmount(() => window.removeEventListener('scroll', handleScroll))
   border-bottom: 4px #5182F8 solid;
   -webkit-user-select: none;
   z-index: 1000;
+}
+
+.header-navbar.homepage {
+  background-color: transparent;
+  backdrop-filter: blur(10px);
+  border-bottom: 4px transparent solid;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .nav-items {
@@ -162,6 +180,10 @@ onBeforeUnmount(() => window.removeEventListener('scroll', handleScroll))
   color: #2F3235;
   font-family: 'Futura Md BT', serif;
   transition: color 0.2s ease;
+}
+
+.nav-title.homepage {
+  color: white;
 }
 
 .dropdown-arrow {
