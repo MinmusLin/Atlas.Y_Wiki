@@ -1,5 +1,6 @@
 <template>
   <div class='background-container'>
+    <!-- 首页 -->
     <img src='/DesignMaterials/Background1.png' alt='Background1' class='background'>
     <img src='/DesignMaterials/Background2.png' alt='Background2' class='background'>
 
@@ -13,21 +14,24 @@
     <img src='/DesignMaterials/MotileCell7.png' alt='MotileCell7' class='motile-cell7'>
     <img src='/DesignMaterials/MotileCell6.png' alt='MotileCell6' class='motile-cell6'>
 
-    <div class='promote1'>
+    <button ref='scrollButtonRef' class='button1'>Get Started</button>
+
+    <div class='promote1' ref='promote1Ref'>
       <p class='promote1-1'>
         <span class='highlight-yellow'>2600</span> years ago,
       </p>
       <p class='promote1-2'>
-        Anaximander of Miletus drew the first map of the world. Back then, he thought Delphi was the center of the
-        world.</p>
+        Anaximander of Miletus drew the first map of the world. Back then, he thought Delphi was the center of the world.
+      </p>
     </div>
 
-    <div class='promote2'>
+    <div class='promote2' ref='promote2Ref'>
       <p class='promote2-1'>
         <span class='highlight-yellow'>2300</span> years ago,
       </p>
       <p class='promote2-2'>
-        Eratosthenes first calculated the circumference of the Earth with some accuracy.</p>
+        Eratosthenes first calculated the circumference of the Earth with some accuracy.
+      </p>
     </div>
 
     <img src='/DesignMaterials/WorldMap.png' alt='WorldMap' class='world-map'>
@@ -38,15 +42,16 @@
     <img src='/DesignMaterials/Planet2.png' alt='Planet2' class='planet2'>
     <img src='/DesignMaterials/Planet3.png' alt='Planet2' class='planet3'>
 
-    <div class='promote3'>
+    <div class='promote3' ref='promote3Ref'>
       <p class='promote3-1'>
         <span class='highlight-yellow'>700</span> years ago,
       </p>
       <p class='promote3-2'>
-        Newton's law of gravity revealed the laws that govern the operation of celestial bodies.</p>
+        Newton's law of gravity revealed the laws that govern the operation of celestial bodies.
+      </p>
     </div>
 
-    <p class='promote4'>
+    <p class='promote4' ref='promote4Ref'>
       Humanity has never stopped exploring the <span class='highlight-yellow'>Macrocosm</span>
     </p>
 
@@ -56,7 +61,7 @@
     <img src='/DesignMaterials/RightCloud.png ' alt='RightCloud' class='right-cloud'>
     <img src='/DesignMaterials/Clouds.png' alt='Clouds' class='clouds'>
 
-    <div class='promote5'>
+    <div class='promote5' ref='promote5Ref'>
       <p class='promote5-1'>
         In the <span class='highlight-blue'>17th century,</span>
       </p>
@@ -72,7 +77,7 @@
     <img src='/DesignMaterials/Cell2.png' alt='Cell1' class='cell6'>
     <img src='/DesignMaterials/Robert.png' alt='Robert' class='Robert'>
 
-    <div class='promote6'>
+    <div class='promote6' ref='promote6Ref'>
       <p class='promote6-1'>
         In the <span class='highlight-blue'>20th century,</span>
       </p>
@@ -114,7 +119,7 @@
       <div class='label'>Bioinformatics Tools</div>
     </div>
 
-    <div class='promote7'>
+    <div class='promote7' ref='promote7Ref'>
       <p class='promote7-1'>
         In <span class='highlight-blue'>modern times,</span>
       </p>
@@ -124,13 +129,13 @@
       </p>
     </div>
 
-    <p class='promote8'>
+    <p class='promote8' ref='promote8Ref'>
       Research into subcellular localisation has not only driven scientific progress, but has also
       demonstrated great economic potential in the biomanufacturing industry.</p>
 
     <img src='/DesignMaterials/Cell.png' alt='Cell' class='cell'>
 
-    <p class='promote9'>
+    <p class='promote9' ref='promote9Ref'>
       By precisely controlling the subcellular localisation of proteins or enzymes within the cell,
       scientists can achieve ‘compartmentalised production’ within the cell, i.e. segregation of different biosynthetic
       reactions in specific organelles.
@@ -139,12 +144,12 @@
       and optimise the yield and purity of target products.
     </p>
 
-    <p class='promote10'>
+    <p class='promote10' ref='promote10Ref'>
       Precise targeting of proteins to specific organelles in yeast is of paramount importance in the rapid development
       of scientific research, biomanufacturing and synthetic biology.
     </p>
 
-    <p class='promote11'>
+    <p class='promote11' ref='promote11Ref'>
       Yeast is an important model organism widely used in metabolic engineering, drug production and industrial
       fermentation.
     </p>
@@ -164,13 +169,13 @@
       </div>
     </div>
 
-    <div class='promote12'>
+    <div class='promote12' ref='promote12Ref'>
       <p>Through in-depth study of protein subcellular localisation, scientists can precisely direct target proteins to
         specific organelles, and such localisation design is decisive for optimising biological reaction pathways.</p>
       <p>How to control the precise localisation of proteins becomes crucial.</p>
     </div>
 
-    <p class='promote13'>
+    <p class='promote13' ref='promote13Ref'>
       So this is why we have launched a molecular tag design software for yeast protein subcellular localisation.
     </p>
 
@@ -181,29 +186,108 @@
     <img src='/DesignMaterials/Yeast.png' alt='Yeast' class='yeast'>
     <img src='/DesignMaterials/Dialog.png' alt='Dialog' class='dialog'>
 
-    <p class='promote14'>
+    <p class='promote14' ref='promote14Ref'>
       Do you know what Atlas.Y does?
     </p>
 
-    <p class='promote15'>
+    <img src='/DesignMaterials/DefaultEarth.png' alt='DefaultEarth' class='default-earth'>
+
+    <p class='promote15' ref='promote15Ref'>
       The function of Atlas.Y is not only a protein map inside the yeast,
     </p>
 
-    <p class='promote16'>
+    <p class='promote16' ref='promote16Ref'>
       but also a scientific research map for mankind to unravel the code of nature step by step
     </p>
 
-    <!-- 容器包含三个点 -->
     <div class='vertical-dots'>
-      <span class='dot1'></span>
-      <span class='dot2'></span>
-      <span class='dot3'></span>
+      <span class='dot1' ref='dot1Ref'></span>
+      <span class='dot2' ref='dot2Ref'></span>
+      <span class='dot3' ref='dot3Ref'></span>
     </div>
+
+    <button class='button2'  ref='button2Ref'>WANT TO KNOW MORE?</button>
   </div>
 
 </template>
 
 <script lang='ts' setup>
+import { onMounted, ref } from 'vue';
+
+const scrollButtonRef = ref<HTMLButtonElement | null>(null);
+
+const button2Ref = ref<HTMLButtonElement | null>(null);
+
+onMounted(() => {
+  // 确保元素已经挂载后再添加事件监听
+  scrollButtonRef.value?.addEventListener('click', () => {
+    window.scrollBy({
+      top: 1050,
+      behavior: 'smooth'
+    });
+  });
+});
+
+const promote1Ref = ref<HTMLElement | null>(null);
+const promote2Ref = ref<HTMLElement | null>(null);
+const promote3Ref = ref<HTMLElement | null>(null);
+const promote4Ref = ref<HTMLElement | null>(null);
+const promote5Ref = ref<HTMLElement | null>(null);
+const promote6Ref = ref<HTMLElement | null>(null);
+const promote7Ref = ref<HTMLElement | null>(null);
+const promote8Ref = ref<HTMLElement | null>(null);
+const promote9Ref = ref<HTMLElement | null>(null);
+const promote10Ref = ref<HTMLElement | null>(null);
+const promote11Ref = ref<HTMLElement | null>(null);
+const promote12Ref = ref<HTMLElement | null>(null);
+const promote13Ref = ref<HTMLElement | null>(null);
+const promote14Ref = ref<HTMLElement | null>(null);
+const promote15Ref = ref<HTMLElement | null>(null);
+const promote16Ref = ref<HTMLElement | null>(null);
+
+const dot1Ref = ref<HTMLElement | null>(null);
+const dot2Ref = ref<HTMLElement | null>(null);
+const dot3Ref = ref<HTMLElement | null>(null);
+
+const handleIntersection = (entries: IntersectionObserverEntry[]) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('active');
+    } else {
+      entry.target.classList.remove('active');
+    }
+  });
+};
+
+onMounted(() => {
+  const observer = new IntersectionObserver(handleIntersection, {
+    root: null, // 观察整个视口
+    threshold: 1.0 // 100% 进入视口时触发
+  });
+
+  if (promote1Ref.value) observer.observe(promote1Ref.value);
+  if (promote2Ref.value) observer.observe(promote2Ref.value);
+  if (promote3Ref.value) observer.observe(promote3Ref.value);
+  if (promote4Ref.value) observer.observe(promote4Ref.value);
+  if (promote5Ref.value) observer.observe(promote5Ref.value);
+  if (promote6Ref.value) observer.observe(promote6Ref.value);
+  if (promote7Ref.value) observer.observe(promote7Ref.value);
+  if (promote8Ref.value) observer.observe(promote8Ref.value);
+  if (promote9Ref.value) observer.observe(promote9Ref.value);
+  if (promote10Ref.value) observer.observe(promote10Ref.value);
+  if (promote11Ref.value) observer.observe(promote11Ref.value);
+  if (promote12Ref.value) observer.observe(promote12Ref.value);
+  if (promote13Ref.value) observer.observe(promote13Ref.value);
+  if (promote14Ref.value) observer.observe(promote14Ref.value);
+  if (promote15Ref.value) observer.observe(promote15Ref.value);
+  if (promote16Ref.value) observer.observe(promote16Ref.value);
+
+  if (button2Ref.value) observer.observe(button2Ref.value);
+
+  if (dot1Ref.value) observer.observe(dot1Ref.value);
+  if (dot2Ref.value) observer.observe(dot2Ref.value);
+  if (dot3Ref.value) observer.observe(dot3Ref.value);
+});
 </script>
 
 <style scoped>
@@ -227,6 +311,39 @@
   left: 50%;
   transform: translateX(-50%);
   z-index: 990;
+}
+
+.button1 {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: calc(24 / 1920 * 100vw);
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  transition: color 0.3s ease;
+  gap: 13px;
+}
+
+.button1:hover {
+  color: #cccccc;
+}
+
+.button1::before {
+  content: '';
+  background-image: url('/DesignMaterials/DownArrow.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 22px;
+  height: 22px;
+  display: inline-block;
+  transition: filter 0.3s ease;
 }
 
 .motile-cell1 {
@@ -624,7 +741,7 @@
   position: absolute;
   top: 93.5%;
   left: 50%;
-  transform: translateX(-45%);
+  transform: translateX(-50%);
   width: 10px;
   height: 10px;
   background-color: #16396E;
@@ -635,7 +752,7 @@
   position: absolute;
   top: 94.5%;
   left: 50%;
-  transform: translateX(-45%);
+  transform: translateX(-50%);
   width: 10px;
   height: 10px;
   background-color: #16396E;
@@ -646,11 +763,49 @@
   position: absolute;
   top: 95.5%;
   left: 50%;
-  transform: translateX(-45%);
+  transform: translateX(-50%);
   width: 10px;
   height: 10px;
   background-color: #16396E;
   border-radius: 50%;
+}
+
+.default-earth{
+  position: absolute;
+  top: 88.3%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20%;
+  height: auto;
+}
+
+.button2 {
+  position: absolute;
+  top: 97%;
+  left: 50%;
+  transform: translateX(-50%) translateY(50px);
+  background-color: transparent;
+  color:#16396E;
+  font-family: 'Futura Md BT', sans-serif;
+  font-size: calc(24 / 1920 * 100vw);
+  font-weight: 400;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  transition: color 0.3s ease, transform 0.6s ease, opacity 0.6s ease;
+  text-decoration: underline;
+  opacity: 0;
+}
+
+.button2.active {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+.button2:hover {
+  color: #2c77df;
+  transform: translateX(-50%) translateY(0);
 }
 
 .promote1 {
@@ -695,7 +850,7 @@
   position: absolute;
   top: 20.2%;
   left: 50%;
-  transform: translateX(-45%);
+  transform: translateX(-50%);
   width: 72%;
   height: auto;
   font-family: 'Futura Md BT', sans-serif;
@@ -768,7 +923,7 @@
   position: absolute;
   top: 46.5%;
   left: 50%;
-  transform: translateX(-45%);
+  transform: translateX(-50%);
   width: 60.7%;
   height: 171px;
   font-family: 'Futura Md BT', sans-serif;
@@ -794,7 +949,7 @@
   position: absolute;
   top: 59%;
   left: 50%;
-  transform: translateX(-45%);
+  transform: translateX(-50%);
   width: 60.7%;
   height: 171px;
   font-family: 'Futura Md BT', sans-serif;
@@ -808,7 +963,7 @@
   position: absolute;
   top: 61%;
   left: 50%;
-  transform: translateX(-45%);
+  transform: translateX(-50%);
   width: 41.7%;
   height: 171px;
   font-family: 'Futura Md BT', sans-serif;
@@ -822,7 +977,7 @@
   position: absolute;
   top: 66%;
   left: 50%;
-  transform: translateX(-45%);
+  transform: translateX(-50%);
   width: 42.4%;
   height: 171px;
   font-family: 'Futura Md BT', sans-serif;
@@ -860,7 +1015,7 @@
   position: absolute;
   top: 87%;
   left: 50%;
-  transform: translateX(-45%);
+  transform: translateX(-50%);
   width: 62.5%;
   height: auto;
   font-family: 'Futura Md BT', sans-serif;
@@ -873,7 +1028,7 @@
   position: absolute;
   top: 92%;
   left: 50%;
-  transform: translateX(-45%);
+  transform: translateX(-50%);
   width: 52%;
   height: auto;
   font-family: 'Futura Md BT', sans-serif;
@@ -881,5 +1036,35 @@
   font-weight: 400;
   color: #16396E;
   text-align: center;
+}
+
+.promote1, .promote2, .promote3, .promote5, .promote6, .promote7,
+.promote9,  .promote13, .promote14{
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.promote1.active, .promote2.active, .promote3.active,
+.promote5.active, .promote6.active, .promote7.active,
+.promote9.active, .promote13.active,.promote14.active{
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.promote4, .promote8,.promote10, .promote11, .promote12,
+.promote15, .promote16, .dot1, .dot2, .dot3{
+  opacity: 0;
+  transform: translateX(-50%) translateY(50px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.promote4.active, .promote8.active,
+.promote10.active, .promote11.active,
+.promote12.active, .promote15.active,
+.promote16.active, .dot1.active,
+.dot2.active, .dot3.active{
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
 }
 </style>
