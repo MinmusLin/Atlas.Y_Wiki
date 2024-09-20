@@ -276,6 +276,7 @@ function draw() {
   gradient.addColorStop(0.63287, '#653F05')
   gradient.addColorStop(0.68127, '#2B5D6F')
   gradient.addColorStop(1, '#2B5D6F')
+  ctx.setLineDash([30, 30]) // 虚线样式 [line length, gap length]
   ctx.strokeStyle = gradient
   ctx.lineWidth = 17
   ctx.lineCap = 'round'
