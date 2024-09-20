@@ -1,6 +1,5 @@
 <template>
   <div class='background-container'>
-    <!-- 首页 -->
     <img src='/DesignMaterials/Background1.png' alt='Background1' class='background'>
     <img src='/DesignMaterials/Background2.png' alt='Background2' class='background'>
 
@@ -14,7 +13,9 @@
     <img src='/DesignMaterials/MotileCell7.png' alt='MotileCell7' class='motile-cell7'>
     <img src='/DesignMaterials/MotileCell6.png' alt='MotileCell6' class='motile-cell6'>
 
-    <button ref='scrollButtonRef' class='button1'>Get Started</button>
+    <button ref='scrollButtonRef' class='button1'>
+      Get Started
+    </button>
 
     <div class='promote1' ref='promote1Ref'>
       <p class='promote1-1'>
@@ -67,7 +68,8 @@
         In the <span class='highlight-blue'>17th century,</span>
       </p>
       <p class='promote5-2'>
-        British scientist Robert Hooke used a microscope to observe and discover the cell, the basic unit of life.</p>
+        British scientist Robert Hooke used a microscope to observe and discover the cell, the basic unit of life.
+      </p>
     </div>
 
     <img src='/DesignMaterials/Cell1.png' alt='Cell1' class='cell1'>
@@ -98,7 +100,9 @@
     <div class='container2 microscope-container'>
       <img src='/DesignMaterials/SuperResolutionMicroscope.png' alt='SuperResolutionMicroscope'
            class='super-resolution-microscope'>
-      <div class='label'>Super-Resolution Microscope</div>
+      <div class='label'>
+        Super-Resolution Microscope
+      </div>
     </div>
 
     <div class='container2 sequencing-container'>
@@ -106,7 +110,9 @@
            class='sequencing-technology'>
       <img src='/DesignMaterials/SingleCellSequencingTechnologyTable.png' alt='SingleCellSequencingTechnologyTable'
            class='sequencing-technology-table'>
-      <div class='label'>Single-Cell Sequencing Technology</div>
+      <div class='label'>
+        Single-Cell Sequencing Technology
+      </div>
     </div>
 
     <div class='container2 proteomics-container'>
@@ -114,7 +120,9 @@
            class='default-quantitative-proteomics'>
       <img src='/DesignMaterials/ActiveQuantitativeProteomics.png' alt='ActiveQuantitativeProteomics'
            class='active-quantitative-proteomics'>
-      <div class='label'>Quantitative Proteomics</div>
+      <div class='label'>
+        Quantitative Proteomics
+      </div>
     </div>
 
     <div class='container2 bioinformatics-container1'>
@@ -124,7 +132,9 @@
         <img src='/DesignMaterials/OrganelleDB.png' alt='OrganelleDB' class='organelle-db'>
         <img src='/DesignMaterials/CellProfiler.png' alt='CellProfiler' class='cell-profiler'>
       </div>
-      <div class='label'>Bioinformatics Tools</div>
+      <div class='label'>
+        Bioinformatics Tools
+      </div>
     </div>
 
     <div class='promote7' ref='promote7Ref'>
@@ -139,17 +149,17 @@
 
     <p class='promote8' ref='promote8Ref'>
       Research into subcellular localisation has not only driven scientific progress, but has also
-      demonstrated great economic potential in the biomanufacturing industry.</p>
+      demonstrated great economic potential in the biomanufacturing industry.
+    </p>
 
     <img src='/DesignMaterials/Cell.png' alt='Cell' class='cell'>
 
     <p class='promote9' ref='promote9Ref'>
-      By precisely controlling the subcellular localisation of proteins or enzymes within the cell,
-      scientists can achieve ‘compartmentalised production’ within the cell, i.e. segregation of different biosynthetic
-      reactions in specific organelles.
-      This clearly defined production method, similar to assembly lines in industry, can significantly increase
-      metabolic efficiency, reduce by-product accumulation,
-      and optimise the yield and purity of target products.
+      By precisely controlling the subcellular localisation of proteins or enzymes within the cell, scientists can
+      achieve ‘compartmentalised production’ within the cell, i.e. segregation of different biosynthetic reactions in
+      specific organelles. This clearly defined production method, similar to assembly lines in industry, can
+      significantly increase metabolic efficiency, reduce by-product accumulation, and optimise the yield and purity of
+      target products.
     </p>
 
     <p class='promote10' ref='promote10Ref'>
@@ -165,22 +175,32 @@
     <div class='image-gallery'>
       <div class='image-item'>
         <img src='/DesignMaterials/MetabolicEngineering.png' alt='Metabolic Engineering' class='image'/>
-        <div class='image-label'>Metabolic Engineering</div>
+        <div class='image-label'>
+          Metabolic Engineering
+        </div>
       </div>
       <div class='image-item'>
         <img src='/DesignMaterials/DrugProduction.png' alt='Drug Production' class='image'/>
-        <div class='image-label'>Drug Production</div>
+        <div class='image-label'>
+          Drug Production
+        </div>
       </div>
       <div class='image-item'>
         <img src='/DesignMaterials/IndustrialFermentation.png' alt='Industrial Fermentation' class='image'/>
-        <div class='image-label'>Industrial Fermentation</div>
+        <div class='image-label'>
+          Industrial Fermentation
+        </div>
       </div>
     </div>
 
     <div class='promote12' ref='promote12Ref'>
-      <p>Through in-depth study of protein subcellular localisation, scientists can precisely direct target proteins to
-        specific organelles, and such localisation design is decisive for optimising biological reaction pathways.</p>
-      <p>How to control the precise localisation of proteins becomes crucial.</p>
+      <p>
+        Through in-depth study of protein subcellular localisation, scientists can precisely direct target proteins to
+        specific organelles, and such localisation design is decisive for optimising biological reaction pathways.
+      </p>
+      <p>
+        How to control the precise localisation of proteins becomes crucial.
+      </p>
     </div>
 
     <p class='promote13' ref='promote13Ref'>
@@ -214,12 +234,14 @@
       <span class='dot3' ref='dot3Ref'></span>
     </div>
 
-    <button class='button2' ref='button2Ref'>WANT TO KNOW MORE?</button>
+    <button class='button2' ref='button2Ref'>
+      WANT TO KNOW MORE?
+    </button>
   </div>
 </template>
 
 <script lang='ts' setup>
-import {ref, onMounted} from 'vue';
+import {ref, onMounted} from 'vue'
 
 const scrollButtonRef = ref<HTMLButtonElement | null>(null)
 const promote1Ref = ref<HTMLElement | null>(null)
@@ -245,7 +267,7 @@ const button2Ref = ref<HTMLButtonElement | null>(null)
 
 onMounted(() => {
   scrollButtonRef.value?.addEventListener('click', () => {
-    const scrollDistance = window.innerHeight * 1.0
+    const scrollDistance = window.innerHeight
     window.scrollBy({
       top: scrollDistance,
       behavior: 'smooth'
@@ -264,11 +286,11 @@ const handleIntersection = (entries: IntersectionObserverEntry[]) => {
 }
 
 onMounted(() => {
+  // noinspection TypeScriptValidateTypes
   const observer = new IntersectionObserver(handleIntersection, {
     root: null,
     threshold: 1.0
   })
-
   if (promote1Ref.value) observer.observe(promote1Ref.value)
   if (promote2Ref.value) observer.observe(promote2Ref.value)
   if (promote3Ref.value) observer.observe(promote3Ref.value)
@@ -297,6 +319,7 @@ onMounted(() => {
   position: relative;
   display: block;
   overflow: hidden;
+  -webkit-user-select: none;
 }
 
 .background {
@@ -334,7 +357,7 @@ onMounted(() => {
 }
 
 .button1:hover {
-  color: #cccccc;
+  color: #CCCCCC;
 }
 
 .button1::before {
@@ -846,7 +869,7 @@ onMounted(() => {
 }
 
 .button2:hover {
-  color: #2c77df;
+  color: #2C77DF;
   transform: translateX(-50%) translateY(0);
 }
 
@@ -1076,32 +1099,24 @@ onMounted(() => {
   text-align: center;
 }
 
-.promote1, .promote2, .promote3, .promote5, .promote6, .promote7,
-.promote9, .promote13, .promote14 {
+.promote1, .promote2, .promote3, .promote5, .promote6, .promote7, .promote9, .promote13, .promote14 {
   opacity: 0;
   transform: translateY(50px);
   transition: opacity 0.6s ease, transform 0.6s ease;
 }
 
-.promote1.active, .promote2.active, .promote3.active,
-.promote5.active, .promote6.active, .promote7.active,
-.promote9.active, .promote13.active, .promote14.active {
+.promote1.active, .promote2.active, .promote3.active, .promote5.active, .promote6.active, .promote7.active, .promote9.active, .promote13.active, .promote14.active {
   opacity: 1;
   transform: translateY(0);
 }
 
-.promote8, .promote10, .promote11, .promote12,
-.promote15, .promote16, .dot1, .dot2, .dot3 {
+.promote8, .promote10, .promote11, .promote12, .promote15, .promote16, .dot1, .dot2, .dot3 {
   opacity: 0;
   transform: translateX(-50%) translateY(50px);
   transition: opacity 0.6s ease, transform 0.6s ease;
 }
 
-.promote4.active, .promote8.active,
-.promote10.active, .promote11.active,
-.promote12.active, .promote15.active,
-.promote16.active, .dot1.active,
-.dot2.active, .dot3.active {
+.promote4.active, .promote8.active, .promote10.active, .promote11.active, .promote12.active, .promote15.active, .promote16.active, .dot1.active, .dot2.active, .dot3.active {
   opacity: 1;
   transform: translateX(-50%) translateY(0);
 }
