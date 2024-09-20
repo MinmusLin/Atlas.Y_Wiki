@@ -21,7 +21,8 @@
         <span class='highlight-yellow'>2600</span> years ago,
       </p>
       <p class='promote1-2'>
-        Anaximander of Miletus drew the first map of the world. Back then, he thought Delphi was the center of the world.
+        Anaximander of Miletus drew the first map of the world. Back then, he thought Delphi was the center of the
+        world.
       </p>
     </div>
 
@@ -77,6 +78,8 @@
     <img src='/DesignMaterials/Cell2.png' alt='Cell1' class='cell6'>
     <img src='/DesignMaterials/Robert.png' alt='Robert' class='Robert'>
 
+    <img src='/DesignMaterials/ElectronMicroscope.png' alt='ElectronMicroscope' class='electron-microscope'>
+
     <div class='promote6' ref='promote6Ref'>
       <p class='promote6-1'>
         In the <span class='highlight-blue'>20th century,</span>
@@ -86,6 +89,11 @@
         human eyes gradually looked into the microcosmic universe inside the cell - Subcellular Structure.
       </p>
     </div>
+
+    <img src='/DesignMaterials/Organelle1.png' alt='Organelle1' class='organelle1'>
+    <img src='/DesignMaterials/Organelle2.png' alt='Organelle1' class='organelle2'>
+    <img src='/DesignMaterials/Organelle3.png' alt='Organelle1' class='organelle3'>
+    <img src='/DesignMaterials/Organelle4.png' alt='Organelle1' class='organelle4'>
 
     <div class='container2 microscope-container'>
       <img src='/DesignMaterials/SuperResolutionMicroscope.png' alt='SuperResolutionMicroscope'
@@ -206,88 +214,82 @@
       <span class='dot3' ref='dot3Ref'></span>
     </div>
 
-    <button class='button2'  ref='button2Ref'>WANT TO KNOW MORE?</button>
+    <button class='button2' ref='button2Ref'>WANT TO KNOW MORE?</button>
   </div>
 
 </template>
 
 <script lang='ts' setup>
-import { onMounted, ref } from 'vue';
+import {onMounted, ref} from 'vue'
 
-const scrollButtonRef = ref<HTMLButtonElement | null>(null);
-
-const button2Ref = ref<HTMLButtonElement | null>(null);
+const scrollButtonRef = ref<HTMLButtonElement | null>(null)
+const promote1Ref = ref<HTMLElement | null>(null)
+const promote2Ref = ref<HTMLElement | null>(null)
+const promote3Ref = ref<HTMLElement | null>(null)
+const promote4Ref = ref<HTMLElement | null>(null)
+const promote5Ref = ref<HTMLElement | null>(null)
+const promote6Ref = ref<HTMLElement | null>(null)
+const promote7Ref = ref<HTMLElement | null>(null)
+const promote8Ref = ref<HTMLElement | null>(null)
+const promote9Ref = ref<HTMLElement | null>(null)
+const promote10Ref = ref<HTMLElement | null>(null)
+const promote11Ref = ref<HTMLElement | null>(null)
+const promote12Ref = ref<HTMLElement | null>(null)
+const promote13Ref = ref<HTMLElement | null>(null)
+const promote14Ref = ref<HTMLElement | null>(null)
+const promote15Ref = ref<HTMLElement | null>(null)
+const promote16Ref = ref<HTMLElement | null>(null)
+const dot1Ref = ref<HTMLElement | null>(null)
+const dot2Ref = ref<HTMLElement | null>(null)
+const dot3Ref = ref<HTMLElement | null>(null)
+const button2Ref = ref<HTMLButtonElement | null>(null)
 
 onMounted(() => {
-  // 确保元素已经挂载后再添加事件监听
   scrollButtonRef.value?.addEventListener('click', () => {
     window.scrollBy({
       top: 1050,
       behavior: 'smooth'
-    });
-  });
-});
-
-const promote1Ref = ref<HTMLElement | null>(null);
-const promote2Ref = ref<HTMLElement | null>(null);
-const promote3Ref = ref<HTMLElement | null>(null);
-const promote4Ref = ref<HTMLElement | null>(null);
-const promote5Ref = ref<HTMLElement | null>(null);
-const promote6Ref = ref<HTMLElement | null>(null);
-const promote7Ref = ref<HTMLElement | null>(null);
-const promote8Ref = ref<HTMLElement | null>(null);
-const promote9Ref = ref<HTMLElement | null>(null);
-const promote10Ref = ref<HTMLElement | null>(null);
-const promote11Ref = ref<HTMLElement | null>(null);
-const promote12Ref = ref<HTMLElement | null>(null);
-const promote13Ref = ref<HTMLElement | null>(null);
-const promote14Ref = ref<HTMLElement | null>(null);
-const promote15Ref = ref<HTMLElement | null>(null);
-const promote16Ref = ref<HTMLElement | null>(null);
-
-const dot1Ref = ref<HTMLElement | null>(null);
-const dot2Ref = ref<HTMLElement | null>(null);
-const dot3Ref = ref<HTMLElement | null>(null);
+    })
+  })
+})
 
 const handleIntersection = (entries: IntersectionObserverEntry[]) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
-      entry.target.classList.add('active');
+      entry.target.classList.add('active')
     } else {
-      entry.target.classList.remove('active');
+      entry.target.classList.remove('active')
     }
-  });
-};
+  })
+}
 
 onMounted(() => {
   const observer = new IntersectionObserver(handleIntersection, {
-    root: null, // 观察整个视口
-    threshold: 1.0 // 100% 进入视口时触发
-  });
+    root: null,
+    threshold: 1.0
+  })
 
-  if (promote1Ref.value) observer.observe(promote1Ref.value);
-  if (promote2Ref.value) observer.observe(promote2Ref.value);
-  if (promote3Ref.value) observer.observe(promote3Ref.value);
-  if (promote4Ref.value) observer.observe(promote4Ref.value);
-  if (promote5Ref.value) observer.observe(promote5Ref.value);
-  if (promote6Ref.value) observer.observe(promote6Ref.value);
-  if (promote7Ref.value) observer.observe(promote7Ref.value);
-  if (promote8Ref.value) observer.observe(promote8Ref.value);
-  if (promote9Ref.value) observer.observe(promote9Ref.value);
-  if (promote10Ref.value) observer.observe(promote10Ref.value);
-  if (promote11Ref.value) observer.observe(promote11Ref.value);
-  if (promote12Ref.value) observer.observe(promote12Ref.value);
-  if (promote13Ref.value) observer.observe(promote13Ref.value);
-  if (promote14Ref.value) observer.observe(promote14Ref.value);
-  if (promote15Ref.value) observer.observe(promote15Ref.value);
-  if (promote16Ref.value) observer.observe(promote16Ref.value);
-
-  if (button2Ref.value) observer.observe(button2Ref.value);
-
-  if (dot1Ref.value) observer.observe(dot1Ref.value);
-  if (dot2Ref.value) observer.observe(dot2Ref.value);
-  if (dot3Ref.value) observer.observe(dot3Ref.value);
-});
+  if (promote1Ref.value) observer.observe(promote1Ref.value)
+  if (promote2Ref.value) observer.observe(promote2Ref.value)
+  if (promote3Ref.value) observer.observe(promote3Ref.value)
+  if (promote4Ref.value) observer.observe(promote4Ref.value)
+  if (promote5Ref.value) observer.observe(promote5Ref.value)
+  if (promote6Ref.value) observer.observe(promote6Ref.value)
+  if (promote7Ref.value) observer.observe(promote7Ref.value)
+  if (promote8Ref.value) observer.observe(promote8Ref.value)
+  if (promote9Ref.value) observer.observe(promote9Ref.value)
+  if (promote10Ref.value) observer.observe(promote10Ref.value)
+  if (promote11Ref.value) observer.observe(promote11Ref.value)
+  if (promote12Ref.value) observer.observe(promote12Ref.value)
+  if (promote13Ref.value) observer.observe(promote13Ref.value)
+  if (promote14Ref.value) observer.observe(promote14Ref.value)
+  if (promote15Ref.value) observer.observe(promote15Ref.value)
+  if (promote16Ref.value) observer.observe(promote16Ref.value)
+  if (button2Ref.value) observer.observe(button2Ref.value)
+  if (dot1Ref.value) observer.observe(dot1Ref.value)
+  if (dot2Ref.value) observer.observe(dot2Ref.value)
+  if (dot3Ref.value) observer.observe(dot3Ref.value)
+})
 </script>
 
 <style scoped>
@@ -524,7 +526,7 @@ onMounted(() => {
 
 .cell4 {
   position: absolute;
-  top: 36.5%;
+  top: 37.6%;
   left: 0;
   height: auto;
   width: 29%;
@@ -533,7 +535,7 @@ onMounted(() => {
 
 .cell5 {
   position: absolute;
-  top: 39.5%;
+  top: 40.5%;
   left: 0;
   height: auto;
   width: 23%;
@@ -542,7 +544,7 @@ onMounted(() => {
 
 .cell6 {
   position: absolute;
-  top: 41.5%;
+  top: 42.5%;
   right: -4%;
   height: auto;
   width: 22%;
@@ -557,6 +559,46 @@ onMounted(() => {
   width: 13.5%;
 }
 
+.electron-microscope {
+  position: absolute;
+  top: 35.6%;
+  left: 16%;
+  height: auto;
+  width: 19%;
+}
+
+.organelle1 {
+  position: absolute;
+  top: 36.2%;
+  left: 16%;
+  height: auto;
+  width: 4%;
+}
+
+.organelle2 {
+  position: absolute;
+  top: 36.7%;
+  left: 30%;
+  height: auto;
+  width: 5%;
+}
+
+.organelle3 {
+  position: absolute;
+  top: 37.4%;
+  left: 12%;
+  height: auto;
+  width: 5%;
+}
+
+.organelle4 {
+  position: absolute;
+  top: 37.8%;
+  left: 29%;
+  height: auto;
+  width: 5%;
+}
+
 .container2 {
   position: absolute;
   display: flex;
@@ -565,26 +607,26 @@ onMounted(() => {
 }
 
 .microscope-container {
-  top: 39.4%;
+  top: 40.4%;
   left: 13.5%;
   width: 12%
 }
 
 .sequencing-container {
-  top: 39.5%;
+  top: 40.5%;
   left: 32.5%;
   width: 12%
 }
 
 .proteomics-container {
-  top: 39.5%;
+  top: 40.5%;
   left: 55%;
   width: 10%
 }
 
 .bioinformatics-container1 {
   position: absolute;
-  top: 39.7%;
+  top: 40.7%;
   left: 75%;
   width: 11%;
   height: auto;
@@ -657,7 +699,7 @@ onMounted(() => {
 
 .cell {
   position: absolute;
-  top: 49%;
+  top: 50%;
   left: 0;
   width: 50%;
   height: auto;
@@ -665,7 +707,7 @@ onMounted(() => {
 
 .image-gallery {
   position: absolute;
-  top: 62.5%;
+  top: 63.5%;
   width: 80%;
   left: 9.9%;
   height: auto;
@@ -698,7 +740,7 @@ onMounted(() => {
 
 .default-logo {
   position: absolute;
-  top: 72.5%;
+  top: 73.5%;
   right: 10%;
   width: 50%;
   height: auto;
@@ -707,7 +749,7 @@ onMounted(() => {
 
 .protein1 {
   position: absolute;
-  top: 74%;
+  top: 75%;
   left: 5%;
   width: 25%;
   height: auto;
@@ -715,7 +757,7 @@ onMounted(() => {
 
 .protein2 {
   position: absolute;
-  top: 81.5%;
+  top: 82.5%;
   right: 0;
   width: 25%;
   height: auto;
@@ -723,7 +765,7 @@ onMounted(() => {
 
 .yeast {
   position: absolute;
-  top: 79%;
+  top: 80%;
   left: 20%;
   width: 25%;
   height: auto;
@@ -731,24 +773,13 @@ onMounted(() => {
 
 .dialog {
   position: absolute;
-  top: 77.8%;
+  top: 78.8%;
   left: 40%;
   width: 25%;
   height: auto;
 }
 
 .dot1 {
-  position: absolute;
-  top: 93.5%;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 10px;
-  height: 10px;
-  background-color: #16396E;
-  border-radius: 50%;
-}
-
-.dot2 {
   position: absolute;
   top: 94.5%;
   left: 50%;
@@ -759,7 +790,7 @@ onMounted(() => {
   border-radius: 50%;
 }
 
-.dot3 {
+.dot2 {
   position: absolute;
   top: 95.5%;
   left: 50%;
@@ -770,9 +801,20 @@ onMounted(() => {
   border-radius: 50%;
 }
 
-.default-earth{
+.dot3 {
   position: absolute;
-  top: 88.3%;
+  top: 96.5%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 10px;
+  height: 10px;
+  background-color: #16396E;
+  border-radius: 50%;
+}
+
+.default-earth {
+  position: absolute;
+  top: 89.3%;
   left: 50%;
   transform: translateX(-50%);
   width: 20%;
@@ -781,11 +823,11 @@ onMounted(() => {
 
 .button2 {
   position: absolute;
-  top: 97%;
+  top: 98%;
   left: 50%;
   transform: translateX(-50%) translateY(50px);
   background-color: transparent;
-  color:#16396E;
+  color: #16396E;
   font-family: 'Futura Md BT', sans-serif;
   font-size: calc(24 / 1920 * 100vw);
   font-weight: 400;
@@ -887,7 +929,7 @@ onMounted(() => {
 
 .promote6 {
   position: absolute;
-  top: 36.8%;
+  top: 37.8%;
   left: 38.5%;
   width: 52.1%;
   height: auto;
@@ -895,7 +937,7 @@ onMounted(() => {
 
 .promote7 {
   position: absolute;
-  top: 43.2%;
+  top: 44.2%;
   left: 13.5%;
   width: 72.1%;
   height: auto;
@@ -921,7 +963,7 @@ onMounted(() => {
 
 .promote8 {
   position: absolute;
-  top: 46.5%;
+  top: 47.5%;
   left: 50%;
   transform: translateX(-50%);
   width: 60.7%;
@@ -935,7 +977,7 @@ onMounted(() => {
 
 .promote9 {
   position: absolute;
-  top: 53.5%;
+  top: 54.5%;
   right: 20%;
   width: 28.1%;
   height: 171px;
@@ -947,7 +989,7 @@ onMounted(() => {
 
 .promote10 {
   position: absolute;
-  top: 59%;
+  top: 60%;
   left: 50%;
   transform: translateX(-50%);
   width: 60.7%;
@@ -961,7 +1003,7 @@ onMounted(() => {
 
 .promote11 {
   position: absolute;
-  top: 61%;
+  top: 62%;
   left: 50%;
   transform: translateX(-50%);
   width: 41.7%;
@@ -975,7 +1017,7 @@ onMounted(() => {
 
 .promote12 {
   position: absolute;
-  top: 66%;
+  top: 67%;
   left: 50%;
   transform: translateX(-50%);
   width: 42.4%;
@@ -989,7 +1031,7 @@ onMounted(() => {
 
 .promote13 {
   position: absolute;
-  top: 70%;
+  top: 71%;
   left: 10%;
   width: 45%;
   height: 171px;
@@ -1001,7 +1043,7 @@ onMounted(() => {
 
 .promote14 {
   position: absolute;
-  top: 78.35%;
+  top: 79.35%;
   left: 43%;
   width: 21%;
   height: auto;
@@ -1013,7 +1055,7 @@ onMounted(() => {
 
 .promote15 {
   position: absolute;
-  top: 87%;
+  top: 88%;
   left: 50%;
   transform: translateX(-50%);
   width: 62.5%;
@@ -1026,7 +1068,7 @@ onMounted(() => {
 
 .promote16 {
   position: absolute;
-  top: 92%;
+  top: 93%;
   left: 50%;
   transform: translateX(-50%);
   width: 52%;
@@ -1039,7 +1081,7 @@ onMounted(() => {
 }
 
 .promote1, .promote2, .promote3, .promote5, .promote6, .promote7,
-.promote9,  .promote13, .promote14{
+.promote9, .promote13, .promote14 {
   opacity: 0;
   transform: translateY(50px);
   transition: opacity 0.6s ease, transform 0.6s ease;
@@ -1047,13 +1089,13 @@ onMounted(() => {
 
 .promote1.active, .promote2.active, .promote3.active,
 .promote5.active, .promote6.active, .promote7.active,
-.promote9.active, .promote13.active,.promote14.active{
+.promote9.active, .promote13.active, .promote14.active {
   opacity: 1;
   transform: translateY(0);
 }
 
-.promote4, .promote8,.promote10, .promote11, .promote12,
-.promote15, .promote16, .dot1, .dot2, .dot3{
+.promote4, .promote8, .promote10, .promote11, .promote12,
+.promote15, .promote16, .dot1, .dot2, .dot3 {
   opacity: 0;
   transform: translateX(-50%) translateY(50px);
   transition: opacity 0.6s ease, transform 0.6s ease;
@@ -1063,7 +1105,7 @@ onMounted(() => {
 .promote10.active, .promote11.active,
 .promote12.active, .promote15.active,
 .promote16.active, .dot1.active,
-.dot2.active, .dot3.active{
+.dot2.active, .dot3.active {
   opacity: 1;
   transform: translateX(-50%) translateY(0);
 }
