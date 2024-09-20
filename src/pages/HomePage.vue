@@ -216,11 +216,10 @@
 
     <button class='button2' ref='button2Ref'>WANT TO KNOW MORE?</button>
   </div>
-
 </template>
 
 <script lang='ts' setup>
-import {onMounted, ref} from 'vue'
+import {ref, onMounted} from 'vue';
 
 const scrollButtonRef = ref<HTMLButtonElement | null>(null)
 const promote1Ref = ref<HTMLElement | null>(null)
@@ -246,8 +245,9 @@ const button2Ref = ref<HTMLButtonElement | null>(null)
 
 onMounted(() => {
   scrollButtonRef.value?.addEventListener('click', () => {
+    const scrollDistance = window.innerHeight * 1.0
     window.scrollBy({
-      top: 1050,
+      top: scrollDistance,
       behavior: 'smooth'
     })
   })
@@ -784,8 +784,8 @@ onMounted(() => {
   top: 94.5%;
   left: 50%;
   transform: translateX(-50%);
-  width: 10px;
-  height: 10px;
+  width: calc(10 / 1920 * 100vw);
+  height: calc(10 / 1920 * 100vw);
   background-color: #16396E;
   border-radius: 50%;
 }
@@ -795,8 +795,8 @@ onMounted(() => {
   top: 95.5%;
   left: 50%;
   transform: translateX(-50%);
-  width: 10px;
-  height: 10px;
+  width: calc(10 / 1920 * 100vw);
+  height: calc(10 / 1920 * 100vw);
   background-color: #16396E;
   border-radius: 50%;
 }
@@ -806,8 +806,8 @@ onMounted(() => {
   top: 96.5%;
   left: 50%;
   transform: translateX(-50%);
-  width: 10px;
-  height: 10px;
+  width: calc(10 / 1920 * 100vw);
+  height: calc(10 / 1920 * 100vw);
   background-color: #16396E;
   border-radius: 50%;
 }
