@@ -892,13 +892,15 @@ onMounted(() => {
   position: absolute;
   top: 20.2%;
   left: 50%;
-  transform: translateX(-50%);
-  width: 72%;
+  width: 80%;
   height: auto;
   font-family: 'Futura Md BT', sans-serif;
-  font-size: calc(50 / 1920 * 100vw);
+  font-size: calc(60 / 1920 * 100vw);
   font-weight: 700;
   color: white;
+  opacity: 0;
+  transform: translateX(-50%) translateY(50px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
 }
 
 .highlight-yellow {
@@ -965,7 +967,6 @@ onMounted(() => {
   position: absolute;
   top: 47.5%;
   left: 50%;
-  transform: translateX(-50%);
   width: 60.7%;
   height: 171px;
   font-family: 'Futura Md BT', sans-serif;
@@ -991,7 +992,6 @@ onMounted(() => {
   position: absolute;
   top: 60%;
   left: 50%;
-  transform: translateX(-50%);
   width: 60.7%;
   height: 171px;
   font-family: 'Futura Md BT', sans-serif;
@@ -1005,7 +1005,6 @@ onMounted(() => {
   position: absolute;
   top: 62%;
   left: 50%;
-  transform: translateX(-50%);
   width: 41.7%;
   height: 171px;
   font-family: 'Futura Md BT', sans-serif;
@@ -1019,7 +1018,6 @@ onMounted(() => {
   position: absolute;
   top: 67%;
   left: 50%;
-  transform: translateX(-50%);
   width: 42.4%;
   height: 171px;
   font-family: 'Futura Md BT', sans-serif;
@@ -1057,7 +1055,6 @@ onMounted(() => {
   position: absolute;
   top: 88%;
   left: 50%;
-  transform: translateX(-50%);
   width: 62.5%;
   height: auto;
   font-family: 'Futura Md BT', sans-serif;
@@ -1070,7 +1067,6 @@ onMounted(() => {
   position: absolute;
   top: 93%;
   left: 50%;
-  transform: translateX(-50%);
   width: 52%;
   height: auto;
   font-family: 'Futura Md BT', sans-serif;
@@ -1094,18 +1090,23 @@ onMounted(() => {
   transform: translateY(0);
 }
 
-.promote4, .promote8, .promote10, .promote11, .promote12,
+.promote8, .promote10, .promote11, .promote12,
 .promote15, .promote16, .dot1, .dot2, .dot3 {
   opacity: 0;
   transform: translateX(-50%) translateY(50px);
   transition: opacity 0.6s ease, transform 0.6s ease;
 }
 
-.promote4.active, .promote8.active,
+.promote8.active,
 .promote10.active, .promote11.active,
 .promote12.active, .promote15.active,
 .promote16.active, .dot1.active,
 .dot2.active, .dot3.active {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+.promote4.active {
   opacity: 1;
   transform: translateX(-50%) translateY(0);
 }
