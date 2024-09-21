@@ -1,29 +1,45 @@
 <template>
   <div class='title-box' :class="{ 'animate': startAnimation }">
-    <div class='image-container'>
+    <div class='image-container' ref='imageContainer'>
       <img src='/DesignMaterials/TitleBackground.png' alt='TitleBackground' class='title-image'/>
-      <img src='/DesignMaterials/Mascot.gif' alt='Mascot' class='corner-image' :class="{ 'animate': startAnimation }"/>
-      <p class='title1'>{{ props.title }}</p>
-      <p class='title2'>{{ props.title }}</p>
+      <img src='/DesignMaterials/Mascot.gif' alt='Mascot' class='corner-image' :class="{ 'animate': mascotAnimation }"
+           :style="{ right: mascotPosition.right, bottom: mascotPosition.bottom }"/>
+      <p class='title1' ref='title1'>{{ title }}</p>
+      <p class='title2'>{{ title }}</p>
     </div>
   </div>
 </template>
 
 <script setup lang='ts'>
-import {ref, onMounted, nextTick} from 'vue'
+import {ref, onMounted, nextTick, reactive, defineProps} from 'vue'
 
-interface Props {
+defineProps<{
   title: string
-}
+}>()
 
-const props = defineProps<Props>()
 const startAnimation = ref(false)
+const mascotAnimation = ref(false)
+const title1 = ref<HTMLElement | null>(null)
+const imageContainer = ref<HTMLElement | null>(null)
+const ballPosition = reactive({x: 0, y: 0})
+const mascotPosition = reactive({right: '-150px', bottom: '-150px'})
 
 onMounted(async () => {
   await nextTick()
   setTimeout(() => {
     startAnimation.value = true
-  }, 500)
+    // noinspection TypeScriptUnresolvedReference
+    const rect = title1.value?.getBoundingClientRect()
+    // noinspection TypeScriptUnresolvedReference
+    const containerRect = imageContainer.value?.getBoundingClientRect()
+    if (rect && containerRect) {
+      ballPosition.x = rect.right - containerRect.left
+      ballPosition.y = rect.bottom - containerRect.top
+      mascotPosition.right = `${containerRect.width - ballPosition.x - 290}px`
+      mascotPosition.bottom = `${containerRect.height - ballPosition.y - 90}px`
+      mascotAnimation.value = true
+    }
+  }, 100)
 })
 </script>
 
@@ -52,18 +68,17 @@ onMounted(async () => {
 
 .corner-image {
   position: absolute;
-  bottom: -100px;
-  right: -100px;
   width: 320px;
   height: 320px;
   border-radius: 10px;
+  transition: right 1.5s, bottom 1.5s;
 }
 
 .title1 {
   position: absolute;
-  left: 62px;
-  bottom: 15px;
-  font-size: 64px;
+  left: 70px;
+  bottom: 26px;
+  font-size: 80px;
   font-weight: 800;
   color: #5182F8;
   font-family: 'Inter', serif;
@@ -71,9 +86,9 @@ onMounted(async () => {
 
 .title2 {
   position: absolute;
-  left: 53px;
-  bottom: 19px;
-  font-size: 64px;
+  left: 61px;
+  bottom: 30px;
+  font-size: 80px;
   font-weight: 800;
   color: white;
   font-family: 'Inter', serif;
@@ -81,7 +96,7 @@ onMounted(async () => {
 
 .title1, .title2 {
   clip-path: inset(0 0 0 100%);
-  transition: clip-path 1s ease-out 1s;
+  transition: clip-path 0.75s ease-out 1.5s;
 }
 
 .title-box.animate .title1, .title-box.animate .title2 {
