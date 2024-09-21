@@ -3,7 +3,7 @@
     <img src='/DesignMaterials/TopRightCircle.png' alt='TopRightCircle' class='top-right-image'/>
     <img src='/DesignMaterials/BottomLeftCircle.png' alt='BottomLeftCircle' class='bottom-left-image'/>
     <div class='title-box-container'>
-      <TitleBox :image-src='imageSrc'/>
+      <TitleBox :title='title'/>
     </div>
     <nav ref='navRef'>
       <a v-for='title in titleList' :key='title'
@@ -21,7 +21,7 @@ import {ref, onMounted, onUnmounted, defineProps} from 'vue'
 import TitleBox from '@/components/TitleBox.vue'
 
 defineProps<{
-  imageSrc: string
+  title: string
   titleList: string[]
 }>()
 

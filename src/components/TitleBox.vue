@@ -1,8 +1,10 @@
 <template>
   <div class='title-box'>
     <div class='image-container'>
-      <img :src='imageSrc' alt='TitleImage' class='title-image'/>
+      <img src='/DesignMaterials/TitleBackground.png' alt='TitleBackground' class='title-image'/>
       <img src='/DesignMaterials/Mascot.gif' alt='Mascot' class='corner-image'/>
+      <p class='title1'>{{ title }}</p>
+      <p class='title2'>{{ title }}</p>
     </div>
   </div>
 </template>
@@ -11,7 +13,7 @@
 import {defineProps} from 'vue'
 
 defineProps<{
-  imageSrc: string
+  title: string
 }>()
 </script>
 
@@ -27,7 +29,7 @@ defineProps<{
 .image-container {
   position: relative;
   width: 1240px;
-  height: 281px;
+  height: auto;
 }
 
 .title-image {
@@ -45,5 +47,26 @@ defineProps<{
   width: 320px;
   height: 320px;
   border-radius: 10px;
+}
+
+.title1 {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  font-size: 64px;
+  font-weight: 900;
+  color: white;
+  -webkit-text-stroke: 10px white;
+  font-family: 'Inter', serif;
+}
+
+.title2 {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  font-size: 64px;
+  font-weight: 900;
+  color: #5182F8;
+  font-family: 'Inter', serif;
 }
 </style>
