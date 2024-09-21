@@ -1,20 +1,30 @@
 <template>
-  <div class='title-box'>
+  <div class='title-box' :class="{ 'animate': startAnimation }">
     <div class='image-container'>
       <img src='/DesignMaterials/TitleBackground.png' alt='TitleBackground' class='title-image'/>
-      <img src='/DesignMaterials/Mascot.gif' alt='Mascot' class='corner-image'/>
-      <p class='title1'>{{ title }}</p>
-      <p class='title2'>{{ title }}</p>
+      <img src='/DesignMaterials/Mascot.gif' alt='Mascot' class='corner-image' :class="{ 'animate': startAnimation }"/>
+      <p class='title1'>{{ props.title }}</p>
+      <p class='title2'>{{ props.title }}</p>
     </div>
   </div>
 </template>
 
 <script setup lang='ts'>
-import {defineProps} from 'vue'
+import {ref, onMounted, nextTick} from 'vue'
 
-defineProps<{
+interface Props {
   title: string
-}>()
+}
+
+const props = defineProps<Props>()
+const startAnimation = ref(false)
+
+onMounted(async () => {
+  await nextTick()
+  setTimeout(() => {
+    startAnimation.value = true
+  }, 500)
+})
 </script>
 
 <style scoped>
@@ -67,5 +77,14 @@ defineProps<{
   font-weight: 800;
   color: white;
   font-family: 'Inter', serif;
+}
+
+.title1, .title2 {
+  clip-path: inset(0 0 0 100%);
+  transition: clip-path 1s ease-out 1s;
+}
+
+.title-box.animate .title1, .title-box.animate .title2 {
+  clip-path: inset(0);
 }
 </style>
