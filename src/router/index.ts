@@ -71,7 +71,7 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: '/human-practices',
     component: () => import('@/pages/IntegratedHumanPracticesPage.vue'),
-    meta: {title: 'Integrated Human Practices'}
+    meta: {title: 'Integrated HP'}
   },
   {
     path: '/entrepreneurship',

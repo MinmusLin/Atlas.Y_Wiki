@@ -74,7 +74,7 @@ const navItems = ref([
   {
     title: 'HUMAN PRACTICES',
     url: null,
-    subItems: ['Integrated Human Practices', 'Entrepreneurship', 'Education', 'Promotion Video'],
+    subItems: ['Integrated HP', 'Entrepreneurship', 'Education', 'Promotion Video'],
     subUrls: ['/human-practices', '/entrepreneurship', '/education', '/promotion-video'],
     isOpen: false
   },

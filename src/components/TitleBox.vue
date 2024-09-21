@@ -51,22 +51,21 @@ defineProps<{
 
 .title1 {
   position: absolute;
-  left: 0;
-  bottom: 0;
+  left: 62px;
+  bottom: 15px;
   font-size: 64px;
-  font-weight: 900;
-  color: white;
-  -webkit-text-stroke: 10px white;
+  font-weight: 800;
+  color: #5182F8;
   font-family: 'Inter', serif;
 }
 
 .title2 {
   position: absolute;
-  left: 0;
-  bottom: 0;
+  left: 53px;
+  bottom: 19px;
   font-size: 64px;
-  font-weight: 900;
-  color: #5182F8;
+  font-weight: 800;
+  color: white;
   font-family: 'Inter', serif;
 }
 </style>
