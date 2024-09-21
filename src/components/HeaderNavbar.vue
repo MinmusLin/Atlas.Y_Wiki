@@ -243,7 +243,15 @@ onBeforeUnmount(() => {
   color: #7AA8F3;
 }
 
+.hover-effect.homepage {
+  color: #7AA8F3;
+}
+
 .active-effect {
+  color: #5182F8;
+}
+
+.active-effect.homepage {
   color: #5182F8;
 }
 
