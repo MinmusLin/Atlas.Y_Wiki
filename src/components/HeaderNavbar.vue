@@ -10,7 +10,7 @@
         <!--suppress JSIncompatibleTypesComparison-->
         <button class='nav-title'
                 @click='item.url ? goToPage(item.url) : undefined'
-                :class="['nav-title', isHomePage ? 'homepage' : '', { 'hover-effect': hoveredItem == item.title, 'active-effect': isActive(item) }]">
+                :class="['nav-title', isHomePage ? 'homepage' : '', { 'hover-effect': hoveredItem == item.title, 'active-effect': isActive(item), 'scrolled': isScrolled }]">
           {{ item.title }}
           <!--suppress JSIncompatibleTypesComparison-->
           <v-icon v-if='item.subItems'
@@ -118,7 +118,7 @@ const handleScroll = () => {
   header.style.transform = `translateX(${-window.scrollX}px)`
   const scrollPosition = window.scrollY
   const pageHeight = document.documentElement.scrollHeight - window.innerHeight
-  isScrolled.value = scrollPosition > pageHeight / 2
+  isScrolled.value = scrollPosition > pageHeight * 0.26
 }
 
 function goToPage(url: string) {
@@ -183,7 +183,15 @@ onBeforeUnmount(() => {
   align-items: center;
   color: #2F3235;
   font-family: 'Futura Md BT', serif;
-  transition: color 0.2s ease;
+  transition: color 0.5s ease;
+}
+
+.nav-title.homepage {
+  color: white;
+}
+
+.nav-title.homepage.scrolled {
+  color: #2F3235;
 }
 
 .dropdown-arrow {
@@ -243,21 +251,34 @@ onBeforeUnmount(() => {
   color: #7AA8F3;
 }
 
+.hover-effect.homepage {
+  color: #7AA8F3;
+}
+
+.hover-effect.homepage.scrolled {
+  color: #7AA8F3;
+}
+
 .active-effect {
   color: #5182F8;
 }
 
-/* noinspection CssUnusedSymbol */
+.active-effect.homepage {
+  color: #5182F8;
+}
+
+.active-effect.homepage.scrolled {
+  color: #5182F8;
+}
+
 .fade-enter-active, .fade-leave-active {
   transition: opacity 0.2s;
 }
 
-/* noinspection CssUnusedSymbol */
 .fade-enter-from, .fade-leave-to {
   opacity: 0;
 }
 
-/* noinspection CssUnusedSymbol */
 .fade-enter-to, .fade-leave-from {
   opacity: 1;
 }
