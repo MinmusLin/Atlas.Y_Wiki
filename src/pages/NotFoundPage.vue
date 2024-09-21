@@ -19,7 +19,7 @@ const router = useRouter()
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: calc(100vh - 510px);
+  height: calc(100vh - 80px);
   padding: 20px;
   margin-top: 80px;
   -webkit-user-select: none;
