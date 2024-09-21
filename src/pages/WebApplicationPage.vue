@@ -1,5 +1,5 @@
 <template>
-  <TextContent image-src='/DesignMaterials/MetabolicEngineering.png'
+  <TextContent title='WEB APPLICATION'
                :title-list="['Web Application']">
     <h1 id='Web Application'>Web Application</h1>
     <p>By visiting the WIKI, you can gain insight into the entire development process, explore our technical details

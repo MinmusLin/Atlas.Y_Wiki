@@ -1,5 +1,5 @@
 <template>
-  <TextContent image-src='/DesignMaterials/MetabolicEngineering.png'
+  <TextContent title='SAFETY'
                :title-list="['Safety']">
     <h1 id='Safety'>Safety</h1>
     <p>By visiting the WIKI, you can gain insight into the entire development process, explore our technical details

@@ -1,5 +1,5 @@
 <template>
-  <TextContent image-src='/DesignMaterials/MetabolicEngineering.png'
+  <TextContent title='PROMOTION VIDEO'
                :title-list="['Title1', 'Title2', 'Title3']">
     <h1 id='Title1'>Title1</h1>
     <p>text</p>

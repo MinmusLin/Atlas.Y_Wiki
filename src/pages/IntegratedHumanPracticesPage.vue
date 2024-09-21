@@ -1,5 +1,5 @@
 <template>
-  <TextContent image-src='/DesignMaterials/MetabolicEngineering.png'
+  <TextContent title='INTEGRATED HUMAN PRACTICES'
                :title-list="['Integrated Human Practices']">
     <h1 id='Integrated Human Practices'>Integrated Human Practices</h1>
     <p>By visiting the WIKI, you can gain insight into the entire development process, explore our technical details

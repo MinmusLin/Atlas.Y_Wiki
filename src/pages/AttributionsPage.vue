@@ -1,5 +1,5 @@
 <template>
-  <TextContent image-src='/DesignMaterials/MetabolicEngineering.png'
+  <TextContent title='ATTRIBUTIONS'
                :title-list="['Attributions']">
     <h1 id='Attributions'>Attributions</h1>
     <p>

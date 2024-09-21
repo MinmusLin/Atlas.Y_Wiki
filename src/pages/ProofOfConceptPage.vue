@@ -1,5 +1,5 @@
 <template>
-  <TextContent image-src='/DesignMaterials/MetabolicEngineering.png'
+  <TextContent title='PROOF OF CONCEPT'
                :title-list="['Proof of Concept']">
     <h1 id='Proof of Concept'>Proof of Concept</h1>
     <p>By visiting the WIKI, you can gain insight into the entire development process, explore our technical details
