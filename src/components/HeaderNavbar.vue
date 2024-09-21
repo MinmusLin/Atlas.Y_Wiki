@@ -14,7 +14,7 @@
           {{ item.title }}
           <!--suppress JSIncompatibleTypesComparison-->
           <v-icon v-if='item.subItems'
-                  :class=" {'rotated': item.isOpen, 'hover-effect': hoveredItem == item.title && !isHomePage, 'active-effect': isActive(item) }"
+                  :class=" {'rotated': item.isOpen, 'hover-effect': hoveredItem == item.title, 'active-effect': isActive(item) }"
                   class='dropdown-arrow'>
             mdi-chevron-down
           </v-icon>
@@ -42,6 +42,7 @@ const route = useRoute()
 const router = useRouter()
 const hoveredItem = ref(null)
 const isHomePage = ref(route.path == '/')
+const isScrolled = ref(false)
 const navItems = ref([
   {
     title: 'HOME',
@@ -115,6 +116,9 @@ const isActive = (item: any) => {
 const handleScroll = () => {
   const header = document.querySelector('.header-navbar') as HTMLElement
   header.style.transform = `translateX(${-window.scrollX}px)`
+  const scrollPosition = window.scrollY
+  const pageHeight = document.documentElement.scrollHeight - window.innerHeight
+  isScrolled.value = scrollPosition > pageHeight / 2
 }
 
 function goToPage(url: string) {
@@ -182,10 +186,6 @@ onBeforeUnmount(() => {
   transition: color 0.2s ease;
 }
 
-.nav-title.homepage {
-  color: white;
-}
-
 .dropdown-arrow {
   transition: transform 0.3s ease;
 }
@@ -243,15 +243,7 @@ onBeforeUnmount(() => {
   color: #7AA8F3;
 }
 
-.hover-effect.homepage {
-  color: #7AA8F3;
-}
-
 .active-effect {
-  color: #5182F8;
-}
-
-.active-effect.homepage {
   color: #5182F8;
 }
 
