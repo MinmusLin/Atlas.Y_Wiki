@@ -9,5 +9,7 @@ pages:
   artifacts:
     paths:
     - dist
+    publish:
+      path: dist
   only:
   - main
