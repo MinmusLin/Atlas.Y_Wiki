@@ -16,7 +16,7 @@ import TextContent from '@/components/TextContent.vue'
 </script>
 
 <style scoped>
-@import '@/assets/styles/text.css';
-@import '@/assets/styles/anchor.css';
-@import '@/assets/styles/layout.css';
+@import '@/styles/text.css';
+@import '@/styles/anchor.css';
+@import '@/styles/layout.css';
 </style>

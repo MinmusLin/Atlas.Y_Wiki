@@ -42,7 +42,7 @@ function scrollToSection(sectionId: string) {
 }
 
 onMounted(() => {
-  if (navRef.value) {
+  if (navRef.value && navRef.value instanceof HTMLElement) {
     navHeight.value = navRef.value.offsetHeight
   }
 })
@@ -73,7 +73,7 @@ onMounted(() => {
 </script>
 
 <style scoped>
-@import '@/assets/styles/text.css';
-@import '@/assets/styles/anchor.css';
-@import '@/assets/styles/layout.css';
+@import '@/styles/text.css';
+@import '@/styles/anchor.css';
+@import '@/styles/layout.css';
 </style>

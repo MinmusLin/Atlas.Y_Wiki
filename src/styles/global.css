@@ -18,21 +18,21 @@ img {
 
 @font-face {
     font-family: 'Inter';
-    src: url('@/assets/fonts/Inter.ttf') format('truetype');
+    src: url('https://static.igem.wiki/teams/5503/fonts/inter.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Futura Md BT';
-    src: url('@/assets/fonts/Futura_Md_BT.ttf') format('truetype');
+    src: url('https://static.igem.wiki/teams/5503/fonts/futura-md-bt.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Futura Bk BT Book';
-    src: url('@/assets/fonts/Futura_Bk_BT_Book.ttf') format('truetype');
+    src: url('https://static.igem.wiki/teams/5503/fonts/futura-bk-bt-book.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
