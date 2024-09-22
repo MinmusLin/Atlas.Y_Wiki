@@ -10,7 +10,6 @@ declare module 'vue' {
     ElBacktop: typeof import('element-plus/es')['ElBacktop']
     FooterNavbar: typeof import('./src/components/FooterNavbar.vue')['default']
     HeaderNavbar: typeof import('./src/components/HeaderNavbar.vue')['default']
-    LatexRenderer: typeof import('./src/components/LatexRenderer.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     TextContent: typeof import('./src/components/TextContent.vue')['default']

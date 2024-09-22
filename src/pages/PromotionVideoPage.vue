@@ -8,7 +8,7 @@
     <h3>Title1.1.1</h3>
     <p>text</p>
     <h4>Title1.1.1.1</h4>
-    <LatexRenderer formula='CAD\text{-}score = 1 - \frac{\sum_{(i,j) \in G} CAD_{bounded}(i,j)}{\sum_{(i,j) \in G} T(i,j)}'/>
+    <p>text</p>
     <h1 id='Title2'>Title2</h1>
     <p class='bold'>bold text</p>
     <p class='strikethrough'>strikethrough text</p>
