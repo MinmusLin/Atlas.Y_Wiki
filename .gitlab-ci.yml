@@ -3,13 +3,13 @@ image: node:18
 pages:
   stage: build
   script:
-  - npm install
-  - npm run build
-  - cp dist/index.html dist/404.html
-  - rm -rf public
-  - mv dist public
+    - npm install
+    - npm run build
+    - cp dist/index.html dist/404.html
   artifacts:
     paths:
-    - public
+      - dist
+    publish:
+      path: dist
   only:
-  - main
+    - main
