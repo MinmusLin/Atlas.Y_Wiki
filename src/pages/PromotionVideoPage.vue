@@ -8,7 +8,7 @@
     <h3>Title1.1.1</h3>
     <p>text</p>
     <h4>Title1.1.1.1</h4>
-    <p>text</p>
+    <LatexRenderer formula='CAD\text{-}score = 1 - \frac{\sum_{(i,j) \in G} CAD_{bounded}(i,j)}{\sum_{(i,j) \in G} T(i,j)}'/>
     <h1 id='Title2'>Title2</h1>
     <p class='bold'>bold text</p>
     <p class='strikethrough'>strikethrough text</p>
@@ -74,6 +74,7 @@
 
 <script setup lang='ts'>
 import TextContent from '@/components/TextContent.vue'
+import LatexRenderer from '@/components/LatexRenderer.vue'
 </script>
 
 <style scoped>
