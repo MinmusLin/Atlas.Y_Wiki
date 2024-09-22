@@ -1,7 +1,6 @@
 <template>
   <div class='background-container'>
-    <img src='/DesignMaterials/Background1.png' alt='Background1' class='background'>
-    <img src='/DesignMaterials/Background2.png' alt='Background2' class='background'>
+    <img src='/DesignMaterials/Background.png' alt='Background' class='background'>
 
     <img src='/DesignMaterials/Title.png' alt='Title' class='title'>
 
@@ -234,20 +233,24 @@
       <span class='dot3' ref='dot3Ref'></span>
     </div>
 
-    <button class='button2' ref='button2Ref'>
+    <button class='button2' ref='button2Ref' @click="router.push('/description')">
       WANT TO KNOW MORE?
     </button>
+
+    <div class='homepage-canvas'>
+      <canvas id='tutorial'/>
+    </div>
   </div>
 
-  <div class='homepage-canvas'>
-    <canvas id='tutorial'/>
-  </div>
+  <div class='background-color'/>
 </template>
 
 <script setup lang='ts'>
 import {ref, onMounted, onBeforeUnmount} from 'vue'
 import {draw} from '@/plugins/canvas'
+import {useRouter} from 'vue-router'
 
+const router = useRouter()
 const scrollButtonRef = ref<HTMLButtonElement | null>(null)
 const promote1Ref = ref<HTMLElement | null>(null)
 const promote2Ref = ref<HTMLElement | null>(null)
@@ -372,13 +375,14 @@ onBeforeUnmount(() => {
 <style scoped>
 #tutorial {
   position: absolute;
-  top: 0;
 }
 
 .homepage-canvas {
+  position: absolute;
   margin: 0 auto;
   width: 1440px;
   height: auto;
+  top: 0;
 }
 
 .background-container {
@@ -386,6 +390,24 @@ onBeforeUnmount(() => {
   width: 1440px;
   margin: 0 auto;
   -webkit-user-select: none;
+  z-index: 2;
+  height: 10982px;
+}
+
+.background-color {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  height: 10982px;
+  z-index: 1;
+  background: linear-gradient(to bottom,
+  #0A2144 0px,
+  #0A2144 3074px,
+  #FFF7C8 3074px,
+  #FFF7C8 4024px,
+  #F7F5E1 7028px,
+  #AACAF9 10000px,
+  #AACAF9 10982px);
 }
 
 .background {
@@ -420,7 +442,7 @@ onBeforeUnmount(() => {
   padding: 10px 20px;
   transition: color 0.3s ease;
   gap: 13px;
-  z-index:999;
+  z-index: 3;
 }
 
 .button1:hover {
@@ -927,6 +949,7 @@ onBeforeUnmount(() => {
   transition: color 0.3s ease, transform 0.6s ease, opacity 0.6s ease;
   text-decoration: underline;
   opacity: 0;
+  z-index: 3;
 }
 
 .button2.active {
@@ -972,7 +995,7 @@ onBeforeUnmount(() => {
 
 .promote1-2, .promote2-2, .promote3-2 {
   font-family: 'Futura Md BT', sans-serif;
-  font-size:21px;
+  font-size: 21px;
   font-weight: 400;
   color: #FFFFFF;
 }
