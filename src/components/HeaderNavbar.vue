@@ -1,7 +1,10 @@
 <template>
   <header :class="['header-navbar', isHomePage ? 'homepage' : '']">
     <nav class='nav-items'>
-      <img src='/DesignMaterials/DefaultLogo.webp' alt='DefaultLogo' class='logo' @click="router.push('/')">
+      <img src='https://static.igem.wiki/teams/5503/designmaterials/defaultlogo.webp'
+           alt='DefaultLogo'
+           class='logo'
+           @click="router.push('/')">
       <div v-for='item in navItems'
            :key='item.title'
            class='nav-item'

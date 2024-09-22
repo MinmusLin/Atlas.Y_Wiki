@@ -46,7 +46,7 @@ nav a:hover, a.active:hover {
 nav a:hover::before {
     content: '';
     display: inline-block;
-    background-image: url('/DesignMaterials/ActiveMapMarker.webp');
+    background-image: url('https://static.igem.wiki/teams/5503/designmaterials/activemapmarker.webp');
     background-size: contain;
     background-repeat: no-repeat;
     width: 20px;
@@ -64,7 +64,7 @@ nav a.active {
 nav a.active::before {
     content: '';
     display: inline-block;
-    background-image: url('/DesignMaterials/DefaultMapMarker.webp');
+    background-image: url('https://static.igem.wiki/teams/5503/designmaterials/defaultmapmarker.webp');
     background-size: contain;
     background-repeat: no-repeat;
     width: 20px;
@@ -75,5 +75,5 @@ nav a.active::before {
 }
 
 nav a.active:hover::before {
-    background-image: url('/DesignMaterials/ActiveMapMarker.webp');
+    background-image: url('https://static.igem.wiki/teams/5503/designmaterials/activemapmarker.webp');
 }

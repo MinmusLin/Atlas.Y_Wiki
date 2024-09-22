@@ -1,13 +1,13 @@
 <template>
   <div class='footer-navbar'>
-    <img src='/DesignMaterials/TongjiUniversityLogo.webp'
+    <img src='https://static.igem.wiki/teams/5503/designmaterials/tongjiuniversitylogo.webp'
          alt='TongjiUniversityLogo'
          style='top: 50px; left: 100px; cursor: pointer; width: 140px'
          @click="goToLink('https://en.tongji.edu.cn')">
-    <img src='/DesignMaterials/TongjiSoftwareLogo.webp'
+    <img src='https://static.igem.wiki/teams/5503/designmaterials/tongjisoftwarelogo.webp'
          alt='TongjiSoftwareLogo'
          style='top: 90px; left: 304px; width: 183px'>
-    <img src='/DesignMaterials/LightLogo.webp'
+    <img src='https://static.igem.wiki/teams/5503/designmaterials/lightlogo.webp'
          alt='LightLogo'
          style='top: 93px; left: 545px; cursor: pointer; width: 243px'
          @click="goToLink('http://47.91.92.143')">
@@ -25,16 +25,16 @@
     </div>
     <p class='contact-us'>Contact Us</p>
     <a class='email' href='mailto:tongji_china2019@163.com'>tongji_china2019@163.com</a>
-    <img src='/DesignMaterials/Email.webp'
+    <img src='https://static.igem.wiki/teams/5503/designmaterials/email.webp'
          alt='Email'
          style='top: 225px; right: 439px; width: 51px'>
-    <img src='/DesignMaterials/TikTok.webp'
+    <img src='https://static.igem.wiki/teams/5503/designmaterials/tiktok.webp'
          alt='TikTok'
          style='top: 298px; right: 447px; width: 42px'>
-    <img src='/DesignMaterials/WeChat.webp'
+    <img src='https://static.igem.wiki/teams/5503/designmaterials/wechat.webp'
          alt='WeChat'
          style='top: 296px; right: 321px; width: 64px'>
-    <img src='/DesignMaterials/Bilibili.webp'
+    <img src='https://static.igem.wiki/teams/5503/designmaterials/bilibili.webp'
          alt='Bilibili'
          style='top: 302px; right: 100px; width: 159px'>
   </div>

@@ -35,7 +35,8 @@
     <h1 id='Title3'>Title3</h1>
     <p>By visiting the WIKI, you can gain insight into the entire development process, explore our technical details
       and the thinking behind our decisions, and access a wealth of background information and resource support.</p>
-    <img src='/DesignMaterials/MetabolicEngineering.webp' alt='ExampleImage'
+    <img src='https://static.igem.wiki/teams/5503/designmaterials/metabolicengineering.webp'
+         alt='ExampleImage'
          width='500'/>
     <h5>Figure 1.1 Example</h5>
     <p>By visiting the WIKI, you can gain insight into the entire development process, explore our technical details

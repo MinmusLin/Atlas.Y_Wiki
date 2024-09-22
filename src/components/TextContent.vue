@@ -1,7 +1,11 @@
 <template>
   <div class='content-area'>
-    <img src='/DesignMaterials/TopRightCircle.webp' alt='TopRightCircle' class='top-right-image'/>
-    <img src='/DesignMaterials/BottomLeftCircle.webp' alt='BottomLeftCircle' class='bottom-left-image'/>
+    <img src='https://static.igem.wiki/teams/5503/designmaterials/toprightcircle.webp'
+         alt='TopRightCircle'
+         class='top-right-image'/>
+    <img src='https://static.igem.wiki/teams/5503/designmaterials/bottomleftcircle.webp'
+         alt='BottomLeftCircle'
+         class='bottom-left-image'/>
     <div class='title-box-container'>
       <TitleBox :title='title'/>
     </div>

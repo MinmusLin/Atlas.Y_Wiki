@@ -1,13 +1,13 @@
 const lines = [300, 180, 1040, 180, 1120, 480, 700, 180, 600, 180, 210, 180, 630, 1120, 260, 180]
-const r = 30 // 圆弧半径为30
-const startHeight = 850 // 起始高度为300
+const r = 30
+const startHeight = 850
 const speed = 5
-let currentLine = 850 // 初始值为300
+let currentLine = 850
 let topScreen: number
 let bottomScreen: number
 let positionX: number
 let positionY: number
-const imgSrc = '/DesignMaterials/MovingPlanet.webp'
+const imgSrc = 'https://static.igem.wiki/teams/5503/designmaterials/movingplanet.webp'
 const img = new Image()
 img.src = imgSrc
 const imgWidth = 75
@@ -94,7 +94,7 @@ function circularArc(x: number, y: number, ctx: CanvasRenderingContext2D, canvas
           setTimeout(() => draw(), 50)
         } else if (canvasH < currentLine) {
           currentLine -= speed
-          setTimeout(() => draw(), 50) // 使用箭头函数
+          setTimeout(() => draw(), 50)
         }
       } else {
         if (canDraw(y - 150, y + 150)) {
@@ -117,10 +117,10 @@ function circularArc(x: number, y: number, ctx: CanvasRenderingContext2D, canvas
         }
         if (canvasH > currentLine) {
           currentLine += speed
-          setTimeout(() => draw(), 50) // 使用箭头函数
+          setTimeout(() => draw(), 50)
         } else if (canvasH < currentLine) {
           currentLine -= speed
-          setTimeout(() => draw(), 50) // 使用箭头函数
+          setTimeout(() => draw(), 50)
         }
       } else {
         if (canDraw(y - 150, y + 150)) {
@@ -191,10 +191,10 @@ function horizontalLine(x1: number, x2: number, y: number, ctx: CanvasRenderingC
         lines[lineID] -= 10
       }
       if (lines[lineID] > x1) {
-        setTimeout(() => draw(), 100) // 使用箭头函数
+        setTimeout(() => draw(), 100)
       }
     }
-  } else if (typeID == 2) { // 向左绘制
+  } else if (typeID == 2) {
     if (currentLine >= y && canvasH >= y) {
       if (canDraw(y - 150, y + 150)) {
         ctx.moveTo(x1, y)
@@ -208,7 +208,7 @@ function horizontalLine(x1: number, x2: number, y: number, ctx: CanvasRenderingC
         lines[lineID] -= 10
       }
       if (lines[lineID] > x2) {
-        setTimeout(() => draw(), 120) // 使用箭头函数
+        setTimeout(() => draw(), 120)
       }
     }
     if (canvasH < y && lines[lineID] < x1 && currentLine == y) {
@@ -224,7 +224,7 @@ function horizontalLine(x1: number, x2: number, y: number, ctx: CanvasRenderingC
         lines[lineID] += 10
       }
       if (lines[lineID] < x1) {
-        setTimeout(() => draw(), 100) // 使用箭头函数
+        setTimeout(() => draw(), 100)
       }
     }
   }
@@ -243,7 +243,7 @@ export function draw() {
   topScreen = Math.floor(-canvas.getBoundingClientRect().top)
   bottomScreen = Math.floor(document.documentElement.clientHeight + scrTop - cvsH)
   let canvasH = Math.floor(curH - cvsH)
-  canvasH = canvasH - (canvasH % 10) // 简化的余数处理
+  canvasH = canvasH - (canvasH % 10)
   const ctx = canvas.getContext('2d')
   if (!ctx) {
     return
@@ -253,7 +253,7 @@ export function draw() {
   gradient.addColorStop(0.23, '#FFFFFF')
   gradient.addColorStop(0.24, '#2F62D7')
   gradient.addColorStop(1, '#2F62D7')
-  ctx.setLineDash([10, 18]) // 虚线样式 [line length, gap length]
+  ctx.setLineDash([10, 18])
   ctx.strokeStyle = gradient
   ctx.lineWidth = 3
   ctx.lineCap = 'round'
@@ -262,28 +262,26 @@ export function draw() {
   if (canvasH < startHeight) {
     currentLine = startHeight
   }
-  verticalLine(230, 850, 1500, ctx, canvasH) // 垂直线
-  circularArc(260, 1500, ctx, canvasH, 1, 0) // 圆弧
-  horizontalLine(260, 1200, 1530, ctx, canvasH, 1, 0) // 水平线
-  circularArc(1200, 1560, ctx, canvasH, 2, 0) // 圆弧
-  verticalLine(1230, 1560, 4080, ctx, canvasH) // 垂直线
-  circularArc(1200, 4080, ctx, canvasH, 3, 1) // 圆弧
-  horizontalLine(1200, 150, 4110, ctx, canvasH, 2, 1) // 水平线
-  circularArc(150, 4140, ctx, canvasH, 4, 1) // 圆弧
-  verticalLine(120, 4140, 5700, ctx, canvasH) // 垂直线
-  circularArc(150, 5700, ctx, canvasH, 1, 2) // 圆弧
-  horizontalLine(150, 1220, 5730, ctx, canvasH, 1, 2) // 水平线
-  circularArc(1220, 5760, ctx, canvasH, 2, 2) // 圆弧
-  verticalLine(1250, 5760, 7100, ctx, canvasH) // 垂直线
-
+  verticalLine(230, 850, 1500, ctx, canvasH)
+  circularArc(260, 1500, ctx, canvasH, 1, 0)
+  horizontalLine(260, 1200, 1530, ctx, canvasH, 1, 0)
+  circularArc(1200, 1560, ctx, canvasH, 2, 0)
+  verticalLine(1230, 1560, 4080, ctx, canvasH)
+  circularArc(1200, 4080, ctx, canvasH, 3, 1)
+  horizontalLine(1200, 150, 4110, ctx, canvasH, 2, 1)
+  circularArc(150, 4140, ctx, canvasH, 4, 1)
+  verticalLine(120, 4140, 5700, ctx, canvasH)
+  circularArc(150, 5700, ctx, canvasH, 1, 2)
+  horizontalLine(150, 1220, 5730, ctx, canvasH, 1, 2)
+  circularArc(1220, 5760, ctx, canvasH, 2, 2)
+  verticalLine(1250, 5760, 7100, ctx, canvasH)
   if (positionY < 3200) {
-    img.src = '/DesignMaterials/MovingPlanet.webp';  // 小行星
+    img.src = 'https://static.igem.wiki/teams/5503/designmaterials/movingplanet.webp'
   } else if (positionY >= 3200 && positionY < 5700) {
-    img.src = '/DesignMaterials/MovingCell.webp';  // 小细胞
+    img.src = 'https://static.igem.wiki/teams/5503/designmaterials/movingcell.webp'
   } else {
-    img.src = '/DesignMaterials/MovingProtein.webp'; // 小蛋白质
+    img.src = 'https://static.igem.wiki/teams/5503/designmaterials/movingprotein.webp'
   }
-
   ctx.drawImage(img, positionX - imgWidth / 2, positionY - imgHeight / 2, imgWidth, imgHeight)
   ctx.stroke()
   canvas.style.backgroundColor = 'transparent'

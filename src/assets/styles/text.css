@@ -26,7 +26,7 @@
     transform: translateX(-15px) translateY(-50%);
     width: 36px;
     height: 36px;
-    background-image: url('/DesignMaterials/DefaultMapMarker.webp');
+    background-image: url('https://static.igem.wiki/teams/5503/designmaterials/defaultmapmarker.webp');
     background-size: contain;
     background-repeat: no-repeat;
 }
