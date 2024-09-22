@@ -75,7 +75,6 @@
 
 <script setup lang='ts'>
 import TextContent from '@/components/TextContent.vue'
-import LatexRenderer from '@/components/LatexRenderer.vue'
 </script>
 
 <style scoped>

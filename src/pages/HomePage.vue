@@ -94,10 +94,10 @@
     <img src='https://static.igem.wiki/teams/5503/designmaterials/plainearth.webp'
          alt='PlainEarth'
          class='plain-earth'>
-    <img src='https://static.igem.wiki/teams/5503/designmaterials/leftCloud.webp'
+    <img src='https://static.igem.wiki/teams/5503/designmaterials/leftcloud.webp'
          alt='LeftCloud'
          class='left-cloud'>
-    <img src='https://static.igem.wiki/teams/5503/designmaterials/rightCloud.webp '
+    <img src='https://static.igem.wiki/teams/5503/designmaterials/rightcloud.webp'
          alt='RightCloud'
          class='right-cloud'>
     <img src='https://static.igem.wiki/teams/5503/designmaterials/clouds.webp'

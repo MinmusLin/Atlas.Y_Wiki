@@ -185,7 +185,7 @@ onBeforeUnmount(() => {
   display: flex;
   align-items: center;
   color: #2F3235;
-  font-family: 'Futura Md BT', serif;
+  font-family: 'Futura Md BT', sans-serif;
   transition: color 0.5s ease;
 }
 
@@ -223,7 +223,7 @@ onBeforeUnmount(() => {
   color: #2F3235;
   font-size: 20px;
   line-height: 38px;
-  font-family: 'Inter', serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 600;
   white-space: nowrap;
   width: auto;

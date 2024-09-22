@@ -86,7 +86,7 @@ onMounted(async () => {
   font-size: 80px;
   font-weight: 800;
   color: #5182F8;
-  font-family: 'Inter', serif;
+  font-family: 'Inter', sans-serif;
 }
 
 .title2 {
@@ -96,7 +96,7 @@ onMounted(async () => {
   font-size: 80px;
   font-weight: 800;
   color: white;
-  font-family: 'Inter', serif;
+  font-family: 'Inter', sans-serif;
 }
 
 .title1, .title2 {

@@ -57,7 +57,7 @@ function goToLink(link: string) {
 .contact-us {
   position: absolute;
   color: white;
-  font-family: 'Futura Md BT', serif;
+  font-family: 'Futura Md BT', sans-serif;
   line-height: 34px;
   font-size: 32px;
   font-weight: 700;
@@ -73,7 +73,7 @@ img {
 .email {
   position: absolute;
   color: white;
-  font-family: 'Futura Bk BT Book', serif;
+  font-family: 'Futura Bk BT Book', sans-serif;
   font-size: 20px;
   font-weight: 500;
   right: 167px;
@@ -89,7 +89,7 @@ img {
 
 .notes p {
   color: white;
-  font-family: 'Futura Bk BT Book', serif;
+  font-family: 'Futura Bk BT Book', sans-serif;
   font-weight: 500;
   line-height: 34px;
   font-size: 18px;
