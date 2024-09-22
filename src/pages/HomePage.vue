@@ -553,13 +553,13 @@ onBeforeUnmount(() => {
   top: 1826px;
   left: 0;
   height: auto;
-  width: 244.8px;
+  width: 245px;
 }
 
 .planet2 {
   position: absolute;
   top: 1738px;
-  right: 604.8px;
+  right: 605px;
   height: auto;
   width: 144px;
 }
@@ -569,7 +569,7 @@ onBeforeUnmount(() => {
   top: 2145px;
   left: 432px;
   height: auto;
-  width: 115.2px;
+  width: 115px;
 }
 
 .left-cloud {
@@ -585,15 +585,15 @@ onBeforeUnmount(() => {
   top: 2574px;
   right: 0;
   height: auto;
-  width: 547.2px;
+  width: 547px;
 }
 
 .distant-cloud {
   position: absolute;
   top: 2387px;
-  right: 388.8px;
+  right: 389px;
   height: auto;
-  width: 403.2px;
+  width: 403px;
 }
 
 .clouds {
@@ -617,13 +617,13 @@ onBeforeUnmount(() => {
   top: 3456px;
   left: 0;
   height: auto;
-  width: 475.2px;
+  width: 475px;
 }
 
 .cell2 {
   position: absolute;
   top: 3630px;
-  right: 403.2px;
+  right: 403px;
   height: auto;
   width: 216px;
 }
@@ -641,7 +641,7 @@ onBeforeUnmount(() => {
   top: 4136px;
   left: 0;
   height: auto;
-  width: 417.6px;
+  width: 418px;
   transform: rotate(-25deg);
 }
 
@@ -650,7 +650,7 @@ onBeforeUnmount(() => {
   top: 4455px;
   left: 0;
   height: auto;
-  width: 331.2px;
+  width: 331px;
   transform: scaleX(-1);
 }
 
@@ -659,7 +659,7 @@ onBeforeUnmount(() => {
   top: 4657px;
   right: -57.6px;
   height: auto;
-  width: 316.8px;
+  width: 317px;
   transform: rotate(15deg);
 }
 
@@ -668,23 +668,23 @@ onBeforeUnmount(() => {
   top: 3641px;
   right: 0;
   height: auto;
-  width: 194.4px;
+  width: 194px;
 }
 
 .electron-microscope {
   position: absolute;
   top: 3916px;
-  left: 230.4px;
+  left: 230px;
   height: auto;
-  width: 273.6px;
+  width: 274px;
 }
 
 .organelle1 {
   position: absolute;
   top: 3982px;
-  left: 230.4px;
+  left: 230px;
   height: auto;
-  width: 57.6px;
+  width: 58px;
 }
 
 .organelle2 {
@@ -698,7 +698,7 @@ onBeforeUnmount(() => {
 .organelle3 {
   position: absolute;
   top: 4114px;
-  left: 172.8px;
+  left: 173px;
   height: auto;
   width: 72px;
 }
@@ -706,7 +706,7 @@ onBeforeUnmount(() => {
 .organelle4 {
   position: absolute;
   top: 4158px;
-  left: 417.6px;
+  left: 418px;
   height: auto;
   width: 72px;
 }
@@ -720,14 +720,14 @@ onBeforeUnmount(() => {
 
 .microscope-container {
   top: 4444px;
-  left: 194.4px;
-  width: 172.8px;
+  left: 194px;
+  width: 173px;
 }
 
 .sequencing-container {
   top: 4455px;
   left: 468px;
-  width: 172.8px;
+  width: 173px;
 }
 
 .proteomics-container {
@@ -740,7 +740,7 @@ onBeforeUnmount(() => {
   position: absolute;
   top: 4477px;
   left: 1080px;
-  width: 158.4px;
+  width: 158px;
   height: auto;
 }
 
@@ -821,7 +821,7 @@ onBeforeUnmount(() => {
   position: absolute;
   top: 6985px;
   width: 1152px;
-  left: 142.56px;
+  left: 143px;
   height: auto;
   display: flex;
   justify-content: space-between;
@@ -965,7 +965,7 @@ onBeforeUnmount(() => {
 .promote1 {
   position: absolute;
   top: 1012px;
-  left: 302.4px;
+  left: 302px;
   width: 355px;
   height: auto;
 }
@@ -973,8 +973,8 @@ onBeforeUnmount(() => {
 .promote2 {
   position: absolute;
   top: 1342px;
-  left: 633.6px;
-  width: 374.4px;
+  left: 634px;
+  width: 374px;
   height: auto;
 }
 
@@ -1022,8 +1022,8 @@ onBeforeUnmount(() => {
 .promote5 {
   position: absolute;
   top: 3707px;
-  left: 770.4px;
-  width: 394.56px;
+  left: 770px;
+  width: 395px;
   height: auto;
 }
 
@@ -1044,8 +1044,8 @@ onBeforeUnmount(() => {
 .promote6 {
   position: absolute;
   top: 4158px;
-  left: 554.4px;
-  width: 750.24px;
+  left: 554px;
+  width: 750px;
   height: auto;
 }
 
@@ -1079,7 +1079,7 @@ onBeforeUnmount(() => {
   position: absolute;
   top: 5225px;
   left: 50%;
-  width: 873.36px;
+  width: 873px;
   height: 171px;
   font-family: 'Futura Md BT', sans-serif;
   font-size: 30px;
@@ -1104,7 +1104,7 @@ onBeforeUnmount(() => {
   position: absolute;
   top: 6600px;
   left: 50%;
-  width: 873.36px;
+  width: 873px;
   height: 171px;
   font-family: 'Futura Md BT', sans-serif;
   font-size: 30px;
@@ -1117,7 +1117,7 @@ onBeforeUnmount(() => {
   position: absolute;
   top: 6820px;
   left: 50%;
-  width: 600.48px;
+  width: 600px;
   height: 171px;
   font-family: 'Futura Md BT', sans-serif;
   font-size: 18px;
@@ -1130,7 +1130,7 @@ onBeforeUnmount(() => {
   position: absolute;
   top: 7370px;
   left: 50%;
-  width: 610.56px;
+  width: 611px;
   height: 171px;
   font-family: 'Futura Md BT', sans-serif;
   font-size: 18px;
@@ -1154,8 +1154,8 @@ onBeforeUnmount(() => {
 .promote14 {
   position: absolute;
   top: 8729px;
-  left: 619.2px;
-  width: 302.4px;
+  left: 619px;
+  width: 302px;
   height: auto;
   font-family: 'Futura Md BT', sans-serif;
   font-size: 32px;
@@ -1179,7 +1179,7 @@ onBeforeUnmount(() => {
   position: absolute;
   top: 10230px;
   left: 50%;
-  width: 748.8px;
+  width: 749px;
   height: auto;
   font-family: 'Futura Md BT', sans-serif;
   font-size: 32px;
