@@ -107,13 +107,16 @@ const routes: Array<RouteRecordRaw> = [
   }
 ]
 
+// noinspection JSUnusedGlobalSymbols
 const router: Router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
-  routes
+  routes,
+  scrollBehavior(to, from, savedPosition) {
+    return {top: 0, left: 0}
+  }
 })
 
 router.beforeEach((to, _, next) => {
-  document.documentElement.scrollTop = 0
   if (to.meta && to.meta.title) {
     document.title = to.meta.title as string + ' | Tongji-Software - iGEM 2024'
   } else {
