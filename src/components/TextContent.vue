@@ -30,7 +30,7 @@ defineProps<{
 }>()
 
 const activeAnchor = ref<string | null>(null)
-const navRef = ref(null)
+const navRef = ref<HTMLElement | null>(null)
 const navHeight = ref(0)
 
 function scrollToSection(sectionId: string) {
@@ -42,8 +42,8 @@ function scrollToSection(sectionId: string) {
 }
 
 onMounted(() => {
-  if (navRef.value && navRef.value instanceof HTMLElement) {
-    navHeight.value = navRef.value.offsetHeight
+  if (navRef.value) {
+    navHeight.value = (navRef.value as HTMLElement).offsetHeight
   }
 })
 
