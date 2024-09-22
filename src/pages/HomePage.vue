@@ -518,10 +518,10 @@ onBeforeUnmount(() => {
 
 .world-map {
   position: absolute;
-  top: 935px;
-  left: 0;
+  top: 965px;
+  left: -440px;
   height: auto;
-  width: 504px;
+  width: 900px;
 }
 
 .Anaximander {
@@ -535,17 +535,17 @@ onBeforeUnmount(() => {
 .Eratosthenes {
   position: absolute;
   top: 1408px;
-  left: 475px;
+  left: 400px;
   height: auto;
-  width: 194px;
+  width: 250px;
 }
 
 .Newton {
   position: absolute;
   top: 1694px;
-  right: 0;
+  right: -150px;
   height: auto;
-  width: 194px;
+  width: 300px;
 }
 
 .planet1 {
@@ -631,7 +631,7 @@ onBeforeUnmount(() => {
 .cell3 {
   position: absolute;
   top: 3828px;
-  right: 0;
+  right: 90px;
   height: auto;
   width: 288px;
 }
@@ -666,9 +666,9 @@ onBeforeUnmount(() => {
 .Robert {
   position: absolute;
   top: 3641px;
-  right: 0;
+  right: -150px;
   height: auto;
-  width: 194px;
+  width: 250px;
 }
 
 .electron-microscope {
