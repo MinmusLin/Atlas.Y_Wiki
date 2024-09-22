@@ -4,7 +4,7 @@
     <router-view/>
     <FooterNavbar/>
     <el-backtop :right='80' :bottom='80' class='back-top'>
-      <img src='/DesignMaterials/BackToTop.png' alt='BackToTop' style='width: 40px'>
+      <img src='/DesignMaterials/BackToTop.webp' alt='BackToTop' style='width: 40px'>
     </el-backtop>
   </v-app>
 </template>

@@ -1,16 +1,16 @@
 <template>
   <div class='background-container'>
-    <img src='/DesignMaterials/Background.png' alt='Background' class='background'>
+    <img src='/DesignMaterials/Background.webp' alt='Background' class='background'>
 
-    <img src='/DesignMaterials/Title.png' alt='Title' class='title'>
+    <img src='/DesignMaterials/Title.webp' alt='Title' class='title'>
 
-    <img src='/DesignMaterials/MotileCell1.png' alt='MotileCell1' class='motile-cell1'>
-    <img src='/DesignMaterials/MotileCell2.png' alt='MotileCell2' class='motile-cell2'>
-    <img src='/DesignMaterials/MotileCell3.png' alt='MotileCell3' class='motile-cell3'>
-    <img src='/DesignMaterials/MotileCell4.png' alt='MotileCell4' class='motile-cell4'>
-    <img src='/DesignMaterials/MotileCell5.png' alt='MotileCell5' class='motile-cell5'>
-    <img src='/DesignMaterials/MotileCell7.png' alt='MotileCell7' class='motile-cell7'>
-    <img src='/DesignMaterials/MotileCell6.png' alt='MotileCell6' class='motile-cell6'>
+    <img src='/DesignMaterials/MotileCell1.webp' alt='MotileCell1' class='motile-cell1'>
+    <img src='/DesignMaterials/MotileCell2.webp' alt='MotileCell2' class='motile-cell2'>
+    <img src='/DesignMaterials/MotileCell3.webp' alt='MotileCell3' class='motile-cell3'>
+    <img src='/DesignMaterials/MotileCell4.webp' alt='MotileCell4' class='motile-cell4'>
+    <img src='/DesignMaterials/MotileCell5.webp' alt='MotileCell5' class='motile-cell5'>
+    <img src='/DesignMaterials/MotileCell7.webp' alt='MotileCell7' class='motile-cell7'>
+    <img src='/DesignMaterials/MotileCell6.webp' alt='MotileCell6' class='motile-cell6'>
 
     <button ref='scrollButtonRef' class='button1'>
       Get Started
@@ -35,13 +35,13 @@
       </p>
     </div>
 
-    <img src='/DesignMaterials/WorldMap.png' alt='WorldMap' class='world-map'>
-    <img src='/DesignMaterials/Anaximander.png' alt='Anaximander' class='Anaximander'>
-    <img src='/DesignMaterials/Eratosthenes.png' alt='Eratosthenes' class='Eratosthenes'>
-    <img src='/DesignMaterials/Newton.png' alt='Newton' class='Newton'>
-    <img src='/DesignMaterials/Planet1.png' alt='Planet1' class='planet1'>
-    <img src='/DesignMaterials/Planet2.png' alt='Planet2' class='planet2'>
-    <img src='/DesignMaterials/Planet3.png' alt='Planet2' class='planet3'>
+    <img src='/DesignMaterials/WorldMap.webp' alt='WorldMap' class='world-map'>
+    <img src='/DesignMaterials/Anaximander.webp' alt='Anaximander' class='Anaximander'>
+    <img src='/DesignMaterials/Eratosthenes.webp' alt='Eratosthenes' class='Eratosthenes'>
+    <img src='/DesignMaterials/Newton.webp' alt='Newton' class='Newton'>
+    <img src='/DesignMaterials/Planet1.webp' alt='Planet1' class='planet1'>
+    <img src='/DesignMaterials/Planet2.webp' alt='Planet2' class='planet2'>
+    <img src='/DesignMaterials/Planet3.webp' alt='Planet2' class='planet3'>
 
     <div class='promote3' ref='promote3Ref'>
       <p class='promote3-1'>
@@ -56,11 +56,11 @@
       Humanity has never stopped exploring the <span class='highlight-yellow'>Macrocosm</span>
     </p>
 
-    <img src='/DesignMaterials/DistantCloud.png' alt='DistantCloud' class='distant-cloud'>
-    <img src='/DesignMaterials/PlainEarth.png' alt='PlainEarth' class='plain-earth'>
-    <img src='/DesignMaterials/LeftCloud.png' alt='LeftCloud' class='left-cloud'>
-    <img src='/DesignMaterials/RightCloud.png ' alt='RightCloud' class='right-cloud'>
-    <img src='/DesignMaterials/Clouds.png' alt='Clouds' class='clouds'>
+    <img src='/DesignMaterials/DistantCloud.webp' alt='DistantCloud' class='distant-cloud'>
+    <img src='/DesignMaterials/PlainEarth.webp' alt='PlainEarth' class='plain-earth'>
+    <img src='/DesignMaterials/LeftCloud.webp' alt='LeftCloud' class='left-cloud'>
+    <img src='/DesignMaterials/RightCloud.webp ' alt='RightCloud' class='right-cloud'>
+    <img src='/DesignMaterials/Clouds.webp' alt='Clouds' class='clouds'>
 
     <div class='promote5' ref='promote5Ref'>
       <p class='promote5-1'>
@@ -71,15 +71,15 @@
       </p>
     </div>
 
-    <img src='/DesignMaterials/Cell1.png' alt='Cell1' class='cell1'>
-    <img src='/DesignMaterials/Cell2.png' alt='Cell1' class='cell2'>
-    <img src='/DesignMaterials/Cell3.png' alt='Cell1' class='cell3'>
-    <img src='/DesignMaterials/Cell2.png' alt='Cell1' class='cell4'>
-    <img src='/DesignMaterials/Cell1.png' alt='Cell1' class='cell5'>
-    <img src='/DesignMaterials/Cell2.png' alt='Cell1' class='cell6'>
-    <img src='/DesignMaterials/Robert.png' alt='Robert' class='Robert'>
+    <img src='/DesignMaterials/Cell1.webp' alt='Cell1' class='cell1'>
+    <img src='/DesignMaterials/Cell2.webp' alt='Cell1' class='cell2'>
+    <img src='/DesignMaterials/Cell3.webp' alt='Cell1' class='cell3'>
+    <img src='/DesignMaterials/Cell2.webp' alt='Cell1' class='cell4'>
+    <img src='/DesignMaterials/Cell1.webp' alt='Cell1' class='cell5'>
+    <img src='/DesignMaterials/Cell2.webp' alt='Cell1' class='cell6'>
+    <img src='/DesignMaterials/Robert.webp' alt='Robert' class='Robert'>
 
-    <img src='/DesignMaterials/ElectronMicroscope.png' alt='ElectronMicroscope' class='electron-microscope'>
+    <img src='/DesignMaterials/ElectronMicroscope.webp' alt='ElectronMicroscope' class='electron-microscope'>
 
     <div class='promote6' ref='promote6Ref'>
       <p class='promote6-1'>
@@ -91,13 +91,13 @@
       </p>
     </div>
 
-    <img src='/DesignMaterials/Organelle1.png' alt='Organelle1' class='organelle1'>
-    <img src='/DesignMaterials/Organelle2.png' alt='Organelle1' class='organelle2'>
-    <img src='/DesignMaterials/Organelle3.png' alt='Organelle1' class='organelle3'>
-    <img src='/DesignMaterials/Organelle4.png' alt='Organelle1' class='organelle4'>
+    <img src='/DesignMaterials/Organelle1.webp' alt='Organelle1' class='organelle1'>
+    <img src='/DesignMaterials/Organelle2.webp' alt='Organelle1' class='organelle2'>
+    <img src='/DesignMaterials/Organelle3.webp' alt='Organelle1' class='organelle3'>
+    <img src='/DesignMaterials/Organelle4.webp' alt='Organelle1' class='organelle4'>
 
     <div class='container2 microscope-container'>
-      <img src='/DesignMaterials/SuperResolutionMicroscope.png' alt='SuperResolutionMicroscope'
+      <img src='/DesignMaterials/SuperResolutionMicroscope.webp' alt='SuperResolutionMicroscope'
            class='super-resolution-microscope'>
       <div class='label'>
         Super-Resolution Microscope
@@ -105,9 +105,9 @@
     </div>
 
     <div class='container2 sequencing-container'>
-      <img src='/DesignMaterials/SingleCellSequencingTechnology.png' alt='SingleCellSequencingTechnology'
+      <img src='/DesignMaterials/SingleCellSequencingTechnology.webp' alt='SingleCellSequencingTechnology'
            class='sequencing-technology'>
-      <img src='/DesignMaterials/SingleCellSequencingTechnologyTable.png' alt='SingleCellSequencingTechnologyTable'
+      <img src='/DesignMaterials/SingleCellSequencingTechnologyTable.webp' alt='SingleCellSequencingTechnologyTable'
            class='sequencing-technology-table'>
       <div class='label'>
         Single-Cell Sequencing Technology
@@ -115,9 +115,9 @@
     </div>
 
     <div class='container2 proteomics-container'>
-      <img src='/DesignMaterials/DefaultQuantitativeProteomics.png' alt='DefaultQuantitativeProteomics'
+      <img src='/DesignMaterials/DefaultQuantitativeProteomics.webp' alt='DefaultQuantitativeProteomics'
            class='default-quantitative-proteomics'>
-      <img src='/DesignMaterials/ActiveQuantitativeProteomics.png' alt='ActiveQuantitativeProteomics'
+      <img src='/DesignMaterials/ActiveQuantitativeProteomics.webp' alt='ActiveQuantitativeProteomics'
            class='active-quantitative-proteomics'>
       <div class='label'>
         Quantitative Proteomics
@@ -125,11 +125,11 @@
     </div>
 
     <div class='container2 bioinformatics-container1'>
-      <img src='/DesignMaterials/BioinformaticsTools.png' alt='BioinformaticsTools' class='bioinformatics-tools'>
+      <img src='/DesignMaterials/BioinformaticsTools.webp' alt='BioinformaticsTools' class='bioinformatics-tools'>
       <div class='container2 bioinformatics-container2'>
-        <img src='/DesignMaterials/DeepLoc.png' alt='DeepLoc' class='deep-loc'>
-        <img src='/DesignMaterials/OrganelleDB.png' alt='OrganelleDB' class='organelle-db'>
-        <img src='/DesignMaterials/CellProfiler.png' alt='CellProfiler' class='cell-profiler'>
+        <img src='/DesignMaterials/DeepLoc.webp' alt='DeepLoc' class='deep-loc'>
+        <img src='/DesignMaterials/OrganelleDB.webp' alt='OrganelleDB' class='organelle-db'>
+        <img src='/DesignMaterials/CellProfiler.webp' alt='CellProfiler' class='cell-profiler'>
       </div>
       <div class='label'>
         Bioinformatics Tools
@@ -151,7 +151,7 @@
       demonstrated great economic potential in the biomanufacturing industry.
     </p>
 
-    <img src='/DesignMaterials/Cell.png' alt='Cell' class='cell'>
+    <img src='/DesignMaterials/Cell.webp' alt='Cell' class='cell'>
 
     <p class='promote9' ref='promote9Ref'>
       By precisely controlling the subcellular localisation of proteins or enzymes within the cell, scientists can
@@ -173,19 +173,19 @@
 
     <div class='image-gallery'>
       <div class='image-item'>
-        <img src='/DesignMaterials/MetabolicEngineering.png' alt='Metabolic Engineering' class='image'/>
+        <img src='/DesignMaterials/MetabolicEngineering.webp' alt='Metabolic Engineering' class='image'/>
         <div class='image-label'>
           Metabolic Engineering
         </div>
       </div>
       <div class='image-item'>
-        <img src='/DesignMaterials/DrugProduction.png' alt='Drug Production' class='image'/>
+        <img src='/DesignMaterials/DrugProduction.webp' alt='Drug Production' class='image'/>
         <div class='image-label'>
           Drug Production
         </div>
       </div>
       <div class='image-item'>
-        <img src='/DesignMaterials/IndustrialFermentation.png' alt='Industrial Fermentation' class='image'/>
+        <img src='/DesignMaterials/IndustrialFermentation.webp' alt='Industrial Fermentation' class='image'/>
         <div class='image-label'>
           Industrial Fermentation
         </div>
@@ -206,18 +206,18 @@
       So this is why we have launched a molecular tag design software for yeast protein subcellular localisation.
     </p>
 
-    <img src='/DesignMaterials/DefaultLogo.png' alt='DefaultLogo' class='default-logo'>
+    <img src='/DesignMaterials/DefaultLogo.webp' alt='DefaultLogo' class='default-logo'>
 
-    <img src='/DesignMaterials/Protein1.png' alt='Protein1' class='protein1'>
-    <img src='/DesignMaterials/Protein2.png' alt='Protein2' class='protein2'>
-    <img src='/DesignMaterials/Yeast.png' alt='Yeast' class='yeast'>
-    <img src='/DesignMaterials/Dialog.png' alt='Dialog' class='dialog'>
+    <img src='/DesignMaterials/Protein1.webp' alt='Protein1' class='protein1'>
+    <img src='/DesignMaterials/Protein2.webp' alt='Protein2' class='protein2'>
+    <img src='/DesignMaterials/Yeast.webp' alt='Yeast' class='yeast'>
+    <img src='/DesignMaterials/Dialog.webp' alt='Dialog' class='dialog'>
 
     <p class='promote14' ref='promote14Ref'>
       Do you know what Atlas.Y does?
     </p>
 
-    <img src='/DesignMaterials/DefaultEarth.png' alt='DefaultEarth' class='default-earth'>
+    <img src='/DesignMaterials/DefaultEarth.webp' alt='DefaultEarth' class='default-earth'>
 
     <p class='promote15' ref='promote15Ref'>
       The function of Atlas.Y is not only a protein map inside the yeast,
@@ -451,7 +451,7 @@ onBeforeUnmount(() => {
 
 .button1::before {
   content: '';
-  background-image: url('/DesignMaterials/DownArrow.png');
+  background-image: url('/DesignMaterials/DownArrow.webp');
   background-size: contain;
   background-repeat: no-repeat;
   width: 22px;

@@ -1,7 +1,7 @@
 <template>
   <div class='content-area'>
-    <img src='/DesignMaterials/TopRightCircle.png' alt='TopRightCircle' class='top-right-image'/>
-    <img src='/DesignMaterials/BottomLeftCircle.png' alt='BottomLeftCircle' class='bottom-left-image'/>
+    <img src='/DesignMaterials/TopRightCircle.webp' alt='TopRightCircle' class='top-right-image'/>
+    <img src='/DesignMaterials/BottomLeftCircle.webp' alt='BottomLeftCircle' class='bottom-left-image'/>
     <div class='title-box-container'>
       <TitleBox :title='title'/>
     </div>

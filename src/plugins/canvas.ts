@@ -7,7 +7,7 @@ let topScreen: number
 let bottomScreen: number
 let positionX: number
 let positionY: number
-const imgSrc = '/DesignMaterials/MovingPlanet.png'
+const imgSrc = '/DesignMaterials/MovingPlanet.webp'
 const img = new Image()
 img.src = imgSrc
 const imgWidth = 75
@@ -277,11 +277,11 @@ export function draw() {
   verticalLine(1250, 5760, 7100, ctx, canvasH) // 垂直线
 
   if (positionY < 3200) {
-    img.src = '/DesignMaterials/MovingPlanet.png';  // 小行星
+    img.src = '/DesignMaterials/MovingPlanet.webp';  // 小行星
   } else if (positionY >= 3200 && positionY < 5700) {
-    img.src = '/DesignMaterials/MovingCell.png';  // 小细胞
+    img.src = '/DesignMaterials/MovingCell.webp';  // 小细胞
   } else {
-    img.src = '/DesignMaterials/MovingProtein.png'; // 小蛋白质
+    img.src = '/DesignMaterials/MovingProtein.webp'; // 小蛋白质
   }
 
   ctx.drawImage(img, positionX - imgWidth / 2, positionY - imgHeight / 2, imgWidth, imgHeight)

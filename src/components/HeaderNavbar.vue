@@ -1,7 +1,7 @@
 <template>
   <header :class="['header-navbar', isHomePage ? 'homepage' : '']">
     <nav class='nav-items'>
-      <img src='/DesignMaterials/DefaultLogo.png' alt='DefaultLogo' class='logo' @click="router.push('/')">
+      <img src='/DesignMaterials/DefaultLogo.webp' alt='DefaultLogo' class='logo' @click="router.push('/')">
       <div v-for='item in navItems'
            :key='item.title'
            class='nav-item'

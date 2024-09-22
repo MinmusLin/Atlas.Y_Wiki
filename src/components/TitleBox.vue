@@ -1,8 +1,8 @@
 <template>
   <div class='title-box' :class="{ 'animate': startAnimation }">
     <div class='image-container' ref='imageContainer'>
-      <img src='/DesignMaterials/TitleBackground.png' alt='TitleBackground' class='title-image'/>
-      <img src='/DesignMaterials/Mascot.gif' alt='Mascot' class='corner-image' :class="{ 'animate': mascotAnimation }"
+      <img src='/DesignMaterials/TitleBackground.webp' alt='TitleBackground' class='title-image'/>
+      <img src='/DesignMaterials/Mascot.webp' alt='Mascot' class='corner-image' :class="{ 'animate': mascotAnimation }"
            :style="{ right: mascotPosition.right, bottom: mascotPosition.bottom }"/>
       <p class='title1' ref='title1'>{{ title }}</p>
       <p class='title2'>{{ title }}</p>
