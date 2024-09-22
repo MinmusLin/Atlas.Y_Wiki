@@ -16,11 +16,11 @@
                 :class="['nav-title', isHomePage ? 'homepage' : '', { 'hover-effect': hoveredItem == item.title, 'active-effect': isActive(item), 'scrolled': isScrolled }]">
           {{ item.title }}
           <!--suppress JSIncompatibleTypesComparison-->
-          <v-icon v-if='item.subItems'
-                  :class=" {'rotated': item.isOpen, 'hover-effect': hoveredItem == item.title, 'active-effect': isActive(item) }"
-                  class='dropdown-arrow'>
-            mdi-chevron-down
-          </v-icon>
+          <el-icon v-if='item.subItems'
+                   :class=" {'rotated': item.isOpen, 'hover-effect': hoveredItem == item.title, 'active-effect': isActive(item) }"
+                   class='dropdown-arrow'>
+            <ArrowDownBold/>
+          </el-icon>
         </button>
         <transition name='fade'>
           <ul v-show='item.subItems && item.isOpen' class='dropdown-menu'>
@@ -40,6 +40,7 @@
 <script setup lang='ts'>
 import {ref, onMounted, onBeforeUnmount, watch} from 'vue'
 import {useRoute, useRouter} from 'vue-router'
+import {ArrowDownBold} from '@element-plus/icons-vue'
 
 const route = useRoute()
 const router = useRouter()
@@ -198,6 +199,7 @@ onBeforeUnmount(() => {
 }
 
 .dropdown-arrow {
+  margin-left: 8px;
   transition: transform 0.3s ease;
 }
 

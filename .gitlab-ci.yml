@@ -6,7 +6,6 @@ pages:
     - npm install
     - npm run build
     - cp dist/index.html dist/404.html
-    - rm -rf public
     - mv dist public
   artifacts:
     paths:
