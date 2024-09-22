@@ -240,7 +240,7 @@
   </div>
 </template>
 
-<script lang='ts' setup>
+<script setup lang='ts'>
 import {ref, onMounted} from 'vue'
 
 const scrollButtonRef = ref<HTMLButtonElement | null>(null)
@@ -266,6 +266,7 @@ const dot3Ref = ref<HTMLElement | null>(null)
 const button2Ref = ref<HTMLButtonElement | null>(null)
 
 onMounted(() => {
+  // noinspection TypeScriptUnresolvedReference
   scrollButtonRef.value?.addEventListener('click', () => {
     const scrollDistance = window.innerHeight
     window.scrollBy({
@@ -291,34 +292,74 @@ onMounted(() => {
     root: null,
     threshold: 1.0
   })
-  if (promote1Ref.value) observer.observe(promote1Ref.value)
-  if (promote2Ref.value) observer.observe(promote2Ref.value)
-  if (promote3Ref.value) observer.observe(promote3Ref.value)
-  if (promote4Ref.value) observer.observe(promote4Ref.value)
-  if (promote5Ref.value) observer.observe(promote5Ref.value)
-  if (promote6Ref.value) observer.observe(promote6Ref.value)
-  if (promote7Ref.value) observer.observe(promote7Ref.value)
-  if (promote8Ref.value) observer.observe(promote8Ref.value)
-  if (promote9Ref.value) observer.observe(promote9Ref.value)
-  if (promote10Ref.value) observer.observe(promote10Ref.value)
-  if (promote11Ref.value) observer.observe(promote11Ref.value)
-  if (promote12Ref.value) observer.observe(promote12Ref.value)
-  if (promote13Ref.value) observer.observe(promote13Ref.value)
-  if (promote14Ref.value) observer.observe(promote14Ref.value)
-  if (promote15Ref.value) observer.observe(promote15Ref.value)
-  if (promote16Ref.value) observer.observe(promote16Ref.value)
-  if (button2Ref.value) observer.observe(button2Ref.value)
-  if (dot1Ref.value) observer.observe(dot1Ref.value)
-  if (dot2Ref.value) observer.observe(dot2Ref.value)
-  if (dot3Ref.value) observer.observe(dot3Ref.value)
+  if (promote1Ref.value) {
+    observer.observe(promote1Ref.value)
+  }
+  if (promote2Ref.value) {
+    observer.observe(promote2Ref.value)
+  }
+  if (promote3Ref.value) {
+    observer.observe(promote3Ref.value)
+  }
+  if (promote4Ref.value) {
+    observer.observe(promote4Ref.value)
+  }
+  if (promote5Ref.value) {
+    observer.observe(promote5Ref.value)
+  }
+  if (promote6Ref.value) {
+    observer.observe(promote6Ref.value)
+  }
+  if (promote7Ref.value) {
+    observer.observe(promote7Ref.value)
+  }
+  if (promote8Ref.value) {
+    observer.observe(promote8Ref.value)
+  }
+  if (promote9Ref.value) {
+    observer.observe(promote9Ref.value)
+  }
+  if (promote10Ref.value) {
+    observer.observe(promote10Ref.value)
+  }
+  if (promote11Ref.value) {
+    observer.observe(promote11Ref.value)
+  }
+  if (promote12Ref.value) {
+    observer.observe(promote12Ref.value)
+  }
+  if (promote13Ref.value) {
+    observer.observe(promote13Ref.value)
+  }
+  if (promote14Ref.value) {
+    observer.observe(promote14Ref.value)
+  }
+  if (promote15Ref.value) {
+    observer.observe(promote15Ref.value)
+  }
+  if (promote16Ref.value) {
+    observer.observe(promote16Ref.value)
+  }
+  if (button2Ref.value) {
+    observer.observe(button2Ref.value)
+  }
+  if (dot1Ref.value) {
+    observer.observe(dot1Ref.value)
+  }
+  if (dot2Ref.value) {
+    observer.observe(dot2Ref.value)
+  }
+  if (dot3Ref.value) {
+    observer.observe(dot3Ref.value)
+  }
 })
 </script>
 
 <style scoped>
 .background-container {
   position: relative;
-  display: block;
-  overflow: hidden;
+  width: 1440px;
+  margin: 0 auto;
   -webkit-user-select: none;
 }
 
