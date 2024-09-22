@@ -206,7 +206,7 @@
       So this is why we have launched a molecular tag design software for yeast protein subcellular localisation.
     </p>
 
-    <img src='/Logos/DefaultLogo.png' alt='DefaultLogo' class='default-logo'>
+    <img src='/DesignMaterials/DefaultLogo.png' alt='DefaultLogo' class='default-logo'>
 
     <img src='/DesignMaterials/Protein1.png' alt='Protein1' class='protein1'>
     <img src='/DesignMaterials/Protein2.png' alt='Protein2' class='protein2'>

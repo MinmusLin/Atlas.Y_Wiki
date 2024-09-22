@@ -1,13 +1,13 @@
 <template>
   <div class='footer-navbar'>
-    <img src='/Logos/TongjiUniversityLogo.png'
+    <img src='/DesignMaterials/TongjiUniversityLogo.png'
          alt='TongjiUniversityLogo'
          style='top: 50px; left: 100px; cursor: pointer; width: 140px'
          @click="goToLink('https://en.tongji.edu.cn')">
-    <img src='/Logos/TongjiSoftwareLogo.png'
+    <img src='/DesignMaterials/TongjiSoftwareLogo.png'
          alt='TongjiSoftwareLogo'
          style='top: 90px; left: 304px; width: 183px'>
-    <img src='/Logos/LightLogo.png'
+    <img src='/DesignMaterials/LightLogo.png'
          alt='LightLogo'
          style='top: 93px; left: 545px; cursor: pointer; width: 243px'
          @click="goToLink('http://47.91.92.143')">
