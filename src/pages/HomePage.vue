@@ -238,10 +238,15 @@
       WANT TO KNOW MORE?
     </button>
   </div>
+
+  <div class='homepage-canvas'>
+    <canvas id='tutorial'/>
+  </div>
 </template>
 
 <script setup lang='ts'>
-import {ref, onMounted} from 'vue'
+import {ref, onMounted, onBeforeUnmount} from 'vue'
+import {draw} from '@/plugins/canvas'
 
 const scrollButtonRef = ref<HTMLButtonElement | null>(null)
 const promote1Ref = ref<HTMLElement | null>(null)
@@ -353,9 +358,29 @@ onMounted(() => {
     observer.observe(dot3Ref.value)
   }
 })
+
+onMounted(() => {
+  draw()
+  window.addEventListener('scroll', draw)
+})
+
+onBeforeUnmount(() => {
+  window.removeEventListener('scroll', draw)
+})
 </script>
 
 <style scoped>
+#tutorial {
+  position: absolute;
+  top: 0;
+}
+
+.homepage-canvas {
+  margin: 0 auto;
+  width: 1440px;
+  height: auto;
+}
+
 .background-container {
   position: relative;
   width: 1440px;
