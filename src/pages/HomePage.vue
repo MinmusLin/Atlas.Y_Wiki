@@ -396,9 +396,9 @@ onBeforeUnmount(() => {
 
 .title {
   position: absolute;
-  top: 2%;
+  top: 220px;
   height: auto;
-  width: 45%;
+  width: 648px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 990;
@@ -406,13 +406,13 @@ onBeforeUnmount(() => {
 
 .button1 {
   position: absolute;
-  top: 5%;
+  top: 550px;
   left: 50%;
   transform: translateX(-50%);
   background-color: transparent;
   border: none;
   color: white;
-  font-size: calc(24 / 1920 * 100vw);
+  font-size: 24px;
   font-weight: 600;
   cursor: pointer;
   display: flex;
@@ -420,6 +420,7 @@ onBeforeUnmount(() => {
   padding: 10px 20px;
   transition: color 0.3s ease;
   gap: 13px;
+  z-index:999;
 }
 
 .button1:hover {
@@ -442,15 +443,15 @@ onBeforeUnmount(() => {
   top: 0;
   left: 0;
   height: auto;
-  width: 15%;
+  width: 216px;
 }
 
 .motile-cell2 {
   position: absolute;
   top: 0;
-  left: 23%;
+  left: 331px;
   height: auto;
-  width: 10%;
+  width: 144px;
 }
 
 .motile-cell3 {
@@ -458,234 +459,234 @@ onBeforeUnmount(() => {
   top: 0;
   right: 0;
   height: auto;
-  width: 38%;
+  width: 547px;
 }
 
 .motile-cell4 {
   position: absolute;
-  top: 3%;
+  top: 330px;
   left: 0;
   height: auto;
-  width: 8%;
+  width: 115px;
 }
 
 .motile-cell5 {
   position: absolute;
-  top: 4.5%;
-  left: 25%;
+  top: 495px;
+  left: 360px;
   height: auto;
-  width: 8%;
+  width: 115px;
 }
 
 .motile-cell6 {
   position: absolute;
-  top: 3.3%;
-  right: 9%;
+  top: 363px;
+  right: 130px;
   height: auto;
-  width: 28%;
+  width: 403px;
 }
 
 .motile-cell7 {
   position: absolute;
-  top: 2.9%;
-  right: 18%;
+  top: 318px;
+  right: 259px;
   height: auto;
-  width: 5%;
+  width: 72px;
 }
 
 .world-map {
   position: absolute;
-  top: 8.5%;
+  top: 935px;
   left: 0;
   height: auto;
-  width: 35%;
+  width: 504px;
 }
 
 .Anaximander {
   position: absolute;
-  top: 9.4%;
+  top: 1034px;
   left: 0;
   height: auto;
-  width: 13.5%;
+  width: 194px;
 }
 
 .Eratosthenes {
   position: absolute;
-  top: 12.8%;
-  left: 33%;
+  top: 1408px;
+  left: 475px;
   height: auto;
-  width: 13.5%;
+  width: 194px;
 }
 
 .Newton {
   position: absolute;
-  top: 15.4%;
+  top: 1694px;
   right: 0;
   height: auto;
-  width: 13.5%;
+  width: 194px;
 }
 
 .planet1 {
   position: absolute;
-  top: 16.6%;
+  top: 1826px;
   left: 0;
   height: auto;
-  width: 17%;
+  width: 244.8px;
 }
 
 .planet2 {
   position: absolute;
-  top: 15.8%;
-  right: 42%;
+  top: 1738px;
+  right: 604.8px;
   height: auto;
-  width: 10%;
+  width: 144px;
 }
 
 .planet3 {
   position: absolute;
-  top: 19.5%;
-  left: 30%;
+  top: 2145px;
+  left: 432px;
   height: auto;
-  width: 8%;
+  width: 115.2px;
 }
 
 .left-cloud {
   position: absolute;
-  top: 22.9%;
+  top: 2519px;
   left: 0;
   height: auto;
-  width: 25%;
+  width: 360px;
 }
 
 .right-cloud {
   position: absolute;
-  top: 23.4%;
+  top: 2574px;
   right: 0;
   height: auto;
-  width: 38%;
+  width: 547.2px;
 }
 
 .distant-cloud {
   position: absolute;
-  top: 21.7%;
-  right: 27%;
+  top: 2387px;
+  right: 388.8px;
   height: auto;
-  width: 28%;
+  width: 403.2px;
 }
 
 .clouds {
   position: absolute;
-  top: 25.05%;
+  top: 2756px;
   left: 0;
   height: auto;
-  width: 100%;
+  width: 1440px;
 }
 
 .plain-earth {
   position: absolute;
-  top: 22.47%;
+  top: 2472px;
   left: 0;
   height: auto;
-  width: 100%;
+  width: 1440px;
 }
 
 .cell1 {
   position: absolute;
-  top: 31.5%;
+  top: 3456px;
   left: 0;
   height: auto;
-  width: 33%;
+  width: 475.2px;
 }
 
 .cell2 {
   position: absolute;
-  top: 33%;
-  right: 28%;
+  top: 3630px;
+  right: 403.2px;
   height: auto;
-  width: 15%;
+  width: 216px;
 }
 
 .cell3 {
   position: absolute;
-  top: 34.8%;
+  top: 3828px;
   right: 0;
   height: auto;
-  width: 20%;
+  width: 288px;
 }
 
 .cell4 {
   position: absolute;
-  top: 37.6%;
+  top: 4136px;
   left: 0;
   height: auto;
-  width: 29%;
+  width: 417.6px;
   transform: rotate(-25deg);
 }
 
 .cell5 {
   position: absolute;
-  top: 40.5%;
+  top: 4455px;
   left: 0;
   height: auto;
-  width: 23%;
+  width: 331.2px;
   transform: scaleX(-1);
 }
 
 .cell6 {
   position: absolute;
-  top: 42.5%;
-  right: -4%;
+  top: 4657px;
+  right: -57.6px;
   height: auto;
-  width: 22%;
+  width: 316.8px;
   transform: rotate(15deg);
 }
 
 .Robert {
   position: absolute;
-  top: 33.1%;
+  top: 3641px;
   right: 0;
   height: auto;
-  width: 13.5%;
+  width: 194.4px;
 }
 
 .electron-microscope {
   position: absolute;
-  top: 35.6%;
-  left: 16%;
+  top: 3916px;
+  left: 230.4px;
   height: auto;
-  width: 19%;
+  width: 273.6px;
 }
 
 .organelle1 {
   position: absolute;
-  top: 36.2%;
-  left: 16%;
+  top: 3982px;
+  left: 230.4px;
   height: auto;
-  width: 4%;
+  width: 57.6px;
 }
 
 .organelle2 {
   position: absolute;
-  top: 36.7%;
-  left: 30%;
+  top: 4037px;
+  left: 432px;
   height: auto;
-  width: 5%;
+  width: 72px;
 }
 
 .organelle3 {
   position: absolute;
-  top: 37.4%;
-  left: 12%;
+  top: 4114px;
+  left: 172.8px;
   height: auto;
-  width: 5%;
+  width: 72px;
 }
 
 .organelle4 {
   position: absolute;
-  top: 37.8%;
-  left: 29%;
+  top: 4158px;
+  left: 417.6px;
   height: auto;
-  width: 5%;
+  width: 72px;
 }
 
 .container2 {
@@ -696,28 +697,28 @@ onBeforeUnmount(() => {
 }
 
 .microscope-container {
-  top: 40.4%;
-  left: 13.5%;
-  width: 12%
+  top: 4444px;
+  left: 194.4px;
+  width: 172.8px;
 }
 
 .sequencing-container {
-  top: 40.5%;
-  left: 32.5%;
-  width: 12%
+  top: 4455px;
+  left: 468px;
+  width: 172.8px;
 }
 
 .proteomics-container {
-  top: 40.5%;
-  left: 55%;
-  width: 10%
+  top: 4455px;
+  left: 792px;
+  width: 144px;
 }
 
 .bioinformatics-container1 {
   position: absolute;
-  top: 40.7%;
-  left: 75%;
-  width: 11%;
+  top: 4477px;
+  left: 1080px;
+  width: 158.4px;
   height: auto;
 }
 
@@ -778,9 +779,9 @@ onBeforeUnmount(() => {
 }
 
 .label {
-  width: 150%;
+  width: 400px;
   font-family: 'Futura Md BT', sans-serif;
-  font-size: calc(20 / 1920 * 100vw);
+  font-size: 18px;
   font-weight: 400;
   color: #16396E;
   margin-top: 20px;
@@ -788,17 +789,17 @@ onBeforeUnmount(() => {
 
 .cell {
   position: absolute;
-  top: 50%;
+  top: 5500px;
   left: 0;
-  width: 50%;
+  width: 720px;
   height: auto;
 }
 
 .image-gallery {
   position: absolute;
-  top: 63.5%;
-  width: 80%;
-  left: 9.9%;
+  top: 6985px;
+  width: 1152px;
+  left: 142.56px;
   height: auto;
   display: flex;
   justify-content: space-between;
@@ -818,7 +819,7 @@ onBeforeUnmount(() => {
 }
 
 .image-label {
-  font-size: calc(20 / 1920 * 100vw);
+  font-size: 20px;
   font-weight: 400;
   margin-top: 30px;
   text-align: center;
@@ -826,99 +827,98 @@ onBeforeUnmount(() => {
   color: #16396E;
 }
 
-
 .default-logo {
   position: absolute;
-  top: 73.5%;
-  right: 10%;
-  width: 50%;
+  top: 8085px;
+  right: 144px;
+  width: 720px;
   height: auto;
   opacity: 0.5;
 }
 
 .protein1 {
   position: absolute;
-  top: 75%;
-  left: 5%;
-  width: 25%;
+  top: 8250px;
+  left: 72px;
+  width: 360px;
   height: auto;
 }
 
 .protein2 {
   position: absolute;
-  top: 82.5%;
+  top: 9075px;
   right: 0;
-  width: 25%;
+  width: 360px;
   height: auto;
 }
 
 .yeast {
   position: absolute;
-  top: 80%;
-  left: 20%;
-  width: 25%;
+  top: 8800px;
+  left: 288px;
+  width: 360px;
   height: auto;
 }
 
 .dialog {
   position: absolute;
-  top: 78.8%;
-  left: 40%;
-  width: 25%;
+  top: 8668px;
+  left: 576px;
+  width: 360px;
   height: auto;
 }
 
 .dot1 {
   position: absolute;
-  top: 94.5%;
+  top: 10395px;
   left: 50%;
   transform: translateX(-50%);
-  width: calc(10 / 1920 * 100vw);
-  height: calc(10 / 1920 * 100vw);
+  width: 10px;
+  height: 10px;
   background-color: #16396E;
   border-radius: 50%;
 }
 
 .dot2 {
   position: absolute;
-  top: 95.5%;
+  top: 10505px;
   left: 50%;
   transform: translateX(-50%);
-  width: calc(10 / 1920 * 100vw);
-  height: calc(10 / 1920 * 100vw);
+  width: 10px;
+  height: 10px;
   background-color: #16396E;
   border-radius: 50%;
 }
 
 .dot3 {
   position: absolute;
-  top: 96.5%;
+  top: 10615px;
   left: 50%;
   transform: translateX(-50%);
-  width: calc(10 / 1920 * 100vw);
-  height: calc(10 / 1920 * 100vw);
+  width: 10px;
+  height: 10px;
   background-color: #16396E;
   border-radius: 50%;
 }
 
 .default-earth {
   position: absolute;
-  top: 89.3%;
+  top: 9823px;
   left: 50%;
   transform: translateX(-50%);
-  width: 20%;
+  width: 288px;
   height: auto;
 }
 
 .button2 {
   position: absolute;
-  top: 98%;
+  top: 10780px;
   left: 50%;
   transform: translateX(-50%) translateY(50px);
   background-color: transparent;
   color: #16396E;
   font-family: 'Futura Md BT', sans-serif;
-  font-size: calc(24 / 1920 * 100vw);
+  font-size: 24px;
   font-weight: 400;
   cursor: pointer;
   display: flex;
@@ -941,50 +941,50 @@ onBeforeUnmount(() => {
 
 .promote1 {
   position: absolute;
-  top: 9.2%;
-  left: 21%;
-  width: 26%;
+  top: 1012px;
+  left: 302.4px;
+  width: 355px;
   height: auto;
 }
 
 .promote2 {
   position: absolute;
-  top: 12.2%;
-  left: 44%;
-  width: 26%;
+  top: 1342px;
+  left: 633.6px;
+  width: 374.4px;
   height: auto;
 }
 
 .promote3 {
   position: absolute;
-  top: 16.3%;
-  left: 52.5%;
-  width: 26%;
+  top: 1793px;
+  left: 756px;
+  width: 400px;
   height: auto;
 }
 
 .promote1-1, .promote2-1, .promote3-1 {
   font-family: 'Futura Md BT', sans-serif;
-  font-size: calc(24 / 1920 * 100vw);
+  font-size: 20px;
   font-weight: 700;
   color: #FFFFFF;
 }
 
 .promote1-2, .promote2-2, .promote3-2 {
   font-family: 'Futura Md BT', sans-serif;
-  font-size: calc(24 / 1920 * 100vw);
+  font-size:21px;
   font-weight: 400;
   color: #FFFFFF;
 }
 
 .promote4 {
   position: absolute;
-  top: 20.2%;
+  top: 2222px;
   left: 50%;
-  width: 80%;
+  width: 1152px;
   height: auto;
   font-family: 'Futura Md BT', sans-serif;
-  font-size: calc(60 / 1920 * 100vw);
+  font-size: 46px;
   font-weight: 700;
   color: white;
   opacity: 0;
@@ -998,52 +998,52 @@ onBeforeUnmount(() => {
 
 .promote5 {
   position: absolute;
-  top: 33.7%;
-  left: 53.5%;
-  width: 27.4%;
+  top: 3707px;
+  left: 770.4px;
+  width: 394.56px;
   height: auto;
 }
 
 .promote5-1, .promote6-1 {
   font-family: 'Futura Md BT', sans-serif;
-  font-size: calc(24 / 1920 * 100vw);
+  font-size: 18px;
   font-weight: 700;
   color: #193B6F;
 }
 
 .promote5-2, .promote6-2 {
   font-family: 'Futura Md BT', sans-serif;
-  font-size: calc(24 / 1920 * 100vw);
+  font-size: 18px;
   font-weight: 400;
   color: #193B6F;
 }
 
 .promote6 {
   position: absolute;
-  top: 37.8%;
-  left: 38.5%;
-  width: 52.1%;
+  top: 4158px;
+  left: 554.4px;
+  width: 750.24px;
   height: auto;
 }
 
 .promote7 {
   position: absolute;
-  top: 44.2%;
-  left: 13.5%;
-  width: 72.1%;
+  top: 4880px;
+  left: 194px;
+  width: 1037px;
   height: auto;
 }
 
 .promote7-1 {
   font-family: 'Futura Md BT', sans-serif;
-  font-size: calc(30 / 1920 * 100vw);
+  font-size: 24px;
   font-weight: 700;
   color: #193B6F;
 }
 
 .promote7-2 {
   font-family: 'Futura Md BT', sans-serif;
-  font-size: calc(30 / 1920 * 100vw);
+  font-size: 24px;
   font-weight: 400;
   color: #193B6F;
 }
@@ -1054,12 +1054,12 @@ onBeforeUnmount(() => {
 
 .promote8 {
   position: absolute;
-  top: 47.5%;
+  top: 5225px;
   left: 50%;
-  width: 60.7%;
+  width: 873.36px;
   height: 171px;
   font-family: 'Futura Md BT', sans-serif;
-  font-size: calc(40 / 1920 * 100vw);
+  font-size: 30px;
   font-weight: 400;
   color: #E9AD01;
   text-align: center;
@@ -1067,24 +1067,24 @@ onBeforeUnmount(() => {
 
 .promote9 {
   position: absolute;
-  top: 54.5%;
-  right: 20%;
-  width: 28.1%;
+  top: 5995px;
+  right: 250px;
+  width: 420px;
   height: 171px;
   font-family: 'Futura Md BT', sans-serif;
-  font-size: calc(24 / 1920 * 100vw);
+  font-size: 19px;
   font-weight: 400;
   color: #16396E;
 }
 
 .promote10 {
   position: absolute;
-  top: 60%;
+  top: 6600px;
   left: 50%;
-  width: 60.7%;
+  width: 873.36px;
   height: 171px;
   font-family: 'Futura Md BT', sans-serif;
-  font-size: calc(40 / 1920 * 100vw);
+  font-size: 30px;
   font-weight: 400;
   color: #2F62D7;
   text-align: center;
@@ -1092,12 +1092,12 @@ onBeforeUnmount(() => {
 
 .promote11 {
   position: absolute;
-  top: 62%;
+  top: 6820px;
   left: 50%;
-  width: 41.7%;
+  width: 600.48px;
   height: 171px;
   font-family: 'Futura Md BT', sans-serif;
-  font-size: calc(24 / 1920 * 100vw);
+  font-size: 18px;
   font-weight: 400;
   color: #16396E;
   text-align: center;
@@ -1105,12 +1105,12 @@ onBeforeUnmount(() => {
 
 .promote12 {
   position: absolute;
-  top: 67%;
+  top: 7370px;
   left: 50%;
-  width: 42.4%;
+  width: 610.56px;
   height: 171px;
   font-family: 'Futura Md BT', sans-serif;
-  font-size: calc(24 / 1920 * 100vw);
+  font-size: 18px;
   font-weight: 400;
   color: #16396E;
   text-align: center;
@@ -1118,48 +1118,48 @@ onBeforeUnmount(() => {
 
 .promote13 {
   position: absolute;
-  top: 71%;
-  left: 10%;
-  width: 45%;
+  top: 7810px;
+  left: 144px;
+  width: 648px;
   height: 171px;
   font-family: 'Futura Md BT', sans-serif;
-  font-size: calc(40 / 1920 * 100vw);
+  font-size: 30px;
   font-weight: 700;
   color: #2F62D7;
 }
 
 .promote14 {
   position: absolute;
-  top: 79.35%;
-  left: 43%;
-  width: 21%;
+  top: 8729px;
+  left: 619.2px;
+  width: 302.4px;
   height: auto;
   font-family: 'Futura Md BT', sans-serif;
-  font-size: calc(40 / 1920 * 100vw);
+  font-size: 32px;
   font-weight: 700;
   color: #2F62D7;
 }
 
 .promote15 {
   position: absolute;
-  top: 88%;
+  top: 9680px;
   left: 50%;
-  width: 62.5%;
+  width: 900px;
   height: auto;
   font-family: 'Futura Md BT', sans-serif;
-  font-size: calc(40 / 1920 * 100vw);
+  font-size: 30px;
   font-weight: 400;
   color: #16396E;
 }
 
 .promote16 {
   position: absolute;
-  top: 93%;
+  top: 10230px;
   left: 50%;
-  width: 52%;
+  width: 748.8px;
   height: auto;
   font-family: 'Futura Md BT', sans-serif;
-  font-size: calc(40 / 1920 * 100vw);
+  font-size: 32px;
   font-weight: 400;
   color: #16396E;
   text-align: center;
