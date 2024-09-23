@@ -188,6 +188,8 @@ onBeforeUnmount(() => {
   color: #2F3235;
   font-family: 'Futura Md BT', sans-serif;
   transition: color 0.5s ease;
+  border: none;
+  background-color: transparent;
 }
 
 .nav-title.homepage {
