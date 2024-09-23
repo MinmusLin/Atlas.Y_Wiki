@@ -30,7 +30,7 @@
          alt='MotileCell7'
          class='motile-cell7'>
 
-    <button ref='scrollButtonRef' class='button1'>
+    <button class='button1'>
       Get Started
     </button>
 
@@ -55,7 +55,8 @@
 
     <img src='https://static.igem.wiki/teams/5503/designmaterials/worldmap.webp'
          alt='WorldMap'
-         class='world-map'>
+         class='world-map'
+         ref='worldMapRef'>
     <img src='https://static.igem.wiki/teams/5503/designmaterials/anaximander.webp'
          alt='Anaximander'
          class='Anaximander'>
@@ -86,6 +87,10 @@
 
     <p class='promote4' ref='promote4Ref'>
       Humanity has never stopped exploring the <span class='highlight-yellow'>Macrocosm</span>
+    </p>
+
+    <p class='promote17' ref='promote17Ref'>
+      However, as we enter the modern era,a new revolution is unfolding.
     </p>
 
     <img src='https://static.igem.wiki/teams/5503/designmaterials/distantcloud.webp'
@@ -123,7 +128,8 @@
 
     <img src='https://static.igem.wiki/teams/5503/designmaterials/electronmicroscope.webp'
          alt='ElectronMicroscope'
-         class='electron-microscope'>
+         class='electron-microscope'
+         ref='microscopeOnlyRef'>
 
     <div class='promote6' ref='promote6Ref'>
       <p class='promote6-1'>
@@ -140,7 +146,7 @@
     <img src='https://static.igem.wiki/teams/5503/designmaterials/organelle3.webp' alt='Organelle1' class='organelle3'>
     <img src='https://static.igem.wiki/teams/5503/designmaterials/organelle4.webp' alt='Organelle1' class='organelle4'>
 
-    <div class='container2 microscope-container'>
+    <div class='container2 microscope-container' ref='microscopeRef'>
       <img src='https://static.igem.wiki/teams/5503/designmaterials/superresolutionmicroscope.webp'
            alt='SuperResolutionMicroscope'
            class='super-resolution-microscope'>
@@ -149,7 +155,7 @@
       </div>
     </div>
 
-    <div class='container2 sequencing-container'>
+    <div class='container2 sequencing-container' ref='sequencingRef'>
       <img src='https://static.igem.wiki/teams/5503/designmaterials/singlecellsequencingtechnology.webp'
            alt='SingleCellSequencingTechnology'
            class='sequencing-technology'>
@@ -161,7 +167,7 @@
       </div>
     </div>
 
-    <div class='container2 proteomics-container'>
+    <div class='container2 proteomics-container' ref='proteomicsRef'>
       <img src='https://static.igem.wiki/teams/5503/designmaterials/defaultquantitativeproteomics.webp'
            alt='DefaultQuantitativeProteomics'
            class='default-quantitative-proteomics'>
@@ -173,7 +179,7 @@
       </div>
     </div>
 
-    <div class='container2 bioinformatics-container1'>
+    <div class='container2 bioinformatics-container1' ref='bioinformaticsRef'>
       <img src='https://static.igem.wiki/teams/5503/designmaterials/bioinformaticstools.webp'
            alt='BioinformaticsTools'
            class='bioinformatics-tools'>
@@ -318,7 +324,6 @@ import {draw} from '@/plugins/canvas'
 import {useRouter} from 'vue-router'
 
 const router = useRouter()
-const scrollButtonRef = ref<HTMLButtonElement | null>(null)
 const promote1Ref = ref<HTMLElement | null>(null)
 const promote2Ref = ref<HTMLElement | null>(null)
 const promote3Ref = ref<HTMLElement | null>(null)
@@ -335,21 +340,20 @@ const promote13Ref = ref<HTMLElement | null>(null)
 const promote14Ref = ref<HTMLElement | null>(null)
 const promote15Ref = ref<HTMLElement | null>(null)
 const promote16Ref = ref<HTMLElement | null>(null)
+const promote17Ref = ref<HTMLElement | null>(null)
 const dot1Ref = ref<HTMLElement | null>(null)
 const dot2Ref = ref<HTMLElement | null>(null)
 const dot3Ref = ref<HTMLElement | null>(null)
 const button2Ref = ref<HTMLButtonElement | null>(null)
 
-onMounted(() => {
-  // noinspection TypeScriptUnresolvedReference
-  scrollButtonRef.value?.addEventListener('click', () => {
-    const scrollDistance = window.innerHeight
-    window.scrollBy({
-      top: scrollDistance,
-      behavior: 'smooth'
-    })
-  })
-})
+const worldMapRef = ref<HTMLElement | null>(null)
+
+const microscopeOnlyRef = ref(null)
+
+const microscopeRef = ref(null)
+const sequencingRef = ref(null)
+const proteomicsRef = ref(null)
+const bioinformaticsRef = ref(null)
 
 const handleIntersection = (entries: IntersectionObserverEntry[]) => {
   entries.forEach(entry => {
@@ -415,6 +419,9 @@ onMounted(() => {
   if (promote16Ref.value) {
     observer.observe(promote16Ref.value)
   }
+  if (promote17Ref.value) {
+    observer.observe(promote17Ref.value)
+  }
   if (button2Ref.value) {
     observer.observe(button2Ref.value)
   }
@@ -432,6 +439,75 @@ onMounted(() => {
 onMounted(() => {
   draw()
   window.addEventListener('scroll', draw)
+})
+
+onBeforeUnmount(() => {
+  window.removeEventListener('scroll', draw)
+})
+
+onMounted(() => {
+  const observer = new IntersectionObserver(handleIntersection, {
+    root: null,
+    threshold: 0.1
+  })
+
+  if (worldMapRef.value) {
+    observer.observe(worldMapRef.value)
+  }
+
+  function handleIntersection(entries: IntersectionObserverEntry[]) {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('active')
+      } else {
+        entry.target.classList.remove('active')
+      }
+    })
+  }
+})
+
+onMounted(() => {
+  const options = {
+    root: null,
+    threshold: 0.3
+  }
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show')
+      } else {
+        entry.target.classList.remove('show')
+      }
+    })
+  }, options)
+
+  if (microscopeOnlyRef.value) {
+    observer.observe(microscopeOnlyRef.value)
+  }
+})
+
+const handleIntersectionFour = (entries: IntersectionObserverEntry[]) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('fade-in')
+    } else {
+      entry.target.classList.remove('fade-in')
+    }
+  })
+}
+
+onMounted(() => {
+  const observer = new IntersectionObserver(handleIntersectionFour, {
+    root: null,
+    threshold: 0.1
+  })
+
+    [microscopeRef, sequencingRef, proteomicsRef, bioinformaticsRef].forEach(ref => {
+    if (ref.value) {
+      observer.observe(ref.value);
+    }
+  })
 })
 
 onBeforeUnmount(() => {
@@ -589,6 +665,12 @@ onBeforeUnmount(() => {
   left: -440px;
   height: auto;
   width: 900px;
+  transform: translateX(-20%); /* 初始在左侧 */
+  transition: transform 1s ease; /* 添加平滑过渡效果 */
+}
+
+.world-map.active {
+  transform: translateX(0);
 }
 
 .Anaximander {
@@ -617,10 +699,10 @@ onBeforeUnmount(() => {
 
 .planet1 {
   position: absolute;
-  top: 1826px;
-  left: 0;
+  top: 1820px;
+  left: -150px;
   height: auto;
-  width: 245px;
+  width: 400px;
 }
 
 .planet2 {
@@ -636,7 +718,7 @@ onBeforeUnmount(() => {
   top: 2145px;
   left: 432px;
   height: auto;
-  width: 115px;
+  width: 130px;
 }
 
 .left-cloud {
@@ -665,10 +747,10 @@ onBeforeUnmount(() => {
 
 .clouds {
   position: absolute;
-  top: 2756px;
-  left: 0;
+  top: 2750px;
+  left: -1100px;
   height: auto;
-  width: 1440px;
+  width: 3000px;
 }
 
 .plain-earth {
@@ -744,6 +826,14 @@ onBeforeUnmount(() => {
   left: 230px;
   height: auto;
   width: 274px;
+  opacity: 0;
+  transform: scale(0.5);
+  transition: all 0.35s ease-in-out;
+}
+
+.electron-microscope.show {
+  opacity: 1;
+  transform: scale(1);
 }
 
 .organelle1 {
@@ -783,6 +873,51 @@ onBeforeUnmount(() => {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+}
+
+@keyframes fadeInFromLeft {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeInFromLeft 1s ease forwards;
+}
+
+.fade-out {
+  opacity: 0;
+  animation: none; /* 停止动画 */
+}
+
+.microscope-container,
+.sequencing-container,
+.proteomics-container,
+.bioinformatics-container1 {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.microscope-container.fade-in {
+  animation-delay: 0s;
+}
+
+.sequencing-container.fade-in {
+  animation-delay: 0.4s;
+}
+
+.proteomics-container.fade-in {
+  animation-delay: 0.8s;
+}
+
+.bioinformatics-container1.fade-in {
+  animation-delay: 1.2s;
 }
 
 .microscope-container {
@@ -1077,9 +1212,6 @@ onBeforeUnmount(() => {
   font-size: 46px;
   font-weight: 700;
   color: white;
-  opacity: 0;
-  transform: translateX(-50%) translateY(50px);
-  transition: opacity 0.6s ease, transform 0.6s ease;
 }
 
 .highlight-yellow {
@@ -1255,6 +1387,20 @@ onBeforeUnmount(() => {
   text-align: center;
 }
 
+.promote17 {
+  position: absolute;
+  top: 3150px;
+  left: 50%;
+  width: 1000px;
+  height: auto;
+  font-family: 'Futura Md BT', sans-serif;
+  font-size: 50px;
+  font-weight: 400;
+  color: #16396E;
+  text-align: center;
+  z-index: 9;
+}
+
 .promote1, .promote2, .promote3, .promote5, .promote6, .promote7, .promote9, .promote13, .promote14 {
   opacity: 0;
   transform: translateY(50px);
@@ -1266,13 +1412,13 @@ onBeforeUnmount(() => {
   transform: translateY(0);
 }
 
-.promote8, .promote10, .promote11, .promote12, .promote15, .promote16, .dot1, .dot2, .dot3 {
+.promote4, .promote8, .promote10, .promote11, .promote12, .promote15, .promote16, .promote17, .dot1, .dot2, .dot3 {
   opacity: 0;
   transform: translateX(-50%) translateY(50px);
   transition: opacity 0.6s ease, transform 0.6s ease;
 }
 
-.promote4.active, .promote8.active, .promote10.active, .promote11.active, .promote12.active, .promote15.active, .promote16.active, .dot1.active, .dot2.active, .dot3.active {
+.promote4.active, .promote8.active, .promote10.active, .promote11.active, .promote12.active, .promote15.active, .promote16.active, .promote17.active, .dot1.active, .dot2.active, .dot3.active {
   opacity: 1;
   transform: translateX(-50%) translateY(0);
 }
