@@ -1061,9 +1061,9 @@ onBeforeUnmount(() => {
 }
 
 .promote1-2, .promote2-2, .promote3-2 {
-  font-family: 'Futura Md BT', sans-serif;
+  font-family: 'Futura Bk BT Book', sans-serif;
   font-size: 21px;
-  font-weight: 400;
+  font-weight: 100;
   color: #FFFFFF;
 }
 
