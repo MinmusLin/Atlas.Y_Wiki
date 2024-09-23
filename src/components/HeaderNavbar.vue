@@ -214,8 +214,8 @@ onBeforeUnmount(() => {
   list-style-type: none;
   background-color: white;
   border-radius: 10px;
-  border: 4px #7AA8F3 solid;
-  box-shadow: 8px 12px 0 0 #7AA8F3;
+  border: 4px #5182F8 solid;
+  box-shadow: 8px 12px 0 0 #5182F8;
   padding: 13px 30px 12px;
   right: 0;
   top: 33px;

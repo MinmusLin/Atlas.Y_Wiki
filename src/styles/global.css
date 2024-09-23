@@ -20,15 +20,22 @@ img {
 }
 
 @font-face {
-    font-family: 'Futura Md BT';
-    src: url('https://static.igem.wiki/teams/5503/fonts/futura-md-bt.woff2') format('woff2');
+    font-family: 'Futura Bk BT Book';
+    src: url('https://static.igem.wiki/teams/5503/fonts/futura-bk-bt-book.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Futura Bk BT Book';
-    src: url('https://static.igem.wiki/teams/5503/fonts/futura-bk-bt-book.woff2') format('woff2');
+    font-family: 'Futura Md BT Bold';
+    src: url('https://static.igem.wiki/teams/5503/fonts/futura-md-bt-bold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura Md BT Medium';
+    src: url('https://static.igem.wiki/teams/5503/fonts/futura-md-bt-medium.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
