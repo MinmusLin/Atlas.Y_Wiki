@@ -119,11 +119,11 @@
     </div>
 
     <img src='https://static.igem.wiki/teams/5503/designmaterials/cell1.webp' alt='Cell1' class='cell1'>
-    <img src='https://static.igem.wiki/teams/5503/designmaterials/cell2.webp' alt='Cell1' class='cell2'>
-    <img src='https://static.igem.wiki/teams/5503/designmaterials/cell3.webp' alt='Cell1' class='cell3'>
-    <img src='https://static.igem.wiki/teams/5503/designmaterials/cell2.webp' alt='Cell1' class='cell4'>
-    <img src='https://static.igem.wiki/teams/5503/designmaterials/cell1.webp' alt='Cell1' class='cell5'>
-    <img src='https://static.igem.wiki/teams/5503/designmaterials/cell2.webp' alt='Cell1' class='cell6'>
+    <img src='https://static.igem.wiki/teams/5503/designmaterials/cell2.webp' alt='Cell2' class='cell2'>
+    <img src='https://static.igem.wiki/teams/5503/designmaterials/cell3.webp' alt='Cell3' class='cell3'>
+    <img src='https://static.igem.wiki/teams/5503/designmaterials/cell2.webp' alt='Cell4' class='cell4'>
+    <img src='https://static.igem.wiki/teams/5503/designmaterials/cell1.webp' alt='Cell5' class='cell5'>
+    <img src='https://static.igem.wiki/teams/5503/designmaterials/cell2.webp' alt='Cell6' class='cell6'>
     <img src='https://static.igem.wiki/teams/5503/designmaterials/robert.webp' alt='Robert' class='Robert'>
 
     <img src='https://static.igem.wiki/teams/5503/designmaterials/electronmicroscope.webp'
@@ -501,11 +501,11 @@ onMounted(() => {
   const observer = new IntersectionObserver(handleIntersectionFour, {
     root: null,
     threshold: 0.1
-  })
+  });
 
-    [microscopeRef, sequencingRef, proteomicsRef, bioinformaticsRef].forEach(ref => {
+  [microscopeRef, sequencingRef, proteomicsRef, bioinformaticsRef].forEach(ref => {
     if (ref.value) {
-      observer.observe(ref.value);
+      observer.observe(ref.value)
     }
   })
 })
@@ -566,7 +566,7 @@ onBeforeUnmount(() => {
   width: 648px;
   left: 50%;
   transform: translateX(-50%);
-  z-index: 990;
+  z-index: 3;
 }
 
 .button1 {
