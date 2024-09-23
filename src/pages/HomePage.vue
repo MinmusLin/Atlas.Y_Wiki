@@ -694,6 +694,25 @@ onBeforeUnmount(() => {
   right: 130px;
   height: auto;
   width: 403px;
+  animation: motile-cell6-float 4s ease-in-out infinite;
+}
+
+@keyframes motile-cell6-float {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(10px, -80px);
+  }
+  50% {
+    transform: translate(-100px, 100px);
+  }
+  75% {
+    transform: translate(100px, 100px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
 }
 
 .motile-cell7 {
