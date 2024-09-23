@@ -1,9 +1,9 @@
 <template>
   <div class='content-area'>
-    <img src='https://static.igem.wiki/teams/5503/designmaterials/toprightcircle.webp'
+    <img src='https://static.igem.wiki/teams/5503/design-materials/toprightcircle.webp'
          alt='TopRightCircle'
          class='top-right-image'/>
-    <img src='https://static.igem.wiki/teams/5503/designmaterials/bottomleftcircle.webp'
+    <img src='https://static.igem.wiki/teams/5503/design-materials/bottomleftcircle.webp'
          alt='BottomLeftCircle'
          class='bottom-left-image'/>
     <div class='title-box-container'>

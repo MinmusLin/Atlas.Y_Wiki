@@ -1,32 +1,32 @@
 <template>
   <div class='background-container'>
-    <img src='https://static.igem.wiki/teams/5503/designmaterials/background.webp'
+    <img src='https://static.igem.wiki/teams/5503/design-materials/background.webp'
          alt='Background'
          class='background'>
 
-    <img src='https://static.igem.wiki/teams/5503/designmaterials/title.webp'
+    <img src='https://static.igem.wiki/teams/5503/design-materials/title.webp'
          alt='Title'
          class='title'>
 
-    <img src='https://static.igem.wiki/teams/5503/designmaterials/motilecell1.webp'
+    <img src='https://static.igem.wiki/teams/5503/design-materials/motilecell1.webp'
          alt='MotileCell1'
          class='motile-cell1'>
-    <img src='https://static.igem.wiki/teams/5503/designmaterials/motilecell2.webp'
+    <img src='https://static.igem.wiki/teams/5503/design-materials/motilecell2.webp'
          alt='MotileCell2'
          class='motile-cell2'>
-    <img src='https://static.igem.wiki/teams/5503/designmaterials/motilecell3.webp'
+    <img src='https://static.igem.wiki/teams/5503/design-materials/motilecell3.webp'
          alt='MotileCell3'
          class='motile-cell3'>
-    <img src='https://static.igem.wiki/teams/5503/designmaterials/motilecell4.webp'
+    <img src='https://static.igem.wiki/teams/5503/design-materials/motilecell4.webp'
          alt='MotileCell4'
          class='motile-cell4'>
-    <img src='https://static.igem.wiki/teams/5503/designmaterials/motilecell5.webp'
+    <img src='https://static.igem.wiki/teams/5503/design-materials/motilecell5.webp'
          alt='MotileCell5'
          class='motile-cell5'>
-    <img src='https://static.igem.wiki/teams/5503/designmaterials/motilecell6.webp'
+    <img src='https://static.igem.wiki/teams/5503/design-materials/motilecell6.webp'
          alt='MotileCell6'
          class='motile-cell6'>
-    <img src='https://static.igem.wiki/teams/5503/designmaterials/motilecell7.webp'
+    <img src='https://static.igem.wiki/teams/5503/design-materials/motilecell7.webp'
          alt='MotileCell7'
          class='motile-cell7'>
 
@@ -53,26 +53,26 @@
       </p>
     </div>
 
-    <img src='https://static.igem.wiki/teams/5503/designmaterials/worldmap.webp'
+    <img src='https://static.igem.wiki/teams/5503/design-materials/worldmap.webp'
          alt='WorldMap'
          class='world-map'
          ref='worldMapRef'>
-    <img src='https://static.igem.wiki/teams/5503/designmaterials/anaximander.webp'
+    <img src='https://static.igem.wiki/teams/5503/design-materials/anaximander.webp'
          alt='Anaximander'
          class='Anaximander'>
-    <img src='https://static.igem.wiki/teams/5503/designmaterials/eratosthenes.webp'
+    <img src='https://static.igem.wiki/teams/5503/design-materials/eratosthenes.webp'
          alt='Eratosthenes'
          class='Eratosthenes'>
-    <img src='https://static.igem.wiki/teams/5503/designmaterials/newton.webp'
+    <img src='https://static.igem.wiki/teams/5503/design-materials/newton.webp'
          alt='Newton'
          class='Newton'>
-    <img src='https://static.igem.wiki/teams/5503/designmaterials/planet1.webp'
+    <img src='https://static.igem.wiki/teams/5503/design-materials/planet1.webp'
          alt='Planet1'
          class='planet1'>
-    <img src='https://static.igem.wiki/teams/5503/designmaterials/planet2.webp'
+    <img src='https://static.igem.wiki/teams/5503/design-materials/planet2.webp'
          alt='Planet2'
          class='planet2'>
-    <img src='https://static.igem.wiki/teams/5503/designmaterials/planet3.webp'
+    <img src='https://static.igem.wiki/teams/5503/design-materials/planet3.webp'
          alt='Planet2'
          class='planet3'>
 
@@ -93,19 +93,19 @@
       However, as we enter the modern era,a new revolution is unfolding.
     </p>
 
-    <img src='https://static.igem.wiki/teams/5503/designmaterials/distantcloud.webp'
+    <img src='https://static.igem.wiki/teams/5503/design-materials/distantcloud.webp'
          alt='DistantCloud'
          class='distant-cloud'>
-    <img src='https://static.igem.wiki/teams/5503/designmaterials/plainearth.webp'
+    <img src='https://static.igem.wiki/teams/5503/design-materials/plainearth.webp'
          alt='PlainEarth'
          class='plain-earth'>
-    <img src='https://static.igem.wiki/teams/5503/designmaterials/leftcloud.webp'
+    <img src='https://static.igem.wiki/teams/5503/design-materials/leftcloud.webp'
          alt='LeftCloud'
          class='left-cloud'>
-    <img src='https://static.igem.wiki/teams/5503/designmaterials/rightcloud.webp'
+    <img src='https://static.igem.wiki/teams/5503/design-materials/rightcloud.webp'
          alt='RightCloud'
          class='right-cloud'>
-    <img src='https://static.igem.wiki/teams/5503/designmaterials/clouds.webp'
+    <img src='https://static.igem.wiki/teams/5503/design-materials/clouds.webp'
          alt='Clouds'
          class='clouds'>
 
@@ -118,15 +118,15 @@
       </p>
     </div>
 
-    <img src='https://static.igem.wiki/teams/5503/designmaterials/cell1.webp' alt='Cell1' class='cell1'>
-    <img src='https://static.igem.wiki/teams/5503/designmaterials/cell2.webp' alt='Cell2' class='cell2'>
-    <img src='https://static.igem.wiki/teams/5503/designmaterials/cell3.webp' alt='Cell3' class='cell3'>
-    <img src='https://static.igem.wiki/teams/5503/designmaterials/cell2.webp' alt='Cell4' class='cell4'>
-    <img src='https://static.igem.wiki/teams/5503/designmaterials/cell1.webp' alt='Cell5' class='cell5'>
-    <img src='https://static.igem.wiki/teams/5503/designmaterials/cell2.webp' alt='Cell6' class='cell6'>
-    <img src='https://static.igem.wiki/teams/5503/designmaterials/robert.webp' alt='Robert' class='Robert'>
+    <img src='https://static.igem.wiki/teams/5503/design-materials/cell1.webp' alt='Cell1' class='cell1'>
+    <img src='https://static.igem.wiki/teams/5503/design-materials/cell2.webp' alt='Cell2' class='cell2'>
+    <img src='https://static.igem.wiki/teams/5503/design-materials/cell3.webp' alt='Cell3' class='cell3'>
+    <img src='https://static.igem.wiki/teams/5503/design-materials/cell2.webp' alt='Cell4' class='cell4'>
+    <img src='https://static.igem.wiki/teams/5503/design-materials/cell1.webp' alt='Cell5' class='cell5'>
+    <img src='https://static.igem.wiki/teams/5503/design-materials/cell2.webp' alt='Cell6' class='cell6'>
+    <img src='https://static.igem.wiki/teams/5503/design-materials/robert.webp' alt='Robert' class='Robert'>
 
-    <img src='https://static.igem.wiki/teams/5503/designmaterials/electronmicroscope.webp'
+    <img src='https://static.igem.wiki/teams/5503/design-materials/electronmicroscope.webp'
          alt='ElectronMicroscope'
          class='electron-microscope'
          ref='microscopeOnlyRef'>
@@ -141,13 +141,13 @@
       </p>
     </div>
 
-    <img src='https://static.igem.wiki/teams/5503/designmaterials/organelle1.webp' alt='Organelle1' class='organelle1'>
-    <img src='https://static.igem.wiki/teams/5503/designmaterials/organelle2.webp' alt='Organelle1' class='organelle2'>
-    <img src='https://static.igem.wiki/teams/5503/designmaterials/organelle3.webp' alt='Organelle1' class='organelle3'>
-    <img src='https://static.igem.wiki/teams/5503/designmaterials/organelle4.webp' alt='Organelle1' class='organelle4'>
+    <img src='https://static.igem.wiki/teams/5503/design-materials/organelle1.webp' alt='Organelle1' class='organelle1'>
+    <img src='https://static.igem.wiki/teams/5503/design-materials/organelle2.webp' alt='Organelle1' class='organelle2'>
+    <img src='https://static.igem.wiki/teams/5503/design-materials/organelle3.webp' alt='Organelle1' class='organelle3'>
+    <img src='https://static.igem.wiki/teams/5503/design-materials/organelle4.webp' alt='Organelle1' class='organelle4'>
 
     <div class='container2 microscope-container' ref='microscopeRef'>
-      <img src='https://static.igem.wiki/teams/5503/designmaterials/superresolutionmicroscope.webp'
+      <img src='https://static.igem.wiki/teams/5503/design-materials/superresolutionmicroscope.webp'
            alt='SuperResolutionMicroscope'
            class='super-resolution-microscope'>
       <div class='label'>
@@ -156,10 +156,10 @@
     </div>
 
     <div class='container2 sequencing-container' ref='sequencingRef'>
-      <img src='https://static.igem.wiki/teams/5503/designmaterials/singlecellsequencingtechnology.webp'
+      <img src='https://static.igem.wiki/teams/5503/design-materials/singlecellsequencingtechnology.webp'
            alt='SingleCellSequencingTechnology'
            class='sequencing-technology'>
-      <img src='https://static.igem.wiki/teams/5503/designmaterials/singlecellsequencingtechnologytable.webp'
+      <img src='https://static.igem.wiki/teams/5503/design-materials/singlecellsequencingtechnologytable.webp'
            alt='SingleCellSequencingTechnologyTable'
            class='sequencing-technology-table'>
       <div class='label'>
@@ -168,10 +168,10 @@
     </div>
 
     <div class='container2 proteomics-container' ref='proteomicsRef'>
-      <img src='https://static.igem.wiki/teams/5503/designmaterials/defaultquantitativeproteomics.webp'
+      <img src='https://static.igem.wiki/teams/5503/design-materials/defaultquantitativeproteomics.webp'
            alt='DefaultQuantitativeProteomics'
            class='default-quantitative-proteomics'>
-      <img src='https://static.igem.wiki/teams/5503/designmaterials/activequantitativeproteomics.webp'
+      <img src='https://static.igem.wiki/teams/5503/design-materials/activequantitativeproteomics.webp'
            alt='ActiveQuantitativeProteomics'
            class='active-quantitative-proteomics'>
       <div class='label'>
@@ -180,17 +180,17 @@
     </div>
 
     <div class='container2 bioinformatics-container1' ref='bioinformaticsRef'>
-      <img src='https://static.igem.wiki/teams/5503/designmaterials/bioinformaticstools.webp'
+      <img src='https://static.igem.wiki/teams/5503/design-materials/bioinformaticstools.webp'
            alt='BioinformaticsTools'
            class='bioinformatics-tools'>
       <div class='container2 bioinformatics-container2'>
-        <img src='https://static.igem.wiki/teams/5503/designmaterials/deeploc.webp'
+        <img src='https://static.igem.wiki/teams/5503/design-materials/deeploc.webp'
              alt='DeepLoc'
              class='deep-loc'>
-        <img src='https://static.igem.wiki/teams/5503/designmaterials/organelledb.webp'
+        <img src='https://static.igem.wiki/teams/5503/design-materials/organelledb.webp'
              alt='OrganelleDB'
              class='organelle-db'>
-        <img src='https://static.igem.wiki/teams/5503/designmaterials/cellprofiler.webp'
+        <img src='https://static.igem.wiki/teams/5503/design-materials/cellprofiler.webp'
              alt='CellProfiler'
              class='cell-profiler'>
       </div>
@@ -214,7 +214,7 @@
       demonstrated great economic potential in the biomanufacturing industry.
     </p>
 
-    <img src='https://static.igem.wiki/teams/5503/designmaterials/cell.webp' alt='Cell' class='cell'>
+    <img src='https://static.igem.wiki/teams/5503/design-materials/cell.webp' alt='Cell' class='cell'>
 
     <p class='promote9' ref='promote9Ref'>
       By precisely controlling the subcellular localisation of proteins or enzymes within the cell, scientists can
@@ -236,7 +236,7 @@
 
     <div class='image-gallery'>
       <div class='image-item'>
-        <img src='https://static.igem.wiki/teams/5503/designmaterials/metabolicengineering.webp'
+        <img src='https://static.igem.wiki/teams/5503/design-materials/metabolicengineering.webp'
              alt='Metabolic Engineering'
              class='image'/>
         <div class='image-label'>
@@ -244,7 +244,7 @@
         </div>
       </div>
       <div class='image-item'>
-        <img src='https://static.igem.wiki/teams/5503/designmaterials/drugproduction.webp'
+        <img src='https://static.igem.wiki/teams/5503/design-materials/drugproduction.webp'
              alt='Drug Production'
              class='image'/>
         <div class='image-label'>
@@ -252,7 +252,7 @@
         </div>
       </div>
       <div class='image-item'>
-        <img src='https://static.igem.wiki/teams/5503/designmaterials/industrialfermentation.webp'
+        <img src='https://static.igem.wiki/teams/5503/design-materials/industrialfermentation.webp'
              alt='Industrial Fermentation'
              class='image'/>
         <div class='image-label'>
@@ -275,20 +275,20 @@
       So this is why we have launched a molecular tag design software for yeast protein subcellular localisation.
     </p>
 
-    <img src='https://static.igem.wiki/teams/5503/designmaterials/defaultlogo.webp'
+    <img src='https://static.igem.wiki/teams/5503/design-materials/defaultlogo.webp'
          alt='DefaultLogo'
          class='default-logo'>
 
-    <img src='https://static.igem.wiki/teams/5503/designmaterials/protein1.webp' alt='Protein1' class='protein1'>
-    <img src='https://static.igem.wiki/teams/5503/designmaterials/protein2.webp' alt='Protein2' class='protein2'>
-    <img src='https://static.igem.wiki/teams/5503/designmaterials/yeast.webp' alt='Yeast' class='yeast'>
-    <img src='https://static.igem.wiki/teams/5503/designmaterials/dialog.webp' alt='Dialog' class='dialog'>
+    <img src='https://static.igem.wiki/teams/5503/design-materials/protein1.webp' alt='Protein1' class='protein1'>
+    <img src='https://static.igem.wiki/teams/5503/design-materials/protein2.webp' alt='Protein2' class='protein2'>
+    <img src='https://static.igem.wiki/teams/5503/design-materials/yeast.webp' alt='Yeast' class='yeast'>
+    <img src='https://static.igem.wiki/teams/5503/design-materials/dialog.webp' alt='Dialog' class='dialog'>
 
     <p class='promote14' ref='promote14Ref'>
       Do you know what Atlas.Y does?
     </p>
 
-    <img src='https://static.igem.wiki/teams/5503/designmaterials/defaultearth.webp'
+    <img src='https://static.igem.wiki/teams/5503/design-materials/defaultearth.webp'
          alt='DefaultEarth'
          class='default-earth'
          ref='defaultEarthRef'>
@@ -634,7 +634,7 @@ onBeforeUnmount(() => {
 
 .button1::before {
   content: '';
-  background-image: url('https://static.igem.wiki/teams/5503/designmaterials/downarrow.webp');
+  background-image: url('https://static.igem.wiki/teams/5503/design-materials/downarrow.webp');
   background-size: contain;
   background-repeat: no-repeat;
   width: 22px;

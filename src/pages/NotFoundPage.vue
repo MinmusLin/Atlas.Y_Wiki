@@ -1,6 +1,6 @@
 <template>
   <div class='container'>
-    <img src='https://static.igem.wiki/teams/5503/designmaterials/404.webp' class='image-404' alt='404'>
+    <img src='https://static.igem.wiki/teams/5503/design-materials/404.webp' class='image-404' alt='404'>
     <p class='not-found-text-1'>Sorry, page not found</p>
     <p class='not-found-text-2'>The page is missing or you assembled the link incorrectly</p>
     <button class='go-back-button' @click="router.push('/')">GO BACK</button>

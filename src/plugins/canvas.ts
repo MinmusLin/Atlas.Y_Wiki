@@ -7,7 +7,7 @@ let topScreen: number
 let bottomScreen: number
 let positionX: number
 let positionY: number
-const imgSrc = 'https://static.igem.wiki/teams/5503/designmaterials/movingplanet.webp'
+const imgSrc = 'https://static.igem.wiki/teams/5503/design-materials/movingplanet.webp'
 const img = new Image()
 img.src = imgSrc
 const imgWidth = 75
@@ -276,11 +276,11 @@ export function draw() {
   circularArc(1220, 5760, ctx, canvasH, 2, 2)
   verticalLine(1250, 5760, 7100, ctx, canvasH)
   if (positionY < 3200) {
-    img.src = 'https://static.igem.wiki/teams/5503/designmaterials/movingplanet.webp'
+    img.src = 'https://static.igem.wiki/teams/5503/design-materials/movingplanet.webp'
   } else if (positionY >= 3200 && positionY < 5700) {
-    img.src = 'https://static.igem.wiki/teams/5503/designmaterials/movingcell.webp'
+    img.src = 'https://static.igem.wiki/teams/5503/design-materials/movingcell.webp'
   } else {
-    img.src = 'https://static.igem.wiki/teams/5503/designmaterials/movingprotein.webp'
+    img.src = 'https://static.igem.wiki/teams/5503/design-materials/movingprotein.webp'
   }
   ctx.drawImage(img, positionX - imgWidth / 2, positionY - imgHeight / 2, imgWidth, imgHeight)
   ctx.stroke()

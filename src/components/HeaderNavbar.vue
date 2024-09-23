@@ -1,7 +1,7 @@
 <template>
   <header :class="['header-navbar', isHomePage ? 'homepage' : '']">
     <nav class='nav-items'>
-      <img src='https://static.igem.wiki/teams/5503/designmaterials/defaultlogo.webp'
+      <img src='https://static.igem.wiki/teams/5503/design-materials/defaultlogo.webp'
            alt='DefaultLogo'
            class='logo'
            @click="router.push('/')">

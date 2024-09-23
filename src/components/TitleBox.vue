@@ -1,10 +1,10 @@
 <template>
   <div class='title-box' :class="{ 'animate': startAnimation }">
     <div class='image-container' ref='imageContainer'>
-      <img src='https://static.igem.wiki/teams/5503/designmaterials/titlebackground.webp'
+      <img src='https://static.igem.wiki/teams/5503/design-materials/titlebackground.webp'
            alt='TitleBackground'
            class='title-image'/>
-      <img src='https://static.igem.wiki/teams/5503/designmaterials/mascot.webp'
+      <img src='https://static.igem.wiki/teams/5503/design-materials/mascot.webp'
            alt='Mascot'
            class='corner-image'
            :class="{ 'animate': mascotAnimation }"
