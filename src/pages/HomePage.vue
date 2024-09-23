@@ -30,9 +30,9 @@
          alt='MotileCell7'
          class='motile-cell7'>
 
-    <button class='button1'>
+    <div class='button1'>
       Get Started
-    </button>
+    </div>
 
     <div class='promote1' ref='promote1Ref'>
       <p class='promote1-1'>
@@ -624,17 +624,12 @@ onBeforeUnmount(() => {
   color: white;
   font-size: 24px;
   font-weight: 600;
-  cursor: pointer;
   display: flex;
   align-items: center;
   padding: 10px 20px;
   transition: color 0.3s ease;
   gap: 13px;
   z-index: 3;
-}
-
-.button1:hover {
-  color: #CCCCCC;
 }
 
 .button1::before {
@@ -654,6 +649,25 @@ onBeforeUnmount(() => {
   left: 0;
   height: auto;
   width: 216px;
+  animation: motile-cell1-float 6s ease-in-out infinite;
+}
+
+@keyframes motile-cell1-float {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(-10px, -10px);
+  }
+  50% {
+    transform: translate(-10px, 0px);
+  }
+  75% {
+    transform: translate(10px, -10px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
 }
 
 .motile-cell2 {
@@ -662,6 +676,19 @@ onBeforeUnmount(() => {
   left: 331px;
   height: auto;
   width: 144px;
+  animation: motile-cell2-float 6s ease-in-out infinite;
+}
+
+@keyframes motile-cell2-float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 .motile-cell3 {
@@ -670,6 +697,7 @@ onBeforeUnmount(() => {
   right: 0;
   height: auto;
   width: 547px;
+  animation: motile-cell3_4-float 6s ease-in-out infinite;
 }
 
 .motile-cell4 {
@@ -678,6 +706,25 @@ onBeforeUnmount(() => {
   left: 0;
   height: auto;
   width: 115px;
+  animation: motile-cell3_4-float 6s ease-in-out infinite;
+}
+
+@keyframes motile-cell3_4-float {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(-10px, -10px);
+  }
+  50% {
+    transform: translate(10px, 0px);
+  }
+  75% {
+    transform: translate(10px, -10px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
 }
 
 .motile-cell5 {
@@ -686,6 +733,22 @@ onBeforeUnmount(() => {
   left: 360px;
   height: auto;
   width: 115px;
+  animation: motile-cell5-float 6s ease-in-out infinite;
+}
+
+@keyframes motile-cell5-float {
+  0% {
+    transform: translateY(0);
+  }
+  33% {
+    transform: translateY(-10px);
+  }
+  66% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 .motile-cell6 {
@@ -694,7 +757,8 @@ onBeforeUnmount(() => {
   right: 130px;
   height: auto;
   width: 403px;
-  animation: motile-cell6-float 4s ease-in-out infinite;
+  animation: motile-cell6-float 6s ease-in-out infinite;
+  z-index: 1;
 }
 
 @keyframes motile-cell6-float {
@@ -702,13 +766,13 @@ onBeforeUnmount(() => {
     transform: translate(0, 0);
   }
   25% {
-    transform: translate(10px, -80px);
+    transform: translate(10px, -10px);
   }
   50% {
-    transform: translate(-100px, 100px);
+    transform: translate(-10px, 10px);
   }
   75% {
-    transform: translate(100px, 100px);
+    transform: translate(10px, 10px);
   }
   100% {
     transform: translate(0, 0);
@@ -721,6 +785,25 @@ onBeforeUnmount(() => {
   right: 259px;
   height: auto;
   width: 72px;
+  animation: motile-cell7-float 5s ease-in-out infinite;
+}
+
+@keyframes motile-cell7-float {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(10px, -10px);
+  }
+  50% {
+    transform: translate(10px, 10px);
+  }
+  75% {
+    transform: translate(10px, -10px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
 }
 
 .world-map {
@@ -751,6 +834,7 @@ onBeforeUnmount(() => {
   left: 400px;
   height: auto;
   width: 250px;
+  z-index: 1;
 }
 
 .Newton {
@@ -767,6 +851,25 @@ onBeforeUnmount(() => {
   left: -150px;
   height: auto;
   width: 400px;
+  animation: planet1-float 5s ease-in-out infinite;
+}
+
+@keyframes planet1-float {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(-10px, -10px);
+  }
+  50% {
+    transform: translate(10px, -10px);
+  }
+  75% {
+    transform: translate(-10px, 10px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
 }
 
 .planet2 {
@@ -775,6 +878,22 @@ onBeforeUnmount(() => {
   right: 615px;
   height: auto;
   width: 160px;
+  animation: planet2-float 6s ease-in-out infinite;
+}
+
+@keyframes planet2-float {
+  0% {
+    transform: translate(0, 0);
+  }
+  33% {
+    transform: translate(10px, -10px);
+  }
+  66% {
+    transform: translate(-10px, 10px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
 }
 
 .planet3 {
@@ -783,30 +902,94 @@ onBeforeUnmount(() => {
   left: 432px;
   height: auto;
   width: 130px;
+  animation: planet3-float 6s ease-in-out infinite;
+}
+
+@keyframes planet3-float {
+  0% {
+    transform: translate(0, 0);
+  }
+  33% {
+    transform: translate(-10px, -10px);
+  }
+  66% {
+    transform: translate(10px, 10px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
 }
 
 .left-cloud {
   position: absolute;
-  top: 2519px;
-  left: 0;
+  top: 2590px;
+  left: -60px;
   height: auto;
-  width: 360px;
+  width: 420px;
+  animation: left-cloud-float 6s ease-in-out infinite;
+}
+
+@keyframes left-cloud-float {
+  0% {
+    transform: translateX(0);
+  }
+  33% {
+    transform: translateX(-10px);
+  }
+  66% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 .right-cloud {
   position: absolute;
-  top: 2574px;
-  right: 0;
+  top: 2660px;
+  right: -90px;
   height: auto;
-  width: 547px;
+  width: 620px;
+  animation: right-cloud-float 6s ease-in-out infinite;
+}
+
+@keyframes right-cloud-float {
+  0% {
+    transform: translateX(0);
+  }
+  33% {
+    transform: translateX(10px);
+  }
+  66% {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 .distant-cloud {
   position: absolute;
-  top: 2387px;
+  top: 2450px;
   right: 389px;
   height: auto;
   width: 403px;
+  animation: distant-cloud-float 6s ease-in-out infinite;
+}
+
+@keyframes distant-cloud-float {
+  0% {
+    transform: translateY(0);
+  }
+  33% {
+    transform: translateY(15px);
+  }
+  66% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 .clouds {
@@ -815,6 +998,7 @@ onBeforeUnmount(() => {
   left: -1100px;
   height: auto;
   width: 3000px;
+  z-index: 1;
 }
 
 .plain-earth {
@@ -823,6 +1007,7 @@ onBeforeUnmount(() => {
   left: 0;
   height: auto;
   width: 1440px;
+  z-index: 1;
 }
 
 .cell1 {
@@ -831,6 +1016,7 @@ onBeforeUnmount(() => {
   left: 0;
   height: auto;
   width: 475px;
+  animation: cell1_6-float 6s ease-in-out infinite;
 }
 
 .cell2 {
@@ -839,6 +1025,7 @@ onBeforeUnmount(() => {
   right: 403px;
   height: auto;
   width: 216px;
+  animation: cell2_5-float 6s ease-in-out infinite;
 }
 
 .cell3 {
@@ -847,6 +1034,7 @@ onBeforeUnmount(() => {
   right: 90px;
   height: auto;
   width: 288px;
+  animation: cell3_4-float 6s ease-in-out infinite;
 }
 
 .cell4 {
@@ -856,6 +1044,25 @@ onBeforeUnmount(() => {
   height: auto;
   width: 418px;
   transform: rotate(-25deg);
+  animation: cell3_4-float 6s ease-in-out infinite;
+}
+
+@keyframes cell3_4-float {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(10px, -10px);
+  }
+  50% {
+    transform: translate(10px, 10px);
+  }
+  75% {
+    transform: translate(-10px, 10px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
 }
 
 .cell5 {
@@ -865,6 +1072,25 @@ onBeforeUnmount(() => {
   height: auto;
   width: 331px;
   transform: scaleX(-1);
+  animation: cell2_5-float 6s ease-in-out infinite;
+}
+
+@keyframes cell2_5-float {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(-10px, -10px);
+  }
+  50% {
+    transform: translate(-10px, 10px);
+  }
+  75% {
+    transform: translate(10px, 10px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
 }
 
 .cell6 {
@@ -874,6 +1100,25 @@ onBeforeUnmount(() => {
   height: auto;
   width: 317px;
   transform: rotate(15deg);
+  animation: cell1_6-float 6s ease-in-out infinite;
+}
+
+@keyframes cell1_6-float {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(10px, -10px);
+  }
+  50% {
+    transform: translate(-10px, 10px);
+  }
+  75% {
+    transform: translate(10px, 10px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
 }
 
 .Robert {
@@ -893,6 +1138,7 @@ onBeforeUnmount(() => {
   opacity: 0;
   transform: scale(0.5);
   transition: all 0.35s ease-in-out;
+  z-index: 1;
 }
 
 .electron-microscope.show {
@@ -906,6 +1152,22 @@ onBeforeUnmount(() => {
   left: 230px;
   height: auto;
   width: 58px;
+  animation: organelle1-float 6s ease-in-out infinite;
+}
+
+@keyframes organelle1-float {
+  0% {
+    transform: translateY(0);
+  }
+  33% {
+    transform: translateY(-10px);
+  }
+  66% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 .organelle2 {
@@ -914,6 +1176,22 @@ onBeforeUnmount(() => {
   left: 432px;
   height: auto;
   width: 72px;
+  animation: organelle2-float 6s ease-in-out infinite;
+}
+
+@keyframes organelle2-float {
+  0% {
+    transform: translateY(0);
+  }
+  33% {
+    transform: translateY(10px);
+  }
+  66% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 .organelle3 {
@@ -922,6 +1200,22 @@ onBeforeUnmount(() => {
   left: 173px;
   height: auto;
   width: 72px;
+  animation: organelle3-float 6s ease-in-out infinite;
+}
+
+@keyframes organelle3-float {
+  0% {
+    transform: translateX(0);
+  }
+  33% {
+    transform: translateX(-10px);
+  }
+  66% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 .organelle4 {
@@ -930,6 +1224,22 @@ onBeforeUnmount(() => {
   left: 418px;
   height: auto;
   width: 72px;
+  animation: organelle4-float 6s ease-in-out infinite;
+}
+
+@keyframes organelle4-float {
+  0% {
+    transform: translateX(0);
+  }
+  33% {
+    transform: translateX(10px);
+  }
+  66% {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 .container2 {
@@ -1091,6 +1401,7 @@ onBeforeUnmount(() => {
   height: auto;
   display: flex;
   justify-content: space-between;
+  z-index: 1;
 }
 
 .image-item {
@@ -1130,6 +1441,25 @@ onBeforeUnmount(() => {
   left: 72px;
   width: 360px;
   height: auto;
+  animation: protein1-float 6s ease-in-out infinite;
+}
+
+@keyframes protein1-float {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(10px, -10px);
+  }
+  50% {
+    transform: translate(-10px, 10px);
+  }
+  75% {
+    transform: translate(10px, 10px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
 }
 
 .protein2 {
@@ -1138,6 +1468,25 @@ onBeforeUnmount(() => {
   right: 0;
   width: 360px;
   height: auto;
+  animation: protein1-float 6s ease-in-out infinite;
+}
+
+@keyframes protein1-float {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(10px, 10px);
+  }
+  50% {
+    transform: translate(-10px, 10px);
+  }
+  75% {
+    transform: translate(10px, -10px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
 }
 
 .yeast {
@@ -1277,6 +1626,7 @@ onBeforeUnmount(() => {
   font-size: 46px;
   font-weight: 700;
   color: white;
+  z-index: 1;
 }
 
 .highlight-yellow {
