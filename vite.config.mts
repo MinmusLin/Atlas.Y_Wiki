@@ -9,6 +9,7 @@ import {ElementPlusResolver} from 'unplugin-vue-components/resolvers'
 
 // noinspection JSUnusedGlobalSymbols
 export default defineConfig({
+    base: '/tongji-software/',
     plugins: [
         VueRouter(),
         Vue({
