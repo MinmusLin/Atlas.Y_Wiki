@@ -290,7 +290,8 @@
 
     <img src='https://static.igem.wiki/teams/5503/designmaterials/defaultearth.webp'
          alt='DefaultEarth'
-         class='default-earth'>
+         class='default-earth'
+         ref='defaultEarthRef'>
 
     <p class='promote15' ref='promote15Ref'>
       The function of Atlas.Y is not only a protein map inside the yeast,
@@ -487,7 +488,7 @@ onMounted(() => {
   }
 })
 
-const handleIntersectionFour = (entries: IntersectionObserverEntry[]) => {
+const handleMicroscopeIntersection = (entries: IntersectionObserverEntry[]) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
       entry.target.classList.add('fade-in')
@@ -498,7 +499,7 @@ const handleIntersectionFour = (entries: IntersectionObserverEntry[]) => {
 }
 
 onMounted(() => {
-  const observer = new IntersectionObserver(handleIntersectionFour, {
+  const observer = new IntersectionObserver(handleMicroscopeIntersection, {
     root: null,
     threshold: 0.1
   });
@@ -512,6 +513,50 @@ onMounted(() => {
 
 onBeforeUnmount(() => {
   window.removeEventListener('scroll', draw)
+})
+
+const defaultEarthRef = ref<HTMLImageElement | null>(null);
+let isIntersecting = false
+let initialScrollY = 0
+
+const handleScroll = () => {
+  if (!isIntersecting || !defaultEarthRef.value) return
+
+  const scrollY = window.scrollY;
+  const deltaScroll = scrollY - initialScrollY
+
+  const rotation = deltaScroll * 0.1
+  const scale = Math.max(1, Math.min(1 + deltaScroll / 1000 * 0.8, 1.8))
+
+  defaultEarthRef.value.style.transform = `translateX(-50%) scale(${scale}) rotate(${rotation}deg)`;
+}
+
+const handleDefaultEarthIntersection = (entries: IntersectionObserverEntry[]) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      isIntersecting = true
+      initialScrollY = window.scrollY
+      window.addEventListener('scroll', handleScroll)
+    } else {
+      isIntersecting = false
+      window.removeEventListener('scroll', handleScroll)
+    }
+  })
+}
+
+onMounted(() => {
+  const observer = new IntersectionObserver(handleDefaultEarthIntersection, {
+    root: null,
+    threshold: 0.1
+  })
+
+  if (defaultEarthRef.value) {
+    observer.observe(defaultEarthRef.value);
+  }
+})
+
+onBeforeUnmount(() => {
+  window.removeEventListener('scroll', handleScroll)
 })
 </script>
 
@@ -707,10 +752,10 @@ onBeforeUnmount(() => {
 
 .planet2 {
   position: absolute;
-  top: 1738px;
-  right: 605px;
+  top: 1750px;
+  right: 615px;
   height: auto;
-  width: 144px;
+  width: 160px;
 }
 
 .planet3 {
@@ -815,7 +860,7 @@ onBeforeUnmount(() => {
 .Robert {
   position: absolute;
   top: 3641px;
-  right: -150px;
+  right: -50px;
   height: auto;
   width: 250px;
 }
@@ -1004,7 +1049,7 @@ onBeforeUnmount(() => {
 
 .label {
   width: 400px;
-  font-family: 'Futura Md BT', sans-serif;
+  font-family: 'Futura Md BT Medium', sans-serif;
   font-size: 18px;
   font-weight: 400;
   color: #16396E;
@@ -1047,7 +1092,7 @@ onBeforeUnmount(() => {
   font-weight: 400;
   margin-top: 30px;
   text-align: center;
-  font-family: 'Futura Md BT', sans-serif;
+  font-family: 'Futura Md BT Medium', sans-serif;
   color: #16396E;
 }
 
@@ -1079,15 +1124,15 @@ onBeforeUnmount(() => {
 .yeast {
   position: absolute;
   top: 8800px;
-  left: 288px;
-  width: 360px;
+  left: 0;
+  width: 260px;
   height: auto;
 }
 
 .dialog {
   position: absolute;
   top: 8668px;
-  left: 576px;
+  left: 288px;
   width: 360px;
   height: auto;
 }
@@ -1132,6 +1177,7 @@ onBeforeUnmount(() => {
   transform: translateX(-50%);
   width: 288px;
   height: auto;
+  transition: transform 0.1s ease;
 }
 
 .button2 {
@@ -1141,7 +1187,7 @@ onBeforeUnmount(() => {
   transform: translateX(-50%) translateY(50px);
   background-color: transparent;
   color: #16396E;
-  font-family: 'Futura Md BT', sans-serif;
+  font-family: 'Futura Md BT Medium', sans-serif;
   font-size: 24px;
   font-weight: 400;
   cursor: pointer;
@@ -1168,7 +1214,7 @@ onBeforeUnmount(() => {
   position: absolute;
   top: 1012px;
   left: 302px;
-  width: 355px;
+  width: 370px;
   height: auto;
 }
 
@@ -1176,20 +1222,20 @@ onBeforeUnmount(() => {
   position: absolute;
   top: 1342px;
   left: 634px;
-  width: 374px;
+  width: 440px;
   height: auto;
 }
 
 .promote3 {
   position: absolute;
   top: 1793px;
-  left: 756px;
-  width: 400px;
+  left: 730px;
+  width: 415px;
   height: auto;
 }
 
 .promote1-1, .promote2-1, .promote3-1 {
-  font-family: 'Futura Md BT', sans-serif;
+  font-family: 'Futura Md BT Medium', sans-serif;
   font-size: 20px;
   font-weight: 700;
   color: #FFFFFF;
@@ -1208,7 +1254,7 @@ onBeforeUnmount(() => {
   left: 50%;
   width: 1152px;
   height: auto;
-  font-family: 'Futura Md BT', sans-serif;
+  font-family: 'Futura Md BT Medium', sans-serif;
   font-size: 46px;
   font-weight: 700;
   color: white;
@@ -1221,20 +1267,20 @@ onBeforeUnmount(() => {
 .promote5 {
   position: absolute;
   top: 3707px;
-  left: 770px;
-  width: 395px;
+  left: 750px;
+  width: 375px;
   height: auto;
 }
 
 .promote5-1, .promote6-1 {
-  font-family: 'Futura Md BT', sans-serif;
+  font-family: 'Futura Md BT Medium', sans-serif;
   font-size: 18px;
   font-weight: 700;
   color: #193B6F;
 }
 
 .promote5-2, .promote6-2 {
-  font-family: 'Futura Md BT', sans-serif;
+  font-family: 'Futura Bk BT Book', sans-serif;
   font-size: 18px;
   font-weight: 400;
   color: #193B6F;
@@ -1244,7 +1290,7 @@ onBeforeUnmount(() => {
   position: absolute;
   top: 4158px;
   left: 554px;
-  width: 750px;
+  width: 720px;
   height: auto;
 }
 
@@ -1257,14 +1303,14 @@ onBeforeUnmount(() => {
 }
 
 .promote7-1 {
-  font-family: 'Futura Md BT', sans-serif;
+  font-family: 'Futura Md BT Medium', sans-serif;
   font-size: 24px;
   font-weight: 700;
   color: #193B6F;
 }
 
 .promote7-2 {
-  font-family: 'Futura Md BT', sans-serif;
+  font-family: 'Futura Bk BT Book', sans-serif;
   font-size: 24px;
   font-weight: 400;
   color: #193B6F;
@@ -1280,7 +1326,7 @@ onBeforeUnmount(() => {
   left: 50%;
   width: 873px;
   height: 171px;
-  font-family: 'Futura Md BT', sans-serif;
+  font-family: 'Futura Md BT Medium', sans-serif;
   font-size: 30px;
   font-weight: 400;
   color: #E9AD01;
@@ -1291,9 +1337,9 @@ onBeforeUnmount(() => {
   position: absolute;
   top: 5995px;
   right: 250px;
-  width: 420px;
+  width: 390px;
   height: 171px;
-  font-family: 'Futura Md BT', sans-serif;
+  font-family: 'Futura Bk BT Book', sans-serif;
   font-size: 19px;
   font-weight: 400;
   color: #16396E;
@@ -1305,7 +1351,7 @@ onBeforeUnmount(() => {
   left: 50%;
   width: 873px;
   height: 171px;
-  font-family: 'Futura Md BT', sans-serif;
+  font-family: 'Futura Md BT Medium', sans-serif;
   font-size: 30px;
   font-weight: 400;
   color: #2F62D7;
@@ -1318,7 +1364,7 @@ onBeforeUnmount(() => {
   left: 50%;
   width: 600px;
   height: 171px;
-  font-family: 'Futura Md BT', sans-serif;
+  font-family: 'Futura Bk BT Book', sans-serif;
   font-size: 18px;
   font-weight: 400;
   color: #16396E;
@@ -1331,7 +1377,7 @@ onBeforeUnmount(() => {
   left: 50%;
   width: 611px;
   height: 171px;
-  font-family: 'Futura Md BT', sans-serif;
+  font-family: 'Futura Bk BT Book', sans-serif;
   font-size: 18px;
   font-weight: 400;
   color: #16396E;
@@ -1344,7 +1390,7 @@ onBeforeUnmount(() => {
   left: 144px;
   width: 648px;
   height: 171px;
-  font-family: 'Futura Md BT', sans-serif;
+  font-family: 'Futura Md BT Medium', sans-serif;
   font-size: 30px;
   font-weight: 700;
   color: #2F62D7;
@@ -1353,10 +1399,10 @@ onBeforeUnmount(() => {
 .promote14 {
   position: absolute;
   top: 8729px;
-  left: 619px;
+  left: 331px;
   width: 302px;
   height: auto;
-  font-family: 'Futura Md BT', sans-serif;
+  font-family: 'Futura Md BT Medium', sans-serif;
   font-size: 32px;
   font-weight: 700;
   color: #2F62D7;
@@ -1364,11 +1410,11 @@ onBeforeUnmount(() => {
 
 .promote15 {
   position: absolute;
-  top: 9680px;
+  top: 9650px;
   left: 50%;
   width: 900px;
   height: auto;
-  font-family: 'Futura Md BT', sans-serif;
+  font-family: 'Futura Md BT Medium', sans-serif;
   font-size: 30px;
   font-weight: 400;
   color: #16396E;
@@ -1376,11 +1422,11 @@ onBeforeUnmount(() => {
 
 .promote16 {
   position: absolute;
-  top: 10230px;
+  top: 10250px;
   left: 50%;
   width: 749px;
   height: auto;
-  font-family: 'Futura Md BT', sans-serif;
+  font-family: 'Futura Md BT Medium', sans-serif;
   font-size: 32px;
   font-weight: 400;
   color: #16396E;
@@ -1393,7 +1439,7 @@ onBeforeUnmount(() => {
   left: 50%;
   width: 1000px;
   height: auto;
-  font-family: 'Futura Md BT', sans-serif;
+  font-family: 'Futura Md BT Medium', sans-serif;
   font-size: 50px;
   font-weight: 400;
   color: #16396E;
