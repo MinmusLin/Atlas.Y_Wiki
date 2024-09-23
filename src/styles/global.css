@@ -4,12 +4,8 @@ html, body {
     min-width: 1440px;
 }
 
-body {
-    overflow-x: hidden;
-}
-
 html {
-    overflow-x: auto;
+    overflow-x: hidden;
 }
 
 img {
