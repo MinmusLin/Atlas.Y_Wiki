@@ -84,7 +84,6 @@ onMounted(async () => {
   left: 70px;
   bottom: 26px;
   font-size: 80px;
-  font-weight: 800;
   color: #5182F8;
   font-family: 'Futura Md BT Bold', sans-serif;
 }
@@ -94,7 +93,6 @@ onMounted(async () => {
   left: 61px;
   bottom: 30px;
   font-size: 80px;
-  font-weight: 800;
   color: white;
   font-family: 'Futura Md BT Bold', sans-serif;
 }

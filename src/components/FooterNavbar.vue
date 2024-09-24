@@ -7,7 +7,8 @@
          @click="goToLink('https://en.tongji.edu.cn')">
     <img src='https://static.igem.wiki/teams/5503/design-materials/tongjisoftwarelogo.webp'
          alt='TongjiSoftwareLogo'
-         style='top: 90px; left: 304px; width: 183px'>
+         style='top: 90px; left: 304px; cursor: pointer; width: 183px'
+         @click="goToLink('https://teams.igem.org/5503')">
     <img src='https://static.igem.wiki/teams/5503/design-materials/lightlogo.webp'
          alt='LightLogo'
          style='top: 93px; left: 545px; cursor: pointer; width: 243px'

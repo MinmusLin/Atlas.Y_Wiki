@@ -5,8 +5,15 @@
          class='background'>
 
     <div class='title-slogan-container'>
-      <img src='https://static.igem.wiki/teams/5503/design-materials/title.webp' alt='Title' class='title'>
-      <img src='https://static.igem.wiki/teams/5503/design-materials/slogan.webp' alt='Slogan' class='slogan'>
+      <img src='https://static.igem.wiki/teams/5503/design-materials/title.webp'
+           alt='Title'
+           class='title'>
+      <img src='https://static.igem.wiki/teams/5503/design-materials/slogan.webp'
+           alt='Slogan'
+           class='slogan'>
+      <img src='https://static.igem.wiki/teams/5503/design-materials/getstarted.webp'
+           alt='GetStarted'
+           class='get-started'>
     </div>
 
     <img src='https://static.igem.wiki/teams/5503/design-materials/motilecell1.webp'
@@ -30,10 +37,6 @@
     <img src='https://static.igem.wiki/teams/5503/design-materials/motilecell7.webp'
          alt='MotileCell7'
          class='motile-cell7'>
-
-    <img src='https://static.igem.wiki/teams/5503/design-materials/getstarted.webp'
-         alt='GetStarted'
-         class='get-started'>
 
     <div class='promote1' ref='promote1Ref'>
       <p class='promote1-1'>
@@ -91,8 +94,7 @@
     </p>
 
     <div class='promote17' ref='promote17Ref'>
-      <p>However, as we enter the modern era,</p>
-      <p>a new revolution is unfolding.</p>
+      <p>However, as we enter the modern era,<br>a new revolution is unfolding.</p>
     </div>
 
     <img src='https://static.igem.wiki/teams/5503/design-materials/distantcloud.webp'
@@ -613,16 +615,6 @@ onBeforeUnmount(() => {
   #AACAF9 10982px);
 }
 
-.get-started {
-  position: absolute;
-  top: 700px;
-  height: auto;
-  width: 180px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 3;
-}
-
 .background {
   width: 100%;
   height: auto;
@@ -659,6 +651,17 @@ onBeforeUnmount(() => {
   animation-delay: 0.5s;
   position: absolute;
   top: 230px;
+}
+
+.get-started {
+  height: auto;
+  width: 180px;
+  opacity: 0;
+  transform: translateY(-50px);
+  animation: fade-in-down 1.2s ease forwards;
+  animation-delay: 1s;
+  position: absolute;
+  top: 500px;
 }
 
 @keyframes fade-in-down {
@@ -837,10 +840,10 @@ onBeforeUnmount(() => {
 
 .world-map {
   position: absolute;
-  top: 965px;
-  left: -440px;
+  top: 940px;
+  left: -480px;
   height: auto;
-  width: 900px;
+  width: 1000px;
   transform: translateX(-20%);
   transition: transform 1s ease;
 }
@@ -869,7 +872,7 @@ onBeforeUnmount(() => {
 .newton {
   position: absolute;
   top: 1694px;
-  right: -150px;
+  right: -120px;
   height: auto;
   width: 300px;
 }
@@ -1077,8 +1080,7 @@ onBeforeUnmount(() => {
   left: 0;
   height: auto;
   width: 418px;
-  transform: rotate(-25deg);
-  animation: cell3-4-float 6s ease-in-out infinite;
+  animation: cell3-4-float-rotate 6s ease-in-out infinite;
 }
 
 @keyframes cell3-4-float {
@@ -1099,14 +1101,31 @@ onBeforeUnmount(() => {
   }
 }
 
+@keyframes cell3-4-float-rotate {
+  0% {
+    transform: rotate(-25deg) translate(0, 0);
+  }
+  25% {
+    transform: rotate(-25deg) translate(10px, -10px);
+  }
+  50% {
+    transform: rotate(-25deg) translate(10px, 10px);
+  }
+  75% {
+    transform: rotate(-25deg) translate(-10px, 10px);
+  }
+  100% {
+    transform: rotate(-25deg) translate(0, 0);
+  }
+}
+
 .cell5 {
   position: absolute;
   top: 4455px;
   left: 0;
   height: auto;
   width: 331px;
-  transform: scaleX(-1);
-  animation: cell2-5-float 6s ease-in-out infinite;
+  animation: cell2-5-float-scale 6s ease-in-out infinite;
 }
 
 @keyframes cell2-5-float {
@@ -1124,6 +1143,24 @@ onBeforeUnmount(() => {
   }
   100% {
     transform: translate(0, 0);
+  }
+}
+
+@keyframes cell2-5-float-scale {
+  0% {
+    transform: scaleX(-1) translate(0, 0);
+  }
+  25% {
+    transform: scaleX(-1) translate(-10px, -10px);
+  }
+  50% {
+    transform: scaleX(-1) translate(-10px, 10px);
+  }
+  75% {
+    transform: scaleX(-1) translate(10px, 10px);
+  }
+  100% {
+    transform: scaleX(-1) translate(0, 0);
   }
 }
 
@@ -1376,6 +1413,7 @@ onBeforeUnmount(() => {
   width: 100%;
   height: auto;
   margin-bottom: 27%;
+  transform: translateX(-7px);
 }
 
 .bioinformatics-container2 {
@@ -1384,6 +1422,7 @@ onBeforeUnmount(() => {
   height: auto;
   margin-top: 8%;
   margin-bottom: 28.5%;
+  transform: translateX(-7px);
 }
 
 .deep-loc {
@@ -1771,7 +1810,7 @@ onBeforeUnmount(() => {
 }
 
 .promote7-1 {
-  font-family: 'Futura Md BT Medium', sans-serif;
+  font-family: 'Futura Md BT Bold', sans-serif;
   font-size: 24px;
   color: #193B6F;
 }
@@ -1796,12 +1835,13 @@ onBeforeUnmount(() => {
   font-size: 30px;
   color: #E9AD01;
   text-align: center;
+  line-height: 1.43;
 }
 
 .promote9 {
   position: absolute;
-  top: 5995px;
-  right: 250px;
+  top: 5950px;
+  right: 350px;
   width: 390px;
   height: 171px;
   font-family: 'Futura Bk BT Book', sans-serif;
@@ -1819,6 +1859,7 @@ onBeforeUnmount(() => {
   font-size: 30px;
   color: #2F62D7;
   text-align: center;
+  line-height: 1.43;
 }
 
 .promote11 {
@@ -1854,6 +1895,7 @@ onBeforeUnmount(() => {
   font-family: 'Futura Md BT Bold', sans-serif;
   font-size: 30px;
   color: #2F62D7;
+  line-height: 1.43;
 }
 
 .promote14 {
@@ -1888,6 +1930,7 @@ onBeforeUnmount(() => {
   font-size: 32px;
   color: #16396E;
   text-align: center;
+  line-height: 1.43;
 }
 
 .promote17 {
