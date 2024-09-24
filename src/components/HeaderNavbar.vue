@@ -122,7 +122,7 @@ const handleScroll = () => {
   header.style.transform = `translateX(${-window.scrollX}px)`
   const scrollPosition = window.scrollY
   const pageHeight = document.documentElement.scrollHeight - window.innerHeight
-  isScrolled.value = scrollPosition > pageHeight * 0.26
+  isScrolled.value = scrollPosition > pageHeight * 0.275
 }
 
 function goToPage(url: string) {
