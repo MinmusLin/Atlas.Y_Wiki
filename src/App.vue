@@ -22,5 +22,6 @@ import FooterNavbar from '@/components/FooterNavbar.vue'
   height: 76px;
   border-radius: 50%;
   border: 4px #5182F8 solid;
+  z-index: 1002;
 }
 </style>
