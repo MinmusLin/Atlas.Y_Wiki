@@ -8,6 +8,10 @@
          alt='Title'
          class='title'>
 
+    <img src='https://static.igem.wiki/teams/5503/design-materials/slogan.webp'
+         alt='Slogan'
+         class='slogan'>
+
     <img src='https://static.igem.wiki/teams/5503/design-materials/motilecell1.webp'
          alt='MotileCell1'
          class='motile-cell1'>
@@ -89,9 +93,10 @@
       Humanity has never stopped exploring the <span class='highlight-yellow'>Macrocosm</span>
     </p>
 
-    <p class='promote17' ref='promote17Ref'>
-      However, as we enter the modern era,a new revolution is unfolding.
-    </p>
+    <div class='promote17' ref='promote17Ref'>
+      <p>However, as we enter the modern era,</p>
+      <p>a new revolution is unfolding.</p>
+    </div>
 
     <img src='https://static.igem.wiki/teams/5503/design-materials/distantcloud.webp'
          alt='DistantCloud'
@@ -614,6 +619,16 @@ onBeforeUnmount(() => {
   z-index: 3;
 }
 
+.slogan{
+  position: absolute;
+  top: 430px;
+  height: auto;
+  width: 1000px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+}
+
 .button1 {
   position: absolute;
   top: 550px;
@@ -646,9 +661,9 @@ onBeforeUnmount(() => {
 .motile-cell1 {
   position: absolute;
   top: 0;
-  left: 0;
+  left: -430px;
   height: auto;
-  width: 216px;
+  width: 750px;
   animation: motile-cell1-float 6s ease-in-out infinite;
 }
 
@@ -673,9 +688,9 @@ onBeforeUnmount(() => {
 .motile-cell2 {
   position: absolute;
   top: 0;
-  left: 331px;
+  left: 400px;
   height: auto;
-  width: 144px;
+  width: 220px;
   animation: motile-cell2-float 6s ease-in-out infinite;
 }
 
@@ -694,18 +709,18 @@ onBeforeUnmount(() => {
 .motile-cell3 {
   position: absolute;
   top: 0;
-  right: 0;
+  right: -600px;
   height: auto;
-  width: 547px;
+  width: 1200px;
   animation: motile-cell3_4-float 6s ease-in-out infinite;
 }
 
 .motile-cell4 {
   position: absolute;
-  top: 330px;
-  left: 0;
+  top: 400px;
+  left: -200px;
   height: auto;
-  width: 115px;
+  width: 400px;
   animation: motile-cell3_4-float 6s ease-in-out infinite;
 }
 
@@ -729,10 +744,10 @@ onBeforeUnmount(() => {
 
 .motile-cell5 {
   position: absolute;
-  top: 495px;
-  left: 360px;
+  top: 600px;
+  left: 320px;
   height: auto;
-  width: 115px;
+  width: 130px;
   animation: motile-cell5-float 6s ease-in-out infinite;
 }
 
@@ -753,8 +768,8 @@ onBeforeUnmount(() => {
 
 .motile-cell6 {
   position: absolute;
-  top: 363px;
-  right: 130px;
+  top: 460px;
+  right: 0px;
   height: auto;
   width: 403px;
   animation: motile-cell6-float 6s ease-in-out infinite;
@@ -781,8 +796,8 @@ onBeforeUnmount(() => {
 
 .motile-cell7 {
   position: absolute;
-  top: 318px;
-  right: 259px;
+  top: 430px;
+  right: 140px;
   height: auto;
   width: 72px;
   animation: motile-cell7-float 5s ease-in-out infinite;
@@ -927,6 +942,7 @@ onBeforeUnmount(() => {
   height: auto;
   width: 420px;
   animation: left-cloud-float 6s ease-in-out infinite;
+  z-index:2;
 }
 
 @keyframes left-cloud-float {
@@ -951,6 +967,7 @@ onBeforeUnmount(() => {
   height: auto;
   width: 620px;
   animation: right-cloud-float 6s ease-in-out infinite;
+  z-index:2;
 }
 
 @keyframes right-cloud-float {
@@ -994,19 +1011,21 @@ onBeforeUnmount(() => {
 
 .clouds {
   position: absolute;
-  top: 2750px;
-  left: -1100px;
+  top: 2710px;
+  left: 50%;
+  transform: translateX(-53%);
   height: auto;
-  width: 3000px;
+  width: 2700px;
   z-index: 1;
 }
 
 .plain-earth {
   position: absolute;
-  top: 2472px;
-  left: 0;
+  top: 2400px;
+  left: 50%;
+  transform: translateX(-50%);
   height: auto;
-  width: 1440px;
+  width: 2200px;
   z-index: 1;
 }
 
@@ -1035,6 +1054,7 @@ onBeforeUnmount(() => {
   height: auto;
   width: 288px;
   animation: cell3_4-float 6s ease-in-out infinite;
+  opacity: 0.1;
 }
 
 .cell4 {
@@ -1804,9 +1824,9 @@ onBeforeUnmount(() => {
 
 .promote17 {
   position: absolute;
-  top: 3150px;
+  top: 3050px;
   left: 50%;
-  width: 1000px;
+  width: 906px;
   height: auto;
   font-family: 'Futura Md BT Medium', sans-serif;
   font-size: 50px;
