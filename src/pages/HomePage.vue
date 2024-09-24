@@ -1,4 +1,6 @@
 <template>
+  <LoadingAnimation/>
+
   <div class='background-container'>
     <img src='https://static.igem.wiki/teams/5503/design-materials/background.webp'
          alt='Background'
@@ -287,7 +289,7 @@
     <img src='https://static.igem.wiki/teams/5503/design-materials/dialog.webp' alt='Dialog' class='dialog'>
     <div class='computer-container'>
       <img src='https://static.igem.wiki/teams/5503/design-materials/computer.webp' alt='Computer' class='computer'>
-      <button class='explore' @click='showContent' v-show='!isVisible'>EXPLORE</button>
+      <button class='explore' @click='isVisible=false' v-show='!isVisible'>EXPLORE</button>
 
       <div class='text-content' v-show='isVisible'>
         <ul>
@@ -336,11 +338,14 @@
   <div class='background-color'/>
 </template>
 
+<!--suppress CommaExpressionJS-->
 <script setup lang='ts'>
 import {ref, onMounted, onBeforeUnmount} from 'vue'
 import {draw} from '@/plugins/canvas'
 import {useRouter} from 'vue-router'
+import LoadingAnimation from '@/components/LoadingAnimation.vue'
 
+const isVisible = ref(false)
 const router = useRouter()
 const promote1Ref = ref<HTMLElement | null>(null)
 const promote2Ref = ref<HTMLElement | null>(null)
@@ -363,15 +368,15 @@ const dot1Ref = ref<HTMLElement | null>(null)
 const dot2Ref = ref<HTMLElement | null>(null)
 const dot3Ref = ref<HTMLElement | null>(null)
 const button2Ref = ref<HTMLButtonElement | null>(null)
-
 const worldMapRef = ref<HTMLElement | null>(null)
-
 const microscopeOnlyRef = ref(null)
-
 const microscopeRef = ref(null)
 const sequencingRef = ref(null)
 const proteomicsRef = ref(null)
 const bioinformaticsRef = ref(null)
+const defaultEarthRef = ref<HTMLImageElement | null>(null)
+let isIntersecting = false
+let initialScrollY = 0
 
 const handleIntersection = (entries: IntersectionObserverEntry[]) => {
   entries.forEach(entry => {
@@ -464,11 +469,11 @@ onBeforeUnmount(() => {
 })
 
 onMounted(() => {
+  // noinspection TypeScriptValidateTypes
   const observer = new IntersectionObserver(handleIntersection, {
     root: null,
     threshold: 0.1
   })
-
   if (worldMapRef.value) {
     observer.observe(worldMapRef.value)
   }
@@ -489,7 +494,7 @@ onMounted(() => {
     root: null,
     threshold: 0.3
   }
-
+  // noinspection TypeScriptValidateTypes
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
@@ -499,7 +504,6 @@ onMounted(() => {
       }
     })
   }, options)
-
   if (microscopeOnlyRef.value) {
     observer.observe(microscopeOnlyRef.value)
   }
@@ -516,12 +520,12 @@ const handleMicroscopeIntersection = (entries: IntersectionObserverEntry[]) => {
 }
 
 onMounted(() => {
+  // noinspection TypeScriptValidateTypes
   const observer = new IntersectionObserver(handleMicroscopeIntersection, {
     root: null,
     threshold: 0.1
-  });
-
-  [microscopeRef, sequencingRef, proteomicsRef, bioinformaticsRef].forEach(ref => {
+  })
+    [microscopeRef, sequencingRef, proteomicsRef, bioinformaticsRef].forEach(ref => {
     if (ref.value) {
       observer.observe(ref.value)
     }
@@ -532,20 +536,17 @@ onBeforeUnmount(() => {
   window.removeEventListener('scroll', draw)
 })
 
-const defaultEarthRef = ref<HTMLImageElement | null>(null)
-let isIntersecting = false
-let initialScrollY = 0
-
 const handleScroll = () => {
-  if (!isIntersecting || !defaultEarthRef.value) return
-
+  if (!isIntersecting || !defaultEarthRef.value) {
+    return
+  }
   const scrollY = window.scrollY
   const deltaScroll = scrollY - initialScrollY
-
   const rotation = deltaScroll * 0.1
   const scale = Math.max(1, Math.min(1 + deltaScroll / 1000 * 0.8, 1.8))
-
-  defaultEarthRef.value.style.transform = `translateX(-50%) scale(${scale}) rotate(${rotation}deg)`
+  if (defaultEarthRef.value) {
+    defaultEarthRef.value.style.transform = `translateX(-50%) scale(${scale}) rotate(${rotation}deg)`
+  }
 }
 
 const handleDefaultEarthIntersection = (entries: IntersectionObserverEntry[]) => {
@@ -562,11 +563,11 @@ const handleDefaultEarthIntersection = (entries: IntersectionObserverEntry[]) =>
 }
 
 onMounted(() => {
+  // noinspection TypeScriptValidateTypes
   const observer = new IntersectionObserver(handleDefaultEarthIntersection, {
     root: null,
     threshold: 0.1
   })
-
   if (defaultEarthRef.value) {
     observer.observe(defaultEarthRef.value)
   }
@@ -575,14 +576,9 @@ onMounted(() => {
 onBeforeUnmount(() => {
   window.removeEventListener('scroll', handleScroll)
 })
-
-const isVisible = ref(false)
-
-const showContent = () => {
-  isVisible.value = true
-}
 </script>
 
+<!--suppress CssUnusedSymbol-->
 <style scoped>
 #tutorial {
   position: absolute;
@@ -791,7 +787,7 @@ const showContent = () => {
 .motile-cell6 {
   position: absolute;
   top: 460px;
-  right: 0px;
+  right: 0;
   height: auto;
   width: 403px;
   animation: motile-cell6-float 6s ease-in-out infinite;
@@ -1550,7 +1546,7 @@ const showContent = () => {
 .computer-container {
   position: absolute;
   top: 8600px;
-  right: 0px;
+  right: 0;
   width: 690px;
 }
 
