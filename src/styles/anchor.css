@@ -13,30 +13,29 @@ nav {
     align-items: center;
     cursor: pointer;
     gap: 20px;
-    padding-top: 30px;
-    padding-bottom: 30px;
     -webkit-user-select: none;
     margin-bottom: 20px;
+    padding: 30px 24px 30px 20px;
 }
 
 nav a {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
     color: #C5C9CD;
     text-decoration: none;
-    font-size: 24px;
+    font-size: 22px;
     font-family: 'Futura Md BT Bold', sans-serif;
-    text-align: center;
+    text-align: left;
     width: 100%;
 }
 
 nav a::before {
     content: '';
     display: inline-block;
-    width: 20px;
-    height: 20px;
-    margin-right: 5px;
-    margin-bottom: 5px;
-    vertical-align: middle;
+    width: 30px;
+    height: 30px;
+    margin-right: 8px;
 }
 
 nav a:hover, a.active:hover {
@@ -47,13 +46,11 @@ nav a:hover::before {
     content: '';
     display: inline-block;
     background-image: url('https://static.igem.wiki/teams/5503/design-materials/activemapmarker.webp');
-    background-size: contain;
+    background-size: 16px 16px;
     background-repeat: no-repeat;
-    width: 20px;
-    height: 20px;
-    margin-right: 5px;
-    margin-bottom: 5px;
-    vertical-align: middle;
+    width: 30px;
+    height: 30px;
+    margin-right: 8px;
 }
 
 nav a.active {
@@ -65,13 +62,11 @@ nav a.active::before {
     content: '';
     display: inline-block;
     background-image: url('https://static.igem.wiki/teams/5503/design-materials/defaultmapmarker.webp');
-    background-size: contain;
+    background-size: 16px 16px;
     background-repeat: no-repeat;
-    width: 20px;
-    height: 20px;
-    margin-right: 5px;
-    margin-bottom: 5px;
-    vertical-align: middle;
+    width: 30px;
+    height: 30px;
+    margin-right: 8px;
 }
 
 nav a.active:hover::before {
