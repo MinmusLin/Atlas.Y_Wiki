@@ -4,13 +4,10 @@
          alt='Background'
          class='background'>
 
-    <img src='https://static.igem.wiki/teams/5503/design-materials/title.webp'
-         alt='Title'
-         class='title'>
-
-    <img src='https://static.igem.wiki/teams/5503/design-materials/slogan.webp'
-         alt='Slogan'
-         class='slogan'>
+    <div class='title-slogan-container'>
+      <img src='https://static.igem.wiki/teams/5503/design-materials/title.webp' alt='Title' class='title'>
+      <img src='https://static.igem.wiki/teams/5503/design-materials/slogan.webp' alt='Slogan' class='slogan'>
+    </div>
 
     <img src='https://static.igem.wiki/teams/5503/design-materials/motilecell1.webp'
          alt='MotileCell1'
@@ -288,6 +285,21 @@
     <img src='https://static.igem.wiki/teams/5503/design-materials/protein2.webp' alt='Protein2' class='protein2'>
     <img src='https://static.igem.wiki/teams/5503/design-materials/yeast.webp' alt='Yeast' class='yeast'>
     <img src='https://static.igem.wiki/teams/5503/design-materials/dialog.webp' alt='Dialog' class='dialog'>
+    <div class='computer-container'>
+      <img src='https://static.igem.wiki/teams/5503/design-materials/computer.webp' alt='Computer' class='computer'>
+      <button class='explore' @click='showContent' v-show='!isVisible'>EXPLORE</button>
+
+      <div class='text-content' v-show='isVisible'>
+        <ul>
+          <li>Protein Structure Prediction</li>
+          <li>Subcellular Localization Protein Design</li>
+          <li>Stability and Functionality Testing</li>
+          <li>Protein Subcellular Localization Prediction</li>
+          <li>Protein Directed Evolution</li>
+          <li>Spatiotemporal-Specific Localization Protein Design</li>
+        </ul>
+      </div>
+    </div>
 
     <p class='promote14' ref='promote14Ref'>
       Do you know what Atlas.Y does?
@@ -520,20 +532,20 @@ onBeforeUnmount(() => {
   window.removeEventListener('scroll', draw)
 })
 
-const defaultEarthRef = ref<HTMLImageElement | null>(null);
+const defaultEarthRef = ref<HTMLImageElement | null>(null)
 let isIntersecting = false
 let initialScrollY = 0
 
 const handleScroll = () => {
   if (!isIntersecting || !defaultEarthRef.value) return
 
-  const scrollY = window.scrollY;
+  const scrollY = window.scrollY
   const deltaScroll = scrollY - initialScrollY
 
   const rotation = deltaScroll * 0.1
   const scale = Math.max(1, Math.min(1 + deltaScroll / 1000 * 0.8, 1.8))
 
-  defaultEarthRef.value.style.transform = `translateX(-50%) scale(${scale}) rotate(${rotation}deg)`;
+  defaultEarthRef.value.style.transform = `translateX(-50%) scale(${scale}) rotate(${rotation}deg)`
 }
 
 const handleDefaultEarthIntersection = (entries: IntersectionObserverEntry[]) => {
@@ -556,13 +568,19 @@ onMounted(() => {
   })
 
   if (defaultEarthRef.value) {
-    observer.observe(defaultEarthRef.value);
+    observer.observe(defaultEarthRef.value)
   }
 })
 
 onBeforeUnmount(() => {
   window.removeEventListener('scroll', handleScroll)
 })
+
+const isVisible = ref(false)
+
+const showContent = () => {
+  isVisible.value = true
+}
 </script>
 
 <style scoped>
@@ -619,24 +637,47 @@ onBeforeUnmount(() => {
   display: block;
 }
 
-.title {
+.title-slogan-container {
   position: absolute;
   top: 220px;
-  height: auto;
-  width: 648px;
   left: 50%;
   transform: translateX(-50%);
-  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 4;
+}
+
+.title {
+  width: 648px;
+  height: auto;
+  margin-bottom: 20px;
+  opacity: 0;
+  transform: translateY(-50px);
+  animation: fade-in-down 1.2s ease forwards;
+  position: absolute;
 }
 
 .slogan {
-  position: absolute;
-  top: 430px;
-  height: auto;
   width: 1000px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 3;
+  height: auto;
+  opacity: 0;
+  transform: translateY(-50px);
+  animation: fade-in-down 1.2s ease forwards;
+  animation-delay: 0.5s;
+  position: absolute;
+  top: 230px;
+}
+
+@keyframes fade-in-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .motile-cell1 {
@@ -808,8 +849,8 @@ onBeforeUnmount(() => {
   left: -440px;
   height: auto;
   width: 900px;
-  transform: translateX(-20%); /* 初始在左侧 */
-  transition: transform 1s ease; /* 添加平滑过渡效果 */
+  transform: translateX(-20%);
+  transition: transform 1s ease;
 }
 
 .world-map.active {
@@ -1267,7 +1308,7 @@ onBeforeUnmount(() => {
 
 .fade-out {
   opacity: 0;
-  animation: none; /* 停止动画 */
+  animation: none;
 }
 
 .microscope-container,
@@ -1504,6 +1545,82 @@ onBeforeUnmount(() => {
   left: 288px;
   width: 360px;
   height: auto;
+}
+
+.computer-container {
+  position: absolute;
+  top: 8530px;
+  right: 0px;
+  width: 690px;
+}
+
+.computer {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.explore {
+  position: absolute;
+  top: 38%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.7);
+  border: none;
+  padding: 15px 30px;
+  color: #16396E;
+  font-family: 'Futura Md BT Medium', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  z-index: 1;
+}
+
+.explore:hover {
+  background-color: rgba(255, 255, 255, 1);
+  transform: translate(-50%, -50%) scale(1.05);
+}
+
+@keyframes wipeUpHeight {
+  0% {
+    max-height: 0;
+    opacity: 0;
+  }
+  100% {
+    max-height: 1000px;
+    opacity: 1;
+  }
+}
+
+.text-content {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  font-family: 'Futura Md BT Medium', sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: #2F62D7;
+  text-align: left;
+  z-index: 1;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  animation: wipeUpHeight 1.5s ease-in forwards;
+}
+
+.text-content ul {
+  list-style-type: disc;
+  list-style-position: inside;
+  padding-left: 15px;
+}
+
+.text-content ul li {
+  margin-bottom: 10px;
+  font-size: 20px;
 }
 
 .dot1 {

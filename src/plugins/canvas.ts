@@ -36,10 +36,10 @@ function verticalLine(x: number, y1: number, y2: number, ctx: CanvasRenderingCon
       }
       if (canvasH > currentLine) {
         currentLine += speed
-        setTimeout(() => draw(), 20)
+        setTimeout(() => draw(), 80)
       } else if (canvasH < currentLine) {
         currentLine -= speed
-        setTimeout(() => draw(), 20)
+        setTimeout(() => draw(), 80)
       }
     } else {
       ctx.lineTo(x, y2)
@@ -65,10 +65,10 @@ function circularArc(x: number, y: number, ctx: CanvasRenderingContext2D, canvas
         }
         if (canvasH > currentLine) {
           currentLine += speed
-          setTimeout(() => draw(), 50)
+          setTimeout(() => draw(), 80)
         } else if (canvasH < currentLine && lines[lineID] == x) {
           currentLine -= speed
-          setTimeout(() => draw(), 50)
+          setTimeout(() => draw(), 80)
         }
       } else {
         if (canDraw(y - 150, y + 150)) {
@@ -91,10 +91,10 @@ function circularArc(x: number, y: number, ctx: CanvasRenderingContext2D, canvas
         }
         if (canvasH > currentLine) {
           currentLine += speed
-          setTimeout(() => draw(), 50)
+          setTimeout(() => draw(), 80)
         } else if (canvasH < currentLine) {
           currentLine -= speed
-          setTimeout(() => draw(), 50)
+          setTimeout(() => draw(), 80)
         }
       } else {
         if (canDraw(y - 150, y + 150)) {
@@ -117,10 +117,10 @@ function circularArc(x: number, y: number, ctx: CanvasRenderingContext2D, canvas
         }
         if (canvasH > currentLine) {
           currentLine += speed
-          setTimeout(() => draw(), 50)
+          setTimeout(() => draw(), 80)
         } else if (canvasH < currentLine) {
           currentLine -= speed
-          setTimeout(() => draw(), 50)
+          setTimeout(() => draw(), 80)
         }
       } else {
         if (canDraw(y - 150, y + 150)) {
@@ -143,10 +143,10 @@ function circularArc(x: number, y: number, ctx: CanvasRenderingContext2D, canvas
         }
         if (canvasH > currentLine) {
           currentLine += speed
-          setTimeout(() => draw(), 50)
+          setTimeout(() => draw(), 80)
         } else if (canvasH < currentLine) {
           currentLine -= speed
-          setTimeout(() => draw(), 50)
+          setTimeout(() => draw(), 80)
         }
       } else {
         if (canDraw(y - 150, y + 150)) {
@@ -175,7 +175,7 @@ function horizontalLine(x1: number, x2: number, y: number, ctx: CanvasRenderingC
         lines[lineID] += 10
       }
       if (lines[lineID] < x2) {
-        setTimeout(() => draw(), 120)
+        setTimeout(() => draw(), 150)
       }
     }
     if (canvasH < y && lines[lineID] > x1 && currentLine == y) {
@@ -191,7 +191,7 @@ function horizontalLine(x1: number, x2: number, y: number, ctx: CanvasRenderingC
         lines[lineID] -= 10
       }
       if (lines[lineID] > x1) {
-        setTimeout(() => draw(), 100)
+        setTimeout(() => draw(), 150)
       }
     }
   } else if (typeID == 2) {
@@ -208,7 +208,7 @@ function horizontalLine(x1: number, x2: number, y: number, ctx: CanvasRenderingC
         lines[lineID] -= 10
       }
       if (lines[lineID] > x2) {
-        setTimeout(() => draw(), 120)
+        setTimeout(() => draw(), 150)
       }
     }
     if (canvasH < y && lines[lineID] < x1 && currentLine == y) {
@@ -224,7 +224,7 @@ function horizontalLine(x1: number, x2: number, y: number, ctx: CanvasRenderingC
         lines[lineID] += 10
       }
       if (lines[lineID] < x1) {
-        setTimeout(() => draw(), 100)
+        setTimeout(() => draw(), 150)
       }
     }
   }
@@ -255,7 +255,7 @@ export function draw() {
   gradient.addColorStop(1, '#2F62D7')
   ctx.setLineDash([10, 18])
   ctx.strokeStyle = gradient
-  ctx.lineWidth = 3
+  ctx.lineWidth = 4
   ctx.lineCap = 'round'
   ctx.lineJoin = 'round'
   ctx.beginPath()
