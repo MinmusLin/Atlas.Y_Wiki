@@ -51,9 +51,9 @@ function scrollToSection(sectionId: string) {
 
 onMounted(async () => {
   const images = [
-    'https://static.igem.wiki/teams/5503/design-materials/yellowprotein.webp',
-    'https://static.igem.wiki/teams/5503/design-materials/greenprotein.webp',
-    'https://static.igem.wiki/teams/5503/design-materials/blueprotein.webp'
+    'https://static.igem.wiki/teams/5503/design-materials/yellowbackgroundprotein.webp',
+    'https://static.igem.wiki/teams/5503/design-materials/greenbackgroundprotein.webp',
+    'https://static.igem.wiki/teams/5503/design-materials/bluebackgroundprotein.webp'
   ]
   let addedHeight = 0
   const availableHeight = document.body.scrollHeight
