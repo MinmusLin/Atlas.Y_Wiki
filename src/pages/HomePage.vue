@@ -388,7 +388,7 @@ onMounted(() => {
   // noinspection TypeScriptValidateTypes
   const observer = new IntersectionObserver(handleIntersection, {
     root: null,
-    threshold: 1.0
+    threshold: 0
   })
   if (promote1Ref.value) {
     observer.observe(promote1Ref.value)
@@ -1727,11 +1727,11 @@ onBeforeUnmount(() => {
 .promote4 {
   position: absolute;
   top: 2222px;
-  left: 50%;
-  width: 1152px;
+  left: 65px;
+  width: 1300px;
   height: auto;
-  font-family: 'Futura Md BT Medium', sans-serif;
-  font-size: 46px;
+  font-family: 'Futura Md BT Bold', sans-serif;
+  font-size: 44px;
   font-weight: 700;
   color: white;
   z-index: 1;
@@ -1924,24 +1924,24 @@ onBeforeUnmount(() => {
   z-index: 9;
 }
 
-.promote1, .promote2, .promote3, .promote5, .promote6, .promote7, .promote9, .promote13, .promote14 {
+.promote1, .promote2, .promote3, .promote4, .promote5, .promote6, .promote7, .promote9, .promote13, .promote14 {
   opacity: 0;
   transform: translateY(50px);
   transition: opacity 0.6s ease, transform 0.6s ease;
 }
 
-.promote1.active, .promote2.active, .promote3.active, .promote5.active, .promote6.active, .promote7.active, .promote9.active, .promote13.active, .promote14.active {
+.promote1.active, .promote2.active, .promote3.active, .promote4.active, .promote5.active, .promote6.active, .promote7.active, .promote9.active, .promote13.active, .promote14.active {
   opacity: 1;
   transform: translateY(0);
 }
 
-.promote4, .promote8, .promote10, .promote11, .promote12, .promote15, .promote16, .promote17, .dot1, .dot2, .dot3 {
+.promote8, .promote10, .promote11, .promote12, .promote15, .promote16, .promote17, .dot1, .dot2, .dot3 {
   opacity: 0;
   transform: translateX(-50%) translateY(50px);
   transition: opacity 0.6s ease, transform 0.6s ease;
 }
 
-.promote4.active, .promote8.active, .promote10.active, .promote11.active, .promote12.active, .promote15.active, .promote16.active, .promote17.active, .dot1.active, .dot2.active, .dot3.active {
+.promote8.active, .promote10.active, .promote11.active, .promote12.active, .promote15.active, .promote16.active, .promote17.active, .dot1.active, .dot2.active, .dot3.active {
   opacity: 1;
   transform: translateX(-50%) translateY(0);
 }
