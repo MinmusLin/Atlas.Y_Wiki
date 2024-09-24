@@ -285,6 +285,7 @@
     <img src='https://static.igem.wiki/teams/5503/design-materials/protein2.webp' alt='Protein2' class='protein2'>
     <img src='https://static.igem.wiki/teams/5503/design-materials/yeast.webp' alt='Yeast' class='yeast'>
     <img src='https://static.igem.wiki/teams/5503/design-materials/dialog.webp' alt='Dialog' class='dialog'>
+
     <div class='computer-container'>
       <img src='https://static.igem.wiki/teams/5503/design-materials/computer.webp' alt='Computer' class='computer'>
       <button class='explore' @click='isVisible=true' v-show='!isVisible'>EXPLORE</button>
@@ -876,7 +877,7 @@ onBeforeUnmount(() => {
 .planet1 {
   position: absolute;
   top: 1820px;
-  left: -150px;
+  left: -160px;
   height: auto;
   width: 400px;
   animation: planet1-float 5s ease-in-out infinite;
@@ -1062,8 +1063,8 @@ onBeforeUnmount(() => {
 
 .cell3 {
   position: absolute;
-  top: 3828px;
-  right: 90px;
+  top: 3928px;
+  right: 80px;
   height: auto;
   width: 288px;
   animation: cell3_4-float 6s ease-in-out infinite;
@@ -1357,18 +1358,21 @@ onBeforeUnmount(() => {
   position: relative;
   width: 100%;
   margin: 7.8% 0;
+  transform: translateX(16px);
 }
 
 .sequencing-technology, .sequencing-technology-table {
   position: relative;
   width: 100%;
   margin: 10.5% 0;
+  transform: translateX(28px);
 }
 
 .default-quantitative-proteomics, .active-quantitative-proteomics {
   position: relative;
   width: 100%;
-  margin: 15% 0;
+  margin: 15.1% 0;
+  transform: translateX(10px);
 }
 
 .bioinformatics-tools {
@@ -1382,7 +1386,7 @@ onBeforeUnmount(() => {
   width: 100%;
   height: auto;
   margin-top: 8%;
-  margin-bottom: 28%;
+  margin-bottom: 28.5%;
 }
 
 .deep-loc {
@@ -1412,15 +1416,15 @@ onBeforeUnmount(() => {
 .label {
   width: 400px;
   font-family: 'Futura Md BT Medium', sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   color: #16396E;
   margin-top: 20px;
 }
 
 .cell {
   position: absolute;
-  top: 5500px;
-  left: 0;
+  top: 5485px;
+  left: -60px;
   width: 720px;
   height: auto;
 }
@@ -1463,7 +1467,7 @@ onBeforeUnmount(() => {
   right: 144px;
   width: 720px;
   height: auto;
-  opacity: 0.70;
+  opacity: 0.6;
 }
 
 .protein1 {
@@ -1495,8 +1499,8 @@ onBeforeUnmount(() => {
 
 .protein2 {
   position: absolute;
-  top: 9075px;
-  right: 0;
+  top: 9100px;
+  right: -50px;
   width: 360px;
   height: auto;
   animation: protein1-float 6s ease-in-out infinite;
@@ -1848,7 +1852,7 @@ onBeforeUnmount(() => {
   position: absolute;
   top: 7810px;
   left: 144px;
-  width: 648px;
+  width: 700px;
   height: 171px;
   font-family: 'Futura Md BT Bold', sans-serif;
   font-size: 30px;
