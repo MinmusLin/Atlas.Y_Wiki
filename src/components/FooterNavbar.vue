@@ -1,5 +1,6 @@
 <template>
-  <div class='footer-navbar'>
+  <div class='footer-navbar'
+       :style="{ backgroundColor: (props.isHomePage ? '#16396E' : '#5182F8'), '--hover-color': hoverColor }">
     <img src='https://static.igem.wiki/teams/5503/design-materials/tongjiuniversitylogo.webp'
          alt='TongjiUniversityLogo'
          style='top: 50px; left: 100px; cursor: pointer; width: 140px'
@@ -41,6 +42,14 @@
 </template>
 
 <script setup lang='ts'>
+import {defineProps, computed} from 'vue'
+
+const props = defineProps<{
+  isHomePage: boolean
+}>()
+
+const hoverColor = computed(() => props.isHomePage ? '#AACAF9' : '#16396E');
+
 function goToLink(link: string) {
   window.open(link, '_blank')
 }
@@ -48,10 +57,10 @@ function goToLink(link: string) {
 
 <style scoped>
 .footer-navbar {
-  background-color: #16396E;
   height: 430px;
   position: relative;
   -webkit-user-select: none;
+  --hover-color: #AACAF9;
 }
 
 .contact-us {
@@ -60,7 +69,6 @@ function goToLink(link: string) {
   font-family: 'Futura Md BT Bold', sans-serif;
   line-height: 34px;
   font-size: 32px;
-  font-weight: 700;
   right: 330px;
   top: 135px;
   white-space: nowrap;
@@ -75,7 +83,6 @@ img {
   color: white;
   font-family: 'Futura Bk BT Book', sans-serif;
   font-size: 20px;
-  font-weight: 500;
   right: 167px;
   top: 225px;
   text-decoration: none;
@@ -90,7 +97,6 @@ img {
 .notes p {
   color: white;
   font-family: 'Futura Bk BT Book', sans-serif;
-  font-weight: 500;
   line-height: 34px;
   font-size: 18px;
   white-space: nowrap;
@@ -102,6 +108,6 @@ a {
 }
 
 a:hover {
-  color: #AACAF9;
+  color: var(--hover-color);
 }
 </style>

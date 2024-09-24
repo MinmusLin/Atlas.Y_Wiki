@@ -122,7 +122,7 @@ const handleScroll = () => {
   header.style.transform = `translateX(${-window.scrollX}px)`
   const scrollPosition = window.scrollY
   const pageHeight = document.documentElement.scrollHeight - window.innerHeight
-  isScrolled.value = scrollPosition > pageHeight * 0.26
+  isScrolled.value = scrollPosition > pageHeight * 0.275
 }
 
 function goToPage(url: string) {
@@ -182,7 +182,6 @@ onBeforeUnmount(() => {
 
 .nav-title {
   font-size: 20px;
-  font-weight: 400;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -229,7 +228,6 @@ onBeforeUnmount(() => {
   font-size: 20px;
   line-height: 38px;
   font-family: 'Futura Md BT Bold', sans-serif;
-  font-weight: 400;
   white-space: nowrap;
   width: auto;
   transition: color 0.3s ease;

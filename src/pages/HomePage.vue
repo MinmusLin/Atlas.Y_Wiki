@@ -604,8 +604,8 @@ onBeforeUnmount(() => {
   z-index: 1;
   background: linear-gradient(to bottom,
   #0A2144 0px,
-  #0A2144 3074px,
-  #FFF7C8 3074px,
+  #0A2144 2850px,
+  #FFF7C8 3100px,
   #FFF7C8 4024px,
   #F7F5E1 7028px,
   #AACAF9 10000px,
@@ -1413,7 +1413,6 @@ onBeforeUnmount(() => {
   width: 400px;
   font-family: 'Futura Md BT Medium', sans-serif;
   font-size: 18px;
-  font-weight: 400;
   color: #16396E;
   margin-top: 20px;
 }
@@ -1452,7 +1451,6 @@ onBeforeUnmount(() => {
 
 .image-label {
   font-size: 20px;
-  font-weight: 400;
   margin-top: 30px;
   text-align: center;
   font-family: 'Futura Md BT Medium', sans-serif;
@@ -1465,7 +1463,7 @@ onBeforeUnmount(() => {
   right: 144px;
   width: 720px;
   height: auto;
-  opacity: 0.5;
+  opacity: 0.70;
 }
 
 .protein1 {
@@ -1560,9 +1558,8 @@ onBeforeUnmount(() => {
   border: none;
   padding: 15px 50px;
   color: #16396E;
-  font-family: 'Futura Md BT Medium', sans-serif;
+  font-family: 'Futura Md BT Bold', sans-serif;
   font-size: 24px;
-  font-weight: 700;
   cursor: pointer;
   border-radius: 8px;
   z-index: 1;
@@ -1586,13 +1583,12 @@ onBeforeUnmount(() => {
 
 .text-content {
   position: absolute;
-  top: 15%;
-  left: 50%;
+  top: 16.5%;
+  left: 53%;
   transform: translateX(-50%);
-  width: 80%;
-  font-family: 'Futura Md BT Medium', sans-serif;
+  width: 90%;
+  font-family: 'Futura Md BT Bold', sans-serif;
   font-size: 28px;
-  font-weight: 700;
   color: #2F62D7;
   text-align: left;
   z-index: 1;
@@ -1665,7 +1661,6 @@ onBeforeUnmount(() => {
   color: #16396E;
   font-family: 'Futura Md BT Medium', sans-serif;
   font-size: 24px;
-  font-weight: 400;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -1711,16 +1706,14 @@ onBeforeUnmount(() => {
 }
 
 .promote1-1, .promote2-1, .promote3-1 {
-  font-family: 'Futura Md BT Medium', sans-serif;
+  font-family: 'Futura Md BT Bold', sans-serif;
   font-size: 20px;
-  font-weight: 700;
   color: #FFFFFF;
 }
 
 .promote1-2, .promote2-2, .promote3-2 {
   font-family: 'Futura Bk BT Book', sans-serif;
   font-size: 21px;
-  font-weight: 100;
   color: #FFFFFF;
 }
 
@@ -1732,7 +1725,6 @@ onBeforeUnmount(() => {
   height: auto;
   font-family: 'Futura Md BT Bold', sans-serif;
   font-size: 44px;
-  font-weight: 700;
   color: white;
   z-index: 1;
 }
@@ -1750,16 +1742,14 @@ onBeforeUnmount(() => {
 }
 
 .promote5-1, .promote6-1 {
-  font-family: 'Futura Md BT Medium', sans-serif;
+  font-family: 'Futura Md BT Bold', sans-serif;
   font-size: 18px;
-  font-weight: 700;
   color: #193B6F;
 }
 
 .promote5-2, .promote6-2 {
   font-family: 'Futura Bk BT Book', sans-serif;
   font-size: 18px;
-  font-weight: 400;
   color: #193B6F;
 }
 
@@ -1782,14 +1772,12 @@ onBeforeUnmount(() => {
 .promote7-1 {
   font-family: 'Futura Md BT Medium', sans-serif;
   font-size: 24px;
-  font-weight: 700;
   color: #193B6F;
 }
 
 .promote7-2 {
   font-family: 'Futura Bk BT Book', sans-serif;
   font-size: 24px;
-  font-weight: 400;
   color: #193B6F;
 }
 
@@ -1805,7 +1793,6 @@ onBeforeUnmount(() => {
   height: 171px;
   font-family: 'Futura Md BT Medium', sans-serif;
   font-size: 30px;
-  font-weight: 400;
   color: #E9AD01;
   text-align: center;
 }
@@ -1818,7 +1805,6 @@ onBeforeUnmount(() => {
   height: 171px;
   font-family: 'Futura Bk BT Book', sans-serif;
   font-size: 19px;
-  font-weight: 400;
   color: #16396E;
 }
 
@@ -1830,7 +1816,6 @@ onBeforeUnmount(() => {
   height: 171px;
   font-family: 'Futura Md BT Medium', sans-serif;
   font-size: 30px;
-  font-weight: 400;
   color: #2F62D7;
   text-align: center;
 }
@@ -1843,7 +1828,6 @@ onBeforeUnmount(() => {
   height: 171px;
   font-family: 'Futura Bk BT Book', sans-serif;
   font-size: 18px;
-  font-weight: 400;
   color: #16396E;
   text-align: center;
 }
@@ -1856,7 +1840,6 @@ onBeforeUnmount(() => {
   height: 171px;
   font-family: 'Futura Bk BT Book', sans-serif;
   font-size: 18px;
-  font-weight: 400;
   color: #16396E;
   text-align: center;
 }
@@ -1867,9 +1850,8 @@ onBeforeUnmount(() => {
   left: 144px;
   width: 648px;
   height: 171px;
-  font-family: 'Futura Md BT Medium', sans-serif;
+  font-family: 'Futura Md BT Bold', sans-serif;
   font-size: 30px;
-  font-weight: 700;
   color: #2F62D7;
 }
 
@@ -1879,9 +1861,8 @@ onBeforeUnmount(() => {
   left: 331px;
   width: 302px;
   height: auto;
-  font-family: 'Futura Md BT Medium', sans-serif;
-  font-size: 32px;
-  font-weight: 700;
+  font-family: 'Futura Md BT Bold', sans-serif;
+  font-size: 28px;
   color: #2F62D7;
 }
 
@@ -1893,7 +1874,6 @@ onBeforeUnmount(() => {
   height: auto;
   font-family: 'Futura Md BT Medium', sans-serif;
   font-size: 30px;
-  font-weight: 400;
   color: #16396E;
 }
 
@@ -1905,7 +1885,6 @@ onBeforeUnmount(() => {
   height: auto;
   font-family: 'Futura Md BT Medium', sans-serif;
   font-size: 32px;
-  font-weight: 400;
   color: #16396E;
   text-align: center;
 }
@@ -1918,7 +1897,6 @@ onBeforeUnmount(() => {
   height: auto;
   font-family: 'Futura Md BT Medium', sans-serif;
   font-size: 50px;
-  font-weight: 400;
   color: #16396E;
   text-align: center;
   z-index: 9;

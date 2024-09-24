@@ -2,7 +2,7 @@
   <v-app>
     <HeaderNavbar/>
     <router-view/>
-    <FooterNavbar/>
+    <FooterNavbar :is-home-page='isHomePage'/>
     <el-backtop :right='80' :bottom='80' class='back-top'>
       <img src='https://static.igem.wiki/teams/5503/design-materials/backtotop.webp'
            alt='BackToTop'
@@ -12,8 +12,13 @@
 </template>
 
 <script setup lang='ts'>
+import {computed} from 'vue'
+import {useRoute} from 'vue-router'
 import HeaderNavbar from '@/components/HeaderNavbar.vue'
 import FooterNavbar from '@/components/FooterNavbar.vue'
+
+const route = useRoute()
+const isHomePage = computed(() => route.path == '/')
 </script>
 
 <style scoped>
