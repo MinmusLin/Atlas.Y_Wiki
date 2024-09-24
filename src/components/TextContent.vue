@@ -39,7 +39,7 @@ defineProps<{
 const activeAnchor = ref<string | null>(null)
 const navRef = ref<HTMLElement | null>(null)
 const navHeight = ref(0)
-const backgroundImages = ref([])
+const backgroundImages = ref<string[]>([])
 
 function scrollToSection(sectionId: string) {
   const element = document.getElementById(sectionId)
