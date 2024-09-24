@@ -108,7 +108,6 @@
     font-family: 'Inter', sans-serif;
     line-height: 30px;
     margin: 8px 0;
-    text-align: justify;
 }
 
 .text-area p.bold {
@@ -127,6 +126,29 @@
     text-decoration: underline;
 }
 
+.text-area span {
+    font-size: 20px;
+    font-family: 'Inter', sans-serif;
+    line-height: 30px;
+    margin: 8px 0;
+}
+
+.text-area span.bold {
+    font-weight: 600;
+}
+
+.text-area span.strikethrough {
+    text-decoration: line-through;
+}
+
+.text-area span.italic {
+    font-style: italic;
+}
+
+.text-area span.underline {
+    text-decoration: underline;
+}
+
 .text-area ul {
     list-style-type: disc;
     padding-left: 20px;
@@ -134,7 +156,6 @@
     font-size: 20px;
     line-height: 30px;
     margin: 8px 0;
-    text-align: justify;
 }
 
 .text-area ol {
@@ -144,7 +165,6 @@
     font-size: 20px;
     line-height: 30px;
     margin: 8px 0;
-    text-align: justify;
 }
 
 .text-area img {
