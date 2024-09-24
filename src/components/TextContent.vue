@@ -56,7 +56,7 @@ onMounted(async () => {
     'https://static.igem.wiki/teams/5503/design-materials/bluebackgroundprotein.webp'
   ]
   let addedHeight = 0
-  const availableHeight = document.body.scrollHeight
+  const availableHeight = document.body.scrollHeight - 800
   let index = 0
   const loadNextImage = () => {
     const img = new Image()
@@ -64,7 +64,7 @@ onMounted(async () => {
     img.src = src
     img.onload = () => {
       if (addedHeight + img.height <= availableHeight) {
-        addedHeight += 400
+        addedHeight += 600
         backgroundImages.value.push(src)
         index++
         loadNextImage()

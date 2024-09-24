@@ -287,7 +287,7 @@
     <img src='https://static.igem.wiki/teams/5503/design-materials/dialog.webp' alt='Dialog' class='dialog'>
     <div class='computer-container'>
       <img src='https://static.igem.wiki/teams/5503/design-materials/computer.webp' alt='Computer' class='computer'>
-      <button class='explore' @click='showContent' v-show='!isVisible'>EXPLORE</button>
+      <button class='explore' @click='isVisible=true' v-show='!isVisible'>EXPLORE</button>
 
       <div class='text-content' v-show='isVisible'>
         <ul>
@@ -455,10 +455,6 @@ onMounted(() => {
   }
 })
 
-const showContent = () => {
-  isVisible.value = true
-}
-
 onMounted(() => {
   draw()
   window.addEventListener('scroll', draw)
@@ -520,12 +516,12 @@ const handleMicroscopeIntersection = (entries: IntersectionObserverEntry[]) => {
 }
 
 onMounted(() => {
-  // noinspection TypeScriptValidateTypes, CommaExpressionJS
+  // noinspection TypeScriptValidateTypes
   const observer = new IntersectionObserver(handleMicroscopeIntersection, {
     root: null,
     threshold: 0.1
-  })
-    [microscopeRef, sequencingRef, proteomicsRef, bioinformaticsRef].forEach(ref => {
+  }); // IMPORTANT: Do not remove this semicolon!
+  [microscopeRef, sequencingRef, proteomicsRef, bioinformaticsRef].forEach(ref => {
     if (ref.value) {
       observer.observe(ref.value)
     }

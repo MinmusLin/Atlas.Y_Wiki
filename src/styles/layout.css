@@ -43,12 +43,16 @@
     align-items: center;
     overflow: hidden;
     width: 100%;
+    padding-top: 400px;
+    padding-bottom: 400px;
 }
 
 .background-image-container img {
     display: block;
     height: 400px;
     width: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 .background-style-0 {
