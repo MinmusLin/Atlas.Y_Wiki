@@ -1529,7 +1529,7 @@ onBeforeUnmount(() => {
 
 .yeast {
   position: absolute;
-  top: 8800px;
+  top: 8870px;
   left: 0;
   width: 260px;
   height: auto;
@@ -1537,7 +1537,7 @@ onBeforeUnmount(() => {
 
 .dialog {
   position: absolute;
-  top: 8668px;
+  top: 8738px;
   left: 288px;
   width: 360px;
   height: auto;
@@ -1545,7 +1545,7 @@ onBeforeUnmount(() => {
 
 .computer-container {
   position: absolute;
-  top: 8530px;
+  top: 8600px;
   right: 0;
   width: 690px;
 }
@@ -1561,22 +1561,21 @@ onBeforeUnmount(() => {
   top: 38%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: #EEF3FE;
   border: none;
-  padding: 15px 30px;
+  padding: 15px 50px;
   color: #16396E;
   font-family: 'Futura Md BT Medium', sans-serif;
   font-size: 24px;
   font-weight: 700;
   cursor: pointer;
   border-radius: 8px;
-  transition: background-color 0.3s ease, transform 0.3s ease;
   z-index: 1;
 }
 
 .explore:hover {
-  background-color: rgba(255, 255, 255, 1);
-  transform: translate(-50%, -50%) scale(1.05);
+  color: #7AA8F3;
+  border: 4px solid #7AA8F3;
 }
 
 @keyframes wipeUpHeight {
@@ -1881,7 +1880,7 @@ onBeforeUnmount(() => {
 
 .promote14 {
   position: absolute;
-  top: 8729px;
+  top: 8800px;
   left: 331px;
   width: 302px;
   height: auto;
