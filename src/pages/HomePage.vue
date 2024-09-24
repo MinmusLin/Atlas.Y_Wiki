@@ -604,8 +604,8 @@ onBeforeUnmount(() => {
   z-index: 1;
   background: linear-gradient(to bottom,
   #0A2144 0px,
-  #0A2144 3074px,
-  #FFF7C8 3074px,
+  #0A2144 2850px,
+  #FFF7C8 3100px,
   #FFF7C8 4024px,
   #F7F5E1 7028px,
   #AACAF9 10000px,
