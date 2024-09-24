@@ -287,7 +287,7 @@
     <img src='https://static.igem.wiki/teams/5503/design-materials/dialog.webp' alt='Dialog' class='dialog'>
     <div class='computer-container'>
       <img src='https://static.igem.wiki/teams/5503/design-materials/computer.webp' alt='Computer' class='computer'>
-      <button class='explore' @click='isVisible=false' v-show='!isVisible'>EXPLORE</button>
+      <button class='explore' @click='showContent' v-show='!isVisible'>EXPLORE</button>
 
       <div class='text-content' v-show='isVisible'>
         <ul>
@@ -454,6 +454,10 @@ onMounted(() => {
     observer.observe(dot3Ref.value)
   }
 })
+
+const showContent = () => {
+  isVisible.value = true
+}
 
 onMounted(() => {
   draw()
