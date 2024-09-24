@@ -34,7 +34,7 @@ const router = useRouter()
   margin-top: 10px;
   font-size: 42px;
   font-weight: 700;
-  font-family: 'Futura Md BT', sans-serif;
+  font-family: 'Futura Md Bt Medium', sans-serif;
   color: #5182F8;
   text-align: center;
 }
@@ -42,7 +42,7 @@ const router = useRouter()
 .not-found-text-2 {
   font-size: 16px;
   font-weight: 400;
-  font-family: 'Futura Md BT', sans-serif;
+  font-family: 'Futura Md Bt Medium', sans-serif;
   color: #C5C9CD;
   text-align: center;
 }
@@ -54,7 +54,7 @@ const router = useRouter()
   padding: 10px 20px;
   font-size: 20px;
   font-weight: 700;
-  font-family: 'Futura Md BT', sans-serif;
+  font-family: 'Futura Md Bt Medium', sans-serif;
   color: #5182F8;
   background-color: transparent;
   border: 4px solid #5182F8;

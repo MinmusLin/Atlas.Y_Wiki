@@ -76,7 +76,7 @@
             width='912'
             height='513'
             src='https://video.igem.org/videos/embed/bd8a4fa2-aef2-4e08-b860-7c6eeeb8bd1a'
-            allowfullscreen=''
+            :allowfullscreen='true'
             sandbox='allow-same-origin allow-scripts allow-popups allow-forms'/>
   </TextContent>
 </template>

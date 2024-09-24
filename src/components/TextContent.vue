@@ -76,7 +76,7 @@ onMounted(async () => {
 
 onMounted(() => {
   if (navRef.value) {
-    navHeight.value = (navRef.value as HTMLElement).offsetHeight
+    navHeight.value = navRef.value?.offsetHeight
   }
 })
 
