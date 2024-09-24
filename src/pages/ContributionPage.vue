@@ -61,7 +61,7 @@
       the synthesis of complex compounds like biofuels or pharmaceuticals.</p>
     <h2>Dynamic Localization and Control</h2>
     <p>Atlas.Y offers dynamic localization tools, incorporating photosensitive elements to achieve precise <span
-      class='bold'>spatiotemporal</span> control of protein behavior. This feature is particularly important in
+      class='bold'>spatiotemporal control</span> of protein behavior. This feature is particularly important in
       industrial production, allowing researchers to adjust protein function in response to changing environmental
       conditions quickly. For example, during large-scale fermentation, fluctuations in metabolic conditions can affect
       the synthesis efficiency of target products. The dynamic localization feature can respond to these changes in
