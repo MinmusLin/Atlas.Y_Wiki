@@ -70,6 +70,14 @@
     </table>
     <p>By visiting the WIKI, you can gain insight into the entire development process, explore our technical details
       and the thinking behind our decisions, and access a wealth of background information and resource support.</p>
+
+    <iframe style='border: none'
+            title='Tongji-Software: Atlas.Y: An Advanced Targeting and Localization Assistance Syst... (2024) - Project Promotion [English]'
+            width='912'
+            height='513'
+            src='https://video.igem.org/videos/embed/bd8a4fa2-aef2-4e08-b860-7c6eeeb8bd1a'
+            allowfullscreen=''
+            sandbox='allow-same-origin allow-scripts allow-popups allow-forms'/>
   </TextContent>
 </template>
 
