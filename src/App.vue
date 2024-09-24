@@ -4,7 +4,8 @@
     <router-view/>
     <FooterNavbar/>
     <el-backtop :right='80' :bottom='80' class='back-top'>
-      <img src='https://static.igem.wiki/teams/5503/design-materials/backtotop.webp' alt='BackToTop'
+      <img src='https://static.igem.wiki/teams/5503/design-materials/backtotop.webp'
+           alt='BackToTop'
            style='width: 40px'>
     </el-backtop>
   </v-app>

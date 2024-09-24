@@ -140,6 +140,7 @@ onBeforeUnmount(() => {
 })
 </script>
 
+<!--suppress CssUnusedSymbol-->
 <style scoped>
 .header-navbar {
   position: fixed;
