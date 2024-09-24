@@ -14,7 +14,7 @@
          :class='{ active: activeAnchor == `#${title}` }'
          @click.prevent='scrollToSection(title)'>{{ title }}</a>
     </nav>
-    <div class='text-area' :style="{ marginTop: (-navHeight-22) + 'px' }">
+    <div class='text-area' :style="{ marginTop: (-navHeight-40) + 'px' }">
       <slot/>
     </div>
     <div class='background-image-container'>
