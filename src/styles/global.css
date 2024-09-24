@@ -14,28 +14,28 @@ img {
 
 @font-face {
     font-family: 'Inter';
-    src: url('https://static.igem.wiki/teams/5503/fonts/inter.woff2') format('woff2');
+    src: url('https://static.igem.wiki/teams/5503/design-fonts/inter.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Futura Bk BT Book';
-    src: url('https://static.igem.wiki/teams/5503/fonts/futura-bk-bt-book.woff2') format('woff2');
+    src: url('https://static.igem.wiki/teams/5503/design-fonts/futura-bk-bt-book.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Futura Md BT Bold';
-    src: url('https://static.igem.wiki/teams/5503/fonts/futura-md-bt-bold.woff2') format('woff2');
+    src: url('https://static.igem.wiki/teams/5503/design-fonts/futura-md-bt-bold.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Futura Md BT Medium';
-    src: url('https://static.igem.wiki/teams/5503/fonts/futura-md-bt-medium.woff2') format('woff2');
+    src: url('https://static.igem.wiki/teams/5503/design-fonts/futura-md-bt-medium.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
