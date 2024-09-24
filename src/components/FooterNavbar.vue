@@ -57,7 +57,7 @@ function goToLink(link: string) {
 .contact-us {
   position: absolute;
   color: white;
-  font-family: 'Futura Md BT', sans-serif;
+  font-family: 'Futura Md BT Bold', sans-serif;
   line-height: 34px;
   font-size: 32px;
   font-weight: 700;

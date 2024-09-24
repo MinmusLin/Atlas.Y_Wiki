@@ -186,7 +186,7 @@ onBeforeUnmount(() => {
   display: flex;
   align-items: center;
   color: #2F3235;
-  font-family: 'Futura Md BT', sans-serif;
+  font-family: 'Futura Md BT Medium', sans-serif;
   transition: color 0.5s ease;
   border: none;
   background-color: transparent;
