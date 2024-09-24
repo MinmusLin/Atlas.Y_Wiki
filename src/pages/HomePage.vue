@@ -60,13 +60,13 @@
          ref='worldMapRef'>
     <img src='https://static.igem.wiki/teams/5503/design-materials/anaximander.webp'
          alt='Anaximander'
-         class='Anaximander'>
+         class='anaximander'>
     <img src='https://static.igem.wiki/teams/5503/design-materials/eratosthenes.webp'
          alt='Eratosthenes'
-         class='Eratosthenes'>
+         class='eratosthenes'>
     <img src='https://static.igem.wiki/teams/5503/design-materials/newton.webp'
          alt='Newton'
-         class='Newton'>
+         class='newton'>
     <img src='https://static.igem.wiki/teams/5503/design-materials/planet1.webp'
          alt='Planet1'
          class='planet1'>
@@ -726,7 +726,7 @@ onBeforeUnmount(() => {
   right: -600px;
   height: auto;
   width: 1200px;
-  animation: motile-cell3_4-float 6s ease-in-out infinite;
+  animation: motile-cell3-4-float 6s ease-in-out infinite;
 }
 
 .motile-cell4 {
@@ -735,10 +735,10 @@ onBeforeUnmount(() => {
   left: -200px;
   height: auto;
   width: 400px;
-  animation: motile-cell3_4-float 6s ease-in-out infinite;
+  animation: motile-cell3-4-float 6s ease-in-out infinite;
 }
 
-@keyframes motile-cell3_4-float {
+@keyframes motile-cell3-4-float {
   0% {
     transform: translate(0, 0);
   }
@@ -849,7 +849,7 @@ onBeforeUnmount(() => {
   transform: translateX(0);
 }
 
-.Anaximander {
+.anaximander {
   position: absolute;
   top: 1034px;
   left: 0;
@@ -857,7 +857,7 @@ onBeforeUnmount(() => {
   width: 194px;
 }
 
-.Eratosthenes {
+.eratosthenes {
   position: absolute;
   top: 1408px;
   left: 400px;
@@ -866,7 +866,7 @@ onBeforeUnmount(() => {
   z-index: 1;
 }
 
-.Newton {
+.newton {
   position: absolute;
   top: 1694px;
   right: -150px;
@@ -1049,7 +1049,7 @@ onBeforeUnmount(() => {
   left: 0;
   height: auto;
   width: 475px;
-  animation: cell1_6-float 6s ease-in-out infinite;
+  animation: cell1-6-float 6s ease-in-out infinite;
 }
 
 .cell2 {
@@ -1058,7 +1058,7 @@ onBeforeUnmount(() => {
   right: 403px;
   height: auto;
   width: 216px;
-  animation: cell2_5-float 6s ease-in-out infinite;
+  animation: cell2-5-float 6s ease-in-out infinite;
 }
 
 .cell3 {
@@ -1067,7 +1067,7 @@ onBeforeUnmount(() => {
   right: 80px;
   height: auto;
   width: 288px;
-  animation: cell3_4-float 6s ease-in-out infinite;
+  animation: cell3-4-float 6s ease-in-out infinite;
   opacity: 0.1;
 }
 
@@ -1078,10 +1078,10 @@ onBeforeUnmount(() => {
   height: auto;
   width: 418px;
   transform: rotate(-25deg);
-  animation: cell3_4-float 6s ease-in-out infinite;
+  animation: cell3-4-float 6s ease-in-out infinite;
 }
 
-@keyframes cell3_4-float {
+@keyframes cell3-4-float {
   0% {
     transform: translate(0, 0);
   }
@@ -1106,10 +1106,10 @@ onBeforeUnmount(() => {
   height: auto;
   width: 331px;
   transform: scaleX(-1);
-  animation: cell2_5-float 6s ease-in-out infinite;
+  animation: cell2-5-float 6s ease-in-out infinite;
 }
 
-@keyframes cell2_5-float {
+@keyframes cell2-5-float {
   0% {
     transform: translate(0, 0);
   }
@@ -1134,10 +1134,10 @@ onBeforeUnmount(() => {
   height: auto;
   width: 317px;
   transform: rotate(15deg);
-  animation: cell1_6-float 6s ease-in-out infinite;
+  animation: cell1-6-float 6s ease-in-out infinite;
 }
 
-@keyframes cell1_6-float {
+@keyframes cell1-6-float {
   0% {
     transform: translate(0, 0);
   }
@@ -1283,7 +1283,7 @@ onBeforeUnmount(() => {
   justify-content: flex-end;
 }
 
-@keyframes fadeInFromLeft {
+@keyframes fade-in-from-left {
   from {
     opacity: 0;
     transform: translateY(100px);
@@ -1295,7 +1295,7 @@ onBeforeUnmount(() => {
 }
 
 .fade-in {
-  animation: fadeInFromLeft 1s ease forwards;
+  animation: fade-in-from-left 1s ease forwards;
 }
 
 .fade-out {
@@ -1303,10 +1303,7 @@ onBeforeUnmount(() => {
   animation: none;
 }
 
-.microscope-container,
-.sequencing-container,
-.proteomics-container,
-.bioinformatics-container1 {
+.microscope-container, .sequencing-container, .proteomics-container, .bioinformatics-container1 {
   opacity: 0;
   transform: translateY(20px);
   transition: opacity 1s ease, transform 1s ease;
@@ -1574,7 +1571,7 @@ onBeforeUnmount(() => {
   border: 4px solid #7AA8F3;
 }
 
-@keyframes wipeUpHeight {
+@keyframes wipe-up-height {
   0% {
     max-height: 0;
     opacity: 0;
@@ -1599,7 +1596,7 @@ onBeforeUnmount(() => {
   max-height: 0;
   overflow: hidden;
   opacity: 0;
-  animation: wipeUpHeight 1.5s ease-in forwards;
+  animation: wipe-up-height 1.5s ease-in forwards;
 }
 
 .text-content ul {
