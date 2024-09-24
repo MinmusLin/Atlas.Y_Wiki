@@ -17,6 +17,13 @@
     <div class='text-area' :style="{ marginTop: (-navHeight-22) + 'px' }">
       <slot/>
     </div>
+    <div class='background-image-container'>
+      <img v-for='(img, index) in backgroundImages'
+           :src='img'
+           :key='index'
+           alt='BackgroundImage'
+           :class="'background-style-' + index % 6">
+    </div>
   </div>
 </template>
 
@@ -32,6 +39,7 @@ defineProps<{
 const activeAnchor = ref<string | null>(null)
 const navRef = ref<HTMLElement | null>(null)
 const navHeight = ref(0)
+const backgroundImages = ref([])
 
 function scrollToSection(sectionId: string) {
   const element = document.getElementById(sectionId)
@@ -40,6 +48,31 @@ function scrollToSection(sectionId: string) {
     window.scrollTo({top: y, behavior: 'smooth'})
   }
 }
+
+onMounted(async () => {
+  const images = [
+    'https://static.igem.wiki/teams/5503/design-materials/yellowprotein.webp',
+    'https://static.igem.wiki/teams/5503/design-materials/greenprotein.webp',
+    'https://static.igem.wiki/teams/5503/design-materials/blueprotein.webp'
+  ]
+  let addedHeight = 0
+  const availableHeight = document.body.scrollHeight
+  let index = 0
+  const loadNextImage = () => {
+    const img = new Image()
+    const src = images[index % images.length]
+    img.src = src
+    img.onload = () => {
+      if (addedHeight + img.height <= availableHeight) {
+        addedHeight += 400
+        backgroundImages.value.push(src)
+        index++
+        loadNextImage()
+      }
+    }
+  }
+  loadNextImage()
+})
 
 onMounted(() => {
   if (navRef.value) {
