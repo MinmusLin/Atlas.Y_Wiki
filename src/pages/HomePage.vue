@@ -34,9 +34,9 @@
          alt='MotileCell7'
          class='motile-cell7'>
 
-    <div class='button1'>
-      Get Started
-    </div>
+    <img src='https://static.igem.wiki/teams/5503/design-materials/getstarted.webp'
+         alt='GetStarted'
+         class='get-started'>
 
     <div class='promote1' ref='promote1Ref'>
       <p class='promote1-1'>
@@ -603,6 +603,16 @@ onBeforeUnmount(() => {
   #AACAF9 10982px);
 }
 
+.get-started {
+  position: absolute;
+  top: 700px;
+  height: auto;
+  width: 180px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+}
+
 .background {
   width: 100%;
   height: auto;
@@ -619,7 +629,7 @@ onBeforeUnmount(() => {
   z-index: 3;
 }
 
-.slogan{
+.slogan {
   position: absolute;
   top: 430px;
   height: auto;
@@ -627,35 +637,6 @@ onBeforeUnmount(() => {
   left: 50%;
   transform: translateX(-50%);
   z-index: 3;
-}
-
-.button1 {
-  position: absolute;
-  top: 550px;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: transparent;
-  border: none;
-  color: white;
-  font-size: 24px;
-  font-weight: 600;
-  display: flex;
-  align-items: center;
-  padding: 10px 20px;
-  transition: color 0.3s ease;
-  gap: 13px;
-  z-index: 3;
-}
-
-.button1::before {
-  content: '';
-  background-image: url('https://static.igem.wiki/teams/5503/design-materials/downarrow.webp');
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 22px;
-  height: 22px;
-  display: inline-block;
-  transition: filter 0.3s ease;
 }
 
 .motile-cell1 {
@@ -942,7 +923,7 @@ onBeforeUnmount(() => {
   height: auto;
   width: 420px;
   animation: left-cloud-float 6s ease-in-out infinite;
-  z-index:2;
+  z-index: 2;
 }
 
 @keyframes left-cloud-float {
@@ -967,7 +948,7 @@ onBeforeUnmount(() => {
   height: auto;
   width: 620px;
   animation: right-cloud-float 6s ease-in-out infinite;
-  z-index:2;
+  z-index: 2;
 }
 
 @keyframes right-cloud-float {
