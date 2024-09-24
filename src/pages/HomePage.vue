@@ -1,6 +1,4 @@
 <template>
-  <LoadingAnimation/>
-
   <div class='background-container'>
     <img src='https://static.igem.wiki/teams/5503/design-materials/background.webp'
          alt='Background'
@@ -343,7 +341,6 @@
 import {ref, onMounted, onBeforeUnmount} from 'vue'
 import {draw} from '@/plugins/canvas'
 import {useRouter} from 'vue-router'
-import LoadingAnimation from '@/components/LoadingAnimation.vue'
 
 const isVisible = ref(false)
 const router = useRouter()
@@ -544,9 +541,8 @@ const handleScroll = () => {
   const deltaScroll = scrollY - initialScrollY
   const rotation = deltaScroll * 0.1
   const scale = Math.max(1, Math.min(1 + deltaScroll / 1000 * 0.8, 1.8))
-  if (defaultEarthRef.value) {
-    defaultEarthRef.value.style.transform = `translateX(-50%) scale(${scale}) rotate(${rotation}deg)`
-  }
+  // noinspection TypeScriptUnresolvedReference
+  defaultEarthRef.value.style.transform = `translateX(-50%) scale(${scale}) rotate(${rotation}deg)`
 }
 
 const handleDefaultEarthIntersection = (entries: IntersectionObserverEntry[]) => {
