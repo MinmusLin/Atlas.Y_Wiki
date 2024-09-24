@@ -336,7 +336,6 @@
   <div class='background-color'/>
 </template>
 
-<!--suppress CommaExpressionJS-->
 <script setup lang='ts'>
 import {ref, onMounted, onBeforeUnmount} from 'vue'
 import {draw} from '@/plugins/canvas'
@@ -517,7 +516,7 @@ const handleMicroscopeIntersection = (entries: IntersectionObserverEntry[]) => {
 }
 
 onMounted(() => {
-  // noinspection TypeScriptValidateTypes
+  // noinspection TypeScriptValidateTypes, CommaExpressionJS
   const observer = new IntersectionObserver(handleMicroscopeIntersection, {
     root: null,
     threshold: 0.1
