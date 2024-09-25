@@ -1759,7 +1759,7 @@ onMounted(() => {
   position: absolute;
   top: 16.5%;
   left: 53%;
-  transform: translateX(-50%);
+  transform: translateX(-50%) translateY(-4px);
   width: 90%;
   font-family: 'Futura Md BT Bold', sans-serif;
   font-size: 28px;
