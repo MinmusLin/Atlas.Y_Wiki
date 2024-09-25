@@ -291,12 +291,19 @@
 
     <img src='https://static.igem.wiki/teams/5503/design-materials/defaultlogo.webp'
          alt='DefaultLogo'
-         class='default-logo'>
+         class='default-logo'
+         ref="defaultLogoRef">
 
     <img src='https://static.igem.wiki/teams/5503/design-materials/protein1.webp' alt='Protein1' class='protein1'>
     <img src='https://static.igem.wiki/teams/5503/design-materials/protein2.webp' alt='Protein2' class='protein2'>
     <img src='https://static.igem.wiki/teams/5503/design-materials/yeast.webp' alt='Yeast' class='yeast'>
-    <img src='https://static.igem.wiki/teams/5503/design-materials/dialog.webp' alt='Dialog' class='dialog'>
+    <div class="dialog-container" ref="dialogContainerRef">
+      <img src='https://static.igem.wiki/teams/5503/design-materials/dialog.webp' alt='Dialog' class='dialog'>
+
+      <p class='promote14'>
+        Do you know what Atlas.Y does?
+      </p>
+    </div>
 
     <div class='computer-container'>
       <img src='https://static.igem.wiki/teams/5503/design-materials/computer.webp' alt='Computer' class='computer'>
@@ -313,10 +320,6 @@
         </ul>
       </div>
     </div>
-
-    <p class='promote14' ref='promote14Ref'>
-      Do you know what Atlas.Y does?
-    </p>
 
     <img src='https://static.igem.wiki/teams/5503/design-materials/defaultearth.webp'
          alt='DefaultEarth'
@@ -369,7 +372,6 @@ const promote10Ref = ref<HTMLElement | null>(null)
 const promote11Ref = ref<HTMLElement | null>(null)
 const promote12Ref = ref<HTMLElement | null>(null)
 const promote13Ref = ref<HTMLElement | null>(null)
-const promote14Ref = ref<HTMLElement | null>(null)
 const promote15Ref = ref<HTMLElement | null>(null)
 const promote16Ref = ref<HTMLElement | null>(null)
 const promote17Ref = ref<HTMLElement | null>(null)
@@ -423,7 +425,7 @@ const handleCloudIntersection = (entries: IntersectionObserverEntry[]) => {
 onMounted(() => {
   const observer = new IntersectionObserver(handleCloudIntersection, {
     root: null,
-    threshold: 0.1 // 控制进入可视区域的比例
+    threshold: 0.1
   })
   if (rightCloudRef.value) {
     observer.observe(rightCloudRef.value)
@@ -477,9 +479,6 @@ onMounted(() => {
   }
   if (promote13Ref.value) {
     observer.observe(promote13Ref.value)
-  }
-  if (promote14Ref.value) {
-    observer.observe(promote14Ref.value)
   }
   if (promote15Ref.value) {
     observer.observe(promote15Ref.value)
@@ -621,6 +620,35 @@ onMounted(() => {
 onBeforeUnmount(() => {
   window.removeEventListener('scroll', handleScroll)
 })
+
+const defaultLogoRef = ref<HTMLElement | null>(null);
+
+const handlePopIntersection = (entries: IntersectionObserverEntry[]) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('pop-up');
+    } else {
+      entry.target.classList.remove('pop-up');
+    }
+  });
+};
+
+onMounted(() => {
+  const observer = new IntersectionObserver(handlePopIntersection, {
+    root: null,
+    threshold: 0.1,
+  });
+
+  if (defaultLogoRef.value) {
+    observer.observe(defaultLogoRef.value);
+  }
+
+  if (dialogContainerRef.value) {
+    observer.observe(dialogContainerRef.value);
+  }
+});
+
+const dialogContainerRef = ref<HTMLElement | null>(null);
 </script>
 
 <!--suppress CssUnusedSymbol-->
@@ -1575,6 +1603,13 @@ onBeforeUnmount(() => {
   right: 144px;
   width: 720px;
   height: auto;
+  opacity: 0;
+  transform: scale(0);
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.pop-up {
+  transform: scale(1);
   opacity: 0.6;
 }
 
@@ -1640,12 +1675,35 @@ onBeforeUnmount(() => {
   height: auto;
 }
 
-.dialog {
+.dialog-container {
   position: absolute;
   top: 8738px;
   left: 288px;
   width: 360px;
   height: auto;
+  opacity: 0;
+  transform: scale(0);
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.dialog-container.pop-up {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.dialog {
+  width: 100%;
+  height: auto;
+}
+
+.promote14 {
+  position: absolute;
+  bottom: 40%;
+  left: 10%;
+  font-family: 'Futura Md BT Bold', sans-serif;
+  font-size: 28px;
+  color: #2F62D7;
+  width:300px;
 }
 
 .computer-container {
@@ -1970,17 +2028,6 @@ onBeforeUnmount(() => {
   line-height: 1.43;
 }
 
-.promote14 {
-  position: absolute;
-  top: 8800px;
-  left: 331px;
-  width: 302px;
-  height: auto;
-  font-family: 'Futura Md BT Bold', sans-serif;
-  font-size: 28px;
-  color: #2F62D7;
-}
-
 .promote15 {
   position: absolute;
   top: 9650px;
@@ -2018,13 +2065,13 @@ onBeforeUnmount(() => {
   z-index: 9;
 }
 
-.promote1, .promote2, .promote3, .promote5, .promote6, .promote7, .promote9, .promote13, .promote14 {
+.promote1, .promote2, .promote3, .promote5, .promote6, .promote7, .promote9, .promote13{
   opacity: 0;
   transform: translateY(50px);
   transition: opacity 0.6s ease, transform 0.6s ease;
 }
 
-.promote1.active, .promote2.active, .promote3.active, .promote5.active, .promote6.active, .promote7.active, .promote9.active, .promote13.active, .promote14.active {
+.promote1.active, .promote2.active, .promote3.active, .promote5.active, .promote6.active, .promote7.active, .promote9.active, .promote13.active {
   opacity: 1;
   transform: translateY(0);
 }
