@@ -11,11 +11,11 @@
     <table>
       <thead>
       <tr>
-        <th>Tool</th>
-        <th>Accuracy</th>
-        <th>Speed</th>
+        <th style='width: 165px'>Tool</th>
+        <th style='width: 165px'>Accuracy</th>
+        <th style='width: 165px'>Speed</th>
         <th>Computational Resource Requirement</th>
-        <th>Local Support</th>
+        <th style='width: 165px'>Local Support</th>
       </tr>
       </thead>
       <tbody>

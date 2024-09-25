@@ -27,7 +27,7 @@
 
     <h1 id='Laboratory'>Laboratory</h1>
     <p>Before the actual experiments commenced, our lab instructor provided us with <span class='bold'>a comprehensive
-      lab safety course</span>,detailing the basic experimental procedures we would be using, as well as emergency
+      lab safety course</span>, detailing the basic experimental procedures we would be using, as well as emergency
       safety measures. In the early stages of the experiment, to ensure the safety of team members within the lab, each
       of us learned all the experiments under the supervision of professional scientific researchers in the biological
       lab. These experiments included simple PCR, gel electrophoresis, gel extraction, Yeast Transformation Experiment,
