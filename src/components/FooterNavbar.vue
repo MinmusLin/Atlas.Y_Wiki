@@ -49,7 +49,7 @@ const props = defineProps<{
   isHomePage: boolean
 }>()
 
-const hoverColor = computed(() => props.isHomePage ? '#AACAF9' : '#16396E');
+const hoverColor = computed(() => props.isHomePage ? '#AACAF9' : '#AACAF9');
 
 function goToLink(link: string) {
   window.open(link, '_blank')

@@ -22,7 +22,7 @@
     <img src='https://static.igem.wiki/teams/5503/design-materials/motilecell2.webp'
          alt='MotileCell2'
          class='motile-cell2'>
-    <img src='https://static.igem.wiki/teams/5503/design-materials/motilecell3.webp'
+    <img src='https://static.igem.wiki/teams/5503/design-materials/newmotilecell3.webp'
          alt='MotileCell3'
          class='motile-cell3'>
     <img src='https://static.igem.wiki/teams/5503/design-materials/newmotilecell4.webp'
