@@ -258,17 +258,17 @@
     </p>
 
     <div class='image-gallery'>
-      <div class='image-item'>
+      <div class='image-item item1' ref='item1'>
         <img src='https://static.igem.wiki/teams/5503/design-materials/metabolicengineering.webp'
              alt='Metabolic Engineering' class='image'/>
         <div class='image-label'>Metabolic Engineering</div>
       </div>
-      <div class='image-item'>
+      <div class='image-item item2' ref='item2'>
         <img src='https://static.igem.wiki/teams/5503/design-materials/drugproduction.webp' alt='Drug Production'
              class='image'/>
         <div class='image-label'>Drug Production</div>
       </div>
-      <div class='image-item'>
+      <div class='image-item item3' ref='item3'>
         <img src='https://static.igem.wiki/teams/5503/design-materials/industrialfermentation.webp'
              alt='Industrial Fermentation' class='image'/>
         <div class='image-label'>Industrial Fermentation</div>
@@ -392,6 +392,9 @@ const organelleRef1 = ref<HTMLElement | null>(null)
 const organelleRef2 = ref<HTMLElement | null>(null)
 const organelleRef3 = ref<HTMLElement | null>(null)
 const organelleRef4 = ref<HTMLElement | null>(null)
+const item1 = ref(null)
+const item2 = ref(null)
+const item3 = ref(null)
 
 const handleIntersection = (entries: IntersectionObserverEntry[]) => {
   entries.forEach(entry => {
@@ -562,12 +565,13 @@ const handleMicroscopeIntersection = (entries: IntersectionObserverEntry[]) => {
 }
 
 onMounted(() => {
-  // noinspection TypeScriptValidateTypes
   const observer = new IntersectionObserver(handleMicroscopeIntersection, {
     root: null,
     threshold: 0.1
-  }); // IMPORTANT: Do not remove this semicolon!
-  [microscopeRef, sequencingRef, proteomicsRef, bioinformaticsRef].forEach(ref => {
+  })
+  const elementsToObserve = [microscopeRef, sequencingRef, proteomicsRef, bioinformaticsRef, item1, item2, item3]
+
+  elementsToObserve.forEach(ref => {
     if (ref.value) {
       observer.observe(ref.value)
     }
@@ -1390,11 +1394,6 @@ onBeforeUnmount(() => {
   animation: fade-in-from-left 1s ease forwards;
 }
 
-.fade-out {
-  opacity: 0;
-  animation: none;
-}
-
 .microscope-container, .sequencing-container, .proteomics-container, .bioinformatics-container1 {
   opacity: 0;
   transform: translateY(20px);
@@ -1529,6 +1528,24 @@ onBeforeUnmount(() => {
   display: flex;
   justify-content: space-between;
   z-index: 1;
+}
+
+.item1, .item2, .item3{
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.item1.fade-in {
+  animation-delay: 0s;
+}
+
+.item2.fade-in {
+  animation-delay: 0.4s;
+}
+
+.item3.fade-in {
+  animation-delay: 0.8s;
 }
 
 .image-item {
@@ -1739,7 +1756,7 @@ onBeforeUnmount(() => {
 
 .default-earth {
   position: absolute;
-  top: 9823px;
+  top: 9843px;
   left: 50%;
   transform: translateX(-50%);
   width: 288px;
