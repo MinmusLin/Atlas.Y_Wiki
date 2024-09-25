@@ -42,7 +42,7 @@
 </template>
 
 <script setup lang='ts'>
-import {defineProps, computed} from 'vue'
+import {defineProps} from 'vue'
 
 const props = defineProps<{
   isHomePage: boolean
