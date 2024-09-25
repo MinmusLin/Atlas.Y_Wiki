@@ -6,7 +6,7 @@
     border-radius: 20px;
     padding: 40px;
     box-shadow: 12px 20px 0 0 #5182F8;
-    transform: translate(-148px,-30px);
+    transform: translateX(-148px);
     z-index: 1;
 }
 
