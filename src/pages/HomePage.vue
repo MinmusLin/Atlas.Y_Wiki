@@ -16,7 +16,7 @@
            class='get-started'>
     </div>
 
-    <img src='https://static.igem.wiki/teams/5503/design-materials/motilecell1.webp'
+    <img src='https://static.igem.wiki/teams/5503/design-materials/newmotilecell1.webp'
          alt='MotileCell1'
          class='motile-cell1'>
     <img src='https://static.igem.wiki/teams/5503/design-materials/motilecell2.webp'
@@ -25,7 +25,7 @@
     <img src='https://static.igem.wiki/teams/5503/design-materials/motilecell3.webp'
          alt='MotileCell3'
          class='motile-cell3'>
-    <img src='https://static.igem.wiki/teams/5503/design-materials/motilecell4.webp'
+    <img src='https://static.igem.wiki/teams/5503/design-materials/newmotilecell4.webp'
          alt='MotileCell4'
          class='motile-cell4'>
     <img src='https://static.igem.wiki/teams/5503/design-materials/motilecell5.webp'
