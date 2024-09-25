@@ -59,7 +59,7 @@ onMounted(async () => {
 
 .image-container {
   position: relative;
-  width: 1240px;
+  width: 1340px;
   height: auto;
 }
 

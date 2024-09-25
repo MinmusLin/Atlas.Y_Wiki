@@ -1,8 +1,8 @@
 nav {
     position: sticky;
     top: 76px;
-    transform: translateX(499px);
-    width: 244px;
+    transform: translateX(520px);
+    width: 300px;
     background-color: #FFFCEF;
     border: #5182F8 4px solid;
     border-radius: 0 20px 20px 0;
@@ -24,8 +24,9 @@ nav a {
     justify-content: flex-start;
     color: #C5C9CD;
     text-decoration: none;
-    font-size: 22px;
-    font-family: 'Futura Md BT Bold', sans-serif;
+    font-size: 20px;
+    font-family: 'Futura Md BT Medium', sans-serif;
+    font-weight: 600;
     text-align: left;
     width: 100%;
 }

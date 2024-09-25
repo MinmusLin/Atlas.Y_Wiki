@@ -1,12 +1,12 @@
 .text-area {
     position: relative;
-    width: 1000px;
+    width: 1043px;
     background-color: #FFFCEF;
     border: #5182F8 4px solid;
     border-radius: 20px;
     padding: 40px;
     box-shadow: 12px 20px 0 0 #5182F8;
-    transform: translateX(-120px);
+    transform: translateX(-148px);
     z-index: 1;
 }
 
