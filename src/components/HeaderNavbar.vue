@@ -227,7 +227,7 @@ onBeforeUnmount(() => {
   color: #2F3235;
   font-size: 20px;
   line-height: 38px;
-  font-family: 'Futura Md BT Bold', sans-serif;
+  font-family: 'Futura Md BT Medium', sans-serif;
   white-space: nowrap;
   width: auto;
   transition: color 0.3s ease;
