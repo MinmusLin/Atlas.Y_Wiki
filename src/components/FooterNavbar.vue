@@ -1,6 +1,5 @@
 <template>
-  <div class='footer-navbar'
-       :style="{ backgroundColor: (props.isHomePage ? '#16396E' : '#5182F8'), '--hover-color': hoverColor }">
+  <div class='footer-navbar' :style="{ backgroundColor: (props.isHomePage ? '#16396E' : '#5182F8') }">
     <img src='https://static.igem.wiki/teams/5503/design-materials/tongjiuniversitylogo.webp'
          alt='TongjiUniversityLogo'
          style='top: 50px; left: 100px; cursor: pointer; width: 140px'
@@ -49,8 +48,6 @@ const props = defineProps<{
   isHomePage: boolean
 }>()
 
-const hoverColor = computed(() => props.isHomePage ? '#AACAF9' : '#AACAF9');
-
 function goToLink(link: string) {
   window.open(link, '_blank')
 }
@@ -61,7 +58,6 @@ function goToLink(link: string) {
   height: 430px;
   position: relative;
   -webkit-user-select: none;
-  --hover-color: #AACAF9;
 }
 
 .contact-us {
@@ -109,6 +105,6 @@ a {
 }
 
 a:hover {
-  color: var(--hover-color);
+  color: #AACAF9;
 }
 </style>
