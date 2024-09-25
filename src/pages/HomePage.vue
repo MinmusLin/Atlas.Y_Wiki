@@ -1895,12 +1895,13 @@ onMounted(() => {
   position: absolute;
   top: 2222px;
   left: 50%;
-  width: 1300px;
+  width: 100%;
   height: auto;
   font-family: 'Futura Md BT Bold', sans-serif;
   font-size: 44px;
   color: white;
   z-index: 1;
+  text-align: center;
 }
 
 .highlight-yellow {
