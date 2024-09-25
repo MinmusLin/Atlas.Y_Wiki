@@ -64,16 +64,17 @@
       becomes more precise and efficient in addressing diverse user requirements. Additionally, we will refine the
       software's design and functionality to address specific scenarios and challenges raised by users, enhancing its
       adaptability and flexibility under different experimental conditions.</p>
-    <p>We plan to commercialize Atlas.Y (see <a @click="router.push('/entrepreneurship')">Entrepreneurship</a> for
-      details) and establish a corresponding experimental platform. Atlas.Y will serve as our <span class='bold'>initial
-      core product</span>, providing a stable revenue stream by addressing the market demand for protein subcellular
-      localization. Building on this foundation, we will gradually expand our business scope, developing more innovative
-      biotechnology solutions. Our ultimate goal is to grow the company into <span class='bold'>a multifaceted
-      biotechnology enterprise</span> that integrates protein design, directed evolution, and experimental solutions. We
-      will offer comprehensive solutions from protein design to directed evolution, and further introduce tools and
-      products for experimental use, meeting the diverse needs of both research and industrial users. This approach will
-      not only drive technological innovation but also provide efficient and convenient resources for laboratories and
-      production, optimizing processes and improving overall efficiency.</p>
+    <p>We plan to commercialize Atlas.Y (see <a @click="router.push('/entrepreneurship')" style='cursor: pointer'>
+      Entrepreneurship</a> for details) and establish a corresponding experimental platform. Atlas.Y will serve as our
+      <span class='bold'>initial core product</span>, providing a stable revenue stream by addressing the market demand
+      for protein subcellular localization. Building on this foundation, we will gradually expand our business scope,
+      developing more innovative biotechnology solutions. Our ultimate goal is to grow the company into
+      <span class='bold'>a multifaceted biotechnology enterprise</span> that integrates protein design, directed
+      evolution, and experimental solutions. We will offer comprehensive solutions from protein design to directed
+      evolution, and further introduce tools and products for experimental use, meeting the diverse needs of both
+      research and industrial users. This approach will not only drive technological innovation but also provide
+      efficient and convenient resources for laboratories and production, optimizing processes and improving overall
+      efficiency.</p>
 
     <h1 id='References'>References</h1>
     <ol>
