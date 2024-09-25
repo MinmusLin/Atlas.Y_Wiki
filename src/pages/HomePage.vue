@@ -292,14 +292,14 @@
     <img src='https://static.igem.wiki/teams/5503/design-materials/defaultlogo.webp'
          alt='DefaultLogo'
          class='default-logo'
-         ref="defaultLogoRef">
+         ref='defaultLogoRef'>
 
     <img src='https://static.igem.wiki/teams/5503/design-materials/protein1.webp' alt='Protein1' class='protein1'>
     <img src='https://static.igem.wiki/teams/5503/design-materials/protein2.webp' alt='Protein2' class='protein2'>
     <img src='https://static.igem.wiki/teams/5503/design-materials/yeast.webp' alt='Yeast' class='yeast'>
-    <div class="dialog-container" ref="dialogContainerRef">
-      <img src='https://static.igem.wiki/teams/5503/design-materials/dialog.webp' alt='Dialog' class='dialog'>
 
+    <div class='dialog-container' ref='dialogContainerRef'>
+      <img src='https://static.igem.wiki/teams/5503/design-materials/dialog.webp' alt='Dialog' class='dialog'>
       <p class='promote14'>
         Do you know what Atlas.Y does?
       </p>
@@ -385,8 +385,6 @@ const sequencingRef = ref(null)
 const proteomicsRef = ref(null)
 const bioinformaticsRef = ref(null)
 const defaultEarthRef = ref<HTMLImageElement | null>(null)
-let isIntersecting = false
-let initialScrollY = 0
 const rightCloudRef = ref<HTMLElement | null>(null)
 const leftCloudRef = ref<HTMLElement | null>(null)
 const microscopeOnlyRef = ref<HTMLElement | null>(null)
@@ -397,6 +395,10 @@ const organelleRef4 = ref<HTMLElement | null>(null)
 const item1 = ref(null)
 const item2 = ref(null)
 const item3 = ref(null)
+const dialogContainerRef = ref<HTMLElement | null>(null)
+const defaultLogoRef = ref<HTMLElement | null>(null)
+let isIntersecting = false
+let initialScrollY = 0
 
 const handleIntersection = (entries: IntersectionObserverEntry[]) => {
   entries.forEach(entry => {
@@ -423,6 +425,7 @@ const handleCloudIntersection = (entries: IntersectionObserverEntry[]) => {
 }
 
 onMounted(() => {
+  // noinspection TypeScriptValidateTypes
   const observer = new IntersectionObserver(handleCloudIntersection, {
     root: null,
     threshold: 0.1
@@ -528,26 +531,32 @@ onMounted(() => {
     root: null,
     threshold: 0.3,
   }
-
+  // noinspection TypeScriptValidateTypes
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         entry.target.classList.add('show')
-
+        // noinspection TypeScriptUnresolvedReference
         setTimeout(() => organelleRef1.value?.classList.add('active'), 0)
+        // noinspection TypeScriptUnresolvedReference
         setTimeout(() => organelleRef2.value?.classList.add('active'), 300)
+        // noinspection TypeScriptUnresolvedReference
         setTimeout(() => organelleRef3.value?.classList.add('active'), 600)
+        // noinspection TypeScriptUnresolvedReference
         setTimeout(() => organelleRef4.value?.classList.add('active'), 900)
       } else {
         entry.target.classList.remove('show')
+        // noinspection TypeScriptUnresolvedReference
         organelleRef1.value?.classList.remove('active')
+        // noinspection TypeScriptUnresolvedReference
         organelleRef2.value?.classList.remove('active')
+        // noinspection TypeScriptUnresolvedReference
         organelleRef3.value?.classList.remove('active')
+        // noinspection TypeScriptUnresolvedReference
         organelleRef4.value?.classList.remove('active')
       }
     })
   }, options)
-
   if (microscopeOnlyRef.value) {
     observer.observe(microscopeOnlyRef.value)
   }
@@ -564,12 +573,12 @@ const handleMicroscopeIntersection = (entries: IntersectionObserverEntry[]) => {
 }
 
 onMounted(() => {
+  // noinspection TypeScriptValidateTypes
   const observer = new IntersectionObserver(handleMicroscopeIntersection, {
     root: null,
     threshold: 0.1
   })
   const elementsToObserve = [microscopeRef, sequencingRef, proteomicsRef, bioinformaticsRef, item1, item2, item3]
-
   elementsToObserve.forEach(ref => {
     if (ref.value) {
       observer.observe(ref.value)
@@ -621,34 +630,29 @@ onBeforeUnmount(() => {
   window.removeEventListener('scroll', handleScroll)
 })
 
-const defaultLogoRef = ref<HTMLElement | null>(null);
-
 const handlePopIntersection = (entries: IntersectionObserverEntry[]) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
-      entry.target.classList.add('pop-up');
+      entry.target.classList.add('pop-up')
     } else {
-      entry.target.classList.remove('pop-up');
+      entry.target.classList.remove('pop-up')
     }
-  });
-};
+  })
+}
 
 onMounted(() => {
+  // noinspection TypeScriptValidateTypes
   const observer = new IntersectionObserver(handlePopIntersection, {
     root: null,
     threshold: 0.1,
-  });
-
+  })
   if (defaultLogoRef.value) {
-    observer.observe(defaultLogoRef.value);
+    observer.observe(defaultLogoRef.value)
   }
-
   if (dialogContainerRef.value) {
-    observer.observe(dialogContainerRef.value);
+    observer.observe(dialogContainerRef.value)
   }
-});
-
-const dialogContainerRef = ref<HTMLElement | null>(null);
+})
 </script>
 
 <!--suppress CssUnusedSymbol-->
@@ -1558,7 +1562,7 @@ const dialogContainerRef = ref<HTMLElement | null>(null);
   z-index: 1;
 }
 
-.item1, .item2, .item3{
+.item1, .item2, .item3 {
   opacity: 0;
   transform: translateY(20px);
   transition: opacity 1s ease, transform 1s ease;
@@ -1703,7 +1707,7 @@ const dialogContainerRef = ref<HTMLElement | null>(null);
   font-family: 'Futura Md BT Bold', sans-serif;
   font-size: 28px;
   color: #2F62D7;
-  width:300px;
+  width: 300px;
 }
 
 .computer-container {
@@ -2065,7 +2069,7 @@ const dialogContainerRef = ref<HTMLElement | null>(null);
   z-index: 9;
 }
 
-.promote1, .promote2, .promote3, .promote5, .promote6, .promote7, .promote9, .promote13{
+.promote1, .promote2, .promote3, .promote5, .promote6, .promote7, .promote9, .promote13 {
   opacity: 0;
   transform: translateY(50px);
   transition: opacity 0.6s ease, transform 0.6s ease;
