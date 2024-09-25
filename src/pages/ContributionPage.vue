@@ -52,14 +52,14 @@
       dynamic localization control, particularly for applications requiring efficient production in complex
       environments. Whether in basic research or large-scale industrial production, Atlas.Y provides researchers with
       new ideas and capabilities, accelerating the optimization and innovation of biomanufacturing processes.</p>
-    <h2>Subcellular Localization Optimization</h2>
+    <h4>Subcellular Localization Optimization</h4>
     <p>By optimizing subcellular localization, Atlas.Y helps users direct proteins to specific organelles to enhance
       local metabolic efficiency. For instance, in the production of <span class='bold'>high-value chemicals</span> such
       as terpenoids, the precise localization of enzymes to organelles like mitochondria can significantly increase the
       yield of target products while reducing the formation of by-products. This optimization is not only applicable in
       research experiments but also shows great potential in large-scale industrial production, significantly enhancing
       the synthesis of complex compounds like biofuels or pharmaceuticals.</p>
-    <h2>Dynamic Localization and Control</h2>
+    <h4>Dynamic Localization and Control</h4>
     <p>Atlas.Y offers dynamic localization tools, incorporating photosensitive elements to achieve precise <span
       class='bold'>spatiotemporal control</span> of protein behavior. This feature is particularly important in
       industrial production, allowing researchers to adjust protein function in response to changing environmental
