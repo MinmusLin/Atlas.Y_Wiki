@@ -105,10 +105,13 @@
          class='plain-earth'>
     <img src='https://static.igem.wiki/teams/5503/design-materials/leftcloud.webp'
          alt='LeftCloud'
-         class='left-cloud'>
+         class='left-cloud'
+         ref='leftCloudRef'>
     <img src='https://static.igem.wiki/teams/5503/design-materials/rightcloud.webp'
          alt='RightCloud'
-         class='right-cloud'>
+         class='right-cloud'
+         ref='rightCloudRef'>
+
     <img src='https://static.igem.wiki/teams/5503/design-materials/clouds.webp'
          alt='Clouds'
          class='clouds'>
@@ -135,6 +138,27 @@
          class='electron-microscope'
          ref='microscopeOnlyRef'>
 
+    <img src='https://static.igem.wiki/teams/5503/design-materials/organelle1.webp'
+         alt='Organelle1'
+         class='organelle1'
+         ref='organelleRef1'>
+
+    <img src='https://static.igem.wiki/teams/5503/design-materials/organelle2.webp'
+         alt='Organelle2'
+         class='organelle2'
+         ref='organelleRef2'>
+
+    <img src='https://static.igem.wiki/teams/5503/design-materials/organelle3.webp'
+         alt='Organelle3'
+         class='organelle3'
+         ref='organelleRef3'>
+
+    <img src='https://static.igem.wiki/teams/5503/design-materials/organelle4.webp'
+         alt='Organelle4'
+         class='organelle4'
+         ref='organelleRef4'>
+
+
     <div class='promote6' ref='promote6Ref'>
       <p class='promote6-1'>
         In the <span class='highlight-blue'>20th century,</span>
@@ -144,11 +168,6 @@
         human eyes gradually looked into the microcosmic universe inside the cell - Subcellular Structure.
       </p>
     </div>
-
-    <img src='https://static.igem.wiki/teams/5503/design-materials/organelle1.webp' alt='Organelle1' class='organelle1'>
-    <img src='https://static.igem.wiki/teams/5503/design-materials/organelle2.webp' alt='Organelle1' class='organelle2'>
-    <img src='https://static.igem.wiki/teams/5503/design-materials/organelle3.webp' alt='Organelle1' class='organelle3'>
-    <img src='https://static.igem.wiki/teams/5503/design-materials/organelle4.webp' alt='Organelle1' class='organelle4'>
 
     <div class='container2 microscope-container' ref='microscopeRef'>
       <img src='https://static.igem.wiki/teams/5503/design-materials/superresolutionmicroscope.webp'
@@ -241,27 +260,18 @@
     <div class='image-gallery'>
       <div class='image-item'>
         <img src='https://static.igem.wiki/teams/5503/design-materials/metabolicengineering.webp'
-             alt='Metabolic Engineering'
-             class='image'/>
-        <div class='image-label'>
-          Metabolic Engineering
-        </div>
+             alt='Metabolic Engineering' class='image'/>
+        <div class='image-label'>Metabolic Engineering</div>
       </div>
       <div class='image-item'>
-        <img src='https://static.igem.wiki/teams/5503/design-materials/drugproduction.webp'
-             alt='Drug Production'
+        <img src='https://static.igem.wiki/teams/5503/design-materials/drugproduction.webp' alt='Drug Production'
              class='image'/>
-        <div class='image-label'>
-          Drug Production
-        </div>
+        <div class='image-label'>Drug Production</div>
       </div>
       <div class='image-item'>
         <img src='https://static.igem.wiki/teams/5503/design-materials/industrialfermentation.webp'
-             alt='Industrial Fermentation'
-             class='image'/>
-        <div class='image-label'>
-          Industrial Fermentation
-        </div>
+             alt='Industrial Fermentation' class='image'/>
+        <div class='image-label'>Industrial Fermentation</div>
       </div>
     </div>
 
@@ -368,7 +378,6 @@ const dot2Ref = ref<HTMLElement | null>(null)
 const dot3Ref = ref<HTMLElement | null>(null)
 const button2Ref = ref<HTMLButtonElement | null>(null)
 const worldMapRef = ref<HTMLElement | null>(null)
-const microscopeOnlyRef = ref(null)
 const microscopeRef = ref(null)
 const sequencingRef = ref(null)
 const proteomicsRef = ref(null)
@@ -376,6 +385,13 @@ const bioinformaticsRef = ref(null)
 const defaultEarthRef = ref<HTMLImageElement | null>(null)
 let isIntersecting = false
 let initialScrollY = 0
+const rightCloudRef = ref<HTMLElement | null>(null)
+const leftCloudRef = ref<HTMLElement | null>(null)
+const microscopeOnlyRef = ref<HTMLElement | null>(null)
+const organelleRef1 = ref<HTMLElement | null>(null)
+const organelleRef2 = ref<HTMLElement | null>(null)
+const organelleRef3 = ref<HTMLElement | null>(null)
+const organelleRef4 = ref<HTMLElement | null>(null)
 
 const handleIntersection = (entries: IntersectionObserverEntry[]) => {
   entries.forEach(entry => {
@@ -386,6 +402,33 @@ const handleIntersection = (entries: IntersectionObserverEntry[]) => {
     }
   })
 }
+
+const handleCloudIntersection = (entries: IntersectionObserverEntry[]) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('active')
+      setTimeout(() => {
+        entry.target.classList.add('float')
+      }, 1000)
+    } else {
+      entry.target.classList.remove('active')
+      entry.target.classList.remove('float')
+    }
+  })
+}
+
+onMounted(() => {
+  const observer = new IntersectionObserver(handleCloudIntersection, {
+    root: null,
+    threshold: 0.1 // 控制进入可视区域的比例
+  })
+  if (rightCloudRef.value) {
+    observer.observe(rightCloudRef.value)
+  }
+  if (leftCloudRef.value) {
+    observer.observe(leftCloudRef.value)
+  }
+})
 
 onMounted(() => {
   // noinspection TypeScriptValidateTypes
@@ -476,33 +519,33 @@ onMounted(() => {
   if (worldMapRef.value) {
     observer.observe(worldMapRef.value)
   }
-
-  function handleIntersection(entries: IntersectionObserverEntry[]) {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('active')
-      } else {
-        entry.target.classList.remove('active')
-      }
-    })
-  }
 })
 
 onMounted(() => {
   const options = {
     root: null,
-    threshold: 0.3
+    threshold: 0.3,
   }
-  // noinspection TypeScriptValidateTypes
+
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         entry.target.classList.add('show')
+
+        setTimeout(() => organelleRef1.value?.classList.add('active'), 0)
+        setTimeout(() => organelleRef2.value?.classList.add('active'), 300)
+        setTimeout(() => organelleRef3.value?.classList.add('active'), 600)
+        setTimeout(() => organelleRef4.value?.classList.add('active'), 900)
       } else {
         entry.target.classList.remove('show')
+        organelleRef1.value?.classList.remove('active')
+        organelleRef2.value?.classList.remove('active')
+        organelleRef3.value?.classList.remove('active')
+        organelleRef4.value?.classList.remove('active')
       }
     })
   }, options)
+
   if (microscopeOnlyRef.value) {
     observer.observe(microscopeOnlyRef.value)
   }
@@ -636,19 +679,14 @@ onBeforeUnmount(() => {
   width: 648px;
   height: auto;
   margin-bottom: 20px;
-  opacity: 0;
   transform: translateY(-50px);
-  animation: fade-in-down 1.2s ease forwards;
   position: absolute;
 }
 
 .slogan {
   width: 1000px;
   height: auto;
-  opacity: 0;
   transform: translateY(-50px);
-  animation: fade-in-down 1.2s ease forwards;
-  animation-delay: 0.5s;
   position: absolute;
   top: 230px;
 }
@@ -656,22 +694,28 @@ onBeforeUnmount(() => {
 .get-started {
   height: auto;
   width: 180px;
-  opacity: 0;
   transform: translateY(-50px);
-  animation: fade-in-down 1.2s ease forwards;
-  animation-delay: 1s;
   position: absolute;
   top: 500px;
 }
 
-@keyframes fade-in-down {
+.title, .slogan {
+  opacity: 0;
+  animation: fade-in 2s ease forwards;
+}
+
+.get-started {
+  opacity: 0;
+  animation: fade-in 2s ease forwards;
+  animation-delay: 2s;
+}
+
+@keyframes fade-in {
   0% {
     opacity: 0;
-    transform: translateY(-50px);
   }
   100% {
     opacity: 1;
-    transform: translateY(0);
   }
 }
 
@@ -958,8 +1002,17 @@ onBeforeUnmount(() => {
   left: -60px;
   height: auto;
   width: 420px;
-  animation: left-cloud-float 6s ease-in-out infinite;
+  transform: translateX(-50%);
+  transition: transform 1s ease;
   z-index: 2;
+}
+
+.left-cloud.active {
+  transform: translateX(0);
+}
+
+.left-cloud.float {
+  animation: left-cloud-float 6s ease-in-out infinite;
 }
 
 @keyframes left-cloud-float {
@@ -983,8 +1036,17 @@ onBeforeUnmount(() => {
   right: -90px;
   height: auto;
   width: 620px;
-  animation: right-cloud-float 6s ease-in-out infinite;
+  transform: translateX(50%);
+  transition: transform 1s ease;
   z-index: 2;
+}
+
+.right-cloud.active {
+  transform: translateX(0);
+}
+
+.right-cloud.float {
+  animation: right-cloud-float 6s ease-in-out infinite;
 }
 
 @keyframes right-cloud-float {
@@ -1217,28 +1279,21 @@ onBeforeUnmount(() => {
   transform: scale(1);
 }
 
+.organelle1, .organelle2, .organelle3, .organelle4 {
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.organelle1.active, .organelle2.active, .organelle3.active, .organelle4.active {
+  opacity: 1;
+}
+
 .organelle1 {
   position: absolute;
   top: 3982px;
   left: 230px;
   height: auto;
   width: 58px;
-  animation: organelle1-float 6s ease-in-out infinite;
-}
-
-@keyframes organelle1-float {
-  0% {
-    transform: translateY(0);
-  }
-  33% {
-    transform: translateY(-10px);
-  }
-  66% {
-    transform: translateY(10px);
-  }
-  100% {
-    transform: translateY(0);
-  }
 }
 
 .organelle2 {
@@ -1760,7 +1815,7 @@ onBeforeUnmount(() => {
 .promote4 {
   position: absolute;
   top: 2222px;
-  left: 65px;
+  left: 50%;
   width: 1300px;
   height: auto;
   font-family: 'Futura Md BT Bold', sans-serif;
@@ -1946,24 +2001,24 @@ onBeforeUnmount(() => {
   z-index: 9;
 }
 
-.promote1, .promote2, .promote3, .promote4, .promote5, .promote6, .promote7, .promote9, .promote13, .promote14 {
+.promote1, .promote2, .promote3, .promote5, .promote6, .promote7, .promote9, .promote13, .promote14 {
   opacity: 0;
   transform: translateY(50px);
   transition: opacity 0.6s ease, transform 0.6s ease;
 }
 
-.promote1.active, .promote2.active, .promote3.active, .promote4.active, .promote5.active, .promote6.active, .promote7.active, .promote9.active, .promote13.active, .promote14.active {
+.promote1.active, .promote2.active, .promote3.active, .promote5.active, .promote6.active, .promote7.active, .promote9.active, .promote13.active, .promote14.active {
   opacity: 1;
   transform: translateY(0);
 }
 
-.promote8, .promote10, .promote11, .promote12, .promote15, .promote16, .promote17, .dot1, .dot2, .dot3 {
+.promote4, .promote8, .promote10, .promote11, .promote12, .promote15, .promote16, .promote17, .dot1, .dot2, .dot3 {
   opacity: 0;
   transform: translateX(-50%) translateY(50px);
   transition: opacity 0.6s ease, transform 0.6s ease;
 }
 
-.promote8.active, .promote10.active, .promote11.active, .promote12.active, .promote15.active, .promote16.active, .promote17.active, .dot1.active, .dot2.active, .dot3.active {
+.promote4.active, .promote8.active, .promote10.active, .promote11.active, .promote12.active, .promote15.active, .promote16.active, .promote17.active, .dot1.active, .dot2.active, .dot3.active {
   opacity: 1;
   transform: translateX(-50%) translateY(0);
 }
