@@ -1,9 +1,54 @@
 <template>
   <TextContent title='MODEL'
-               :title-list="['Model']">
-    <h1 id='Model'>Model</h1>
-    <p>By visiting the WIKI, you can gain insight into the entire development process, explore our technical details
-      and the thinking behind our decisions, and access a wealth of background information and resource support.</p>
+               :title-list="['Structure Prediction Model']">
+    <h1 id='Structure Prediction Model'>Structure Prediction Model</h1>
+    <p>In our project, a protein structure prediction model is essential for accurately generating fusion proteins' pdb
+      files for subsequent stability and functional evaluations. After comparing various options, we selected
+      <span class='bold'>ESMFold</span> for its exceptional speed, moderate computational resource requirements, and
+      ability to handle large sequences without MSAs. These advantages make ESMFold the most efficient choice for our
+      workflow, ensuring fast and reliable structural predictions.</p>
+    <h5>Table. Comparison of Protein Structure Prediction Tools</h5>
+    <table>
+      <thead>
+      <tr>
+        <th>Tool</th>
+        <th>Accuracy</th>
+        <th>Speed</th>
+        <th>Computational Resource Requirement</th>
+        <th>Local Support</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>AlphaFold</td>
+        <td>●●●●●</td>
+        <td>●●</td>
+        <td>●●●●●</td>
+        <td>Yes</td>
+      </tr>
+      <tr>
+        <td>Uni-Fold</td>
+        <td>●●●●</td>
+        <td>●●●●</td>
+        <td>●●●</td>
+        <td>Yes</td>
+      </tr>
+      <tr>
+        <td>ColabFold</td>
+        <td>●●●●●</td>
+        <td>●●●</td>
+        <td>●</td>
+        <td>No</td>
+      </tr>
+      <tr>
+        <td>ESMFold</td>
+        <td>●●●●</td>
+        <td>●●●●●</td>
+        <td>●●●</td>
+        <td>Yes</td>
+      </tr>
+      </tbody>
+    </table>
   </TextContent>
 </template>
 
