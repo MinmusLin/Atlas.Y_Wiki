@@ -47,11 +47,10 @@ nav a:hover::before {
     content: '';
     display: inline-block;
     background-image: url('https://static.igem.wiki/teams/5503/design-materials/activemapmarker.webp');
-    background-size: 16px 16px;
+    background-size: 20px 20px;
     background-repeat: no-repeat;
     width: 30px;
     height: 30px;
-    margin-right: 8px;
 }
 
 nav a.active {
@@ -63,11 +62,10 @@ nav a.active::before {
     content: '';
     display: inline-block;
     background-image: url('https://static.igem.wiki/teams/5503/design-materials/defaultmapmarker.webp');
-    background-size: 16px 16px;
+    background-size: 20px 20px;
     background-repeat: no-repeat;
     width: 30px;
     height: 30px;
-    margin-right: 8px;
 }
 
 nav a.active:hover::before {

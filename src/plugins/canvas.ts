@@ -275,6 +275,7 @@ export function draw() {
   horizontalLine(150, 1220, 5730, ctx, canvasH, 1, 2)
   circularArc(1220, 5760, ctx, canvasH, 2, 2)
   verticalLine(1250, 5760, 7100, ctx, canvasH)
+  ctx.stroke()
   if (positionY < 3200) {
     img.src = 'https://static.igem.wiki/teams/5503/design-materials/nodeplanet.webp'
   } else if (positionY >= 3200 && positionY < 5700) {
@@ -283,6 +284,5 @@ export function draw() {
     img.src = 'https://static.igem.wiki/teams/5503/design-materials/nodeprotein.webp'
   }
   ctx.drawImage(img, positionX - imgWidth / 2, positionY - imgHeight / 2, imgWidth, imgHeight)
-  ctx.stroke()
   canvas.style.backgroundColor = 'transparent'
 }
