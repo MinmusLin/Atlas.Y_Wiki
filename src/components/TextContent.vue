@@ -15,7 +15,7 @@
          @click.prevent='scrollToSection(title)'>{{ title }}</a>
     </nav>
     <div class='text-area'
-         :style="{ marginTop: (titleList.length == 0 ? -20 : -navHeight-40) + 'px', transform: `translateX(${titleList.length == 0 ? 0 : -148 }px)`, width: titleList.length == 0 ? '1340px' : '1043px' }">
+         :style="{ marginTop: (titleList.length == 0 ? -20 : -navHeight-40) + 'px', transform: `translateX(${titleList.length == 0 ? 0 : -149 }px)`, width: titleList.length == 0 ? '1340px' : '1043px' }">
       <slot/>
     </div>
     <div class='background-image-container'>
@@ -77,6 +77,7 @@ onMounted(async () => {
 
 onMounted(() => {
   if (navRef.value) {
+    // noinspection TypeScriptUnresolvedReference
     navHeight.value = navRef.value?.offsetHeight
   }
 })
