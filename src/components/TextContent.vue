@@ -9,12 +9,13 @@
     <div class='title-box-container'>
       <TitleBox :title='title'/>
     </div>
-    <nav ref='navRef'>
+    <nav ref='navRef' v-if='titleList.length!=0'>
       <a v-for='title in titleList' :key='title'
          :class='{ active: activeAnchor == `#${title}` }'
          @click.prevent='scrollToSection(title)'>{{ title }}</a>
     </nav>
-    <div class='text-area' :style="{ marginTop: (-navHeight-40) + 'px' }">
+    <div class='text-area'
+         :style="{ marginTop: (titleList.length == 0 ? -20 : -navHeight-40) + 'px', transform: `translateX(${titleList.length == 0 ? 0 : -148 }px)`, width: titleList.length == 0 ? '1340px' : '1043px' }">
       <slot/>
     </div>
     <div class='background-image-container'>
