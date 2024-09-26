@@ -25,7 +25,9 @@ onMounted(() => {
     const {type, data} = JSON.parse(e.data)
     if (type == 'igem-attribution-form') {
       const element = document.getElementById('igem-attribution-form')
-      element.style.height = data + 'px'
+      if (element) {
+        element.style.height = data + 'px'
+      }
     }
   })
 })
