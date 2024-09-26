@@ -11,7 +11,7 @@
     <HeaderNavbar/>
     <router-view/>
     <FooterNavbar :is-home-page='isHomePage'/>
-    <el-backtop :right='80' :bottom='80' class='back-top'>
+    <el-backtop :right='60' :bottom='60' class='back-top'>
       <img src='https://static.igem.wiki/teams/5503/design-materials/backtotop.webp'
            alt='BackToTop'
            style='width: 40px'>

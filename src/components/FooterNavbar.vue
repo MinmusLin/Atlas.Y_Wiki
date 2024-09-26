@@ -28,30 +28,29 @@
     <a class='email' href='mailto:tongji_china2019@163.com'>tongji_china2019@163.com</a>
     <img src='https://static.igem.wiki/teams/5503/design-materials/email.webp'
          alt='Email'
-         style='top: 225px; right: 439px; width: 51px'>
+         style='top: 307px; right: 439px; width: 51px'>
     <img src='https://static.igem.wiki/teams/5503/design-materials/tiktok.webp'
          alt='TikTok'
-         style='top: 298px; right: 447px; width: 42px; cursor: pointer'
+         style='top: 227px; right: 447px; width: 42px; cursor: pointer'
          @click="goToLink('https://www.douyin.com/user/MS4wLjABAAAAv-bx0_ifEkA6KWMDaoB1eXeNspQPeVZUY4pR3Qfp0UBqo5NEo4QLNwVAdHZLFgA2')">
-    <div @mouseover='isHover = true' @mouseleave='isHover = false'>
+    <div @mouseover='isHover=true' @mouseleave='isHover=false'>
       <img src='https://static.igem.wiki/teams/5503/design-materials/wechat.webp'
            alt='WeChat'
-           style='top: 296px; right: 321px; width: 64px; cursor: pointer'>
+           style='top: 225px; right: 78px; width: 64px; cursor: pointer'>
       <transition name='fade'>
         <v-card v-show='isHover'
-                @mouseover='isHover = true'
-                @mouseleave='isHover = false'
-                style='border-radius: 8px; position: absolute; z-index: 1; top: 100px; right: 260px; display: flex; justify-content: center; align-items: center;'
-                :style="{ width: '180px', height: '180px' }">
+                @mouseover='isHover=true'
+                @mouseleave='isHover=false'
+                class='qrcode-container'>
           <img src='https://static.igem.wiki/teams/5503/design-materials/wechatqrcode.webp'
                alt='WeChatQRCode'
-               style='width: 150px; height: auto'>
+               style='width: 92px; height: 92px'>
         </v-card>
       </transition>
     </div>
     <img src='https://static.igem.wiki/teams/5503/design-materials/bilibili.webp'
          alt='Bilibili'
-         style='top: 302px; right: 100px; width: 159px; cursor: pointer'
+         style='top: 231px; right: 207px; width: 159px; cursor: pointer'
          @click="goToLink('https://space.bilibili.com/696914648')">
   </div>
 </template>
@@ -76,6 +75,16 @@ function goToLink(link: string) {
   -webkit-user-select: none;
 }
 
+.qrcode-container {
+  border-radius: 20px;
+  position: absolute;
+  top: 70px;
+  right: 46px;
+  width: 128px;
+  height: 128px;
+  padding: 18px;
+}
+
 .contact-us {
   position: absolute;
   color: white;
@@ -97,7 +106,7 @@ img {
   font-family: 'Futura Bk BT Book', sans-serif;
   font-size: 20px;
   right: 167px;
-  top: 225px;
+  top: 307px;
   text-decoration: none;
 }
 
