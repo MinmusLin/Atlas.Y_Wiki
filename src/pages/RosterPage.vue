@@ -1,7 +1,5 @@
 <template>
-  <TextContent title='ROSTER'
-               :title-list="['Roster']">
-    <h1 id='Roster'>Roster</h1>
+  <TextContent title='ROSTER' :title-list='[]'>
     <p>By visiting the WIKI, you can gain insight into the entire development process, explore our technical details
       and the thinking behind our decisions, and access a wealth of background information and resource support.</p>
   </TextContent>
@@ -12,7 +10,5 @@ import TextContent from '@/components/TextContent.vue'
 </script>
 
 <style scoped>
-@import '@/styles/text.css';
-@import '@/styles/anchor.css';
-@import '@/styles/layout.css';
+@import '@/styles/style.css';
 </style>

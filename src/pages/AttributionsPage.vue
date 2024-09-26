@@ -1,7 +1,5 @@
 <template>
-  <TextContent title='ATTRIBUTIONS'
-               :title-list="['Attributions']">
-    <h1 id='Attributions'>Attributions</h1>
+  <TextContent title='ATTRIBUTIONS' :title-list='[]'>
     <p>
       Below is the content from <a href='https://teams.igem.org/wiki/5503/attributions' target='_blank'>
       https://teams.igem.org/wiki/5503/attributions</a>.
@@ -16,7 +14,5 @@ import TextContent from '@/components/TextContent.vue'
 </script>
 
 <style scoped>
-@import '@/styles/text.css';
-@import '@/styles/anchor.css';
-@import '@/styles/layout.css';
+@import '@/styles/style.css';
 </style>

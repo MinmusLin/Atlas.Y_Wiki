@@ -303,7 +303,5 @@ import TextContent from '@/components/TextContent.vue'
 </script>
 
 <style scoped>
-@import '@/styles/text.css';
-@import '@/styles/anchor.css';
-@import '@/styles/layout.css';
+@import '@/styles/style.css';
 </style>
