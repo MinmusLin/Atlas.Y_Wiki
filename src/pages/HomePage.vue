@@ -400,6 +400,11 @@ const defaultLogoRef = ref<HTMLElement | null>(null)
 let isIntersecting = false
 let initialScrollY = 0
 
+onMounted(() => {
+  draw()
+  window.addEventListener('scroll', draw)
+})
+
 const handleIntersection = (entries: IntersectionObserverEntry[]) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
@@ -504,11 +509,6 @@ onMounted(() => {
   if (dot3Ref.value) {
     observer.observe(dot3Ref.value)
   }
-})
-
-onMounted(() => {
-  draw()
-  window.addEventListener('scroll', draw)
 })
 
 onBeforeUnmount(() => {
