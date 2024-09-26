@@ -33,9 +33,22 @@
          alt='TikTok'
          style='top: 298px; right: 447px; width: 42px; cursor: pointer'
          @click="goToLink('https://www.douyin.com/user/MS4wLjABAAAAv-bx0_ifEkA6KWMDaoB1eXeNspQPeVZUY4pR3Qfp0UBqo5NEo4QLNwVAdHZLFgA2')">
-    <img src='https://static.igem.wiki/teams/5503/design-materials/wechat.webp'
-         alt='WeChat'
-         style='top: 296px; right: 321px; width: 64px; cursor: pointer'>
+    <div @mouseover='isHover = true' @mouseleave='isHover = false'>
+      <img src='https://static.igem.wiki/teams/5503/design-materials/wechat.webp'
+           alt='WeChat'
+           style='top: 296px; right: 321px; width: 64px; cursor: pointer'>
+      <transition name='fade'>
+        <v-card v-show='isHover'
+                @mouseover='isHover = true'
+                @mouseleave='isHover = false'
+                style='border-radius: 8px; position: absolute; z-index: 1; top: 100px; right: 260px; display: flex; justify-content: center; align-items: center;'
+                :style="{ width: '180px', height: '180px' }">
+          <img src='https://static.igem.wiki/teams/5503/design-materials/wechatqrcode.webp'
+               alt='WeChatQRCode'
+               style='width: 150px; height: auto'>
+        </v-card>
+      </transition>
+    </div>
     <img src='https://static.igem.wiki/teams/5503/design-materials/bilibili.webp'
          alt='Bilibili'
          style='top: 302px; right: 100px; width: 159px; cursor: pointer'
@@ -44,8 +57,9 @@
 </template>
 
 <script setup lang='ts'>
-import {defineProps} from 'vue'
+import {defineProps, ref} from 'vue'
 
+const isHover = ref(false)
 const props = defineProps<{
   isHomePage: boolean
 }>()
@@ -108,5 +122,20 @@ a {
 
 a:hover {
   color: #AACAF9;
+}
+
+/* noinspection CssUnusedSymbol */
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 0.2s ease-in-out;
+}
+
+/* noinspection CssUnusedSymbol */
+.fade-enter-from, .fade-leave-to {
+  opacity: 0;
+}
+
+/* noinspection CssUnusedSymbol */
+.fade-enter-to, .fade-leave-from {
+  opacity: 1;
 }
 </style>
