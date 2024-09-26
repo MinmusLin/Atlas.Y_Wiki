@@ -35,8 +35,6 @@
     <img src='https://static.igem.wiki/teams/5503/design-materials/screenshot4.webp' alt='Screenshot4' style='margin-bottom: 38px'>
     <p class='english-text'>Atlas.Y ensures every protein stays on course within the "city", providing an effective tour for synthetic biology, bio-manufacturing, and scientific research.</p>
     <p class='chinese-text'>Atlas.Y 让每一个蛋白在城市中不会迷路，为合成生物学和生物制造领域提供了有效的工具，为未来的科学研究提供新的工具和方法。</p>
-    <img src='https://static.igem.wiki/teams/5503/design-materials/screenshot6.webp' alt='Screenshot6' style='margin-bottom: 38px'>
-    <img src='https://static.igem.wiki/teams/5503/design-materials/screenshot7.webp' alt='Screenshot7' style='margin-bottom: 38px'>
   </TextContent>
 </template>
 
