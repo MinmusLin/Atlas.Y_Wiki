@@ -200,15 +200,17 @@
 }
 
 .text-area table th {
-    padding: 15px 15px;
     text-align: center;
     vertical-align: middle;
+    padding-top: 12px;
+    padding-bottom: 12px;
 }
 
 .text-area table td {
-    padding: 12px 15px;
     text-align: center;
     vertical-align: middle;
+    padding-top: 8px;
+    padding-bottom: 8px;
 }
 
 .text-area table tbody td {
