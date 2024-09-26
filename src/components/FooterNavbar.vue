@@ -31,13 +31,15 @@
          style='top: 225px; right: 439px; width: 51px'>
     <img src='https://static.igem.wiki/teams/5503/design-materials/tiktok.webp'
          alt='TikTok'
-         style='top: 298px; right: 447px; width: 42px'>
+         style='top: 298px; right: 447px; width: 42px; cursor: pointer'
+         @click="goToLink('https://www.douyin.com/user/MS4wLjABAAAAv-bx0_ifEkA6KWMDaoB1eXeNspQPeVZUY4pR3Qfp0UBqo5NEo4QLNwVAdHZLFgA2')">
     <img src='https://static.igem.wiki/teams/5503/design-materials/wechat.webp'
          alt='WeChat'
-         style='top: 296px; right: 321px; width: 64px'>
+         style='top: 296px; right: 321px; width: 64px; cursor: pointer'>
     <img src='https://static.igem.wiki/teams/5503/design-materials/bilibili.webp'
          alt='Bilibili'
-         style='top: 302px; right: 100px; width: 159px'>
+         style='top: 302px; right: 100px; width: 159px; cursor: pointer'
+         @click="goToLink('https://space.bilibili.com/696914648')">
   </div>
 </template>
 

@@ -684,20 +684,14 @@ onMounted(() => {
   top: 0;
   height: 10982px;
   z-index: 1;
-  background: linear-gradient(to bottom,
-  #0A2144 0px,
-  #0A2144 2850px,
-  #FFF7C8 3100px,
-  #FFF7C8 4024px,
-  #F7F5E1 7028px,
-  #AACAF9 10000px,
-  #AACAF9 10982px);
+  background: linear-gradient(to bottom, #0A2144 0px, #0A2144 2850px, #FFF7C8 3100px, #FFF7C8 4024px, #F7F5E1 7028px, #AACAF9 10000px, #AACAF9 10982px);
 }
 
 .background {
   width: 100%;
   height: auto;
   display: block;
+  mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 5%, rgba(0, 0, 0, 1) 95%, rgba(0, 0, 0, 0) 100%);
 }
 
 .title-slogan-container {
@@ -738,12 +732,13 @@ onMounted(() => {
 .title, .slogan {
   opacity: 0;
   animation: fade-in 2s ease forwards;
+  animation-delay: 3.3s;
 }
 
 .get-started {
   opacity: 0;
   animation: fade-in 2s ease forwards;
-  animation-delay: 2s;
+  animation-delay: 4.7s;
 }
 
 @keyframes fade-in {
