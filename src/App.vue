@@ -20,7 +20,7 @@
 </template>
 
 <script setup lang='ts'>
-import {computed, onMounted, onBeforeUnmount, ref} from 'vue'
+import {computed, onMounted, ref} from 'vue'
 import {useRoute} from 'vue-router'
 import HeaderNavbar from '@/components/HeaderNavbar.vue'
 import FooterNavbar from '@/components/FooterNavbar.vue'
@@ -28,16 +28,15 @@ import FooterNavbar from '@/components/FooterNavbar.vue'
 const route = useRoute()
 const isHomePage = computed(() => route.path == '/')
 const loadingVisible = ref(true)
-let timer = null
+const opacity = ref(1)
 
 onMounted(() => {
   setTimeout(() => {
-    loadingVisible.value = false
+    opacity.value = 0
   }, 3000)
-})
-
-onBeforeUnmount(() => {
-  clearTimeout(timer)
+  setTimeout(() => {
+    loadingVisible.value = false
+  }, 3500)
 })
 </script>
 
@@ -58,10 +57,12 @@ onBeforeUnmount(() => {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  z-index: 1001;
+  z-index: 1003;
   position: fixed;
   top: 0;
   left: 0;
   -webkit-user-select: none;
+  transition: opacity 0.5s ease-out;
+  opacity: v-bind(opacity);
 }
 </style>
