@@ -734,13 +734,12 @@ onMounted(() => {
 .title, .slogan {
   opacity: 0;
   animation: fade-in 2s ease forwards;
-  animation-delay: 3.3s;
 }
 
 .get-started {
   opacity: 0;
   animation: fade-in 2s ease forwards;
-  animation-delay: 4.7s;
+  animation-delay: 1.5s;
 }
 
 @keyframes fade-in {
