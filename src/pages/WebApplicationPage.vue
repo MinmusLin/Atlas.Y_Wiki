@@ -1,12 +1,19 @@
 <template>
-  <TextContent title='WEB APPLICATION' :title-list='[]'>
-    <p>By visiting the WIKI, you can gain insight into the entire development process, explore our technical details
-      and the thinking behind our decisions, and access a wealth of background information and resource support.</p>
-  </TextContent>
+  <div class='content-area'>
+    <img src='https://static.igem.wiki/teams/5503/design-materials/toprightcircle.webp'
+         alt='TopRightCircle'
+         class='top-right-image'/>
+    <img src='https://static.igem.wiki/teams/5503/design-materials/bottomleftcircle.webp'
+         alt='BottomLeftCircle'
+         class='bottom-left-image'/>
+    <div class='title-box-container' style='margin-bottom: calc(100vh - 524px)'>
+      <TitleBox title='WEB APPLICATION'/>
+    </div>
+  </div>
 </template>
 
 <script setup lang='ts'>
-import TextContent from '@/components/TextContent.vue'
+import TitleBox from '@/components/TitleBox.vue'
 </script>
 
 <style scoped>
