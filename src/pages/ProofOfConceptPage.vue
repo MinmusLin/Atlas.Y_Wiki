@@ -1,5 +1,5 @@
 <template>
-  <TextContent title='PROOF OF CONCEPT'
+  <TextContent title='PROOFOFCONCEPT'
                :title-list="['Proof of Concept']">
     <h1 id='Proof of Concept'>Proof of Concept</h1>
     <p>By visiting the WIKI, you can gain insight into the entire development process, explore our technical details

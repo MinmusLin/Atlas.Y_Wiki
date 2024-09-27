@@ -9,8 +9,7 @@
            class='corner-image'
            :class="{ 'animate': mascotAnimation }"
            :style="{ right: mascotPosition.right, bottom: mascotPosition.bottom }"/>
-      <p class='title1' ref='title1'>{{ title }}</p>
-      <p class='title2'>{{ title }}</p>
+      <p class='title' ref='title'>{{ title }}</p>
     </div>
   </div>
 </template>
@@ -24,7 +23,7 @@ defineProps<{
 
 const startAnimation = ref(false)
 const mascotAnimation = ref(false)
-const title1 = ref<HTMLElement | null>(null)
+const title = ref<HTMLElement | null>(null)
 const imageContainer = ref<HTMLElement | null>(null)
 const ballPosition = reactive({x: 0, y: 0})
 const mascotPosition = reactive({right: '-150px', bottom: '-150px'})
@@ -34,7 +33,7 @@ onMounted(async () => {
   setTimeout(() => {
     startAnimation.value = true
     // noinspection TypeScriptUnresolvedReference
-    const rect = title1.value?.getBoundingClientRect()
+    const rect = title.value?.getBoundingClientRect()
     // noinspection TypeScriptUnresolvedReference
     const containerRect = imageContainer.value?.getBoundingClientRect()
     if (rect && containerRect) {
@@ -79,30 +78,12 @@ onMounted(async () => {
   transition: right 1.5s, bottom 1.5s;
 }
 
-.title1 {
+.title {
   position: absolute;
   left: 70px;
   bottom: 26px;
   font-size: 80px;
   color: #5182F8;
   font-family: 'Futura Md BT Bold', sans-serif;
-}
-
-.title2 {
-  position: absolute;
-  left: 61px;
-  bottom: 30px;
-  font-size: 80px;
-  color: white;
-  font-family: 'Futura Md BT Bold', sans-serif;
-}
-
-.title1, .title2 {
-  clip-path: inset(0 0 0 100%);
-  transition: clip-path 0.75s ease-out 1.5s;
-}
-
-.title-box.animate .title1, .title-box.animate .title2 {
-  clip-path: inset(0);
 }
 </style>

@@ -8,11 +8,9 @@
          class='bottom-left-image'/>
     <div class='flex-container'>
       <div class='title-box-container'>
-        <TitleBox title='WEB APPLICATION'/>
+        <TitleBox title='WEBAPPLICATION'/>
       </div>
-
       <p class='welcome'>Welcome to Atlas.Y!</p>
-
       <div class='button-area'>
         <button class='btn how-to-use'>How to Use</button>
         <button class='btn try-it'>Try it</button>
@@ -43,7 +41,7 @@ import TitleBox from '@/components/TitleBox.vue'
   font-size: 36px;
   color: #FFFFFF;
   margin-bottom: 40px;
-  z-index:1;
+  z-index: 1;
 }
 
 .button-area {
@@ -53,7 +51,7 @@ import TitleBox from '@/components/TitleBox.vue'
   align-items: center;
   gap: 75px;
   margin-bottom: 75px;
-  z-index:1;
+  z-index: 1;
 }
 
 .btn {
