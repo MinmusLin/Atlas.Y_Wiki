@@ -11,7 +11,7 @@
     <img src='https://static.igem.wiki/teams/5503/design-materials/lightlogo.webp'
          alt='LightLogo'
          style='top: 93px; left: 545px; cursor: pointer; width: 243px'
-         @click="goToLink('http://47.91.92.143')">
+         @click="goToLink('http://162.62.213.36')">
     <div class='notes'>
       <p>
         © 2024 - Content on this site is licensed under a

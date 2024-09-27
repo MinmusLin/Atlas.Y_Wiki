@@ -12,8 +12,14 @@
       </div>
       <p class='welcome'>Welcome to Atlas.Y!</p>
       <div class='button-area'>
-        <button class='btn how-to-use'>How to Use</button>
-        <button class='btn try-it'>Try it</button>
+        <button class='btn how-to-use'
+                @click="goToLink('http://162.62.213.36/user-guide')">
+          How to Use
+        </button>
+        <button class='btn try-it'
+                @click="goToLink('http://162.62.213.36')">
+          Try it
+        </button>
       </div>
     </div>
   </div>
@@ -21,6 +27,10 @@
 
 <script setup lang='ts'>
 import TitleBox from '@/components/TitleBox.vue'
+
+function goToLink(link: string) {
+  window.open(link, '_blank')
+}
 </script>
 
 <style scoped>
@@ -39,7 +49,7 @@ import TitleBox from '@/components/TitleBox.vue'
   font-family: 'Futura Md BT Medium', sans-serif;
   text-align: center;
   font-size: 36px;
-  color: #FFFFFF;
+  color: white;
   margin-bottom: 40px;
   z-index: 1;
 }
@@ -61,21 +71,19 @@ import TitleBox from '@/components/TitleBox.vue'
   cursor: pointer;
   font-size: 36px;
   font-family: 'Futura Md Bt Bold', sans-serif;
-  color: #5182F8;
-  background-color: transparent;
-  border: 4px solid #5182F8;
   border-radius: 20px;
   box-shadow: 3px 5px 0 0 #5182F8;
+  border: 4px solid #5182F8;
   transition: background-color 0.3s, color 0.3s, box-shadow 0.1s, transform 0.1s;
 }
 
 .how-to-use {
   background-color: white;
-  color: #007bff;
+  color: #5182F8;
 }
 
 .try-it {
-  background-color: #007bff;
+  background-color: #7AA8F5;
   color: white;
 }
 
