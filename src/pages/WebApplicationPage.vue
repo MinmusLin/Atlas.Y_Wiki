@@ -8,7 +8,7 @@
          class='bottom-left-image'/>
     <div class='flex-container'>
       <div class='title-box-container'>
-        <TitleBox title='WEBAPPLICATION'/>
+        <TitleBox title='WEB APPLICATION'/>
       </div>
       <p class='welcome'>Welcome to Atlas.Y!</p>
       <div class='button-area'>

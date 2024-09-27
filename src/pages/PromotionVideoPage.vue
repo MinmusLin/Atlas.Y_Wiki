@@ -1,5 +1,5 @@
 <template>
-  <TextContent title='PROMOTIONVIDEO' :title-list='[]'>
+  <TextContent title='PROMOTION VIDEO' :title-list='[]'>
     <iframe style='border: none; margin-top: 15px; margin-bottom: 20px'
             title='Tongji-Software: Atlas.Y: An Advanced Targeting and Localization Assistance Syst... (2024) - Project Promotion [English]'
             width='1202'
