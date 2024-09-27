@@ -10,7 +10,7 @@
     <p style='margin-bottom: 15px'>Below are screenshots from <a href='https://video.igem.org/w/ppveuehoduZSbWimGE2jSW' target='_blank'>our promotion video</a>.</p>
     <p class='english-text'>In a bustling city, we rely on navigation systems to ensure smooth journeys.</p>
     <p class='chinese-text'>在繁忙的城市中，我们依赖导航系统确保每一次出行的顺畅。</p>
-    <p class='english-text'>Similarly, in the world of cells, yeast function like a complex city.</p>
+    <p class='english-text'>Similarly, in the world of cells, yeast functions like a complex city.</p>
     <p class='chinese-text'>同样，在细胞的世界里，酵母菌像一座复杂的城市。</p>
     <p class='english-text'>As a core of bio-manufacturing, yeast can efficiently produce varieties of bioproducts such as fuels and medicines, discovering the key to efficient production becomes increasingly significant.</p>
     <p class='chinese-text'>作为生物制造的核心，酵母菌能够高效生产出燃料、药物等各种生物产品。探索高效生产的秘方变得尤为重要。</p>
@@ -25,7 +25,7 @@
     <img src='https://static.igem.wiki/teams/5503/design-materials/screenshot3.webp' alt='Screenshot3' style='margin-bottom: 38px'>
     <p class='english-text'>Additionally, the platform offers directed evolution and dynamic localization design.</p>
     <p class='chinese-text'>此外，平台还提供融合蛋白定向进化功能和动态定位设计。</p>
-    <p class='english-text'>We obtained hundreds of localization tags and thousands of linkers by literature method and segmentation method. After generating fusion proteins, we evaluate their function and stability using a combination of large-language models, CAD scoring, and the Rosetta method.</p>
+    <p class='english-text'>We have obtained hundreds of localization tags and thousands of linkers by literature method and segmentation method. After generating fusion proteins, we evaluate their function and stability using a combination of large-language models, CAD scoring, and the Rosetta method.</p>
     <p class='chinese-text'>我们通过文献方法与切割方法获得百条定位标签序列，千条 linker 序列。生成融合蛋白后，结合使用蛋白质大语言模型，CAD 评分和 Rosetta 方法评估融合蛋白的功能及稳定性。</p>
     <img src='https://static.igem.wiki/teams/5503/design-materials/screenshot5.webp' alt='Screenshot5' style='margin-bottom: 38px'>
     <p class='english-text'>Additionally, we utilize an advanced large model to generate variants, aiming to further enhance their functionality.</p>
