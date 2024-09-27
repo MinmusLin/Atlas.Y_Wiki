@@ -1,13 +1,12 @@
 <template>
   <TextContent title='PROMOTION VIDEO' :title-list='[]'>
-    <iframe style='border: none; margin-top: 15px; margin-bottom: 20px'
+    <iframe style='border: none; margin-top: 15px; margin-bottom: 44px'
             title='Tongji-Software: Atlas.Y: An Advanced Targeting and Localization Assistance Syst... (2024) - Project Promotion [English]'
             width='1202'
             height='676'
             src='https://video.igem.org/videos/embed/bd8a4fa2-aef2-4e08-b860-7c6eeeb8bd1a'
             :allowfullscreen='true'
             sandbox='allow-same-origin allow-scripts allow-popups allow-forms'/>
-    <p style='margin-bottom: 15px'>Below are screenshots from <a href='https://video.igem.org/w/ppveuehoduZSbWimGE2jSW' target='_blank'>our promotion video</a>.</p>
     <p class='english-text'>In a bustling city, we rely on navigation systems to ensure smooth journeys.</p>
     <p class='chinese-text'>在繁忙的城市中，我们依赖导航系统确保每一次出行的顺畅。</p>
     <p class='english-text'>Similarly, in the world of cells, yeast functions like a complex city.</p>
