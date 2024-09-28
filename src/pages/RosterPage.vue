@@ -4,44 +4,33 @@
       and the thinking behind our decisions, and access a wealth of background information and resource support.</p>
     <div class='team-name'>Algorithm Development</div>
     <div class='member-card'>
-      <MemberCard
-        photo="design-materials/DrugProduction.webp"
-        name="Shurui Ning"
-        role="Leader"
-        bio="By visiting the WIKI, you can gain insight into the entire development process, explore our technical details
-      and the thinking behind our decisions, and access a wealth of background information and resource support."
+      <MemberCard photo="design-materials/DrugProduction.webp"
+                  name="Shurui Ning"
+                  role="Leader"
+                  bio="By visiting the WIKI, you can gain insight into the entire development process, explore our technical details and the thinking behind our decisions, and access a wealth of background information and resource support."
       />
 
-      <MemberCard
-        photo="design-materials/DrugProduction.webp"
-        name="Shurui Ning"
-        role="Leader"
-        bio="By visiting the WIKI, you can gain insight into the entire development process, explore our technical details
-      and the thinking behind our decisions, and access a wealth of background information and resource support."
+      <MemberCard photo="design-materials/DrugProduction.webp"
+                  name="Shurui Ning"
+                  role="Leader"
+                  bio="By visiting the WIKI, you can gain insight into the entire development process, explore our technical details and the thinking behind our decisions, and access a wealth of background information and resource support."
       />
 
-      <MemberCard
-        photo="design-materials/DrugProduction.webp"
-        name="Shurui Ning"
-        role="Leader"
-        bio="By visiting the WIKI, you can gain insight into the entire development process, explore our technical details
-      and the thinking behind our decisions, and access a wealth of background information and resource support."
+      <MemberCard photo="design-materials/DrugProduction.webp"
+                  name="Shurui Ning"
+                  role="Leader"
+                  bio="By visiting the WIKI, you can gain insight into the entire development process, explore our technical details and the thinking behind our decisions, and access a wealth of background information and resource support."
       />
 
-      <MemberCard
-        photo="design-materials/DrugProduction.webp"
-        name="Shurui Ning"
-        role="Leader"
-        bio="By visiting the WIKI, you can gain insight into the entire development process, explore our technical details
-      and the thinking behind our decisions, and access a wealth of background information and resource support."
+      <MemberCard photo="design-materials/DrugProduction.webp" name="Shurui Ning"
+                  role="Leader"
+                  bio="By visiting the WIKI, you can gain insight into the entire development process, explore our technical details and the thinking behind our decisions, and access a wealth of background information and resource support."
       />
 
-      <MemberCard
-        photo="design-materials/DrugProduction.webp"
-        name="Shurui Ning"
-        role="Leader"
-        bio="By visiting the WIKI, you can gain insight into the entire development process, explore our technical details
-      and the thinking behind our decisions, and access a wealth of background information and resource support."
+      <MemberCard photo="design-materials/DrugProduction.webp"
+                  name="Shurui Ning"
+                  role="Leader"
+                  bio="By visiting the WIKI, you can gain insight into the entire development process, explore our technical details and the thinking behind our decisions, and access a wealth of background information and resource support."
       />
     </div>
   </TextContent>
