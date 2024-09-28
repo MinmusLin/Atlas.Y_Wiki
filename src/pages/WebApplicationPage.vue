@@ -13,7 +13,7 @@
       <p class='welcome'>Welcome to Atlas.Y!</p>
       <div class='button-area'>
         <button class='btn how-to-use'
-                @click="goToLink('http://162.62.213.36/user-guide')">
+                @click="router.push('/implementation')">
           How to Use
         </button>
         <button class='btn try-it'
@@ -26,7 +26,10 @@
 </template>
 
 <script setup lang='ts'>
+import {useRouter} from 'vue-router'
 import TitleBox from '@/components/TitleBox.vue'
+
+const router = useRouter()
 
 function goToLink(link: string) {
   window.open(link, '_blank')
