@@ -100,11 +100,11 @@
       <MemberCard photo='https://static.igem.wiki/teams/5503/test/jingzhang.webp'
                   name='Dr. Jing Zhang'
                   role='Primary PI'
-                  bio='She has provided crucial assistance in project management and advancement, funding support, and team building.'/>
+                  bio='She funded our project and supervised the procedure of the project.'/>
       <MemberCard photo='https://static.igem.wiki/teams/5503/test/guohuichuai.webp'
                   name='Dr. Guohui Chuai'
                   role='Secondary PI'
-                  bio='He helped us brainstorm the core of our project and gave us a lot of useful suggestions in model and data.'/>
+                  bio='He helped us in designing and optimizing the project process, gave us guidance on algorithms, and provided a lab server for our experiments.'/>
     </div>
 
     <div class='team-name'>Instructor</div>
