@@ -247,7 +247,8 @@
       target products.
     </p>
 
-    <img src='https://static.igem.wiki/teams/5503/design-materials/growingline.webp' alt='growingLine' class='growing-line'>
+    <img src='https://static.igem.wiki/teams/5503/design-materials/growingline.webp' alt='growingLine'
+         class='growing-line'>
 
     <p class='promote10' ref='promote10Ref'>
       Precise targeting of proteins to specific organelles in yeast is of paramount importance in the rapid development
@@ -1547,7 +1548,7 @@ onMounted(() => {
   height: auto;
 }
 
-.growing-line{
+.growing-line {
   position: absolute;
   top: 6100px;
   right: 270px;
@@ -1825,7 +1826,7 @@ onMounted(() => {
   position: absolute;
   top: 9843px;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-50%) rotate(-60deg);
   width: 288px;
   height: auto;
   transition: transform 0.1s ease;
