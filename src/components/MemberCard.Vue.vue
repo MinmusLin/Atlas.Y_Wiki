@@ -1,27 +1,27 @@
 <template>
   <div class='profile-card'>
     <div class='image-container'>
-      <img :src='photo' alt='Profile photo' class='profile-photo' />
+      <img :src='props.photo' alt='ProfilePhoto' class='profile-photo'/>
       <div class='overlay'>
-        <p class='bio'>{{ bio }}</p>
+        <p class='bio'>{{ props.bio }}</p>
       </div>
     </div>
     <div class='profile-details'>
-      <h2>{{ name }}</h2>
-      <p class='role'>{{ role }}</p>
+      <h2>{{ props.name }}</h2>
+      <p class='role'>{{ props.role }}</p>
     </div>
   </div>
 </template>
 
 <script setup lang='ts'>
-interface Props {
+import {defineProps} from 'vue'
+
+const props = defineProps<{
   photo: string
   name: string
   role: string
-  bio?: string
-}
-
-defineProps<Props>()
+  bio: string
+}>()
 </script>
 
 <style scoped>
@@ -101,4 +101,3 @@ h2 {
   color: #16396e;
 }
 </style>
-
