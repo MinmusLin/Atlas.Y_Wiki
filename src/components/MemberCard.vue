@@ -51,18 +51,21 @@ const props = defineProps<{
 }
 
 .profile-photo {
-  width: 100%;
-  height: 100%;
+  width: 299px;
+  height: 299px;
   object-fit: cover;
+  background-color: #FED549;
+  border-radius: 10px;
 }
 
 .overlay {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 299px;
+  height: 299px;
   background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
