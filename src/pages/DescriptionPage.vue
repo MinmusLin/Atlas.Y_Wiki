@@ -21,10 +21,12 @@
       intracellular logistics could have profound implications not only for <span class='bold'>basic research</span> but
       also for revolutionary advances in <span class='bold'>biomanufacturing, drug delivery, and disease
       treatment</span>.<sup>[4][5]</sup></p>
+    <img src='https://static.igem.wiki/teams/5503/accompanying-images/description1-1.webp' alt='Description1'>
     <p>Targeting proteins to specific subcellular structures is complex, relying on multiple regulatory mechanisms.
       <span class='bold'>Signal sequences</span> and <span class='bold'>signal patches</span> act as "postal addresses"
       recognized by the cell's transport system, guiding proteins through secretion, transport, or membrane fusion to
       structures like the nucleus, mitochondria, endoplasmic reticulum, or lysosomes.<sup>[6]</sup></p>
+    <img src='https://static.igem.wiki/teams/5503/accompanying-images/description2-1.webp' alt='Description2'>
     <p>Nevertheless, the design and functional execution of signal sequences and patches are far from straightforward.
       The intracellular environment is highly complex, and various signaling pathways and molecular interactions can
       interfere with proper protein transport and localization. Moreover, different subcellular structures have unique
@@ -38,19 +40,23 @@
     <p>When users input their requirements into the software, we search our <span class='bold'>signal peptide</span> and
       <span class='bold'>linker</span> databases to find suitable components and engineer their target proteins into
       fusion proteins with specific localization signals.</p>
+    <img src='https://static.igem.wiki/teams/5503/accompanying-images/description3-1.webp' alt='Description3'>
     <p>For the generated fusion proteins, we have a comprehensive evaluation system. First, we use the <span
       class='bold'>ESM-fold model</span> for 3D structure prediction, which is a lightweight, fast, and highly accurate
       prediction model. Then, we apply the <span class='bold'>Rosetta</span> model to calculate the stability of the
       fusion proteins, using this metric to rank them. Finally, we utilize the <span class='bold'>CAD-score</span> model
       to ensure functional consistency before and after fusion.</p>
+    <img src='https://static.igem.wiki/teams/5503/accompanying-images/description4-1.webp' alt='Description4'>
     <p>To validate the localization efficiency of our designed fusion proteins, we use <span class='bold'>DeepLoc
       2.0</span> for assisted prediction. The results show that the majority of the fusion proteins designed using our
       method can efficiently target the desired locations.</p>
+    <img src='https://static.igem.wiki/teams/5503/accompanying-images/description5-1.webp' alt='Description5'>
     <p>Once successfully localized, fusion proteins face another challenge—whether they can remain stable in the new
       subcellular microenvironment. To address this, we employ a <span class='bold'>graph-based deep learning algorithm
       </span> that does not rely on MSA (multiple sequence alignment) for directed protein evolution. Through multiple
       rounds of training and fine-tuning, the model learns features that allow proteins to adapt to specific
       microenvironments.</p>
+    <img src='https://static.igem.wiki/teams/5503/accompanying-images/description6-1.webp' alt='Description6'>
     <p>Considering the high spatiotemporal resolution required in some research, users may need to dynamically adjust
       the localization of certain proteins. Therefore, we have further developed a dynamic version that utilizes
       <span class='bold'>optogenetics</span> to precisely control protein localization behavior in both
@@ -110,4 +116,8 @@ const router = useRouter()
 
 <style scoped>
 @import '@/styles/style.css';
+
+img {
+  width: 700px;
+}
 </style>
