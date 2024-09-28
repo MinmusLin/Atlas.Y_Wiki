@@ -1,5 +1,6 @@
 <template>
   <TextContent title='ROSTER' :title-list='[]'>
+    <div class='tongji-software'>Tongji-Software</div>
     <p>Our team is composed of passionate students and teachers from Tongji University, all dedicated to the field of
       synthetic biology. We bring together diverse academic backgrounds, personalities, and strengths, which is our
       greatest asset. United by a common goal, we are developing the Atlas.Y toolbox. This challenging project has
@@ -76,7 +77,10 @@
                   bio="Hi, I'm Zhiye Wang, a student majoring in media and communication design in Tongji University and I participated in the design of the wiki, software, IP and logo. In this competition, I met great teammates, and it was a great pleasure to work with everyone!"/>
     </div>
 
-    <div class='team-name'>Human Practices</div>
+    <div style='display: flex; flex-direction: row'>
+      <div class='team-name' style='width: 824px'>Human Practices</div>
+      <div class='team-name' style='width: 316px'>Wet Lab</div>
+    </div>
     <div class='member-card'>
       <MemberCard photo='https://static.igem.wiki/teams/5503/test/ziwenyao.webp'
                   name='Ziwen Yao'
@@ -86,17 +90,17 @@
                   name='Xi Cui'
                   role='Entrepreneurship / Edu / HP'
                   bio="Hello everyone, I'm Xi Cui, a student majoring in business administration, in this competition, I am responsible for education, entrepreneurship, and integrated human practice. I've grown a lot along the way,and I am very happy to work with you all to solve problems!"/>
-    </div>
-
-    <div style='display: flex; flex-direction: row'>
-      <div class='team-name' style='width: 443px'>Wet Lab</div>
-      <div class='team-name' style='width: 698px'>PI</div>
-    </div>
-    <div class='member-card'>
       <MemberCard photo='https://static.igem.wiki/teams/5503/test/zhenhuabai.webp'
                   name='Zhenhua Bai'
                   role='Wet Lab'
                   bio="I'm Zhenhua Bai, a wet lab experimenter. I like blue, but hate orange. The most common words my elder martial sister says to me are: &quot;Don&apos;t forget to add orange loading&quot; and &quot;Don&apos;t add too much gel dye&quot;."/>
+    </div>
+
+    <div style='display: flex; flex-direction: row'>
+      <div class='team-name' style='width: 822px'>PI</div>
+      <div class='team-name' style='width: 316px'>Instructor</div>
+    </div>
+    <div class='member-card'>
       <MemberCard photo='https://static.igem.wiki/teams/5503/test/jingzhang.webp'
                   name='Dr. Jing Zhang'
                   role='Primary PI'
@@ -105,14 +109,13 @@
                   name='Dr. Guohui Chuai'
                   role='Secondary PI'
                   bio='He helped us in designing and optimizing the project process, gave us guidance on algorithms, and provided a lab server for our experiments.'/>
-    </div>
-
-    <div class='team-name'>Instructor</div>
-    <div class='member-card'>
       <MemberCard photo='https://static.igem.wiki/teams/5503/test/yunzhekang.webp'
                   name='Dr. Yunzhe Kang'
                   role='Instructor'
-                  bio='Retirement, here I come this year!'/>
+                  bio='Retirement, here I come this year!'/></div>
+
+    <div class='member-card'>
+
     </div>
   </TextContent>
 </template>
@@ -124,6 +127,16 @@ import MemberCard from '@/components/MemberCard.vue'
 
 <style scoped>
 @import '@/styles/style.css';
+
+.tongji-software {
+  text-align: center;
+  font-family: 'Futura Md BT Bold', sans-serif;
+  font-size: 54px;
+  color: #16396E;
+  display: block;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
 
 .team-name {
   text-align: center;
