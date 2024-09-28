@@ -97,7 +97,7 @@ h2 {
 .role {
   font-family: 'Inter', sans-serif;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 16px;
   color: #16396e;
 }
 </style>
