@@ -247,7 +247,8 @@
       target products.
     </p>
 
-    <img src='https://static.igem.wiki/teams/5503/design-materials/growingline.webp' alt='growingLine'
+    <img src='https://static.igem.wiki/teams/5503/design-materials/growingline.webp'
+         alt='growingLine'
          class='growing-line'>
 
     <p class='promote10' ref='promote10Ref'>
