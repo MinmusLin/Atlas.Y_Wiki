@@ -112,10 +112,7 @@
       <MemberCard photo='https://static.igem.wiki/teams/5503/test/yunzhekang.webp'
                   name='Dr. Yunzhe Kang'
                   role='Instructor'
-                  bio='Retirement, here I come this year!'/></div>
-
-    <div class='member-card'>
-
+                  bio='Retirement, here I come this year!'/>
     </div>
   </TextContent>
 </template>
