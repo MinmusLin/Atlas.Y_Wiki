@@ -3,7 +3,7 @@
     <div class='image-container' ref='imageContainer'>
       <img class='title-image'
            alt='TitleBackground'
-           :src="`https://static.igem.wiki/teams/5503/design-materials/${props.title.replace(/\s+/g, '').toLowerCase()}.webp`"/>
+           :src="`https://static.igem.wiki/teams/5503/design-materials/${props.title.replace(/\s+/g, '').toLowerCase()}title.webp`"/>
       <img src='https://static.igem.wiki/teams/5503/design-materials/mascot.webp'
            alt='Mascot'
            class='corner-image'
