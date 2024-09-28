@@ -11,6 +11,7 @@ declare module 'vue' {
     ElIcon: typeof import('element-plus/es')['ElIcon']
     FooterNavbar: typeof import('./src/components/FooterNavbar.vue')['default']
     HeaderNavbar: typeof import('./src/components/HeaderNavbar.vue')['default']
+    MemberCard: typeof import('./src/components/MemberCard.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     TextContent: typeof import('./src/components/TextContent.vue')['default']
