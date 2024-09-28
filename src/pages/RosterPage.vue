@@ -8,7 +8,7 @@
       accomplished together.</p>
     <div class='team-name'>Team Leader</div>
     <div class='member-card'>
-      <MemberCard photo='design-materials/DrugProduction.webp'
+      <MemberCard photo='https://static.igem.wiki/teams/5503/test/shuruining.webp'
                   name='Shurui Ning'
                   role='Algorithm Development'
                   bio="Hi, I'm Shurui Ning, a bioinformatics student. I'm responsible for team coordination and the development of biological algorithms. I'm thrilled to have met like-minded friends through iGEM, and I'm excited to use bioinformatics methods to contribute to the advancement of synthetic biology."/>
@@ -112,7 +112,7 @@
       <MemberCard photo='design-materials/DrugProduction.webp'
                   name='Dr. Yunzhe Kang'
                   role='Instructor'
-                  bio="Hi!"/>
+                  bio='Retirement, here I come this year!'/>
     </div>
   </TextContent>
 </template>

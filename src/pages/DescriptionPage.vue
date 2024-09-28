@@ -63,7 +63,7 @@
       <span class='bold'>time and space</span>.
     </p>
     <div class='btn-area'>
-      <button class='btn' @click="goToLink('http://162.62.213.36')">
+      <button class='btn' @click="router.push('/web-application')">
         Try Atlas.Y
       </button>
     </div>
@@ -117,10 +117,6 @@ import {useRouter} from 'vue-router'
 import TextContent from '@/components/TextContent.vue'
 
 const router = useRouter()
-
-function goToLink(link: string) {
-  window.open(link, '_blank')
-}
 </script>
 
 <style scoped>
