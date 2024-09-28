@@ -100,4 +100,16 @@ h2 {
   font-size: 16px;
   color: #16396e;
 }
+
+.bio::-webkit-scrollbar {
+  background-color: transparent;
+}
+
+.bio::-webkit-scrollbar-thumb {
+  background-color: #5182f8;
+}
+
+.bio::-webkit-scrollbar-track {
+  background-color: transparent;
+}
 </style>

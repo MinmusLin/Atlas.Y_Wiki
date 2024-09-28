@@ -62,6 +62,11 @@
       <span class='bold'>optogenetics</span> to precisely control protein localization behavior in both
       <span class='bold'>time and space</span>.
     </p>
+    <div class='btn-area'>
+      <button class='btn' @click="goToLink('http://162.62.213.36')">
+        Try Atlas.Y
+      </button>
+    </div>
 
     <h1 id='Our Vision'>Our Vision</h1>
     <p>In the future, we will continuously focus on <span class='bold'>user experience and feedback</span>, regularly
@@ -112,6 +117,10 @@ import {useRouter} from 'vue-router'
 import TextContent from '@/components/TextContent.vue'
 
 const router = useRouter()
+
+function goToLink(link: string) {
+  window.open(link, '_blank')
+}
 </script>
 
 <style scoped>
@@ -119,5 +128,31 @@ const router = useRouter()
 
 img {
   width: 700px;
+}
+
+.btn {
+  width: 640px;
+  height: 91px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 36px;
+  font-family: 'Futura Md Bt Bold', sans-serif;
+  border-radius: 20px;
+  box-shadow: 3px 5px 0 0 #5182F8;
+  border: 4px solid #5182F8;
+  transition: background-color 0.3s, color 0.3s, box-shadow 0.1s, transform 0.1s;
+  background-color: white;
+  color: #5182F8;
+}
+
+.btn:hover {
+  box-shadow: none;
+  transform: translateY(5px) translateX(3px);
+}
+
+.btn-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 </style>
