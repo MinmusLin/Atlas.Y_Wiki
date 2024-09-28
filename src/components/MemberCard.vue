@@ -109,7 +109,7 @@ h2 {
 }
 
 .bio::-webkit-scrollbar-thumb {
-  background-color: #5182f8;
+  background-color: #C5C9CD;
 }
 
 .bio::-webkit-scrollbar-track {
