@@ -108,11 +108,11 @@
     </div>
     <div class='member-card'>
       <MemberCard photo='https://static.igem.wiki/teams/5503/team-members/jingzhang.webp'
-                  name='Dr. Jing Zhang'
+                  name='Prof. Jing Zhang'
                   role='Primary PI'
                   bio='She funded our project and supervised the procedure of the project.'/>
       <MemberCard photo='https://static.igem.wiki/teams/5503/team-members/guohuichuai.webp'
-                  name='Dr. Guohui Chuai'
+                  name='Asst.Prof. Guohui Chuai'
                   role='Secondary PI'
                   bio='He helped us in designing and optimizing the project process, gave us guidance on algorithms, and provided a lab server for our experiments.'/>
       <MemberCard photo='https://static.igem.wiki/teams/5503/team-members/yunzhekang.webp'
