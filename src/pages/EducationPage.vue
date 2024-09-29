@@ -11,7 +11,7 @@
       <span class='bold'>Shanghai</span> and <span class='bold'>multiple remote rural areas</span> over one semester. In
       Shanghai, <span class='bold'>1,520</span> students participated in <span class='bold'>870</span> hours of lessons,
       with <span class='bold'>47</span> volunteers and teachers involved.</p>
-    <img src='https://static.igem.wiki/teams/5503/accompanying-images/education2-1.webp' alt='Education2'>
+    <img src='https://static.igem.wiki/teams/5503/accompanying-images/education2-2.webp' alt='Education2'>
     <p>Moreover, to ensure educational equity, we extended our synthetic biology education efforts to rural areas,
       covering an area of 2,665.732 square kilometers, involving a total of 2,825 children. We designed interactive
       games for the curriculum, such as "Gene Magician and Recipes," "Bio Repairmen," and "Molecular Postman," to boost
