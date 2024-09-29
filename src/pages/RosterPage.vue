@@ -116,7 +116,7 @@
                   role='Secondary PI'
                   bio='He helped us in designing and optimizing the project process, gave us guidance on algorithms, and provided a lab server for our experiments.'/>
       <MemberCard photo='https://static.igem.wiki/teams/5503/team-members/yunzhekang.webp'
-                  name='Dr. Yunzhe Kang'
+                  name='Yunzhe Kang'
                   role='Instructor'
                   bio='Retirement, here I come this year!'/>
     </div>
