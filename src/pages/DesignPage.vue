@@ -170,6 +170,7 @@
       predictions from DeepLoc 2.0, we ensure that the fusion proteins provided to users not only possess the desired
       functionality but also effectively localize to the intended cellular compartments. This provides robust validation
       for our design efforts.</p>
+    <img src='https://static.igem.wiki/teams/5503/accompanying-images/design5-1.webp' alt='Design5'>
 
     <h1 id='Protein Directed Evolution Model'>Protein Directed Evolution Model</h1>
     <p>Considering the complex protein sorting mechanisms within yeast, relying solely on signal sequence connections

@@ -41,7 +41,7 @@
       enhances reproducibility, and accelerates advancements in protein design and synthetic biology.</p>
     <p>Researchers can access <a href='http://162.62.213.36' target='_blank'>Atlas.Y</a>, the
       <a href='https://gitlab.igem.org/2024/software-tools/tongji-software' target='_blank'>source code</a>, and our
-      <a href='https://github.com/MinmusLin/Atlas.Y_Datase' target='_blank'>open-source dataset</a>. We believe the
+      <a href='https://github.com/MinmusLin/Atlas.Y_Dataset' target='_blank'>open-source dataset</a>. We believe the
       platform will inspire innovation and support future iGEM teams in pushing the boundaries of synthetic biology.</p>
 
     <h1 id='For Synthetic Biology'>For Synthetic Biology</h1>
@@ -61,7 +61,7 @@
       yield of target products while reducing the formation of by-products. This optimization is not only applicable in
       research experiments but also shows great potential in large-scale industrial production, significantly enhancing
       the synthesis of complex compounds like biofuels or pharmaceuticals.</p>
-    <img src='https://static.igem.wiki/teams/5503/accompanying-images/contribution1-1.webp' alt='Contribution1-1'>
+    <img src='https://static.igem.wiki/teams/5503/accompanying-images/contribution1-1.webp' alt='Contribution1'>
     <h4>Dynamic Localization and Control</h4>
     <p>Atlas.Y offers dynamic localization tools, incorporating photosensitive elements to achieve precise <span
       class='bold'>spatiotemporal control</span> of protein behavior. This feature is particularly important in
@@ -81,7 +81,9 @@
       elementary school students to key concepts in synthetic biology, such as cell structures and subcellular
       localization. These efforts not only promote the iGEM initiative but also inspire the next generation to explore
       the exciting world of biotechnology.</p>
-    <img src='https://static.igem.wiki/teams/5503/accompanying-images/contribution2-1.webp' alt='Contribution2-1'>
+    <img src='https://static.igem.wiki/teams/5503/accompanying-images/contribution2-1.webp'
+         alt='Contribution2'
+         style='width: 700px'>
     <p>Additionally, we maintain open communication and collaboration with other iGEM teams, including those from
       NENU-China, NEFU-China, SYPHU-China, CJUH-JLU-China, JLU-China, Imperial College, and Westlake University. By
       sharing insights and discussing common challenges, we contribute to a stronger, more connected iGEM community,
