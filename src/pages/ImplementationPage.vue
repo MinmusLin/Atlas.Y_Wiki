@@ -7,26 +7,26 @@
       localizing fusion proteins. Additionally, Atlas.Y offers <span class='bold'>several auxiliary algorithms</span> to
       enhance the overall user experience.</p>
     <blockquote>
-        <span class='bold'>Additional Auxiliary Algorithms</span>
-        <ul>
-          <li>Site-Specific CAD Scoring System</li>
-          <li>Protein Localization Prediction System</li>
-          <li>Optimized Protein Evolution Localization System</li>
-          <li>TemporalDynamic Localization Design System</li>
-        </ul>
+      <span class='bold'>Additional Auxiliary Algorithms</span>
+      <ul>
+        <li>Site-Specific CAD Scoring System</li>
+        <li>Protein Localization Prediction System</li>
+        <li>Optimized Protein Evolution Localization System</li>
+        <li>TemporalDynamic Localization Design System</li>
+      </ul>
     </blockquote>
 
     <h1 id='How to Use'>How to Use</h1>
     <p>Upon entering the homepage, you can switch between the Basic and Dynamic versions using the left menu bar. You
       can also access the Store, Documentation, About, and Support sections for a deeper understanding of Atlas.Y and to
-      provide feedback. </p>
+      provide feedback.</p>
     <p>In the workspace, you can click "START" to create a new query or select a historical entry to quickly restore
       previous searches.</p>
-    <p>After clicking "START," you can upload the .fasta and .pdb files of the protein you
-      want to edit for localization. Next, you can select your desired target localization on the page; if you have
-      questions about localization abbreviations, you can refer to the demonstration animation in the left legend.
-      Finally, you can choose the properties of the linker you want (for guidance on selecting the appropriate linker,
-      please refer to the <a href='http://162.62.213.36/user-guide' target='_blank'>user guide</a>).</p>
+    <p>After clicking "START", you can upload the .fasta and .pdb files of the protein you want to edit for
+      localization. Next, you can select your desired target localization on the page; if you have questions about
+      localization abbreviations, you can refer to the demonstration animation in the left legend. Finally, you can
+      choose the properties of the linker you want (for guidance on selecting the appropriate linker, please refer to
+      the <a href='http://162.62.213.36/user-guide' target='_blank'>user guide</a>).</p>
     <p>After initiating the query, the software will generate and match localization fusion proteins for the user,
       displaying them based on stability scores. Users can select specific entries according to their preferences.</p>
     <p>On the details page of a specific entry, users can view detailed information about the original protein sequence,
@@ -40,27 +40,27 @@
       <span class='bold'>Site-Specific CAD Scoring System</span>.</p>
     <p>In the Site-Specific CAD Scoring System, users can view the functional scores of their selected core sites. Users
       have two methods for selecting a site: <span class='bold'>1. Enter the site number; 2. Click to select the site on
-      the visual map on the left.</span> After selecting the corresponding site, the software will return the CAD A Score
-      and CAD S Score for that site. The <span class='bold'>CAD A Score</span> is more suitable for understanding the
-      overall structural stability and global adjustments of the protein, while the <span class='bold'>CAD S Score</span>
-      focuses more on local interactions in specific functional regions (such as active sites), making it more relevant
-      for users interested in specific sites.</p>
+      the visual map on the left.</span> After selecting the corresponding site, the software will return the CAD A
+      Score and CAD S Score for that site. The <span class='bold'>CAD A Score</span> is more suitable for understanding
+      the overall structural stability and global adjustments of the protein, while the <span class='bold'>CAD S Score
+      </span> focuses more on local interactions in specific functional regions (such as active sites), making it more
+      relevant for users interested in specific sites.</p>
     <p>In the stability scoring feature, users can view the overall stability score of the fusion protein, as well as
       the contribution of specific forces to the protein's stability.</p>
     <p>To improve the success rate of fusion protein localization, users can opt for the sequence optimization feature
       to enhance localization capabilities. The software will calculate and recommend variant proteins, generating
       multiple options for users to choose from. After selecting a variant, users will be able to view the protein
       sequence along with its corresponding functional and stability scores.</p>
-    <p>In addition, users can switch to the <span class='bold'>dynamic version</span> in the menu bar. In the <span
-      class='bold'>Temporal Dynamic Localization Design System</span>, users can select pre-defined optogenetic
+    <p>In addition, users can switch to the <span class='bold'>dynamic version</span> in the menu bar. In the
+      <span class='bold'>Temporal Dynamic Localization Design System</span>, users can select pre-defined optogenetic
       conditions, supplemented with matching requirements consistent with the basic version. The software will then
       generate multiple matches for the user, with the preliminary steps being the same as in the basic version.
-      Finally, the system will output a design report tailored to the user’s needs, providing detailed information on
+      Finally, the system will output a design report tailored to the user's needs, providing detailed information on
       the recommended optogenetic pair and the complete sequence information of each component.</p>
 
     <h1 id='Proposed End Users'>Proposed End Users</h1>
     <ul>
-      <li><span class='bold'>Business Individual</span>：This group consists of individual researchers, freelancers,
+      <li><span class='bold'>Business Individual</span>: This group consists of individual researchers, freelancers,
         small startups, and consulting firms. They typically seek affordable tools and services to support specific
         projects or small-scale business activities.
       </li>
@@ -68,7 +68,7 @@
         laboratories. These users focus on high-quality research tools and often require long-term capabilities for data
         processing and algorithm optimization.
       </li>
-      <li><span class='bold'>Corporate/Enterprise Users</span>: Encompassing mid-sized and large companies, as well as
+      <li><span class='bold'>Corporate / Enterprise Users</span>: Encompassing mid-sized and large companies, as well as
         multinational corporations, these users have more complex demands and larger budgets, often needing customized
         solutions with advanced features.
       </li>
