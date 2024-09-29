@@ -228,6 +228,7 @@ const displaySubcellularLocalizationContent = (index: number) => {
   border-radius: 20px;
   height: 300px;
   font-size: 20px;
+  margin-bottom: 25px;
 }
 
 .text-content2 {
@@ -236,6 +237,7 @@ const displaySubcellularLocalizationContent = (index: number) => {
   border-radius: 20px;
   height: 240px;
   font-size: 20px;
+  margin-bottom: 25px;
 }
 
 .text-content h3 {
