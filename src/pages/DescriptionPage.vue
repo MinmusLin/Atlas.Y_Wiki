@@ -27,6 +27,7 @@
       recognized by the cell's transport system, guiding proteins through secretion, transport, or membrane fusion to
       structures like the nucleus, mitochondria, endoplasmic reticulum, or lysosomes.<sup>[6]</sup></p>
     <img src='https://static.igem.wiki/teams/5503/accompanying-images/description2-1.webp' alt='Description2'>
+    <h5>Figure. Signal sequence and signal patch</h5>
     <p>Nevertheless, the design and functional execution of signal sequences and patches are far from straightforward.
       The intracellular environment is highly complex, and various signaling pathways and molecular interactions can
       interfere with proper protein transport and localization. Moreover, different subcellular structures have unique
@@ -41,12 +42,14 @@
       <span class='bold'>linker</span> databases to find suitable components and engineer their target proteins into
       fusion proteins with specific localization signals.</p>
     <img src='https://static.igem.wiki/teams/5503/accompanying-images/description3-1.webp' alt='Description3'>
+    <h5>Figure. Atlas.Y: Atlas.Y website homepage</h5>
     <p>For the generated fusion proteins, we have a comprehensive evaluation system. First, we use the <span
       class='bold'>ESM-fold model</span> for 3D structure prediction, which is a lightweight, fast, and highly accurate
       prediction model. Then, we apply the <span class='bold'>Rosetta</span> model to calculate the stability of the
       fusion proteins, using this metric to rank them. Finally, we utilize the <span class='bold'>CAD-score</span> model
       to ensure functional consistency before and after fusion.</p>
     <img src='https://static.igem.wiki/teams/5503/accompanying-images/description4-1.webp' alt='Description4'>
+    <h5>Figure. Atlas.Y: Protein 3D structure display</h5>
     <p>To validate the localization efficiency of our designed fusion proteins, we use <span class='bold'>DeepLoc
       2.0</span> for assisted prediction. The results show that the majority of the fusion proteins designed using our
       method can efficiently target the desired locations.</p>
@@ -127,7 +130,7 @@ img {
 }
 
 .btn {
-  width: 640px;
+  width: 700px;
   height: 91px;
   padding: 10px 20px;
   cursor: pointer;
