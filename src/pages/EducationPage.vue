@@ -24,38 +24,34 @@
     <h3>Synthetic Biology</h3>
     <div class='synthetic-biology-container'>
       <div class='image-grid'>
-        <img
-          v-for='(img, index) in SyntheticBiologyImages'
-          :src='img.src'
-          :alt='img.alt'
-          @mouseover='hoverSyntheticBiologyIndex = index'
-          @mouseleave='hoverSyntheticBiologyIndex = -1'
-          @click='handleSyntheticBiologyImageClick(index)'
-          :class="{ 'hovered': hoverSyntheticBiologyIndex == index, 'selected': selectSyntheticBiologyIndex == index }"
-          :key='index'
-        />
+        <img v-for='(img, index) in SyntheticBiologyImages'
+             :src='img.src'
+             :alt='img.alt'
+             @mouseover='hoverSyntheticBiologyIndex = index'
+             @mouseleave='hoverSyntheticBiologyIndex = -1'
+             @click='handleSyntheticBiologyImageClick(index)'
+             :class="{ 'hovered': hoverSyntheticBiologyIndex == index, 'selected': selectSyntheticBiologyIndex == index }"
+             :key='index'/>
       </div>
       <div class='text-content1'>
-        <p v-html='selectedSyntheticBiologyContent'></p>
+        <p v-html='selectedSyntheticBiologyContent'/>
       </div>
     </div>
 
     <h3>Subcellular Localization</h3>
     <div class='subcellular-localization-container'>
       <div class='image-grid'>
-        <img
-          v-for='(img, index) in SubcellularLocalizationImages'
-          :src='img.src'
-          :alt='img.alt'
-          @mouseover='hoverSubcellularLocalizationIndex = index'
-          @mouseleave='hoverSubcellularLocalizationIndex = -1'
-          @click='handleSubcellularLocalizationImageClick(index)'
-          :class="{ 'hovered': hoverSubcellularLocalizationIndex == index, 'selected': selectSubcellularLocalizationIndex == index }"
-          :key='index'
-        />
+        <img v-for='(img, index) in SubcellularLocalizationImages'
+             :src='img.src'
+             :alt='img.alt'
+             @mouseover='hoverSubcellularLocalizationIndex = index'
+             @mouseleave='hoverSubcellularLocalizationIndex = -1'
+             @click='handleSubcellularLocalizationImageClick(index)'
+             :class="{ 'hovered': hoverSubcellularLocalizationIndex == index, 'selected': selectSubcellularLocalizationIndex == index }"
+             :key='index'/>
       </div>
       <div class='text-content2'>
-        <p v-html='selectedSubcellularLocalizationContent'></p>
+        <p v-html='selectedSubcellularLocalizationContent'/>
       </div>
     </div>
 
