@@ -55,6 +55,7 @@
     <h3>Future Plans</h3>
     <ol>
       <li><span class='bold'>Expanding Coverage</span></li>
+      <!--suppress HtmlUnknownTag-->
       <ul>
         <li>We aim to promote the education of synthetic biology and subcellular localization in more urban and rural
           areas, especially extending to remote regions with limited educational resources.
@@ -64,6 +65,7 @@
         </li>
       </ul>
       <li><span class='bold'>Enhancing Curriculum Diversity</span></li>
+      <!--suppress HtmlUnknownTag-->
       <ul>
         <li>Develop customized educational programs suitable for different age groups and knowledge levels. We plan to
           introduce courses for elementary, middle, and high school students, covering content from basic to advanced
@@ -74,6 +76,7 @@
         </li>
       </ul>
       <li><span class='bold'>Strengthening Teaching Capacity and Educational Partnerships</span></li>
+      <!--suppress HtmlUnknownTag-->
       <ul>
         <li>Expand collaboration with educational institutions and enterprises to train more teachers and volunteers
           with scientific outreach skills, thereby increasing the capacity for science education.
@@ -83,6 +86,7 @@
         </li>
       </ul>
       <li><span class='bold'>Social Impact and Sustainable Development</span></li>
+      <!--suppress HtmlUnknownTag-->
       <ul>
         <li>Continue to promote educational equity by combining online and offline approaches to deliver science
           education to more remote regions and a larger number of students.
