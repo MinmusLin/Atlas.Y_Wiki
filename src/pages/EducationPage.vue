@@ -24,25 +24,38 @@
     <h3>Synthetic Biology</h3>
     <div class='synthetic-biology-container'>
       <div class='image-grid'>
-        <img v-for='(img, index) in SyntheticBiologyImages'
-             :src='img.src'
-             :alt='img.alt'
-             @mouseover='displaySyntheticBiologyContent(index)' :key='index'/>
+        <img
+          v-for='(img, index) in SyntheticBiologyImages'
+          :src='img.src'
+          :alt='img.alt'
+          @mouseover='hoverSyntheticBiologyIndex = index'
+          @mouseleave='hoverSyntheticBiologyIndex = -1'
+          @click='handleSyntheticBiologyImageClick(index)'
+          :class="{ 'hovered': hoverSyntheticBiologyIndex == index, 'selected': selectSyntheticBiologyIndex == index }"
+          :key='index'
+        />
       </div>
       <div class='text-content1'>
-        <p v-html='selectedSyntheticBiologyContent'/>
+        <p v-html='selectedSyntheticBiologyContent'></p>
       </div>
     </div>
+
     <h3>Subcellular Localization</h3>
     <div class='subcellular-localization-container'>
       <div class='image-grid'>
-        <img v-for='(img, index) in SubcellularLocalizationImages'
-             :src='img.src'
-             :alt='img.alt'
-             @mouseover='displaySubcellularLocalizationContent(index)' :key='index'/>
+        <img
+          v-for='(img, index) in SubcellularLocalizationImages'
+          :src='img.src'
+          :alt='img.alt'
+          @mouseover='hoverSubcellularLocalizationIndex = index'
+          @mouseleave='hoverSubcellularLocalizationIndex = -1'
+          @click='handleSubcellularLocalizationImageClick(index)'
+          :class="{ 'hovered': hoverSubcellularLocalizationIndex == index, 'selected': selectSubcellularLocalizationIndex == index }"
+          :key='index'
+        />
       </div>
       <div class='text-content2'>
-        <p v-html='selectedSubcellularLocalizationContent'/>
+        <p v-html='selectedSubcellularLocalizationContent'></p>
       </div>
     </div>
 
@@ -154,8 +167,16 @@ const SyntheticBiologyContentTexts = [
 
 const selectedSyntheticBiologyContent = ref(SyntheticBiologyContentTexts[0])
 
+const hoverSyntheticBiologyIndex = ref(0)
+const selectSyntheticBiologyIndex = ref(0)
+
 const displaySyntheticBiologyContent = (index: number) => {
   selectedSyntheticBiologyContent.value = SyntheticBiologyContentTexts[index]
+}
+
+const handleSyntheticBiologyImageClick = (index: number) => {
+  displaySyntheticBiologyContent(index)
+  selectSyntheticBiologyIndex.value = index
 }
 
 const SubcellularLocalizationImages = [
@@ -200,6 +221,14 @@ const selectedSubcellularLocalizationContent = ref(SubcellularLocalizationConten
 const displaySubcellularLocalizationContent = (index: number) => {
   selectedSubcellularLocalizationContent.value = SubcellularLocalizationContentTexts[index]
 }
+
+const hoverSubcellularLocalizationIndex = ref(0)
+const selectSubcellularLocalizationIndex = ref(0)
+
+const handleSubcellularLocalizationImageClick = (index: number) => {
+  displaySubcellularLocalizationContent(index)
+  selectSubcellularLocalizationIndex.value = index
+}
 </script>
 
 <style scoped>
@@ -226,8 +255,13 @@ const displaySubcellularLocalizationContent = (index: number) => {
   transition: transform 0.3s, filter 0.3s;
 }
 
-.image-grid img:hover {
+.image-grid img.hovered {
   filter: brightness(120%);
+  box-shadow: 3px 5px 0 0 #7AA8F3;
+}
+
+.image-grid img.selected {
+  box-shadow: 3px 5px 0 0 #7AA8F3;
 }
 
 .text-content1 {
