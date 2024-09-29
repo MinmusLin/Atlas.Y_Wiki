@@ -21,7 +21,7 @@
     <p>As part of the project’s expansion and future plans, we will continue to promote synthetic biology education and
       aim to broaden our reach, helping more students access this cutting-edge science.</p>
 
-    <h1 id='Course design overview'>Course Design Overview</h1>
+    <h1 id='Course Design Overview'>Course Design Overview</h1>
     <h2>Synthetic Biology</h2>
     <div class='synthetic-biology-container'>
       <div class='image-grid'>
@@ -45,7 +45,7 @@
       </div>
     </div>
 
-    <h1 id='Project expansion and future plans'>Project Expansion and Future Plans</h1>
+    <h1 id='Project Expansion and Future Plans'>Project Expansion and Future Plans</h1>
     <p>With the successful implementation of this project in both Shanghai and rural areas, we have observed the
       positive impact of synthetic biology and subcellular localization education on students. Engaging 1,520 students
       in Shanghai and 2,825 children in rural regions, we have achieved extensive educational outreach. Moving forward,
@@ -222,11 +222,11 @@ const displaySubcellularLocalizationContent = (index: number) => {
   box-shadow: 0 0 0 0;
   display: block;
   max-width: 100%;
-  transition: transform 0.3s;
+  transition: transform 0.3s, filter 0.3s;
 }
 
 .image-grid img:hover {
-  transform: scale(1.1);
+  filter: brightness(120%);
 }
 
 .text-content1 {
