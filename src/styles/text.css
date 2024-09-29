@@ -230,3 +230,14 @@
 .text-area a:hover {
     color: #5182F8;
 }
+
+.text-area blockquote {
+    background-color: #FFF7C8;
+    border-left: 4px solid #FFCA31;
+    padding: 10px 20px;
+    border-radius: 0 20px 20px 0;
+    color: #2F3235;
+    margin: 10px 0;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+}
