@@ -67,7 +67,10 @@
     </p>
     <div class='btn-area'>
       <button class='btn' @click="router.push('/web-application')">
-        Try Atlas.Y
+        Try
+        <img src='https://static.igem.wiki/teams/5503/design-materials/defaultlogo.webp'
+             alt='DefaultLogo'
+             style='width: 120px; border: none; box-shadow: none; border-radius: 0; transform: translateX(5px)'>
       </button>
     </div>
 
@@ -132,7 +135,7 @@ img {
 .btn {
   width: 700px;
   height: 91px;
-  padding: 10px 20px;
+  padding: 0 254px;
   cursor: pointer;
   font-size: 36px;
   font-family: 'Futura Md Bt Bold', sans-serif;
@@ -142,6 +145,9 @@ img {
   transition: background-color 0.3s, color 0.3s, box-shadow 0.1s, transform 0.1s;
   background-color: white;
   color: #5182F8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .btn:hover {
