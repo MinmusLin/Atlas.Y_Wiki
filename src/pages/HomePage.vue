@@ -13,6 +13,7 @@
            class='slogan'>
       <img src='https://static.igem.wiki/teams/5503/design-materials/getstarted.webp'
            alt='GetStarted'
+           @click='scrollToPosition'
            class='get-started'>
     </div>
 
@@ -657,6 +658,15 @@ onMounted(() => {
     observer.observe(dialogContainerRef.value)
   }
 })
+
+const scrollToPosition = () => {
+  const scrollRatio = 0.065
+  const targetPosition = document.documentElement.scrollHeight * scrollRatio
+  window.scrollTo({
+    top: targetPosition,
+    behavior: 'smooth'
+  })
+}
 </script>
 
 <!--suppress CssUnusedSymbol-->
@@ -731,17 +741,15 @@ onMounted(() => {
   transform: translateY(-50px);
   position: absolute;
   top: 500px;
+  opacity: 0;
+  animation: fade-in 2s ease forwards;
+  animation-delay: 1.5s;
+  cursor: pointer;
 }
 
 .title, .slogan {
   opacity: 0;
   animation: fade-in 2s ease forwards;
-}
-
-.get-started {
-  opacity: 0;
-  animation: fade-in 2s ease forwards;
-  animation-delay: 1.5s;
 }
 
 @keyframes fade-in {
