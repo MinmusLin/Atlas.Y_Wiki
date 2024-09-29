@@ -24,7 +24,9 @@
     <h3>Synthetic Biology</h3>
     <div class='synthetic-biology-container'>
       <div class='image-grid'>
-        <img v-for='(img, index) in SyntheticBiologyImages' :src='img.src' :alt='img.alt'
+        <img v-for='(img, index) in SyntheticBiologyImages'
+             :src='img.src'
+             :alt='img.alt'
              @mouseover='displaySyntheticBiologyContent(index)' :key='index'/>
       </div>
       <div class='text-content1'>
@@ -34,7 +36,9 @@
     <h3>Subcellular Localization</h3>
     <div class='subcellular-localization-container'>
       <div class='image-grid'>
-        <img v-for='(img, index) in SubcellularLocalizationImages' :src='img.src' :alt='img.alt'
+        <img v-for='(img, index) in SubcellularLocalizationImages'
+             :src='img.src'
+             :alt='img.alt'
              @mouseover='displaySubcellularLocalizationContent(index)' :key='index'/>
       </div>
       <div class='text-content2'>
@@ -100,11 +104,11 @@ import {ref} from 'vue'
 import TextContent from '@/components/TextContent.vue'
 
 const SyntheticBiologyImages = [
-  {src: 'https://static.igem.wiki/teams/5503/accompanying-images/education4-1.webp', alt: 'Programming Life'},
-  {src: 'https://static.igem.wiki/teams/5503/accompanying-images/education5-1.webp', alt: 'Building Blocks'},
-  {src: 'https://static.igem.wiki/teams/5503/accompanying-images/education6-1.webp', alt: 'Custom Bio Store'},
-  {src: 'https://static.igem.wiki/teams/5503/accompanying-images/education7-1.webp', alt: 'Genetic Wizards'},
-  {src: 'https://static.igem.wiki/teams/5503/accompanying-images/education8-1.webp', alt: 'Biological Repairman'}
+  {src: 'https://static.igem.wiki/teams/5503/accompanying-images/education4-1.webp', alt: 'ProgrammingLife'},
+  {src: 'https://static.igem.wiki/teams/5503/accompanying-images/education5-1.webp', alt: 'BuildingBlocks'},
+  {src: 'https://static.igem.wiki/teams/5503/accompanying-images/education6-1.webp', alt: 'CustomBioStore'},
+  {src: 'https://static.igem.wiki/teams/5503/accompanying-images/education7-1.webp', alt: 'GeneticWizards'},
+  {src: 'https://static.igem.wiki/teams/5503/accompanying-images/education8-1.webp', alt: 'BiologicalRepairman'}
 ]
 
 const SyntheticBiologyContentTexts = [
@@ -151,10 +155,10 @@ const displaySyntheticBiologyContent = (index: number) => {
 }
 
 const SubcellularLocalizationImages = [
-  {src: 'https://static.igem.wiki/teams/5503/accompanying-images/education9-1.webp', alt: 'Programming Life'},
-  {src: 'https://static.igem.wiki/teams/5503/accompanying-images/education10-1.webp', alt: 'Building Blocks'},
-  {src: 'https://static.igem.wiki/teams/5503/accompanying-images/education11-1.webp', alt: 'Custom Bio Store'},
-  {src: 'https://static.igem.wiki/teams/5503/accompanying-images/education12-1.webp', alt: 'Genetic Wizards'}
+  {src: 'https://static.igem.wiki/teams/5503/accompanying-images/education9-1.webp', alt: 'ProgrammingLife'},
+  {src: 'https://static.igem.wiki/teams/5503/accompanying-images/education10-1.webp', alt: 'BuildingBlocks'},
+  {src: 'https://static.igem.wiki/teams/5503/accompanying-images/education11-1.webp', alt: 'CustomBioStore'},
+  {src: 'https://static.igem.wiki/teams/5503/accompanying-images/education12-1.webp', alt: 'GeneticWizards'}
 ]
 
 const SubcellularLocalizationContentTexts = [
