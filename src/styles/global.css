@@ -40,6 +40,13 @@ img {
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Neo Sans Pro Bold';
+    src: url('https://static.igem.wiki/teams/5503/design-fonts/neo-sans-pro-bold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
 ::-webkit-scrollbar {
     width: 8px;
     height: 8px;
