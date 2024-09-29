@@ -57,7 +57,7 @@ const routes: Array<RouteRecordRaw> = [
     meta: {title: 'Contribution'}
   },
   {
-    path: '/web-application',
+    path: '/software',
     component: () => import('@/pages/WebApplicationPage.vue'),
     meta: {title: 'Web Application'}
   },

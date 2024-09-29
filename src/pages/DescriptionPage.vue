@@ -66,7 +66,7 @@
       <span class='bold'>time and space</span>.
     </p>
     <div class='btn-area'>
-      <button class='btn' @click="router.push('/web-application')">
+      <button class='btn' @click="router.push('/software')">
         Try
         <img src='https://static.igem.wiki/teams/5503/design-materials/defaultlogo.webp'
              alt='DefaultLogo'

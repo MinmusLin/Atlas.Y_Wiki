@@ -66,7 +66,7 @@ const navItems = ref([
     title: 'SOFTWARE',
     url: null,
     subItems: ['Contribution', 'Web Application'],
-    subUrls: ['/contribution', '/web-application'],
+    subUrls: ['/contribution', '/software'],
     isOpen: false
   },
   {
