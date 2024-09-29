@@ -12,8 +12,8 @@
         categorized these peptides, assigning identification numbers for easier querying.
       </li>
       <li><span class='bold'>Linker Database</span>: This database is designed to connect target proteins with signal
-        peptides. It integrates classical linkers identified through <span class='bold'>extensive literature review
-        </span>, which are classified based on their rigidity and flexibility to meet various experimental needs.
+        peptides. It integrates classical linkers identified through <span class='bold'>extensive literature
+        review</span>, which are classified based on their rigidity and flexibility to meet various experimental needs.
         Additionally, we include natural linkers derived from peptide sequences remaining after the removal of conserved
         regions and signal peptides from complete proteins. These efforts significantly enhance the database's
         applicability in synthetic biology. Currently, the database contains a total of 1,067 linkers, making it one of
@@ -39,7 +39,9 @@
       researchers and future iGEM teams to easily customize localization systems, perform directed evolution, and design
       dynamic localization strategies with precision. The accessibility of these tools encourages greater collaboration,
       enhances reproducibility, and accelerates advancements in protein design and synthetic biology.</p>
-    <p>Researchers can access Atlas.Y and our open databases through this link: [TODO:GitHub仓库链接]. We believe the
+    <p>Researchers can access <a href='http://162.62.213.36' target='_blank'>Atlas.Y</a>, the
+      <a href='https://gitlab.igem.org/2024/software-tools/tongji-software' target='_blank'>source code</a>, and our
+      <a href='https://github.com/MinmusLin/Atlas.Y_Datase' target='_blank'>open-source dataset</a>. We believe the
       platform will inspire innovation and support future iGEM teams in pushing the boundaries of synthetic biology.</p>
 
     <h1 id='For Synthetic Biology'>For Synthetic Biology</h1>
@@ -59,6 +61,7 @@
       yield of target products while reducing the formation of by-products. This optimization is not only applicable in
       research experiments but also shows great potential in large-scale industrial production, significantly enhancing
       the synthesis of complex compounds like biofuels or pharmaceuticals.</p>
+    <img src='https://static.igem.wiki/teams/5503/accompanying-images/contribution1-1.webp' alt='Contribution1-1'>
     <h4>Dynamic Localization and Control</h4>
     <p>Atlas.Y offers dynamic localization tools, incorporating photosensitive elements to achieve precise <span
       class='bold'>spatiotemporal control</span> of protein behavior. This feature is particularly important in
@@ -78,6 +81,7 @@
       elementary school students to key concepts in synthetic biology, such as cell structures and subcellular
       localization. These efforts not only promote the iGEM initiative but also inspire the next generation to explore
       the exciting world of biotechnology.</p>
+    <img src='https://static.igem.wiki/teams/5503/accompanying-images/contribution2-1.webp' alt='Contribution2-1'>
     <p>Additionally, we maintain open communication and collaboration with other iGEM teams, including those from
       NENU-China, NEFU-China, SYPHU-China, CJUH-JLU-China, JLU-China, Imperial College, and Westlake University. By
       sharing insights and discussing common challenges, we contribute to a stronger, more connected iGEM community,
