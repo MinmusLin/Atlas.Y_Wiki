@@ -339,9 +339,9 @@
     </p>
 
     <div class='vertical-dots'>
-      <span class='dot1' ref='dot1Ref'></span>
-      <span class='dot2' ref='dot2Ref'></span>
-      <span class='dot3' ref='dot3Ref'></span>
+      <span class='dot1' ref='dot1Ref'/>
+      <span class='dot2' ref='dot2Ref'/>
+      <span class='dot3' ref='dot3Ref'/>
     </div>
 
     <button class='button2' ref='button2Ref' @click="router.push('/description')">

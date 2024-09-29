@@ -66,7 +66,7 @@
       from models like AlphaFold2, which include pLDDT confidence scores. This combination of real experimental data and
       high-quality predictions helps the model maintain both speed and accuracy. Additionally, ESMFold is open-access,
       with its model and code available through <a href='https://github.com/facebookresearch/esm' target='_blank'>
-        Meta AI’s GitHub repository</a>, providing easy access for researchers and developers to integrate and expand
+        Meta AI's GitHub repository</a>, providing easy access for researchers and developers to integrate and expand
       upon.</p>
 
     <p>While configuring ESMFold, we adjusted <span class='bold'>CUDA, PyTorch,</span> and other dependencies to ensure
