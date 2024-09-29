@@ -22,11 +22,12 @@
       provide feedback.</p>
     <p>In the workspace, you can click "START" to create a new query or select a historical entry to quickly restore
       previous searches.</p>
-    <p>After clicking "START", you can upload the .fasta and .pdb files of the protein you want to edit for
-      localization. Next, you can select your desired target localization on the page; if you have questions about
-      localization abbreviations, you can refer to the demonstration animation in the left legend. Finally, you can
-      choose the properties of the linker you want (for guidance on selecting the appropriate linker, please refer to
-      the <a href='http://162.62.213.36/user-guide' target='_blank'>user guide</a>).</p>
+    <p>After clicking "START", you can upload the <span class='bold'>.fasta</span> and <span class='bold'>.pdb</span>
+      files of the protein you want to edit for localization. Next, you can select your desired target localization on
+      the page; if you have questions about localization abbreviations, you can refer to the demonstration animation in
+      the left legend. Finally, you can choose the properties of the linker you want (for guidance on selecting the
+      appropriate linker, please refer to the <a href='http://162.62.213.36/user-guide' target='_blank'>user guide</a>).
+    </p>
     <p>After initiating the query, the software will generate and match localization fusion proteins for the user,
       displaying them based on stability scores. Users can select specific entries according to their preferences.</p>
     <p>On the details page of a specific entry, users can view detailed information about the original protein sequence,
@@ -73,11 +74,16 @@
         solutions with advanced features.
       </li>
     </ul>
+    <p style='text-align: center'>(see <a @click="router.push('/entrepreneurship')" style='cursor: pointer'>
+      Entrepreneurship</a> for more detailed information of users' profiles)</p>
   </TextContent>
 </template>
 
 <script setup lang='ts'>
+import {useRouter} from 'vue-router'
 import TextContent from '@/components/TextContent.vue'
+
+const router = useRouter()
 </script>
 
 <style scoped>
