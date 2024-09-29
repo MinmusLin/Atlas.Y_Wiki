@@ -239,8 +239,8 @@ const handleSubcellularLocalizationImageClick = (index: number) => {
 }
 
 .image-grid img {
-  width: 180px;
-  height: 180px;
+  width: 178px;
+  height: 178px;
   object-fit: cover;
   cursor: pointer;
   border: 0 solid;
