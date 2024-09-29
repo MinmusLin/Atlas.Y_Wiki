@@ -1738,13 +1738,28 @@ const scrollToPosition = () => {
   display: block;
 }
 
+@keyframes flashing-border {
+  0% {
+    border: 4px solid #16396E;
+    color: #16396E;
+  }
+  50% {
+    border: 4px solid #7AA8F3;
+    color: #7AA8F3;
+  }
+  100% {
+    border: 4px solid #16396E;
+    color: #16396E;
+  }
+}
+
 .explore {
   position: absolute;
   top: 38%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: #EEF3FE;
-  border: none;
+  border: 4px solid #16396E;
   padding: 15px 50px;
   color: #16396E;
   font-family: 'Futura Md BT Bold', sans-serif;
@@ -1752,9 +1767,11 @@ const scrollToPosition = () => {
   cursor: pointer;
   border-radius: 8px;
   z-index: 1;
+  animation: flashing-border 0.8s infinite;
 }
 
 .explore:hover {
+  animation: none;
   color: #7AA8F3;
   border: 4px solid #7AA8F3;
 }
