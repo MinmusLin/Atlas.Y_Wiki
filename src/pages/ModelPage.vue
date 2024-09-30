@@ -85,8 +85,8 @@
         overall <span class='bold'>three-dimensional structure</span>. Minimal changes in the contact area indicate that
         critical interactions and structural conformations have not undergone significant alterations.
       </li>
-      <li>2. A protein's function often relies on its specific <span class='bold'>three-dimensional</span> conformation
-        and <span class='bold'>interaction</span> network. If the three-dimensional structures of the protein before and
+      <li>A protein's function often relies on its specific <span class='bold'>three-dimensional</span> conformation and
+        <span class='bold'>interaction</span> network. If the three-dimensional structures of the protein before and
         after fusion remain similar, it can be inferred that their <span class='bold'>functional states</span> have not
         undergone major changes.
       </li>
@@ -109,17 +109,18 @@
     <h4>Contact Area Difference Calculation</h4>
     <p>Once the contact areas for the residues in both the predicted and reference structures have been obtained, the
       differences between them can be calculated.</p>
-    <p>For each residue in the predicted model (denoted as i), we identify the corresponding residue in the reference
-      structure (denoted as j) and compute the contact area difference between this pair of residues. Let the contact
-      area of the residue in the predicted structure be T(i,j) and in the reference structure be M(i,j). The difference
-      is expressed as:</p>
+    <p>For each residue in the predicted model (denoted as <span class='italic'>i</span> ), we identify the
+      corresponding residue in the reference structure (denoted as <span class='italic'>j</span> ) and compute the
+      contact area difference between this pair of residues. Let the contact area of the residue in the predicted
+      structure be <span class='italic'>T(i,j)</span> and in the reference structure be <span class='italic'>
+      M(i,j)</span>. The difference is expressed as:</p>
     <LatexRenderer formula='CAD(i,j)=∣T(i,j)−M(i,j)∣'/>
     <p>If a residue is missing in either the predicted model or the reference structure, or if no corresponding residue
       can be found due to sequence gaps, the contact area for that residue is set to <span class='bold'>zero</span>.
       This ensures that the scoring method can handle structural deficiencies.</p>
     <p>To prevent individual residue pairs with large contact area differences from disproportionately affecting the
-      overall score, the CAD score is <span>normalized</span>. We limit the maximum difference by computing the "bounded
-      contact area difference" using the following formula:</p>
+      overall score, the CAD score is <span class='bold'>normalized</span>. We limit the maximum difference by computing
+      the "bounded contact area difference" using the following formula:</p>
     <LatexRenderer formula='CADbounded(i,j)=min(CAD(i,j),T(i,j))'/>
     <h4>Global CAD Score Calculation</h4>
     <p>The global CAD score is used to evaluate the overall structural integrity of the protein model. It measures the
@@ -169,9 +170,9 @@
     <table>
       <thead>
       <tr>
-        <th style='width: 165px'>Item</th>
-        <th style='width: 165px'>Score Value</th>
-        <th style='width: 300px'>Explanation</th>
+        <th style='width: 240px'>Item</th>
+        <th style='width: 180px'>Score Value</th>
+        <th>Explanation</th>
       </tr>
       </thead>
       <tbody>
@@ -219,11 +220,6 @@
         <td>pro_close</td>
         <td>72.07</td>
         <td>Proline closure energy</td>
-      </tr>
-      <tr>
-        <td>hbond_sr_bb</td>
-        <td>72.07</td>
-        <td>Short-range backbone-backbone hydrogen bonding</td>
       </tr>
       <tr>
         <td>hbond_sr_bb</td>
