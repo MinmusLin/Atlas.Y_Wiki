@@ -1336,6 +1336,22 @@ const scrollToPosition = () => {
   left: 230px;
   height: auto;
   width: 58px;
+  animation: organelle1-float 6s ease-in-out infinite;
+}
+
+@keyframes organelle1-float {
+  0% {
+    transform: translateY(0);
+  }
+  33% {
+    transform: translateY(-10px);
+  }
+  66% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 .organelle2 {
