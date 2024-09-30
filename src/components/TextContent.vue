@@ -84,17 +84,26 @@ onMounted(() => {
 
 onMounted(() => {
   const headings = document.querySelectorAll('h1')
+  let currentActiveIndex = -1
+
   // @ts-ignore
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
-      if (entry.isIntersecting) {
+      const index = Array.from(headings).indexOf(<HTMLHeadingElement>entry.target)
+
+      if (entry.isIntersecting && entry.intersectionRatio > 0.1) {
         activeAnchor.value = `#${entry.target.id}`
+        currentActiveIndex = index
+      }
+      else if (entry.intersectionRatio <= 0.1 && entry.boundingClientRect.top > 0 && currentActiveIndex > 0) {
+        activeAnchor.value = `#${headings[currentActiveIndex - 1].id}`
+        currentActiveIndex = currentActiveIndex - 1
       }
     })
   }, {
     root: null,
-    rootMargin: '0px 0px -50% 0px',
-    threshold: 0.5
+    rootMargin: '0px 0px -30% 0px',
+    threshold: 0.1
   })
   headings.forEach(heading => {
     observer.observe(heading)
