@@ -113,16 +113,19 @@
       structure (denoted as j) and compute the contact area difference between this pair of residues. Let the contact
       area of the residue in the predicted structure be T(i,j) and in the reference structure be M(i,j). The difference
       is expressed as:</p>
+    <LatexRenderer formula='CAD(i,j)=∣T(i,j)−M(i,j)∣'/>
     <p>If a residue is missing in either the predicted model or the reference structure, or if no corresponding residue
       can be found due to sequence gaps, the contact area for that residue is set to <span class='bold'>zero</span>.
       This ensures that the scoring method can handle structural deficiencies.</p>
     <p>To prevent individual residue pairs with large contact area differences from disproportionately affecting the
       overall score, the CAD score is <span>normalized</span>. We limit the maximum difference by computing the "bounded
       contact area difference" using the following formula:</p>
+    <LatexRenderer formula='CADbounded(i,j)=min(CAD(i,j),T(i,j))'/>
     <h4>Global CAD Score Calculation</h4>
     <p>The global CAD score is used to evaluate the overall structural integrity of the protein model. It measures the
       overall similarity between the predicted structure and the reference structure by calculating the contact area
       differences for all residue pairs. The formula for this calculation is:</p>
+    <LatexRenderer formula='CAD\text{-}score = 1 - \frac{\sum_{(i,j) \in G} CAD_{bounded}(i,j)}{\sum_{(i,j) \in G} T(i,j)}'/>
     <p><span class='italic'>G</span> represents the set of all residue pairs. A CAD-score close to <span class='bold'>
       1</span> indicates high <span class='bold'>similarity</span> between the predicted model and the reference
       structure, suggesting that the protein's structure and functionality have been well preserved after fusion. A
@@ -379,6 +382,7 @@
 
 <script setup lang='ts'>
 import TextContent from '@/components/TextContent.vue'
+import LatexRenderer from '@/components/LatexRenderer.vue'
 </script>
 
 <style scoped>
