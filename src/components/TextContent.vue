@@ -85,17 +85,14 @@ onMounted(() => {
 onMounted(() => {
   const headings = document.querySelectorAll('h1')
   let currentActiveIndex = -1
-
   // @ts-ignore
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       const index = Array.from(headings).indexOf(<HTMLHeadingElement>entry.target)
-
       if (entry.isIntersecting && entry.intersectionRatio > 0.1) {
         activeAnchor.value = `#${entry.target.id}`
         currentActiveIndex = index
-      }
-      else if (entry.intersectionRatio <= 0.1 && entry.boundingClientRect.top > 0 && currentActiveIndex > 0) {
+      } else if (entry.intersectionRatio <= 0.1 && entry.boundingClientRect.top > 0 && currentActiveIndex > 0) {
         activeAnchor.value = `#${headings[currentActiveIndex - 1].id}`
         currentActiveIndex = currentActiveIndex - 1
       }
