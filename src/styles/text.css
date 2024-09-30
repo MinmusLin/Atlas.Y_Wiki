@@ -241,3 +241,11 @@
     font-family: 'Inter', sans-serif;
     font-size: 20px;
 }
+
+.text-area tip{
+    color: #5D6164;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    line-height: 20px;
+    margin: 8px 0;
+}
