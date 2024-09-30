@@ -18,7 +18,7 @@
       derived from Aequorea victoria. It is reported to be a rapidly-maturing weak dimer with moderate acid sensitivity.
       Compared to the ordinary GFP protein, this mutant shows a stronger fluorescent signal. Before constructing the
       plasmid, we checked the origin of the genes we wanted to use, which all <span class='bold'>belonged to the
-      whitelist</span> provided by iGEM. </p>
+      whitelist</span> provided by iGEM.</p>
     <p>In the experimental process, the components of the culture medium, dyes, and other experimental chemical
       consumables all come from different biological companies, indicating that our materials are safe. DAPI, or
       4',6-diamidino-2-phenylindole, is a fluorescent dye that strongly binds to DNA and is commonly used in

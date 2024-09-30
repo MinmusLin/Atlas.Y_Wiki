@@ -205,7 +205,7 @@ const SubcellularLocalizationContentTexts = [
    to children's curiosity and sense of exploration while teaching cellular processes.</p>`,
 
   `<h3 style='margin-top: -6px'>Searching for the Secret Base: Discovering Organelles and Their Functions</h3>
-   <p style='margin: 10px 0'>Students will go on a scavenger hunt inside the cell to discover "secret bases" – the
+   <p style='margin: 10px 0'>Students will go on a scavenger hunt inside the cell to discover "secret bases" - the
    organelles. Each organelle has a special function, like the nucleus being the control center. This playful concept
    helps children understand the different roles of cellular components.</p>
    <p><span style='font-weight: bold'>Feedback:</span> The secret base theme creates an engaging and exploratory

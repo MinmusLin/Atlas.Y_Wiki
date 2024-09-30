@@ -67,7 +67,7 @@
     <p>In constructing the PPID Database, we conducted extensive literature research to ensure the efficacy and
       applicability of the selected optogenetic systems.</p>
     <p>The information regarding the blue light-induced optogenetic pair <span class='bold'>CIBN-CRY2</span> system is
-      derived from the study by Kennedy et al., titled "Rapid blue-light–mediated induction of protein interactions in
+      derived from the study by Kennedy et al., titled "Rapid blue-light-mediated induction of protein interactions in
       living cells" The research indicates that this system exhibits a faster response time and greater flexibility
       compared to the original <span class='bold'>CIB1</span>, thereby allowing for real-time regulation of protein
       interactions.</p>
