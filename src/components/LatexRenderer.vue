@@ -30,5 +30,6 @@ watch(() => props.formula, renderLatex, {immediate: true})
   display: flex;
   justify-content: center;
   align-items: center;
+  -webkit-user-select: none;
 }
 </style>
