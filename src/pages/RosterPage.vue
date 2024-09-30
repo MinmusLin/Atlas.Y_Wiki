@@ -25,7 +25,7 @@
                   bio="Hi! I'm Jinling Yuan, majoring in bioinformatic. I have a profound appreciation for nature and life, possess an insatiable thirst for knowledge and vitality, enjoy both sports and the humanities. I am delighted to connect with you in the iGEM community."/>
       <MemberCard photo='https://static.igem.wiki/teams/5503/team-members/jishenlin.webp'
                   name='Jishen Lin'
-                  role='Software Development / Wiki coding'
+                  role='Software Development / Wiki Coding'
                   bio="Hi! I'm Jishen Lin, majoring in software engineering. I am passionate about full-stack development, enjoy exploring new technologies, and pursue elegant engineering practices. I look forward to interacting and learning with fellow iGEMers so we can progress together!"/>
     </div>
 
@@ -49,7 +49,7 @@
     <div class='member-card'>
       <MemberCard photo='https://static.igem.wiki/teams/5503/team-members/shuyiliu.webp'
                   name='Shuyi Liu'
-                  role='Software Development / Wiki coding'
+                  role='Software Development / Wiki Coding'
                   bio="Hi, I am Shuyi Liu, majoring in software engineering. I have an outgoing and lively personality, and I love exploring the beauty of life. I improved my front-end development skills in the iGEM competition and also met like-minded partners."/>
       <MemberCard photo='https://static.igem.wiki/teams/5503/team-members/wenjianzhang.webp'
                   name='Wenjian Zhang'
