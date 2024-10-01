@@ -286,7 +286,7 @@ watch(selectedSubcellularLocalizationContent, () => {
   background-color: #EEF3FE;
   padding: 20px;
   border-radius: 20px;
-  height: 300px;
+  height: 313px;
   font-size: 20px;
   margin-bottom: 25px;
   position: relative;
@@ -296,7 +296,7 @@ watch(selectedSubcellularLocalizationContent, () => {
   background-color: #EEF3FE;
   padding: 20px;
   border-radius: 20px;
-  height: 240px;
+  height: 253px;
   font-size: 20px;
   margin-bottom: 25px;
   position: relative;
@@ -309,6 +309,7 @@ watch(selectedSubcellularLocalizationContent, () => {
   height: 100%;
   width: 100%;
   background-color: #EEF3FE;
+  border-radius: 20px;
   z-index: 999;
 }
 
