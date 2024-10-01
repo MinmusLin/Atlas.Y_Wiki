@@ -34,6 +34,9 @@
              :key='index'/>
       </div>
       <div class='text-content1'>
+        <Transition name='mask'>
+          <div v-if="showBottomTextMask1" class='bottom-text-mask'/>
+        </Transition>
         <p v-html='selectedSyntheticBiologyContent'/>
       </div>
     </div>
@@ -52,7 +55,7 @@
       </div>
       <div class='text-content2'>
         <Transition name='mask'>
-          <div v-if="showBottomTextMask" class='bottom-text-mask'/>
+          <div v-if="showBottomTextMask2" class='bottom-text-mask'/>
         </Transition>
         <p v-html='selectedSubcellularLocalizationContent'/>
       </div>
@@ -178,6 +181,14 @@ const handleSyntheticBiologyImageClick = (index: number) => {
   selectSyntheticBiologyIndex.value = index
 }
 
+const showBottomTextMask1 = ref(false)
+watch(selectedSyntheticBiologyContent, () => {
+  showBottomTextMask1.value = true
+  nextTick(() => {
+    showBottomTextMask1.value = false
+  })
+})
+
 const SubcellularLocalizationImages = [
   {src: 'https://static.igem.wiki/teams/5503/accompanying-images/education9-1.webp', alt: 'ProgrammingLife'},
   {src: 'https://static.igem.wiki/teams/5503/accompanying-images/education10-1.webp', alt: 'BuildingBlocks'},
@@ -229,11 +240,11 @@ const handleSubcellularLocalizationImageClick = (index: number) => {
   selectSubcellularLocalizationIndex.value = index
 }
 
-const showBottomTextMask = ref(false)
+const showBottomTextMask2 = ref(false)
 watch(selectedSubcellularLocalizationContent, () => {
-  showBottomTextMask.value = true
+  showBottomTextMask2.value = true
   nextTick(() => {
-    showBottomTextMask.value = false
+    showBottomTextMask2.value = false
   })
 })
 </script>
@@ -278,6 +289,7 @@ watch(selectedSubcellularLocalizationContent, () => {
   height: 300px;
   font-size: 20px;
   margin-bottom: 25px;
+  position: relative;
 }
 
 .text-content2 {
