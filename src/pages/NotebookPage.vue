@@ -190,7 +190,8 @@ const items = [
       'Following extensive learning and discussion within the team, commenced the deployment of various models, including DeepLoc, ESMfold, CAD score, Rosetta, and SCHEMA recombination programs.'
     ],
     software: [
-      '123'
+      'Determined the project\'s technical selection, development tools, and programming languages.',
+      'Defined the project’s technology stack.'
     ],
     design: [],
     hp: []
@@ -202,7 +203,9 @@ const items = [
       'Developed code to implement localized CAD scoring calculation and allowed users to choose custom options. Additionally, we created a set of automated testing scripts to swiftly verify the effectiveness of the models.'
     ],
     software: [
-      '123'
+      'Determined the project\'s development principles.',
+      'Established the coding style and standards for HTML, CSS, TypeScript, and C#.',
+      'Defined the Git version control guidelines.'
     ],
     design: [],
     hp: []
@@ -213,7 +216,9 @@ const items = [
       'Fully deployed all models, compiled comprehensive technical documentation covering model functions, deployment processes, and user guides to facilitate efficient learning and operation by team members.'
     ],
     software: [
-      '123'
+      'Set up the frontend framework for the wiki project.',
+      'Set up the frontend and backend framework for the Atlas.Y software project.',
+      'Deploy the Atlas.Y server and deploy the CI / CD (Continuous Integration and Continuous Delivery / Deployment) pipeline.'
     ],
     design: [],
     hp: []
@@ -225,7 +230,7 @@ const items = [
       'Developed a next-phase model optimization plan, learning the specific steps to fine-tune evolutionary models.'
     ],
     software: [
-      '123'
+      'Developed the Atlas.Y software, specifically including features such as a contact form and a feedback form.'
     ],
     design: [
       'Gained initial understanding of project design.',
@@ -243,7 +248,7 @@ const items = [
       'Wrote scripts for data cleaning and preprocessing. Began preliminary model optimization.'
     ],
     software: [
-      '123'
+      'Developed the Atlas.Y software, specifically including features such as the algorithm store and membership plans.'
     ],
     design: [
       'Conducted interface design for web application.'
@@ -254,7 +259,8 @@ const items = [
     title: '10 August 2024',
     algorithm: [],
     software: [
-      '123'
+      'Developed the Atlas.Y software, specifically including features such as the user guide and technical resources.',
+      'Rent GPU computing resources and complete the deployment.'
     ],
     design: [
       'Conducted interface design for web application.'
@@ -269,7 +275,8 @@ const items = [
     title: '17 August 2024',
     algorithm: [],
     software: [
-      '123'
+      'Developed the Atlas.Y software, specifically including features such as the basic designer.',
+      'Deployed and maintained the server.'
     ],
     design: [
       'Completed web application page design.'
@@ -285,7 +292,8 @@ const items = [
       'Conducted several small-scale simulations to ensure the feasibility and accuracy of the processes.'
     ],
     software: [
-      '123'
+      'Developed the Atlas.Y software, specifically including features such as the dynamic designer.',
+      'Deployed and maintained the server.'
     ],
     design: [
       'Completed the design and planning of the promotional video script.'
@@ -303,7 +311,9 @@ const items = [
       'Visualized analysis of results to evaluate model performance in practical applications.'
     ],
     software: [
-      '123'
+      'Developed the Atlas.Y software.',
+      'Completed the development of both the basic designer and the dynamic designer parts.',
+      'Deployed and maintained the server.'
     ],
     design: [
       'Completed the design and planning of the promotional video script.'
@@ -321,7 +331,8 @@ const items = [
       'Completed interface testing with the software group to ensure seamless system integration.'
     ],
     software: [
-      '123'
+      'Completed the basic styling for the wiki.',
+      'Optimized the Atlas.Y software.'
     ],
     design: [
       'Completed the production of project promotional video clips.',
@@ -338,7 +349,8 @@ const items = [
       'Migrated optimized models to a high-performance computing server and performed large-scale processing tests. Monitored performance metrics such as memory usage and processing time.'
     ],
     software: [
-      '123'
+      'Implemented the special effects for the wiki homepage.',
+      'Optimized the Atlas.Y software.'
     ],
     design: [
       'Completed wiki home page design.',
@@ -356,7 +368,8 @@ const items = [
       'Conducted additional testing to validate the improvements made.'
     ],
     software: [
-      '123'
+      'Completed the deployment of the wiki content and the related resources.',
+      'Optimized the Atlas.Y software.'
     ],
     design: [
       'Completed the wiki animation design.'
@@ -369,10 +382,11 @@ const items = [
   {
     title: '28 September 2024',
     algorithm: [
-      'Assisted in authoring the project\'s Wiki documentation, focusing on the introduction of Model sections and the algorithm iteration process.'
+      'Assisted in authoring the project\'s wiki documentation, focusing on the introduction of Model sections and the algorithm iteration process.'
     ],
     software: [
-      '123'
+      'Optimized the visual effects of the wiki.',
+      'Optimized the Atlas.Y software.'
     ],
     design: [
       'Improved the design and production of illustrations for various wiki pages.'
