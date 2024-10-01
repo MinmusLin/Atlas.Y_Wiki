@@ -1,8 +1,8 @@
 <template>
   <TextContent title='ENTREPRENEURSHIP'
-               :title-list="['Overview', '1. Business Model Canvas', '2. Market',
-               '3. Profit Model Design', '4. Competitor analysis and product pricing', '5. Financial Planning',
-               '6. Future Development']">
+               :title-list="['Overview', 'Business Model Canvas', 'Market',
+               'Profit Model Design', 'Competitor analysis and product pricing', 'Financial Planning',
+               'Future Development']">
     <h1 id='Overview'>Overview</h1>
     <p>In the Entrepreneurship section, we once again chose the <span class='bold'>EPIC model (Elicit, Prototype,
       Iterate, Consolidate)</span> as the overall framework for the project. Starting from background guidance,
@@ -84,10 +84,10 @@
       </li>
     </ul>
 
-    <h1 id='1. Business Model Canvas'>1. Business Model Canvas</h1>
+    <h1 id='Business Model Canvas'>Business Model Canvas</h1>
     <img src='https://static.igem.wiki/teams/5503/accompanying-images/entrepreneurship1-3.webp' alt='Entrepreneurship1'>
 
-    <h1 id='2. Market'>2. Market</h1>
+    <h1 id='Market'>Market</h1>
 
     <h2>Target User Profile</h2>
     <div class='container'>
@@ -161,7 +161,7 @@
       market, enhance product features, and ensure the project’s sustainable development through flexible profit models
       and marketing strategies.</p>
 
-    <h1 id='3. Profit Model Design'>3. Profit Model Design</h1>
+    <h1 id='Profit Model Design'>Profit Model Design</h1>
     <h2>Membership-based Profitability</h2>
     <p>During the market analysis and assessment of Atlas.Y, we gained a deep understanding of the needs and
       expectations of users at various levels, particularly the impact of the SHEEL framework on different users. </p>
@@ -298,7 +298,7 @@
         inclusive progress.</li>
     </ul>
 
-    <h1 id='4. Competitor analysis and product pricing'>4. Competitor analysis and product pricing</h1>
+    <h1 id='Competitor analysis and product pricing'>Competitor analysis and product pricing</h1>
     <h2>Market Bioinformatics Tool Price</h2>
     <h5>Table. Bioinformatics Tools Market Price</h5>
     <img src='https://static.igem.wiki/teams/5503/accompanying-images/entrepreneurship8-1.webp' class='img-table' alt='Entrepreneurship8'>
@@ -357,7 +357,7 @@
       the <b>potential savings of opting for annual subscriptions over monthly ones</b>.
     </p>
 
-    <h1 id='5. Financial Planning'>5. Financial Planning</h1>
+    <h1 id='Financial Planning'>Financial Planning</h1>
     <h2>Market Trend Forecast</h2>
     <img src='https://static.igem.wiki/teams/5503/accompanying-images/entrepreneurship15-1.webp' alt='Entrepreneurship15'>
     <p>The biotechnology tools market is expected to steadily grow from approximately €150 billion in 2023 to nearly
@@ -506,7 +506,7 @@
         lifetime.</p>
     </ol>
 
-    <h1 id='6. Future Development'>6. Future Development</h1>
+    <h1 id='Future Development'>Future Development</h1>
     <h2>Accelerator</h2>
     <img src='https://static.igem.wiki/teams/5503/accompanying-images/entrepreneurship21-1.webp' alt='Entrepreneurship21'>
     <p>For a startup, support from an <span class='bold'>accelerator</span> is crucial, and we are fortunate to have
