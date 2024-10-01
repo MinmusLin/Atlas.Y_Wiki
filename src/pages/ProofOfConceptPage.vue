@@ -32,7 +32,9 @@
       one flexible—to significantly reduce the computational load without compromising the integrity of the
       analysis.</p>
     <p>The validation outcomes are summarized as follows:</p>
-    <img src='https://static.igem.wiki/teams/5503/accompanying-images/proofofconcept1-1.webp' alt='ProofOfConcept1'>
+    <img src='https://static.igem.wiki/teams/5503/accompanying-images/proofofconcept1-2.webp'
+         alt='ProofOfConcept1'
+         style='width: 100%'>
     <h5>Figure. Multiplying Factor Distribution for Different Subcellular Localization</h5>
     <p>Our findings provide strong evidence that the proposed methodology <span class='bold'>significantly improves
       </span> the likelihood of protein localization to designated target regions. The observed increase in localization
@@ -63,7 +65,7 @@
       recombinant fusion protein.DAPI is a fluorescent dye that strongly binds to DNA and can pass through intact cell
       membranes, making it commonly used for staining the nuclei of living cells, where it can color the nuclei blue.
     </p>
-    <img src='https://static.igem.wiki/teams/5503/accompanying-images/proofofconcept2-1.webp' alt='ProofOfConcept2'>
+    <img src='https://static.igem.wiki/teams/5503/accompanying-images/proofofconcept2-2.webp' alt='ProofOfConcept2'>
     <h5>Figure. EGFP-NLS in pPICZ A</h5>
     <p>We amplified the EGFP gene using PCR and inserted EGFP into the EcoRI and XhoI restriction sites of pPICZ A using
       a double digestion method. The plasmid was linearized with SacI and transferred into X-33 Pichia pastoris,
