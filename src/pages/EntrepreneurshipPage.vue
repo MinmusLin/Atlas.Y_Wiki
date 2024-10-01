@@ -91,15 +91,12 @@
     <h2>Target User Profile</h2>
     <div class='container'>
       <div class='user-image' @mouseleave='onMouseLeave'>
-        <img
-          v-for='(img, index) in images'
-          :key='img.alt'
-          :src='img.src'
-          :alt='img.alt'
-          @mouseover='swapAndShowText(index)'
-          :class="{ 'image-with-textbox': index === 0 && showTextBox }"
-        />
+        <TransitionGroup name="list">
+          <img v-for='(img, index) in images' :key='img.alt' :src='img.src' :alt='img.alt'
+            @mouseover='swapAndShowText(index)' :class="{ 'image-with-textbox': index === 0 && showTextBox }" />
+        </TransitionGroup>
 
+        <Transition name="appear">
         <div v-if='showTextBox && currentText' class='text-container'>
           <div class='text-content'>
             <p class='text-title'>{{ currentText.title1 }}</p>
@@ -112,6 +109,7 @@
             </ul>
           </div>
         </div>
+        </Transition>
       </div>
 
       <div class='bottom-text-box'>
@@ -1200,5 +1198,33 @@ bottomText.value = ['<strong>Userprofile</strong> :User information will be pres
   font-size: 16px;
   margin-top: 10px;
   height: 320px;
+}
+
+.list-move,
+/* 对移动中的元素应用的过渡 */
+.list-enter-active,
+.list-leave-active {
+  transition: all 0.5s ease;
+}
+
+.list-enter-from,
+.list-leave-to {
+  opacity: 0;
+}
+
+/* 确保将离开的元素从布局流中删除
+  以便能够正确地计算移动的动画。 */
+.list-leave-active {
+  position: absolute;
+}
+
+.appear-enter-active,
+.appear-leave-active {
+  transition: all 0.5s ease-out;
+}
+
+.appear-enter-from,
+.appear-leave-to {
+  opacity: 0;
 }
 </style>
