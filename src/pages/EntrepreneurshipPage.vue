@@ -1,7 +1,7 @@
 <!--suppress HtmlUnknownTag-->
 <template>
   <TextContent title='ENTREPRENEURSHIP'
-               :title-list="['Overview', 'Business Model Canvas', 'Market', 'Profit Model Design', 'Competitor Analysis and Product Pricing', 'Financial Planning', 'Future Development']">
+               :title-list="['Overview', 'Business Model Canvas', 'Market', 'Profit Model Design', 'Competitor Analysis and Product Pricing', 'Financial Planning', 'Future Development', 'Business Plan']">
     <h1 id='Overview'>Overview</h1>
     <p>In the Entrepreneurship section, we once again chose the <span class='bold'>EPIC model (Elicit, Prototype,
       Iterate, Consolidate)</span> as the overall framework for the project. Starting from background guidance, initial
@@ -556,23 +556,21 @@
         success and social impact.</p>
     </div>
     <h2>Strategies for Sustained Revenue Growth</h2>
-    <ol>
-      <li>Membership Upgrade Strategy:</li>
-      <p>Encourage users to transition from free or pay-per-use models to subscription plans by offering incentives. For
-        example, users can receive discounts for upgrading, or access to additional services like premium features,
-        priority support, or exclusive content. A tiered subscription model can also motivate users to upgrade by
-        highlighting the benefits of higher-tier plans, such as increased usage limits or faster processing times.</p>
-      <li>Value-Added Services:</li>
-      <p>Introduce extra paid services or premium features to boost revenue. This could include offering advanced data
-        analysis tools, personalized reports, or customization options tailored to specific customer needs. Technical
-        support could be offered as a subscription service, or users could pay for specific consultations or expert
-        advice. These add-ons will create new income streams while improving customer satisfaction.</p>
-      <li>Cross-Selling and Bundling:</li>
-      <p>Develop bundle deals that combine your primary bioinformatics tools with complementary products, such as
-        related databases or third-party software. Offering discounted packages for multiple tools or features can
-        incentivize users to purchase more, increasing overall revenue. Cross-selling within your existing user base is
-        an effective way to promote upgrades or additional products.</p>
-    </ol>
+    <h4>Membership Upgrade Strategy:</h4>
+    <p>Encourage users to transition from free or pay-per-use models to subscription plans by offering incentives. For
+      example, users can receive discounts for upgrading, or access to additional services like premium features,
+      priority support, or exclusive content. A tiered subscription model can also motivate users to upgrade by
+      highlighting the benefits of higher-tier plans, such as increased usage limits or faster processing times.</p>
+    <h4>Value-Added Services:</h4>
+    <p>Introduce extra paid services or premium features to boost revenue. This could include offering advanced data
+      analysis tools, personalized reports, or customization options tailored to specific customer needs. Technical
+      support could be offered as a subscription service, or users could pay for specific consultations or expert
+      advice. These add-ons will create new income streams while improving customer satisfaction.</p>
+    <h4>Cross-Selling and Bundling:</h4>
+    <p>Develop bundle deals that combine your primary bioinformatics tools with complementary products, such as related
+      databases or third-party software. Offering discounted packages for multiple tools or features can incentivize
+      users to purchase more, increasing overall revenue. Cross-selling within your existing user base is an effective
+      way to promote upgrades or additional products.</p>
     <h2>Marketing Strategy</h2>
     <h3>Brand Promotion in the Scientific Community</h3>
     <ul>
@@ -631,123 +629,14 @@
       </li>
     </ul>
     <img src='https://static.igem.wiki/teams/5503/accompanying-images/entrepreneurship22-1.webp'
-         alt='Entrepreneurship22'>
+         alt='Entrepreneurship22'
+         style='width: 700px'>
     <p>Here is the 3-year, 5-year, and 10-year projection for revenue, cost, and profit, considering both minimum and
       maximum scenarios. The chart illustrates the steady growth in revenue, gradual reduction in costs, and subsequent
       increase in profits over time.</p>
     <h2>Risk Consideration and Avoidance</h2>
     <img src='https://static.igem.wiki/teams/5503/accompanying-images/entrepreneurship23-1.webp' class='img-table'
          alt='Entrepreneurship23'>
-    <h3>Political Factors</h3>
-    <ul>
-      <li><span class='bold'>Risks</span>: The bioinformatics tools market has limited government policy support, and
-        there is a lack of unified global regulations, especially regarding data privacy and biotechnology laws.
-        Companies operating in multiple countries must comply with different regulatory requirements, which may increase
-        compliance costs.
-      </li>
-      <li><span class='bold'>Mitigation Measures:</span></li>
-      <ul>
-        <li><span class='bold'>Diverse Regulatory Response</span>: Establish a dedicated compliance team to interpret
-          and audit regulations in each market, ensuring the product's legality in various regions. Engage with
-          regulatory agencies to participate in policy discussions and anticipate potential policy changes.
-        </li>
-        <li><span class='bold'>Adaptability in International Operations</span>: Design software with flexible data
-          privacy management to meet various data regulations (e.g., GDPR, CCPA), ensuring global adaptability.
-        </li>
-      </ul>
-    </ul>
-    <h3>Economic Factors</h3>
-    <ul>
-      <li><span class='bold'>Risks</span>: Target users, including academic institutions and biotech startups, are
-        highly price-sensitive. Global economic fluctuations may reduce customer numbers or lead to subscription
-        cancellations. Under the subscription model, users' long-term payment ability could be affected by economic
-        volatility.
-      </li>
-      <li><span class='bold'>Mitigation Measures:</span></li>
-      <ul>
-        <li><span class='bold'>Flexible Pricing Strategy</span>: Offer tiered pricing plans, including discounts or
-          installment payment options for small research teams or startups. Additionally, expand the pay-per-use model
-          to reduce the financial burden on customers.
-        </li>
-        <li><span class='bold'>Proactive Response to Economic Fluctuations</span>: Regularly conduct market research to
-          adjust pricing strategies based on global economic conditions, and offer discounts for long-term contracts to
-          ensure steady income during economic downturns.
-        </li>
-      </ul>
-    </ul>
-    <h3>Social Factors</h3>
-    <ul>
-      <li><span class='bold'>Risks</span>: With the rapid development of personalized medicine and genomics, demand for
-        customized services is increasing. Moreover, there is growing public concern about corporate transparency and
-        ethical issues, particularly in the field of gene editing.
-      </li>
-      <li><span class='bold'>Mitigation Measures:</span></li>
-      <ul>
-        <li><span class='bold'>Expansion of Customized Services</span>: Continuously optimize software features to offer
-          personalized analysis tools for diverse client needs, especially in personalized medicine and genomic
-          research. Allow customers to adjust software modules based on their projects.
-        </li>
-        <li><span class='bold'>Transparency in Social Responsibility</span>: Emphasize the company's commitment to data
-          privacy, ethics, and social responsibility on the website and promotional materials, and regularly publish
-          social responsibility reports to build public trust.
-        </li>
-      </ul>
-    </ul>
-    <h3>Technological Factors</h3>
-    <ul>
-      <li><span class='bold'>Risks</span>: Rapid technological advancements, especially in AI, machine learning, and big
-        data, drive innovation in bioinformatics tools. Companies must iterate quickly to avoid being surpassed by
-        competitors.
-      </li>
-      <li><span class='bold'>Mitigation Measures:</span></li>
-      <ul>
-        <li><span class='bold'>Accelerated R&D</span>: Set up a dedicated R&D team to maintain technological leadership,
-          regularly releasing new features and updates. Collaborate with leading research institutions and tech
-          companies to access the latest technology and accelerate innovation through joint development.
-        </li>
-        <li><span class='bold'>Integration of AI and Big Data</span>: Incorporate AI and big data technologies into the
-          product to improve analysis capabilities, meeting user demand for more efficient and precise data processing,
-          thus maintaining technological competitiveness.
-        </li>
-      </ul>
-    </ul>
-    <h3>Environmental Factors</h3>
-    <ul>
-      <li><span class='bold'>Risks</span>: There is growing global concern for sustainability, with increased demands on
-        bioinformatics companies regarding server energy consumption and environmentally friendly data center design.
-        Users and investors are placing greater emphasis on corporate sustainability performance.
-      </li>
-      <li><span class='bold'>Mitigation Measures:</span></li>
-      <ul>
-        <li><span class='bold'>Adoption of Green Technologies</span>: Prioritize high-efficiency, low-carbon data
-          centers and servers, ensuring the company's environmental efforts align with global sustainability goals.
-          Obtain environmental certifications to enhance market competitiveness.
-        </li>
-        <li><span class='bold'>Commitment to Sustainability</span>: Minimize environmental impact during product
-          development and operations, actively participate in sustainability programs and environmental initiatives, and
-          demonstrate the company's responsibility and long-term commitment to sustainable development.
-        </li>
-      </ul>
-    </ul>
-    <h3>Legal Factors</h3>
-    <ul>
-      <li><span class='bold'>Risks</span>: The project involves numerous patents and intellectual property, especially
-        in the development of new algorithms and technologies, which could lead to intellectual property disputes.
-        Additionally, with the global spread of data privacy regulations such as GDPR, ensuring data security and
-        privacy compliance is a significant challenge.
-      </li>
-      <li><span class='bold'>Mitigation Measures:</span></li>
-      <ul>
-        <li><span class='bold'>Intellectual Property Protection</span>: Ensure relevant patent and intellectual property
-          licenses are obtained during software development, and promptly apply for patent protection for newly
-          developed algorithms and technologies to avoid infringement disputes.
-        </li>
-        <li><span class='bold'>Data Privacy Compliance</span>: Ensure the software complies with various privacy laws,
-          particularly when handling sensitive data. Strictly adhere to GDPR and other relevant regulations, and conduct
-          regular data security audits to ensure platform compliance.
-        </li>
-      </ul>
-    </ul>
     <h2>Future</h2>
     <p>The Atlas.Y software we have developed is a molecular tag design tool for optimizing subcellular localization of
       yeast enzymes, and it has already demonstrated immense potential in the fields of biotechnology and synthetic
@@ -779,6 +668,18 @@
     <p>We are confident that Atlas.Y will become an indispensable digital tool in the global biotechnology field,
       helping more companies and research institutions achieve digital transformation in biotechnology, and advancing
       the development of global biopharmaceuticals and the green economy.</p>
+
+    <h1 id='Business Plan'>Business Plan</h1>
+    <p>To provide a comprehensive understanding of the practical applications and sustainability of our project, we have
+      developed a detailed business plan. This section outlines our strategic vision for turning our innovative ideas
+      into a viable solution, covering key aspects such as market analysis, revenue models, commercialization
+      strategies, and long-term goals. By integrating scientific innovation with business foresight, we aim to ensure
+      that our project not only contributes to the advancement of synthetic biology but also meets real-world demands
+      effectively.</p>
+    <iframe src='https://static.igem.wiki/teams/5503/businessplan.pdf#view=FitH'
+            style='border: none'
+            width='905px'
+            height='905px'/>
   </TextContent>
 </template>
 
