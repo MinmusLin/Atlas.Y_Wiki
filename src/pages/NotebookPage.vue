@@ -323,7 +323,7 @@ const items = [
       'Completed the design of wiki unified templates for various boards.'
     ],
     hp: [
-      'Searched for accelerators and joined Tongji University’s Venture Valley.',
+      'Searched for accelerators and joined Tongji University\'s Venture Valley.',
       'Made reasonable stage predictions and expectations.'
     ]
   },
