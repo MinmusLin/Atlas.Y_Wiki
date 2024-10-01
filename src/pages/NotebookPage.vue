@@ -113,6 +113,27 @@ const items = [
     ]
   },
   {
+    title: '20 April 2024',
+    algorithm: [
+      'Discussed the feasibility of optogenetics-related topics (this idea was ultimately rejected) and explored the possibility of new topics.',
+      'Planned to explore and research protein-directed evolution systems, whole-cell modeling ecosystems, and subcellular localization systems separately.'
+    ],
+    software: [],
+    design: [],
+    hp: [ ]
+  },
+  {
+    title: '27 April 2024',
+    algorithm: [
+      'Discussed the feasibility of evolution systems, whole-cell modeling ecosystems, and subcellular localization systems. Ultimately, evolution systems and whole-cell modeling ecosystems were rejected due to computational limitations and issues with application scenarios.',
+      'Decided to deepen the subcellular localization systems plan, conducting extensive background research and project planning.',
+      'Communicated with the instructor and PI to finalize the topic.'
+    ],
+    software: [],
+    design: [],
+    hp: []
+  },
+  {
     title: '4 May 2024',
     algorithm: [
       'Conducted an in-depth literature review to compare the performance and applicability of different algorithms. Developed the overall technical framework for the project.',
@@ -136,7 +157,8 @@ const items = [
   {
     title: '1 June 2024',
     algorithm: [
-      'Conducted an interview with Professor Wang Chenfei, incorporating feedback to refine the algorithm design.'
+      'Conducted an interview with Professor Wang Chenfei, incorporating feedback to refine the algorithm design.',
+      'Organized interview notes and adjusted the project plan to better meet practical application needs.'
     ],
     software: [],
     design: [],
@@ -331,7 +353,7 @@ const items = [
     title: '21 September 2024',
     algorithm: [
       'Fine-tuned server configurations to improve efficiency, focusing on enhancing computational speed and resource utilization',
-      'Conducted additional testing to validate the improvements mad'
+      'Conducted additional testing to validate the improvements made.'
     ],
     software: [
       '123'
