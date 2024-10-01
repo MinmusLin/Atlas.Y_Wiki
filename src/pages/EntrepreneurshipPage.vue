@@ -175,6 +175,8 @@
       and legal risks during technical development and application.
     </blockquote>
 
+    <img src='https://static.igem.wiki/teams/5503/accompanying-images/entrepreneurship7-1.webp' class='img-table' alt='Entrepreneurship7'>
+
     <h2>Algorithm Store</h2>
     <p>The algorithms offered in the <span class='bold'>algorithm store</span> can be purchased on demand by users to
       meet specific or infrequent research needs. Such in-app purchases provide flexibility for users while generating
