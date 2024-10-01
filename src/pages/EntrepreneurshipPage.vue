@@ -113,6 +113,9 @@
       </div>
 
       <div class='bottom-text-box'>
+        <Transition name="mask">
+            <div v-if="showBottomTextMask" class="bottom-text-mask"></div>
+        </Transition>
         <ul class='bottom-custom-list'>
           <li v-for='(item, index) in bottomText' :key='index' v-html='item'></li>
         </ul>
@@ -735,7 +738,7 @@
 
 <script setup lang='ts'>
 import TextContent from '@/components/TextContent.vue'
-import {ref, reactive} from 'vue'
+import {ref, reactive, watch, nextTick} from 'vue'
 
 const activeCircle = ref<number | null>(-1)
 const activeBox = ref<number | null>(null)
@@ -932,6 +935,13 @@ function swapAndShowText(index: number) {
   showTextBox.value = true
   canSwap.value = false
 }
+
+// 下方文字的遮罩动画
+const showBottomTextMask = ref(false)
+watch(bottomText, () => {
+  showBottomTextMask.value = true
+  nextTick(() => { showBottomTextMask.value = false })
+})
 
 function onMouseLeave() {
   resetText()
@@ -1198,6 +1208,19 @@ bottomText.value = ['<strong>Userprofile</strong> :User information will be pres
   font-size: 16px;
   margin-top: 10px;
   height: 320px;
+
+  position: relative;
+}
+
+.bottom-text-mask {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #FEFCF0;
+  z-index: 999;
+  box-shadow: 0px -40px 20px #FEFCF0;
 }
 
 .list-move,
@@ -1226,5 +1249,14 @@ bottomText.value = ['<strong>Userprofile</strong> :User information will be pres
 .appear-enter-from,
 .appear-leave-to {
   opacity: 0;
+}
+
+.mask-enter-active,
+.mask-leave-active {
+  transition: all 0.5s ease-out;
+}
+
+.mask-leave-to {
+  height: 0;
 }
 </style>
