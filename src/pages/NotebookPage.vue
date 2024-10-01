@@ -191,7 +191,7 @@ const items = [
     ],
     software: [
       'Determined the project\'s technical selection, development tools, and programming languages.',
-      'Defined the project’s technology stack.'
+      'Defined the project\'s technology stack.'
     ],
     design: [],
     hp: []
