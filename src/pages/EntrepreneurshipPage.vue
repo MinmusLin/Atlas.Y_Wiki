@@ -85,6 +85,7 @@
     </ul>
 
     <h1 id='1. Business Model Canvas'>1. Business Model Canvas</h1>
+    <img src='https://static.igem.wiki/teams/5503/accompanying-images/entrepreneurship1-3.webp' alt='Entrepreneurship1'>
 
     <h1 id='2. Market'>2. Market</h1>
 
@@ -137,6 +138,7 @@
       up. At this stage, it is crucial to ensure that the subcellular localization of key enzymes is optimal.</p>
 
     <h2>Business Model Exchange and Learning</h2>
+    <img src='https://static.igem.wiki/teams/5503/accompanying-images/entrepreneurship5-1.webp' alt='Entrepreneurship5'>
     <p class='tip'>YanIn Technology is a high-tech company focused on providing digital platforms for the biopharmaceutical field,
       offering comprehensive digital solutions related to genomics, proteomics, and synthetic biology. The company is
       dedicated to enhancing the efficiency and accuracy of biopharmaceutical research through advanced algorithms,
@@ -148,6 +150,7 @@
     </p>
 
     <h5>Table. Interview Transcripts with YanIn</h5>
+    <img src='https://static.igem.wiki/teams/5503/accompanying-images/entrepreneurship6-1.webp' class='img-table' alt='Entrepreneurship6'>
 
     <p>Through the interview, we further validated the <span class='bold'>market demand</span> and <span class='bold'>
       technical feasibility</span> of the Atlas.Y software, and <span class='bold'>adjusted design measures</span> based
@@ -295,12 +298,14 @@
     <h1 id='4. Competitor analysis and product pricing'>4. Competitor analysis and product pricing</h1>
     <h2>Market Bioinformatics Tool Price</h2>
     <h5>Table. Bioinformatics Tools Market Price</h5>
+    <img src='https://static.igem.wiki/teams/5503/accompanying-images/entrepreneurship8-1.webp' class='img-table' alt='Entrepreneurship8'>
     <p>Subscription models are commonly used by users who frequently access tools, covering functionalities from
       sequence analysis to experimental management, making them suitable for academic research and commercial users.
       Pay-per-use models offer greater flexibility and are ideal for users who need occasional access to advanced
       features. For large research institutions and companies, enterprise subscription models provide advanced
       functionalities and team collaboration tools, with higher pricing, meeting the needs of data security and
       high-performance computing.</p>
+    <img src='https://static.igem.wiki/teams/5503/accompanying-images/entrepreneurship9-1.webp' alt='Entrepreneurship9'>
     <p>This chart presents the pricing ranges of key bioinformatics tools, covering subscription models, pay-per-use
       options, and enterprise-level subscription plans. The price ranges span from €49 (e.g., Geneious basic
       subscription) to €500 (e.g., Schrödinger Enterprise edition). Different colors distinguish the products, visually
@@ -308,14 +313,17 @@
       reference for formulating competitive pricing strategies and lays the groundwork for capturing market share.</p>
 
     <h2>SWOT Analysis</h2>
+    <img src='https://static.igem.wiki/teams/5503/accompanying-images/entrepreneurship10-2.webp' class='img-table' alt='Entrepreneurship10'>
 
     <h2>Atlas.Y Pricing</h2>
     <h4>Overview</h4>
     <h5>Table. Atlas.Y Pricing</h5>
+    <img src='https://static.igem.wiki/teams/5503/accompanying-images/entrepreneurship11-1.webp' class='img-table' alt='Entrepreneurship11'>
 
     <h4>Pricing Strategy</h4>
     <p>The chart illustrates a comparison between individual purchase prices and bundled package prices for algorithm
       tools. </p>
+    <img src='https://static.igem.wiki/teams/5503/accompanying-images/entrepreneurship12-1.webp' alt='Entrepreneurship12'>
 
     <p class='tip'>The left chart lists the individual prices for four tools: Protein Localization Prediction System (around €10),
       Optimized Protein Evolution Localization System (around €20), Temporal Dynamic Localization Design System (around
@@ -325,6 +333,7 @@
       "Advanced Functionality Combination" (€20), "Multiple Uses Package" (€35), "All-in-One Package (1 use of each)"
       (€40), and "All-in-One Package (5 uses of each)" (€150). These packages offer significant discounts compared to
       individual purchases, with validity periods ranging from 30 to 365 days.
+      <img src='https://static.igem.wiki/teams/5503/accompanying-images/entrepreneurship13-1.webp' alt='Entrepreneurship13'>
     </p>
     <p class='tip'>This image compares the pricing ranges for various bioinformatics tools used by both individual users and
       enterprise users. Alongside these well-known platforms, our product stands out with a Professional Membership
@@ -336,6 +345,7 @@
       €500 for enterprise users, our platform offers competitive pricing with a robust set of features tailored to
       different user needs, making it a highly attractive option for both small labs and large teams.
     </p>
+    <img src='https://static.igem.wiki/teams/5503/accompanying-images/entrepreneurship14-1.webp' alt='Entrepreneurship14'>
     <p class='tip'>This image shows a bar chart <b>comparing the pricing plans for Professional and Enterprise
       memberships</b>.The Enterprise Annual plan costs approximately €1000, offering a 10-15% discount for annual
       payments.The Enterprise Monthly plan is priced at around €100 per month with no discount for monthly payments.The
@@ -346,6 +356,7 @@
 
     <h1 id='5. Financial Planning'>5. Financial Planning</h1>
     <h2>Market Trend Forecast</h2>
+    <img src='https://static.igem.wiki/teams/5503/accompanying-images/entrepreneurship15-1.webp' alt='Entrepreneurship15'>
     <p>The biotechnology tools market is expected to steadily grow from approximately €150 billion in 2023 to nearly
       €200 billion by 2025, reflecting <span class='bold'>increasing demand</span>. Our chart further breaks down growth
       trends across different market segments: <span class='bold'>subscription models (individual and enterprise) and
@@ -369,6 +380,7 @@
       projected number of actual paying users could be 200-400.</p>
 
     <h2>Revenue Forecast</h2>
+    <img src='https://static.igem.wiki/teams/5503/accompanying-images/entrepreneurship16-1.webp' alt='Entrepreneurship16'>
     <ul>
       <li><span class='bold'>Professional Subscription (€30/month)</span>: Assuming 60% of paying users choose the
         professional version, the annual revenue would be approximately:</li>
@@ -384,7 +396,9 @@
         <li>This is the primary revenue source, indicating that enterprise customers are willing to pay more for premium
           features and services.</li>
       </ul>
-      <li><span class='bold'>Pay-Per-Use (€15/use)</span>: Assuming 30% of users opt for the pay-per-use model, with an average of 5 uses per user per year, the annual revenue would be approximately:</li>
+      <li><span class='bold'>Pay-Per-Use (€15/use)</span>: Assuming 30% of users opt for the pay-per-use model, with an
+        average of 5 uses per user per year, the annual revenue would be approximately:
+      </li>
       <ul>
         <li>60-120 users × €15 × 5 uses = €4,500-€9,000/year.</li>
         <li>While limited in usage, it provides additional income, particularly for occasional users, helping to
@@ -402,9 +416,11 @@
     <h2>Cost Estimation</h2>
     <p><span class='bold'>The total annual cost for the first year</span> is estimated to range between <span class='bold'>
       ¥595,000 and ¥1,219,000 (€76,000 to €156,000).</span></p>
+    <img src='https://static.igem.wiki/teams/5503/accompanying-images/entrepreneurship17-1.webp' alt='Entrepreneurship17'>
 
     <p>Detailed cost analysis is as follows：</p>
     <h5>Table. Detailed cost analysis</h5>
+    <img src='https://static.igem.wiki/teams/5503/accompanying-images/entrepreneurship18-1.webp' class='img-table' alt='Entrepreneurship18'>
 
     <h2>Break-even Analysis</h2>
     <p>We estimated the annual revenue from the global market in euros, with a projected range of <span class='bold'>
@@ -415,6 +431,7 @@
       recent years.</p>
 
     <h3>Break-even Analysis</h3>
+    <img src='https://static.igem.wiki/teams/5503/accompanying-images/entrepreneurship19-1.webp' alt='Entrepreneurship19'>
     <ul>
       <li><span class='bold'>Minimum Revenue vs. Minimum Cost</span>: Minimum revenue is €201,500, and minimum cost is
         €76,000.</li>
@@ -439,6 +456,7 @@
       cost optimization, profit margins will further expand.</p>
 
     <h3>LTV to CAC</h3>
+    <img src='https://static.igem.wiki/teams/5503/accompanying-images/entrepreneurship20-1.webp' alt='Entrepreneurship20'>
     <ol>
       <li>Customer Acquisition Cost (CAC)</li>
       <p>Assumptions:</p>
@@ -487,6 +505,7 @@
 
     <h1 id='6. Future Development'>6. Future Development</h1>
     <h2>Accelerator</h2>
+    <img src='https://static.igem.wiki/teams/5503/accompanying-images/entrepreneurship21-1.webp' alt='Entrepreneurship21'>
     <p>For a startup, support from an <span class='bold'>accelerator</span> is crucial, and we are fortunate to have
       received strong backing from <span class='bold'>Tongji University Entrepreneurship Valley</span>. As a
       world-renowned university, Tongji University offers our project a wealth of resources and a broad platform.
@@ -591,11 +610,13 @@
       <li><span class='bold'>Revenue growth</span>: As the number of customers increases, it is expected that revenue
         will achieve significant growth over 3, 5, and 10 years.</li>
     </ul>
+    <img src='https://static.igem.wiki/teams/5503/accompanying-images/entrepreneurship22-1.webp' alt='Entrepreneurship22'>
     <p>Here is the 3-year, 5-year, and 10-year projection for revenue, cost, and profit, considering both minimum and
       maximum scenarios. The chart illustrates the steady growth in revenue, gradual reduction in costs, and subsequent
       increase in profits over time. </p>
 
     <h2>Risk Consideration and Avoidance</h2>
+    <img src='https://static.igem.wiki/teams/5503/accompanying-images/entrepreneurship23-1.webp' class='img-table' alt='Entrepreneurship23'>
 
     <h3>Political Factors</h3>
     <ul>
@@ -1257,5 +1278,15 @@ bottomText.value = ['<strong>Userprofile</strong> :User information will be pres
 
 .mask-leave-to {
   height: 0;
+}
+
+img.img-table {
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+img {
+  width: 800px;
 }
 </style>
