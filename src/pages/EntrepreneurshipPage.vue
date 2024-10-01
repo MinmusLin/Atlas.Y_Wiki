@@ -92,12 +92,12 @@
     <h2>Target User Profile</h2>
     <div class='container'>
       <div class='user-image' @mouseleave='onMouseLeave'>
-        <TransitionGroup name="list">
+        <TransitionGroup name='list'>
           <img v-for='(img, index) in images' :key='img.alt' :src='img.src' :alt='img.alt'
             @mouseover='swapAndShowText(index)' :class="{ 'image-with-textbox': index === 0 && showTextBox }" />
         </TransitionGroup>
 
-        <Transition name="appear">
+        <Transition name='appear'>
         <div v-if='showTextBox && currentText' class='text-container'>
           <div class='text-content'>
             <p class='text-title'>{{ currentText.title1 }}</p>
@@ -113,13 +113,16 @@
         </Transition>
       </div>
 
-      <div class='bottom-text-box'>
-        <Transition name="mask">
-            <div v-if="showBottomTextMask" class="bottom-text-mask"></div>
+      <div class='bottom-text-box' :class="{'center-text-box': canSwap}">
+        <Transition name='mask'>
+            <div v-if='showBottomTextMask' class='bottom-text-mask'></div>
         </Transition>
-        <ul class='bottom-custom-list'>
-          <li v-for='(item, index) in bottomText' :key='index' v-html='item'></li>
-        </ul>
+          <p
+            v-for='(item, index) in bottomText'
+            :key='index'
+            v-html='item'
+            :class="{'center-text': canSwap}"
+          ></p>
       </div>
     </div>
 
@@ -972,12 +975,14 @@ function resetText() {
   images.splice(0, images.length, ...initialImages)
   currentText.value = null
   showTextBox.value = false
-  bottomText.value = ['<strong>Userprofile</strong>: User information will be presented here. Mouse over the ' +
-  'corresponding image to view the details.']
+  bottomText.value = ['<strong>Userprofile</strong><br>' +
+                      '———————————————————————————<br>' +
+                      'User profile will be presented here.<br>Mouse over the corresponding image to view the details.']
 }
 
-bottomText.value = ['<strong>Userprofile</strong> :User information will be presented here. Mouse over the ' +
-'corresponding image to view the details.']
+bottomText.value = ['<strong>Userprofile</strong><br>' +
+                    '———————————————————————————<br>' +
+                    'User profile will be presented here.<br>Mouse over the corresponding image to view the details.']
 </script>
 
 <style scoped>
@@ -1220,16 +1225,29 @@ bottomText.value = ['<strong>Userprofile</strong> :User information will be pres
   margin-bottom: 5px;
 }
 
+.center-text {
+  text-align: center;
+  font-size: 25px !important;
+  line-height: 2 !important;
+  font-family: 'Inter', sans-serif;
+}
+
+.center-text-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .bottom-text-box {
   width: 100%;
   color: black;
   padding: 10px;
   text-align: left;
-  font-size: 16px;
   margin-top: 10px;
-  height: 320px;
-
+  height: 380px;
   position: relative;
+  font-family: 'Inter', sans-serif;
 }
 
 .bottom-text-mask {
@@ -1244,7 +1262,6 @@ bottomText.value = ['<strong>Userprofile</strong> :User information will be pres
 }
 
 .list-move,
-/* 对移动中的元素应用的过渡 */
 .list-enter-active,
 .list-leave-active {
   transition: all 0.5s ease;
@@ -1255,8 +1272,6 @@ bottomText.value = ['<strong>Userprofile</strong> :User information will be pres
   opacity: 0;
 }
 
-/* 确保将离开的元素从布局流中删除
-  以便能够正确地计算移动的动画。 */
 .list-leave-active {
   position: absolute;
 }
