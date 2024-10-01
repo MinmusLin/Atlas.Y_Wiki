@@ -2,7 +2,7 @@
   <TextContent title='NOTEBOOK' :title-list='[]'>
     <v-timeline align='start'
                 side='end'
-                style='transform: translateX(-14px); margin-top: 30px; margin-bottom: -50px'>
+                style='transform: translateX(-14px); margin-top: 53px; margin-bottom: -50px'>
       <v-timeline-item v-for='(item, index) in items' :key='index' dot-color='#2F62D7' class='timeline-item'>
         <div class='cover-line'/>
         <v-card class='card-container'>

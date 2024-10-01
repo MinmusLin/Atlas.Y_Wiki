@@ -3,7 +3,7 @@
                :title-list="['CYCLE I', 'CYCLE II', 'CYCLE III', 'CYCLE IV', 'CYCLE V']">
     <img src='https://static.igem.wiki/teams/5503/accompanying-images/engineering1-1.webp'
          alt='Engineering1'
-         style='width: 700px; margin-bottom: 50px'>
+         style='width: 700px; margin-bottom: 50px; margin-top: 42px'>
     <h1 id='CYCLE I'>CYCLE I</h1>
     <h3>Design</h3>
     <p>At the beginning of the project, our goal was to <span class='bold'>find effective linkers</span> for fusion

@@ -2,7 +2,7 @@
   <TextContent title='ROSTER' :title-list='[]'>
     <img src='https://static.igem.wiki/teams/5503/team-members/team.webp'
          alt='Team'
-         style='width: 1090px; margin-top: 24px'>
+         style='width: 1090px; margin-top: 62px'>
     <div class='meet-our-team'>Meet our team!</div>
     <div class='tongji-software'>Tongji-Software</div>
     <div style='width: 100%; display: flex; justify-content: center'>

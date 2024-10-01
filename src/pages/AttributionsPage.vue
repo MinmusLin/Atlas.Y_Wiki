@@ -1,7 +1,7 @@
 <template>
   <TextContent title='ATTRIBUTIONS' :title-list='[]'>
     <iframe id='igem-attribution-form'
-            style='width: 100%; border: none; margin-bottom: -23px; margin-top: 7px'
+            style='width: 100%; border: none; margin-bottom: -23px; margin-top: 39px'
             src='https://teams.igem.org/wiki/5503/attributions'/>
   </TextContent>
 </template>
