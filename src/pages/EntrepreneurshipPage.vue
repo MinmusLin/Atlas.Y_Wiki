@@ -474,7 +474,8 @@
         minimum profit: €201,500 − €156,000 = <span class='bold'>€45,500</span></li>
       <ul>
         <li>Even in the case of minimum revenue and maximum costs, the company would still achieve a profit of €45,500,
-          with a profit margin of 81.4%.</li>
+          with a profit margin of 81.4%.
+        </li>
       </ul>
     </ul>
     <p>Given the current revenue and cost structure, the company is already profitable, and with increased revenue and
@@ -531,37 +532,33 @@
          alt='Entrepreneurship21'
          style='width: 700px'>
     <div class='scroll-container'>
-      <p>For a startup, support from an <span class='bold'>accelerator</span> is crucial, and we are fortunate to have
-        received strong backing from <span class='bold'>Tongji University Entrepreneurship Valley</span>. As a
-        world-renowned university, Tongji University offers our project a wealth of resources and a broad platform.
-        Entrepreneurship Valley not only provides us with office space and entrepreneurial training, but also connects
-        us
-        with potential investors, corporate clients, and technical experts through its extensive alumni network and
-        cooperative resources. This support has not only accelerated our project progress, but has also enabled us to
-        engage in deep discussions with industry leaders at an early stage, gaining critical market and technical
-        feedback.</p>
-      <p>As one of China's leading university incubators, Tongji University Entrepreneurship Valley has
-        <span class='bold'>a comprehensive acceleration service system</span>, offering full support to our project,
-        from
-        business model optimization, fundraising guidance, to marketing strategies. Particularly in the early stages of
-        financing planning, business model validation, and market strategy formulation, the expert team at
-        Entrepreneurship Valley has provided valuable advice, helping us identify our market position and clarify our
-        development path in a highly competitive environment.</p>
-      <p>With the support of Tongji Entrepreneurship Valley, we are able to efficiently access market information and
-        quickly connect with policy support and industry resources. For instance, through connections with government
-        bodies and industry associations, we can prioritize participation in various innovation and cooperation projects
-        within the biotechnology sector. This has not only accelerated our commercialization process but has also
-        enhanced
-        our influence in the bioinformatics industry.</p>
-      <p>In August 2024, we officially joined the Tongji University Entrepreneurship Valley incubation base. With the
-        support of Tongji Entrepreneurship Valley, we are more confident that the Atlas.Y project will achieve
-        significant
-        breakthroughs in the biotechnology field and gradually reach global markets. Entrepreneurship Valley has not
-        only
-        provided us with resources and networks, but also revealed broader opportunities for future development. Through
-        this accelerator platform, we will continue to innovate and drive the project towards higher levels of
-        commercial
-        success and social impact.</p>
+      <div class='scroll-text-container'>
+        <p>For a startup, support from an <span class='bold'>accelerator</span> is crucial, and we are fortunate to have
+          received strong backing from <span class='bold'>Tongji University Entrepreneurship Valley</span>. As a
+          world-renowned university, Tongji University offers our project a wealth of resources and a broad platform.
+          Entrepreneurship Valley not only provides us with office space and entrepreneurial training, but also connects
+          us with potential investors, corporate clients, and technical experts through its extensive alumni network and
+          cooperative resources. This support has not only accelerated our project progress, but has also enabled us to
+          engage in deep discussions with industry leaders at an early stage, gaining critical market and technical
+          feedback.</p>
+        <p>As one of China's leading university incubators, Tongji University Entrepreneurship Valley has
+          <span class='bold'>a comprehensive acceleration service system</span>, offering full support to our project,
+          from business model optimization, fundraising guidance, to marketing strategies. Particularly in the early
+          stages of financing planning, business model validation, and market strategy formulation, the expert team at
+          Entrepreneurship Valley has provided valuable advice, helping us identify our market position and clarify our
+          development path in a highly competitive environment.</p>
+        <p>With the support of Tongji Entrepreneurship Valley, we are able to efficiently access market information and
+          quickly connect with policy support and industry resources. For instance, through connections with government
+          bodies and industry associations, we can prioritize participation in various innovation and cooperation
+          projects within the biotechnology sector. This has not only accelerated our commercialization process but has
+          also enhanced our influence in the bioinformatics industry.</p>
+        <p>In August 2024, we officially joined the Tongji University Entrepreneurship Valley incubation base. With the
+          support of Tongji Entrepreneurship Valley, we are more confident that the Atlas.Y project will achieve
+          significant breakthroughs in the biotechnology field and gradually reach global markets. Entrepreneurship
+          Valley has not only provided us with resources and networks, but also revealed broader opportunities for
+          future development. Through this accelerator platform, we will continue to innovate and drive the project
+          towards higher levels of commercial success and social impact.</p>
+      </div>
     </div>
     <h2>Strategies for Sustained Revenue Growth</h2>
     <h4>Membership Upgrade Strategy:</h4>
@@ -1231,32 +1228,39 @@ h5 {
 .scroll-container {
   border-radius: 10px;
   border: 4px #FFCA31 solid;
-  padding: 10px 30px;
-  background: #FFF7C8;
-  height: 500px;
-  overflow-y: scroll;
+  background-color: #FFF7C8;
+  height: 250px;
   margin-top: 50px;
   margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.scroll-container p {
+.scroll-text-container {
+  padding: 0 30px;
+  max-height: 90%;
+  overflow-y: auto;
+}
+
+.scroll-text-container p {
   font-size: 16px;
+  line-height: 1.7;
 }
 
-.scroll-container span {
+.scroll-text-container span {
   font-size: 16px;
+  line-height: 1.7;
 }
 
-.scroll-container::-webkit-scrollbar {
+.scroll-text-container::-webkit-scrollbar {
+  background: #FFF7C8;
   width: 8px;
+  border-radius: 4px;
 }
 
-.scroll-container::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-.scroll-container::-webkit-scrollbar-thumb {
-  background: #AAC7F9;
+.scroll-text-container::-webkit-scrollbar-thumb {
+  background: #FFE26A;
   border-radius: 4px;
 }
 
