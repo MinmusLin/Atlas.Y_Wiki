@@ -10,19 +10,19 @@
             {{ item.title }}
           </v-card-title>
           <v-card-text style='border: 4px #2F62D7 solid; background-color: #F6F9FF; padding: 10px 25px'>
-            <p style='font-weight: bold'>Algorithm:</p>
+            <p style='font-weight: bold' v-if='item.algorithm.length!=0'>Algorithm:</p>
             <ul>
               <li v-for='e in item.algorithm' style='margin-left: 2px'>{{ e }}</li>
             </ul>
-            <p style='font-weight: bold'>Software:</p>
+            <p style='font-weight: bold' v-if='item.software.length!=0'>Software:</p>
             <ul>
               <li v-for='e in item.software' style='margin-left: 2px'>{{ e }}</li>
             </ul>
-            <p style='font-weight: bold'>Art Design:</p>
+            <p style='font-weight: bold' v-if='item.design.length!=0'>Art Design:</p>
             <ul>
               <li v-for='e in item.design' style='margin-left: 2px'>{{ e }}</li>
             </ul>
-            <p style='font-weight: bold'>Human Practices:</p>
+            <p style='font-weight: bold' v-if='item.hp.length!=0'>Human Practices:</p>
             <ul>
               <li v-for='e in item.hp' style='margin-left: 2px'>{{ e }}</li>
             </ul>
