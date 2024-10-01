@@ -141,15 +141,17 @@
     <p>In biopharmaceutical or industrial fermentation processes, companies optimize production processes before scaling
       up. At this stage, it is crucial to ensure that the subcellular localization of key enzymes is optimal.</p>
     <h2>Business Model Exchange and Learning</h2>
-    <img src='https://static.igem.wiki/teams/5503/accompanying-images/entrepreneurship5-1.webp' alt='Entrepreneurship5'>
-    <p class='tip'>YanIn Technology is a high-tech company focused on providing digital platforms for the
-      biopharmaceutical field, offering comprehensive digital solutions related to genomics, proteomics, and synthetic
-      biology. The company is dedicated to enhancing the efficiency and accuracy of biopharmaceutical research through
-      advanced algorithms, artificial intelligence, and big data processing, helping research institutions and
-      enterprises achieve breakthrough progress in digital transformation. In this interview regarding business models,
-      we conducted an in-depth discussion on the technical feasibility, market demand, application prospects, revenue
-      model, and promotion strategies for Atlas.Y. Based on our project situation, we developed a corresponding
-      commercialization plan.
+    <img src='https://static.igem.wiki/teams/5503/accompanying-images/entrepreneurship5-1.webp'
+         alt='Entrepreneurship5'
+         style='width: 700px'>
+    <p class='tip' style='text-align: center'>YanIn Technology is a high-tech company focused on providing digital
+      platforms for the biopharmaceutical field, offering comprehensive digital solutions related to genomics,
+      proteomics, and synthetic biology. The company is dedicated to enhancing the efficiency and accuracy of
+      biopharmaceutical research through advanced algorithms, artificial intelligence, and big data processing, helping
+      research institutions and enterprises achieve breakthrough progress in digital transformation. In this interview
+      regarding business models, we conducted an in-depth discussion on the technical feasibility, market demand,
+      application prospects, revenue model, and promotion strategies for Atlas.Y. Based on our project situation, we
+      developed a corresponding commercialization plan.
     </p>
     <h5>Table. Interview Transcripts with YanIn</h5>
     <img src='https://static.igem.wiki/teams/5503/accompanying-images/entrepreneurship6-1.webp'
@@ -169,7 +171,7 @@
       diverse needs of users, enhance user engagement, and create lasting value for the company.</p>
     <blockquote>
       <span class='bold'>SHEEL</span> typically refers to the five core dimensions involved in technical projects:
-      <span class='bold'>Social, Health, Environmental, Ethical, and Legal considerations.</span> Each dimension is
+      <span class='bold'>Social, Health, Environmental, Ethical, and Legal considerations</span>. Each dimension is
       closely related to the project's social responsibility, health impact, environmental sustainability, ethical
       compliance, and legal risks during technical development and application.
     </blockquote>
@@ -305,7 +307,9 @@
       features. For large research institutions and companies, enterprise subscription models provide advanced
       functionalities and team collaboration tools, with higher pricing, meeting the needs of data security and
       high-performance computing.</p>
-    <img src='https://static.igem.wiki/teams/5503/accompanying-images/entrepreneurship9-1.webp' alt='Entrepreneurship9'>
+    <img src='https://static.igem.wiki/teams/5503/accompanying-images/entrepreneurship9-1.webp'
+         alt='Entrepreneurship9'
+         style='width: 700px'>
     <p>This chart presents the pricing ranges of key bioinformatics tools, covering subscription models, pay-per-use
       options, and enterprise-level subscription plans. The price ranges span from €49 (e.g., Geneious basic
       subscription) to €500 (e.g., Schrödinger Enterprise edition). Different colors distinguish the products, visually
@@ -326,14 +330,14 @@
       tools.</p>
     <img src='https://static.igem.wiki/teams/5503/accompanying-images/entrepreneurship12-1.webp'
          alt='Entrepreneurship12'>
-    <p class='tip'>The left chart lists the individual prices for four tools: Protein Localization Prediction System
-      (around €10), Optimized Protein Evolution Localization System (around €20), Temporal Dynamic Localization Design
-      System (around €15), and Site-Specific CAD Scoring System (around €7).
+    <p class='tip'>The left chart lists the <strong>individual prices for four tools</strong>: Protein Localization
+      Prediction System (around €10), Optimized Protein Evolution Localization System (around €20), Temporal Dynamic
+      Localization Design System (around €15), and Site-Specific CAD Scoring System (around €7).
     </p>
-    <p class='tip'>The right chart shows the prices for five different packages, including the "Common Combination"
-      (€15), "Advanced Functionality Combination" (€20), "Multiple Uses Package" (€35), "All-in-One Package (1 use of
-      each)" (€40), and "All-in-One Package (5 uses of each)" (€150). These packages offer significant discounts
-      compared to individual purchases, with validity periods ranging from 30 to 365 days.
+    <p class='tip'>The right chart shows the <strong>prices for five different packages</strong>, including the "Common
+      Combination" (€15), "Advanced Functionality Combination" (€20), "Multiple Uses Package" (€35), "All-in-One Package
+      (1 use of each)" (€40), and "All-in-One Package (5 uses of each)" (€150). These packages offer significant
+      discounts compared to individual purchases, with validity periods ranging from 30 to 365 days.
       <img src='https://static.igem.wiki/teams/5503/accompanying-images/entrepreneurship13-1.webp'
            alt='Entrepreneurship13'>
     </p>
@@ -348,19 +352,21 @@
       different user needs, making it a highly attractive option for both small labs and large teams.
     </p>
     <img src='https://static.igem.wiki/teams/5503/accompanying-images/entrepreneurship14-1.webp'
-         alt='Entrepreneurship14'>
-    <p class='tip'>This image shows a bar chart <b>comparing the pricing plans for Professional and Enterprise
-      memberships</b>.The Enterprise Annual plan costs approximately €1000, offering a 10-15% discount for annual
+         alt='Entrepreneurship14'
+         style='width: 700px'>
+    <p class='tip'>This image shows a bar chart <strong>comparing the pricing plans for Professional and Enterprise
+      memberships</strong>.The Enterprise Annual plan costs approximately €1000, offering a 10-15% discount for annual
       payments.The Enterprise Monthly plan is priced at around €100 per month with no discount for monthly payments.The
       Professional Annual plan costs €300, saving users the cost of two months compared to monthly payments.The
       Professional Monthly plan is priced at €30 per month with no discount for monthly payments.The chart highlights
-      the <b>potential savings of opting for annual subscriptions over monthly ones</b>.
+      the <strong>potential savings of opting for annual subscriptions over monthly ones</strong>.
     </p>
 
     <h1 id='Financial Planning'>Financial Planning</h1>
     <h2>Market Trend Forecast</h2>
     <img src='https://static.igem.wiki/teams/5503/accompanying-images/entrepreneurship15-1.webp'
-         alt='Entrepreneurship15'>
+         alt='Entrepreneurship15'
+         style='width: 700px'>
     <p>The biotechnology tools market is expected to steadily grow from approximately €150 billion in 2023 to nearly
       €200 billion by 2025, reflecting <span class='bold'>increasing demand</span>. Our chart further breaks down growth
       trends across different market segments: <span class='bold'>subscription models (individual and enterprise) and
@@ -383,7 +389,8 @@
       users, the projected number of actual paying users could be 200-400.</p>
     <h2>Revenue Forecast</h2>
     <img src='https://static.igem.wiki/teams/5503/accompanying-images/entrepreneurship16-1.webp'
-         alt='Entrepreneurship16'>
+         alt='Entrepreneurship16'
+         style='width: 700px'>
     <ul>
       <li><span class='bold'>Professional Subscription (€30/month)</span>: Assuming 60% of paying users choose the
         professional version, the annual revenue would be approximately:
@@ -423,9 +430,10 @@
       flexibility and diversity to the overall income.</p>
     <h2>Cost Estimation</h2>
     <p><span class='bold'>The total annual cost for the first year</span> is estimated to range between
-      <span class='bold'>¥595,000 and ¥1,219,000 (€76,000 to €156,000).</span></p>
+      <span class='bold'>¥595,000 and ¥1,219,000 (€76,000 to €156,000)</span>.</p>
     <img src='https://static.igem.wiki/teams/5503/accompanying-images/entrepreneurship17-1.webp'
-         alt='Entrepreneurship17'>
+         alt='Entrepreneurship17'
+         style='width: 700px'>
     <p>Detailed cost analysis is as follows:</p>
     <h5>Table. Detailed cost analysis</h5>
     <img src='https://static.igem.wiki/teams/5503/accompanying-images/entrepreneurship18-1.webp'
@@ -434,13 +442,14 @@
     <h2>Break-even Analysis</h2>
     <p>We estimated the annual revenue from the global market in euros, with a projected range of <span class='bold'>
       €201,500 to €408,000</span>. Considering the company operates in China, costs are calculated in RMB, with a total
-      annual cost range of <span class='bold'>€76,000 to €156,000 (converted to euros).</span> The revenue vs. cost
+      annual cost range of <span class='bold'>€76,000 to €156,000 (converted to euros)</span>. The revenue vs. cost
       comparison chart illustrates the company's financial structure, showing that even in the most conservative
       scenario, revenues exceed costs, demonstrating profitability. We also expect the first year's costs to be the
       highest in recent years.</p>
     <h3>Break-even Analysis</h3>
     <img src='https://static.igem.wiki/teams/5503/accompanying-images/entrepreneurship19-1.webp'
-         alt='Entrepreneurship19'>
+         alt='Entrepreneurship19'
+         style='width: 700px'>
     <ul>
       <li><span class='bold'>Minimum Revenue vs. Minimum Cost</span>: Minimum revenue is €201,500, and minimum cost is
         €76,000.
@@ -464,55 +473,55 @@
       cost optimization, profit margins will further expand.</p>
     <h3>LTV to CAC</h3>
     <img src='https://static.igem.wiki/teams/5503/accompanying-images/entrepreneurship20-1.webp'
-         alt='Entrepreneurship20'>
-    <ol>
-      <li>Customer Acquisition Cost (CAC)</li>
-      <p>Assumptions:</p>
-      <ul>
-        <li>Total Sales and Marketing Expenses: 80,000 RMB</li>
-        <li>New Customers: 300</li>
-      </ul>
-      <p>CAC Formula:</p>
-      <p>CAC = Total Sales and Marketing Expenses / New Customers = 80,000 / 300 = 266.67 RMB</p>
-      <p>To convert to Euros:</p>
-      <p>CAC = 266.67 RMB / 7.8 = 34.19 EUR</p>
-      <p>The Customer Acquisition Cost (CAC) is €34.19.</p>
-      <p>This represents the amount you spend on average to acquire one customer.</p>
-      <li>Customer Lifetime Value (LTV)</li>
-      <p>Assumptions:</p>
-      <ul>
-        <li>Average Annual Revenue per Customer: 500 RMB</li>
-        <li>Customer Lifetime: 3 years</li>
-        <li>Annual Maintenance Cost: 100 RMB</li>
-      </ul>
-      <p>LTV Formula:</p>
-      <p>LTV = (Average Annual Revenue × Customer Lifetime) - Maintenance Cost</p>
-      <p>Convert the revenue and cost to Euros:</p>
-      <p>LTV = (500 RMB / 7.8 × 3) - 100 RMB / 7.8 = (64.10 EUR × 3) - 12.82 EUR = 192.30 EUR - 12.82 EUR = 179.48
-        EUR</p>
-      <p>The Customer Lifetime Value (LTV) is €179.48.</p>
-      <p>This represents the total revenue generated from a customer over their lifetime minus the maintenance cost.</p>
-      <li>LTV to CAC Ratio</li>
-      <p>The LTV/CAC ratio is an important metric that helps determine the efficiency of customer acquisition:</p>
-      <p>LTV/CAC = LTV / CAC = 179.48 / 34.19 = 5.25</p>
-      <ul>
-        <li>A LTV/CAC ratio of 5.25 indicates that for every €1 spent on acquiring a customer, the business generates
-          €5.25 in customer lifetime value.
-        </li>
-        <li>Ideal Ratio: Generally, an LTV/CAC ratio above 3 is considered healthy and shows strong profitability. In
-          this case, the ratio of 5.25 suggests a highly efficient acquisition strategy and strong long-term
-          profitability from each customer.
-        </li>
-      </ul>
-      <p>Given the strong LTV/CAC ratio, the company can consider scaling its marketing and sales efforts to acquire
-        more customers, as the cost of acquisition is significantly lower than the value each customer brings over their
-        lifetime.</p>
-    </ol>
+         alt='Entrepreneurship20'
+         style='width: 700px'>
+    <h4>Customer Acquisition Cost (CAC)</h4>
+    <p>Assumptions:</p>
+    <ul>
+      <li>Total Sales and Marketing Expenses: 80,000 RMB</li>
+      <li>New Customers: 300</li>
+    </ul>
+    <p>CAC Formula:</p>
+    <p>CAC = Total Sales and Marketing Expenses / New Customers = 80,000 / 300 = 266.67 RMB</p>
+    <p>To convert to Euros:</p>
+    <p>CAC = 266.67 RMB / 7.8 = 34.19 EUR</p>
+    <p>The Customer Acquisition Cost (CAC) is €34.19.</p>
+    <p>This represents the amount you spend on average to acquire one customer.</p>
+    <h4>Customer Lifetime Value (LTV)</h4>
+    <p>Assumptions:</p>
+    <ul>
+      <li>Average Annual Revenue per Customer: 500 RMB</li>
+      <li>Customer Lifetime: 3 years</li>
+      <li>Annual Maintenance Cost: 100 RMB</li>
+    </ul>
+    <p>LTV Formula:</p>
+    <p>LTV = (Average Annual Revenue × Customer Lifetime) - Maintenance Cost</p>
+    <p>Convert the revenue and cost to Euros:</p>
+    <p>LTV = (500 RMB / 7.8 × 3) - 100 RMB / 7.8 = (64.10 EUR × 3) - 12.82 EUR = 192.30 EUR - 12.82 EUR = 179.48
+      EUR</p>
+    <p>The Customer Lifetime Value (LTV) is €179.48.</p>
+    <p>This represents the total revenue generated from a customer over their lifetime minus the maintenance cost.</p>
+    <h4>LTV to CAC Ratio</h4>
+    <p>The LTV/CAC ratio is an important metric that helps determine the efficiency of customer acquisition:</p>
+    <p>LTV/CAC = LTV / CAC = 179.48 / 34.19 = 5.25</p>
+    <ul>
+      <li>A LTV/CAC ratio of 5.25 indicates that for every €1 spent on acquiring a customer, the business generates
+        €5.25 in customer lifetime value.
+      </li>
+      <li>Ideal Ratio: Generally, an LTV/CAC ratio above 3 is considered healthy and shows strong profitability. In
+        this case, the ratio of 5.25 suggests a highly efficient acquisition strategy and strong long-term
+        profitability from each customer.
+      </li>
+    </ul>
+    <p>Given the strong LTV/CAC ratio, the company can consider scaling its marketing and sales efforts to acquire
+      more customers, as the cost of acquisition is significantly lower than the value each customer brings over their
+      lifetime.</p>
 
     <h1 id='Future Development'>Future Development</h1>
     <h2>Accelerator</h2>
     <img src='https://static.igem.wiki/teams/5503/accompanying-images/entrepreneurship21-1.webp'
-         alt='Entrepreneurship21'>
+         alt='Entrepreneurship21'
+         style='width: 700px'>
     <p>For a startup, support from an <span class='bold'>accelerator</span> is crucial, and we are fortunate to have
       received strong backing from <span class='bold'>Tongji University Entrepreneurship Valley</span>. As a
       world-renowned university, Tongji University offers our project a wealth of resources and a broad platform.
@@ -1296,5 +1305,9 @@ img {
 
 .fade-leave-to {
   opacity: 0;
+}
+
+h5 {
+  margin-top: 30px;
 }
 </style>
