@@ -1,3 +1,4 @@
+<!--suppress HtmlUnknownTag-->
 <template>
   <TextContent title='ENTREPRENEURSHIP'
                :title-list="['Overview', 'Business Model Canvas', 'Market', 'Profit Model Design', 'Competitor Analysis and Product Pricing', 'Financial Planning', 'Future Development']">
