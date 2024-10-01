@@ -11,7 +11,6 @@
 
     <div class='EPIC'>
       <img src='https://static.igem.wiki/teams/5503/design-materials/greyline.webp' class='grey-line' alt='GreyLine'>
-
       <div class='circle circle1'
            :class='{ active: activeCircle == 0 }'
            @mouseover='showText(0)'
@@ -64,7 +63,6 @@
         04
       </div>
 
-      <!-- 文本框显示 -->
       <div v-if='activeBox == 0' class='text-box text-box-right-top' v-html='textContents[0]'></div>
       <div v-if='activeBox == 1' class='text-box text-box-left-top' v-html='textContents[1]'></div>
       <div v-if='activeBox == 2' class='text-box text-box-right-bottom' v-html='textContents[2]'></div>
@@ -91,6 +89,38 @@
     <h1 id='2. Market'>2. Market</h1>
 
     <h2>Target User Profile</h2>
+    <div class='container'>
+      <div class='user-image' @mouseleave='onMouseLeave'>
+        <img
+          v-for='(img, index) in images'
+          :key='img.alt'
+          :src='img.src'
+          :alt='img.alt'
+          @mouseover='swapAndShowText(index)'
+          :class="{ 'image-with-textbox': index === 0 && showTextBox }"
+        />
+
+        <div v-if='showTextBox && currentText' class='text-container'>
+          <div class='text-content'>
+            <p class='text-title'>{{ currentText.title1 }}</p>
+            <ul class='custom-list'>
+              <li v-for='(item, index) in currentText.ul1' :key='index' v-html='item'></li>
+            </ul>
+            <p class='text-title2'>{{ currentText.title2 }}</p>
+            <ul class='custom-list'>
+              <li v-for='(item, index) in currentText.ul2' :key='index' v-html='item'></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class='bottom-text-box'>
+        <ul class='bottom-custom-list'>
+          <li v-for='(item, index) in bottomText' :key='index' v-html='item'></li>
+        </ul>
+      </div>
+    </div>
+
     <h2>Timing of Demand</h2>
     <h4>Project Planning and Experimental Design Phase</h4>
     <p>During the planning and design phase of a research project, researchers need to determine the subcellular
@@ -112,14 +142,14 @@
       artificial intelligence, and big data processing, helping research institutions and enterprises achieve
       breakthrough progress in digital transformation. In this interview regarding business models, we conducted an
       in-depth discussion on the technical feasibility, market demand, application prospects, revenue model, and
-      promotion strategies for Atlas. Based on our project situation, we developed a corresponding commercialization
+      promotion strategies for Atlas.Y. Based on our project situation, we developed a corresponding commercialization
       plan.
     </p>
 
     <h5>Table. Interview Transcripts with YanIn</h5>
 
     <p>Through the interview, we further validated the <span class='bold'>market demand</span> and <span class='bold'>
-      technical feasibility</span> of the Atlas software, and <span class='bold'>adjusted design measures</span> based
+      technical feasibility</span> of the Atlas.Y software, and <span class='bold'>adjusted design measures</span> based
       on the business advice received. Moving forward, we will continue to deepen our presence in the enterprise user
       market, enhance product features, and ensure the project’s sustainable development through flexible profit models
       and marketing strategies.</p>
@@ -137,7 +167,6 @@
       related to the project's social responsibility, health impact, environmental sustainability, ethical compliance,
       and legal risks during technical development and application.
     </blockquote>
-
 
     <h2>Algorithm Store</h2>
     <p>The algorithms offered in the <span class='bold'>algorithm store</span> can be purchased on demand by users to
@@ -207,14 +236,14 @@
     <h4>Purpose and Alignment with Human Practices</h4>
     <p>The <span class=bold>academic discount</span> initiative aims to make advanced bioinformatics tools accessible to
       researchers and educational institutions that may face budget constraints. By offering significant discounts, the
-      Atlas platform not only promotes research but also aligns with core values of <span
+      Atlas.Y platform not only promotes research but also aligns with core values of <span
         class='bold'>social equity</span> and <span class='bold'>inclusivity</span>. Providing affordable access to
       cutting-edge technologies helps academic users advance their work in life sciences, public health, and
       environmental studies, thereby contributing to the common good.</p>
     <p>This initiative supports the <span class=bold>Integrated Human Practices</span> philosophy by ensuring that
       knowledge and technology are not limited to commercial entities but are accessible to educational and research
       institutions that work for the betterment of society. By enabling more research on issues such as sustainability,
-      global health, and environmental protection, the Atlas platform contributes to long-term societal benefits.</p>
+      global health, and environmental protection, the Atlas.Y platform contributes to long-term societal benefits.</p>
 
     <h4>Academic Discount and Technology Transfer</h4>
     <p>The <span class=bold>academic discount</span> is structured to provide up to <span class=bold>50% off</span> for
@@ -226,9 +255,9 @@
         conduct more research on <span class=bold>socially relevant issues</span> like climate change, public health,
         and biotechnological advancements, which have far-reaching benefits for society.
       </li>
-      <li><span class=bold>Technology Transfer</span>: In addition to discounts, Atlas promotes the <span class=bold>
+      <li><span class=bold>Technology Transfer</span>: In addition to discounts, Atlas.Y promotes the <span class=bold>
         transfer of technology</span> from research institutions to industry. By facilitating partnerships between
-        academic researchers and commercial entities, Atlas enables the commercialization of breakthrough innovations
+        academic researchers and commercial entities, Atlas.Y enables the commercialization of breakthrough innovations
         that emerge from academic research. This model fosters collaboration, ensuring that socially beneficial
         technologies, such as sustainable agricultural methods or medical innovations, reach broader markets.
       </li>
@@ -240,13 +269,13 @@
     </ul>
 
     <h4>Social Care and Sustainability</h4>
-    <p>By offering academic discounts and focusing on technology transfer, the Atlas platform embodies a commitment to
+    <p>By offering academic discounts and focusing on technology transfer, the Atlas.Y platform embodies a commitment to
       <span class=bold>social responsibility</span>. This approach ensures that advancements in technology are not just
       commercialized but are also shared with the broader academic community, which often drives research for societal
       improvement.</p>
     <ul>
       <li><span class=bold>Sustainability and Social Impact</span>: Discounts enable researchers to contribute to
-        sustainability initiatives, fostering projects that aim to reduce environmental impact. Atlas helps bridge the
+        sustainability initiatives, fostering projects that aim to reduce environmental impact. Atlas.Y helps bridge the
         gap between <span class=bold>academic research</span> and <span class=bold>real-world applications</span>,
         empowering researchers to bring innovative, sustainable solutions to life.
       </li>
@@ -279,9 +308,9 @@
 
     <h2>SWOT Analysis</h2>
 
-    <h2>Atlas Pricing</h2>
+    <h2>Atlas.Y Pricing</h2>
     <h4>Overview</h4>
-    <h5>Table. Atlas Pricing</h5>
+    <h5>Table. Atlas.Y Pricing</h5>
 
     <h4>Pricing Strategy</h4>
     <p>The chart illustrates a comparison between individual purchase prices and bundled package prices for algorithm
@@ -477,7 +506,7 @@
       within the biotechnology sector. This has not only accelerated our commercialization process but has also enhanced
       our influence in the bioinformatics industry.</p>
     <p>In August 2024, we officially joined the Tongji University Entrepreneurship Valley incubation base. With the
-      support of Tongji Entrepreneurship Valley, we are more confident that the Atlas project will achieve significant
+      support of Tongji Entrepreneurship Valley, we are more confident that the Atlas.Y project will achieve significant
       breakthroughs in the biotechnology field and gradually reach global markets. Entrepreneurship Valley has not only
       provided us with resources and networks, but also revealed broader opportunities for future development. Through
       this accelerator platform, we will continue to innovate and drive the project towards higher levels of commercial
@@ -550,7 +579,9 @@
       multiple tool or service combinations, thereby increasing overall purchase intent.</p>
 
     <h2>Stage Forecast</h2>
-    <p>Assuming that the number of customers and market share will gradually increase, while also considering that the costs are higher in the first year and will decrease over time, and the revenue will gradually grow. We made the following assumptions for the projection:</p>
+    <p>Assuming that the number of customers and market share will gradually increase, while also considering that the
+      costs are higher in the first year and will decrease over time, and the revenue will gradually grow. We made the
+      following assumptions for the projection:</p>
     <ul>
       <li><span class='bold'>Customer growth</span>: Assuming an annual growth rate of 10%-15%, starting from the first
         year with 200-400 paying users, and gradually increasing.</li>
@@ -671,34 +702,34 @@
 
     <h2>Future</h2>
 
-    <p>The Atlas software we have developed is a molecular tag design tool for optimizing subcellular localization of
+    <p>The Atlas.Y software we have developed is a molecular tag design tool for optimizing subcellular localization of
       yeast enzymes, and it has already demonstrated immense potential in the fields of biotechnology and synthetic
-      biology. Looking ahead, Atlas will not only become an essential tool for researchers but also propel global
+      biology. Looking ahead, Atlas.Y will not only become an essential tool for researchers but also propel global
       biomanufacturing technology towards a more efficient and precise future.</p>
-    <p>As the biopharmaceutical and synthetic biology markets continue to thrive, the commercial value of Atlas will
+    <p>As the biopharmaceutical and synthetic biology markets continue to thrive, the commercial value of Atlas.Y will
       keep rising. There is a strong demand from enterprise users for precise and efficient bioinformatics tools. With
-      its self-developed optimization algorithms and databases, Atlas can offer seamless solutions across
-      biopharmaceuticals, gene editing, and fermentation engineering. In the future, we plan to expand Atlas’s
+      its self-developed optimization algorithms and databases, Atlas.Y can offer seamless solutions across
+      biopharmaceuticals, gene editing, and fermentation engineering. In the future, we plan to expand Atlas.Y’s
       application scenarios, serving not only academic institutions and corporate laboratories but also the entire
-      biopharmaceutical production chain, from drug development to industrial manufacturing, where Atlas could play a
+      biopharmaceutical production chain, from drug development to industrial manufacturing, where Atlas.Y could play a
       critical role.</p>
-    <p>We envision that through customized services and big data integration, Atlas will become a leader in the global
+    <p>We envision that through customized services and big data integration, Atlas.Y will become a leader in the global
       bioinformatics market, offering more value-added services to enterprise users. This will create diverse revenue
       streams, such as data services, integrated experimental workflows, and modular solutions. Building on
-      collaborations with industry leaders like GenScript, Atlas will continuously evolve to become a vital part of the
+      collaborations with industry leaders like GenScript, Atlas.Y will continuously evolve to become a vital part of the
       platform ecosystem, gaining broader market share through ongoing optimization and innovation.</p>
-    <p>From a societal perspective, the commercialization of Atlas not only drives innovation in the bioinformatics
+    <p>From a societal perspective, the commercialization of Atlas.Y not only drives innovation in the bioinformatics
       field but also has far-reaching positive impacts. Against the backdrop of the rise of synthetic biology and
-      personalized medicine, Atlas can help improve drug development efficiency and shorten the biopharmaceutical cycle,
+      personalized medicine, Atlas.Y can help improve drug development efficiency and shorten the biopharmaceutical cycle,
       thereby accelerating the development and application of new drugs. This will greatly enhance the accessibility of
       medical resources, enabling more patients worldwide to benefit from advanced treatments and ultimately
       contributing to improved global health outcomes.</p>
-    <p>Additionally, with the increasing focus on sustainable development worldwide, Atlas can play a role in areas such
+    <p>Additionally, with the increasing focus on sustainable development worldwide, Atlas.Y can play a role in areas such
       as biofuels and green chemistry, by precisely optimizing biosynthetic pathways, reducing energy consumption, and
       minimizing the use of chemical reagents, thus promoting the widespread adoption of environmentally friendly
-      production methods. We believe that Atlas is not just a software tool; it will become a driving force for the
+      production methods. We believe that Atlas.Y is not just a software tool; it will become a driving force for the
       future green economy and the biotechnology revolution.</p>
-    <p>We are confident that Atlas will become an indispensable digital tool in the global biotechnology field, helping
+    <p>We are confident that Atlas.Y will become an indispensable digital tool in the global biotechnology field, helping
       more companies and research institutions achieve digital transformation in biotechnology, and advancing the
       development of global biopharmaceuticals and the green economy.</p>
   </TextContent>
@@ -706,7 +737,7 @@
 
 <script setup lang='ts'>
 import TextContent from '@/components/TextContent.vue'
-import { ref } from 'vue'
+import {ref, reactive} from 'vue'
 
 const activeCircle = ref<number | null>(-1)
 const activeBox = ref<number | null>(null)
@@ -763,6 +794,162 @@ const hideText = () => {
   activeBox.value = null
   activeCircle.value = null
 }
+
+interface ImageText {
+  title1: string
+  ul1: string[]
+  title2: string
+  ul2: string[]
+  bottomText: string[]
+}
+
+interface Image {
+  src: string
+  alt: string
+  text: ImageText
+}
+
+const initialImages: Image[] = [
+  {
+    src: 'https://static.igem.wiki/teams/5503/accompanying-images/entrepreneurship2-1.webp',
+    alt: 'YAO',
+    text: {
+      title1: 'User Persona:Business Individuals',
+      ul1: ['<strong>Interests</strong>: Emerging technologies such as synthetic biology, enzyme optimization, and ' +
+      'protein localization. They are highly interested in cost control and improving production efficiency.',
+            '<strong>Typical Scenarios</strong>: They are currently developing or optimizing biotechnology products, ' +
+            'utilizing enzyme localization technologies to enhance product output and quality. They need to solve ' +
+            'real-world issues related to production efficiency, cost management, and resource management.',
+            '<strong>Behavior</strong>: They frequently seek innovative solutions that can improve production efficiency' +
+            'and reduce costs. They stay actively informed about cutting-edge technologies and use software tools to ' +
+            'design and optimize molecular tags to enhance production precision.'],
+      title2: 'User Insights:Business Individuals',
+      ul2: ['<strong>Pain Points</strong>: The difficulty in selecting molecular tags (70.5%) complicates the production ' +
+            'process. Stability issues during production impact product quality and yield (66.91%).',
+            '<strong>Existing Solutions</strong>: They currently use basic molecular tags and localization tools but are ' +
+            'often dissatisfied due to the complexity of the operation or inconsistent results.',
+             '<strong>Emotional Expectations</strong>: They desire tools that are simple and intuitive yet highly flexible,' +
+            'significantly reducing complexity and uncertainty in the production process.',
+            '<strong>Functional Expectations</strong>: They expect tools to provide more efficient molecular tag selection' +
+            'solutions while reducing the chances of human error. They also need tools that automate more processes to ' +
+             'optimize production, enhance efficiency, and reduce costs.'],
+      bottomText: ['<strong>User Characteristics</strong>: Includes individual researchers, freelancers, small startups, ' +
+                   'and consulting companies. These users typically look for cost-effective tools and services to support' +
+                   'specific projects or small-scale business operations.',
+                   '<strong>Demand</strong>: High demand for one-time algorithm purchases, usually opting for basic or ' +
+                   'professional membership.',
+                   '<strong>User Scale</strong>: Since the number of individual users is large and widely distributed, ' +
+                   'this user group is expected to account for a significant portion of the total user base. Market ' +
+                   'research shows that the number of freelancers and small businesses is steadily increasing, especially ' +
+                   'with the growing adoption of digital tools.',
+                   '<strong>Estimated Scale</strong>: Likely to account for <strong>40-50%</strong> of the total user base.'],
+    }
+  },
+  {
+    src: 'https://static.igem.wiki/teams/5503/accompanying-images/entrepreneurship3-1.webp',
+    alt: 'YUAN',
+    text: {
+      title1: 'User Persona:Business Individuals',
+      ul1: ['<strong>Research Focus</strong>: Subcellular resolution studies, enzyme localization mechanisms, and the ' +
+            'interactions between proteins and organelles.',
+            '<strong>Typical Scenario</strong>: Conducting yeast subcellular localization experiments in the lab, aiming ' +
+            'to observe protein localization patterns using molecular tag technology (84.17%).',
+            '<strong>Research Needs</strong>: Requires precise control of yeast protein subcellular localization for ' +
+            'in-depth studies and to obtain higher resolution data.<br>' +
+            'Seeks computer-aided tools to simplify the molecular tag design process and improve research accuracy (95.68%).'],
+      title2: 'User Insights:Business Individuals',
+      ul2: ['<strong>Pain Points</strong>: Difficulty in selecting molecular tags, which affects the efficiency of ' +
+            'experiments and the precision of research (70.5%)..<br>' +
+            'Yeast stability issues introduce uncertainty into the experimental process, impacting repeatability and data ' +
+            'reliability (66.91%).',
+            '<strong>Existing Solutions</strong>: Basic molecular tag selection and localization tools are being used, but ' +
+            'they lack flexibility and struggle to meet the demands of complex research.',
+            '<strong>Emotional Expectations</strong>: Hopes that software tools will be intuitive and easy to use, reducing ' +
+            'stress and allowing them to focus more on the research itself.<br>' +
+            'Aims to advance biomedical and synthetic biology research by improving subcellular localization techniques, ' +
+            'contributing to societal health and technological progress.',
+            '<strong>Functional Expectations</strong>: Seeks high-precision tools to assist in molecular tag design and ' +
+            'optimization, enhancing the accuracy and repeatability of research.<br>' +
+            'Desires flexible simulation and experiment design support from the tools, enabling further exploration of ' +
+            'possibilities in academic research.'],
+      bottomText: ['<strong>User Characteristics</strong>: Universities, research institutions, researchers, and ' +
+                   'laboratories. Academic users prioritize high-quality research tools and often require long-term data ' +
+                   'processing and algorithm optimization features.',
+                   '<strong>Demand</strong>: They are more likely to choose professional or enterprise memberships, ' +
+                   'especially when handling large-scale data analysis or collaboration. They may also require flexible ' +
+                   'academic pricing.',
+                   '<strong>User Scale</strong>: The number of academic institutions and researchers is substantial, ' +
+                   'and fields like synthetic biology, data analysis, and algorithm optimization have increasing demands ' +
+                   'for such tools.',
+                   '<strong>Estimated Scale</strong>: Likely to account for <strong>20-30%</strong> of the total user base.'],
+    }
+  },
+  {
+    src: 'https://static.igem.wiki/teams/5503/accompanying-images/entrepreneurship4-1.webp',
+    alt: 'Juzhen',
+    text: {
+      title1: 'User Persona:Business Individuals',
+      ul1: ['<strong>Enterprise Field and Scale</strong>: Fields include industrial production and biomedicine (87.05%). ' +
+      'A typical enterprise may have dozens to hundreds of employees, focusing on increasing yield and production ' +
+      'efficiency through enzyme optimization technologies.',
+        '<strong>Typical Scenario</strong>: In large-scale biomanufacturing, enterprises need to optimize the subcellular' +
+        ' localization of enzymes through molecular tag technology to ensure efficient production.',
+        '<strong>Production Actions</strong>: They rely on yeast and molecular tagging systems for enzyme production, ' +
+        'optimizing localization to improve enzyme efficiency and increase the yield of target products (64.75%).'],
+      title2: 'User Insights:Business Individuals',
+      ul2: ['<strong>Pain Points</strong>: High technical difficulty in large-scale applications (56.83%), particularly ' +
+      'with challenges in precise localization and stability. <br>' +
+      'High production costs, primarily due to inaccurate localization and mispositioned enzymes causing resource waste (54.68%).',
+        '<strong>Existing Solutions</strong>: The currently used technologies are insufficient to meet the demands of ' +
+        'large-scale industrial production, still requiring manual regulation and constant adjustments to ensure stability.',
+        '<strong>Social Expectations</strong>: They hope to drive the green transformation of industrial production ' +
+        'through technological innovation, reducing environmental pollution and enhancing the company\'s sense of social responsibility.',
+        '<strong>Economic Expectations</strong>: They expect to further improve production efficiency and reduce costs ' +
+        'through precise enzyme localization technologies, maximizing economic benefits.'],
+      bottomText: ['<strong>User Characteristics</strong>: Mid-sized and large companies, multinational corporations ' +
+                   'with more complex needs and larger budgets, requiring customized solutions and advanced features.',
+                   '<strong>Demand</strong>: Enterprise membership, which includes advanced algorithms, batch processing,' +
+                   'big data analytics, and team collaboration tools. Corporate clients place high importance on data ' +
+                   'privacy, compliance, and security.',
+                   '<strong>User Scale</strong>: While the number of enterprise users is smaller, each client tends to ' +
+                   'contribute significantly more revenue. Enterprise users often depend on high-end subscription services.',
+                   '<strong>Estimated Scale</strong>: Likely to account for <strong>20-30%</strong> of the total user base, ' +
+                   'but contribute a large proportion of revenue.'],
+    }
+  }
+]
+
+const images = reactive([...initialImages])
+const showTextBox = ref(false)
+const currentText = ref<ImageText | null>(null)
+const bottomText = ref<string[]>([])
+let canSwap = ref(true)
+
+function swapAndShowText(index: number) {
+  if (!canSwap.value) return
+  const targetImg = images.splice(index, 1)[0]
+  images.unshift(targetImg)
+  currentText.value = targetImg.text
+  bottomText.value = targetImg.text.bottomText
+  showTextBox.value = true
+  canSwap.value = false
+}
+
+function onMouseLeave() {
+  resetText()
+  canSwap.value = true
+}
+
+function resetText() {
+  images.splice(0, images.length, ...initialImages)
+  currentText.value = null
+  showTextBox.value = false
+  bottomText.value = ['<strong>Userprofile</strong>: User information will be presented here. Mouse over the ' +
+  'corresponding image to view the details.']
+}
+
+bottomText.value = ['<strong>Userprofile</strong> :User information will be presented here. Mouse over the ' +
+'corresponding image to view the details.']
 </script>
 
 <style scoped>
@@ -896,33 +1083,122 @@ const hideText = () => {
   border-radius: 10px;
   padding: 20px 40px;
   background-color: white;
+  font-family: 'Inter', sans-serif;
 }
 
 .text-box-right-top {
   top: 0;
   right: 0;
   width: 270px;
-  height: 550px;
+  height: 570px;
 }
 
 .text-box-left-top {
   top: 0;
   left: 0;
   width: 270px;
-  height: 520px;
+  height: 540px;
 }
 
 .text-box-right-bottom {
   bottom: 0;
   right: 0;
   width: 270px;
-  height: 480px;
+  height: 495px;
 }
 
 .text-box-left-bottom {
   bottom: 0;
   left: 0;
   width: 270px;
-  height: 400px;
+  height: 435px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.user-image {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  position: relative;
+}
+
+.user-image img {
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  display: block;
+  margin: 0;
+  width: auto;
+  height: 480px;
+}
+
+.image-with-textbox {
+  position: relative;
+}
+
+.text-container {
+  position: absolute;
+  top: 0;
+  left: 306px;
+  width: 610px;
+  height: 480px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.text-content {
+  max-height: 90%;
+  padding: 5px;
+  overflow-y: auto;
+  width: 100%;
+  text-align: left;
+  font-family: 'Inter', sans-serif;
+}
+
+.text-title {
+  font-size: 26px !important;
+  font-weight: bold;
+  color: #9FCAE2;
+  margin-bottom: 10px;
+}
+
+.text-title2 {
+  font-size: 26px !important;
+  font-weight: bold;
+  color: #9FCAE2;
+  margin-bottom: 10px;
+}
+
+.custom-list {
+  list-style-type: disc;
+  margin: 0;
+  padding: 0 20px;
+  font-size: 16px;
+  color: #4191C6;
+}
+
+.custom-list li {
+  margin-bottom: 5px;
+}
+
+.bottom-text-box {
+  width: 100%;
+  color: black;
+  padding: 10px;
+  text-align: left;
+  font-size: 16px;
+  margin-top: 10px;
+  height: 320px;
 }
 </style>
