@@ -51,6 +51,9 @@
              :key='index'/>
       </div>
       <div class='text-content2'>
+        <Transition name='mask'>
+          <div v-if="showBottomTextMask" class='bottom-text-mask'/>
+        </Transition>
         <p v-html='selectedSubcellularLocalizationContent'/>
       </div>
     </div>
@@ -113,7 +116,7 @@
 </template>
 
 <script setup lang='ts'>
-import {ref} from 'vue'
+import {ref, watch, nextTick} from 'vue'
 import TextContent from '@/components/TextContent.vue'
 
 const SyntheticBiologyImages = [
@@ -225,6 +228,14 @@ const handleSubcellularLocalizationImageClick = (index: number) => {
   displaySubcellularLocalizationContent(index)
   selectSubcellularLocalizationIndex.value = index
 }
+
+const showBottomTextMask = ref(false)
+watch(selectedSubcellularLocalizationContent, () => {
+  showBottomTextMask.value = true
+  nextTick(() => {
+    showBottomTextMask.value = false
+  })
+})
 </script>
 
 <style scoped>
@@ -276,6 +287,17 @@ const handleSubcellularLocalizationImageClick = (index: number) => {
   height: 240px;
   font-size: 20px;
   margin-bottom: 25px;
+  position: relative;
+}
+
+.bottom-text-mask {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #EEF3FE;
+  z-index: 999;
 }
 
 .text-content h3 {
@@ -285,5 +307,15 @@ const handleSubcellularLocalizationImageClick = (index: number) => {
 .text-content p {
   color: #5D6164;
   line-height: 2;
+}
+
+/* noinspection CssUnusedSymbol */
+.mask-enter-active, .mask-leave-active {
+  transition: all 0.5s ease-out;
+}
+
+/* noinspection CssUnusedSymbol */
+.mask-leave-to {
+  height: 0;
 }
 </style>
