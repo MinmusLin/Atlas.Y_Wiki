@@ -3,11 +3,10 @@
     <v-timeline align='start'
                 side='end'
                 style='transform: translateX(-14px); margin-top: 30px; margin-bottom: -50px'>
-      <v-timeline-item v-for='(item, index) in items' :key='index' dot-color='#2F62D7'>
-        <v-card
-          style='width: 1000px; border-radius: 10px 10px 0 0; box-shadow: none; transform: translateY(-15px); margin-bottom: 30px'>
-          <v-card-title
-            :style="{ backgroundColor: '#2F62D7', color: 'white', fontWeight: 'bold', borderRadius: '10px 10px 0 0', fontFamily: 'Futura Md BT Medium', fontSize: '24px', paddingTop: '15px', paddingLeft: '28px' }">
+      <v-timeline-item v-for='(item, index) in items' :key='index' dot-color='#2F62D7' class='timeline-item'>
+        <div class='cover-line'/>
+        <v-card class='card-container'>
+          <v-card-title class='card-title'>
             {{ item.title }}
           </v-card-title>
           <v-card-text style='border: 4px #2F62D7 solid; background-color: #F6F9FF; padding: 10px 25px'>
@@ -365,4 +364,37 @@ const items = [
 
 <style scoped>
 @import '@/styles/style.css';
+
+.timeline-item {
+  position: relative;
+}
+
+.cover-line {
+  position: absolute;
+  top: 0;
+  left: 100px;
+  width: 2px;
+  height: 24px;
+  background-color: #FFFCEF;
+  z-index: 1;
+}
+
+.card-container {
+  width: 1000px;
+  border-radius: 10px 10px 0 0;
+  box-shadow: none;
+  transform: translateY(-15px);
+  margin-bottom: 30px;
+}
+
+.card-title {
+  background-color: #2F62D7;
+  color: white;
+  font-weight: bold;
+  border-radius: 10px 10px 0 0;
+  font-family: 'Futura Md BT Medium', sans-serif;
+  font-size: 24px;
+  padding-top: 15px;
+  padding-left: 28px;
+}
 </style>
