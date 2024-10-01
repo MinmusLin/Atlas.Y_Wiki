@@ -364,7 +364,7 @@ const items = [
   {
     title: '21 September 2024',
     algorithm: [
-      'Fine-tuned server configurations to improve efficiency, focusing on enhancing computational speed and resource utilization',
+      'Fine-tuned server configurations to improve efficiency, focusing on enhancing computational speed and resource utilization.',
       'Conducted additional testing to validate the improvements made.'
     ],
     software: [
@@ -376,7 +376,7 @@ const items = [
     ],
     hp: [
       'Developed four major marketing strategies.',
-      'Developed continuous revenue growth strategies'
+      'Developed continuous revenue growth strategies.'
     ]
   },
   {
@@ -392,7 +392,7 @@ const items = [
       'Improved the design and production of illustrations for various wiki pages.'
     ],
     hp: [
-      'Envisioned the future of brand development'
+      'Envisioned the future of brand development.'
     ]
   }
 ]
