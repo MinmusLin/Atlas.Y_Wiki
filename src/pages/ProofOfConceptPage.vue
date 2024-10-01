@@ -1,6 +1,7 @@
 <template>
   <TextContent title='PROOF OF CONCEPT'
-               :title-list="['Dry Lab Validation', 'Wet Lab Validation']">
+               :title-list="['Overview', 'Dry Lab Validation', 'Wet Lab Validation']">
+    <h1 id='Overview'>Overview</h1>
     <p>Since the primary task of Atlas.Y is to design fusion proteins with localization functions based on user
       requirements, these fusion proteins lack ground truth labels, making it difficult to validate the model solely
       through dry lab methods. Considering this, we decided to perform initial validation using dry lab methods and
@@ -32,6 +33,7 @@
       analysis.</p>
     <p>The validation outcomes are summarized as follows:</p>
     <img src='https://static.igem.wiki/teams/5503/accompanying-images/proofofconcept1-1.webp' alt='ProofOfConcept1'>
+    <h5>Figure. Multiplying Factor Distribution for Different Subcellular Localization</h5>
     <p>Our findings provide strong evidence that the proposed methodology <span class='bold'>significantly improves
       </span> the likelihood of protein localization to designated target regions. The observed increase in localization
       efficiency, which exceeded expectations, aligns closely with our initial hypothesis. This substantial improvement
@@ -62,6 +64,7 @@
       membranes, making it commonly used for staining the nuclei of living cells, where it can color the nuclei blue.
     </p>
     <img src='https://static.igem.wiki/teams/5503/accompanying-images/proofofconcept2-1.webp' alt='ProofOfConcept2'>
+    <h5>Figure. EGFP-NLS in pPICZ A</h5>
     <p>We amplified the EGFP gene using PCR and inserted EGFP into the EcoRI and XhoI restriction sites of pPICZ A using
       a double digestion method. The plasmid was linearized with SacI and transferred into X-33 Pichia pastoris,
       inducing expression with methanol. We used DAPI to label the cell nuclei, and then observed the green fluorescence
@@ -70,6 +73,7 @@
       design.</p>
     <p>Our plasmid design procedure is as follows:</p>
     <img src='https://static.igem.wiki/teams/5503/accompanying-images/proofofconcept3-1.webp' alt='ProofOfConcept3'>
+    <h5>Figure. Plasmid Design Procedure</h5>
   </TextContent>
 </template>
 
