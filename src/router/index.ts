@@ -118,9 +118,9 @@ const router: Router = createRouter({
 
 router.beforeEach((to, _, next) => {
   if (to.meta && to.meta.title) {
-    document.title = to.meta.title as string + ' | Tongji-Software - iGEM 2024'
+    document.title = to.meta.title as string + ' | Tongji-Software'
   } else {
-    document.title = 'Tongji-Software - iGEM 2024'
+    document.title = 'Tongji-Software'
   }
   next()
 })
