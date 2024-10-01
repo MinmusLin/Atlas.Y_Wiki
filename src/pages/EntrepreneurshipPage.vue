@@ -936,7 +936,6 @@ function swapAndShowText(index: number) {
   canSwap.value = false
 }
 
-// 下方文字的遮罩动画
 const showBottomTextMask = ref(false)
 watch(bottomText, () => {
   showBottomTextMask.value = true
