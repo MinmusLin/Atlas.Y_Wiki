@@ -57,22 +57,30 @@
            @mouseleave='hideText'>
         04
       </div>
-      <div v-if='activeBox == 0' class='text-box text-box-right-top' v-html='textContents[0]'/>
-      <div v-if='activeBox == 1' class='text-box text-box-left-top' v-html='textContents[1]'/>
-      <div v-if='activeBox == 2' class='text-box text-box-right-bottom' v-html='textContents[2]'/>
-      <div v-if='activeBox == 3' class='text-box text-box-left-bottom' v-html='textContents[3]'/>
+      <transition name='fade'>
+        <div v-if='activeBox == 0' class='text-box text-box-right-top' v-html='textContents[0]'/>
+      </transition>
+      <transition name='fade'>
+        <div v-if='activeBox == 1' class='text-box text-box-left-top' v-html='textContents[1]'/>
+      </transition>
+      <transition name='fade'>
+        <div v-if='activeBox == 2' class='text-box text-box-right-bottom' v-html='textContents[2]'/>
+      </transition>
+      <transition name='fade'>
+        <div v-if='activeBox == 3' class='text-box text-box-left-bottom' v-html='textContents[3]'/>
+      </transition>
     </div>
     <ul>
-      <li><span class='bold'>Elicit</span>：We first identified the key issues and challenges in the current market,
+      <li><span class='bold'>Elicit</span>: We first identified the key issues and challenges in the current market,
         explored the advantages of our product, and aligned them with market demands.
       </li>
-      <li><span class='bold'>Prototype</span>：After clarifying the background and key points of business design, we
+      <li><span class='bold'>Prototype</span>: After clarifying the background and key points of business design, we
         developed a revenue model and pricing strategy.
       </li>
-      <li><span class='bold'>Iterate</span>：After completing the initial business design, we further refined it based
+      <li><span class='bold'>Iterate</span>: After completing the initial business design, we further refined it based
         on business calculations.
       </li>
-      <li><span class='bold'>Consolidate</span>：After continuous iteration and optimization, we integrated the existing
+      <li><span class='bold'>Consolidate</span>: After continuous iteration and optimization, we integrated the existing
         content and explored future expansion and application directions.
       </li>
     </ul>
@@ -165,7 +173,7 @@
       closely related to the project's social responsibility, health impact, environmental sustainability, ethical
       compliance, and legal risks during technical development and application.
     </blockquote>
-    <img src='https://static.igem.wiki/teams/5503/accompanying-images/entrepreneurship7-1.webp'
+    <img src='https://static.igem.wiki/teams/5503/accompanying-images/entrepreneurship7-2.webp'
          class='img-table'
          alt='Entrepreneurship7'>
     <h2>Algorithm Store</h2>
@@ -418,7 +426,7 @@
       <span class='bold'>¥595,000 and ¥1,219,000 (€76,000 to €156,000).</span></p>
     <img src='https://static.igem.wiki/teams/5503/accompanying-images/entrepreneurship17-1.webp'
          alt='Entrepreneurship17'>
-    <p>Detailed cost analysis is as follows：</p>
+    <p>Detailed cost analysis is as follows:</p>
     <h5>Table. Detailed cost analysis</h5>
     <img src='https://static.igem.wiki/teams/5503/accompanying-images/entrepreneurship18-1.webp'
          class='img-table'
@@ -776,46 +784,46 @@ interface Image {
 }
 
 const textContents = ref<string[]>([
-  '<h3>Elicit</h3>' +
+  '<h3 style="margin-bottom: 10px; margin-left: -18px">Elicit</h3>' +
   '<ul><li>2024.4</li>' +
-  '<ul><li>Conducted surveys and extracted three user profiles to identify pain points and expectations</li>' +
-  '<li>Identified the timing of user needs</li>' +
-  '<li>Extracted three target user profiles</li>' +
-  '<li>Identified the timing of demand</li></ul>' +
+  '<ul><li style="margin-left: 17px">Conducted surveys and extracted three user profiles to identify pain points and expectations</li>' +
+  '<li style="margin-left: 17px">Identified the timing of user needs</li>' +
+  '<li style="margin-left: 17px">Extracted three target user profiles</li>' +
+  '<li style="margin-left: 17px">Identified the timing of demand</li></ul>' +
   '<li>2024.7</li>' +
-  '<ul><li>Collected market prices of competing products</li>' +
-  '<li>Conducted SWOT analysis</li></ul>' +
+  '<ul><li style="margin-left: 17px">Collected market prices of competing products</li>' +
+  '<li style="margin-left: 17px">Conducted SWOT analysis</li></ul>' +
   '<li>2024.8.10</li>' +
-  '<ul><li>Consulted YanYin Technology</li>' +
-  '<li>Extracted 6 keys of design strategies</li></ul>',
+  '<ul><li style="margin-left: 17px">Consulted YanYin Technology</li>' +
+  '<li style="margin-left: 17px">Extracted 6 keys of design strategies</li></ul>',
 
-  '<h3>Prototype</h3>' +
+  '<h3 style="margin-bottom: 10px; margin-left: -18px">Prototype</h3>' +
   '<ul><li>2024.8</li>' +
-  '<ul><li>Designed a membership-based model, generating revenue from an algorithm store, package deals, and ads</li>' +
-  '<li>Established academic discounts, assessing their social impacts</li>' +
-  '<li>Set pricing for individual and enterprise memberships</li>' +
-  '<li>Determined the unit and package combination prices for the algorithm store</li></ul>' +
+  '<ul><li style="margin-left: 17px">Designed a membership-based model, generating revenue from an algorithm store, package deals, and ads</li>' +
+  '<li style="margin-left: 17px">Established academic discounts, assessing their social impacts</li>' +
+  '<li style="margin-left: 17px">Set pricing for individual and enterprise memberships</li>' +
+  '<li style="margin-left: 17px">Determined the unit and package combination prices for the algorithm store</li></ul>' +
   '<li>2024.9</li>' +
-  '<ul><li>Created a business model canvas</li></ul>',
+  '<ul><li style="margin-left: 17px">Created a business model canvas</li></ul>',
 
-  '<h3>Iterate</h3>' +
+  '<h3 style="margin-bottom: 10px; margin-left: -18px">Iterate</h3>' +
   '<ul><li>2024.8 - 2024.9</li>' +
-  '<ul><li>Predicted market trends and adjusted pricing and revenue systems</li>' +
-  '<li>Forecasted revenue, estimated costs and analyzed profit and loss</li>' +
-  '<li>Calculated CAC-to-LTV ratio</li>' +
-  '<li>Outlined future direction and performed financial planning</li></ul>' +
+  '<ul><li style="margin-left: 17px">Predicted market trends and adjusted pricing and revenue systems</li>' +
+  '<li style="margin-left: 17px">Forecasted revenue, estimated costs and analyzed profit and loss</li>' +
+  '<li style="margin-left: 17px">Calculated CAC-to-LTV ratio</li>' +
+  '<li style="margin-left: 17px">Outlined future direction and performed financial planning</li></ul>' +
   '<li>2024.9</li>' +
-  '<ul><li>Conducted PESTEL analysis to assess risks at various levels and develop risk mitigation strategies</li></ul>',
+  '<ul><li style="margin-left: 17px">Conducted PESTEL analysis to assess risks at various levels and develop risk mitigation strategies</li></ul>',
 
-  '<h3>Consolidate</h3>' +
+  '<h3 style="margin-bottom: 10px; margin-left: -18px">Consolidate</h3>' +
   '<ul><li>2024.9.14</li>' +
-  '<ul><li>Sought accelerators and joined Tongji University\'s Innovation Valley</li></ul>' +
+  '<ul><li style="margin-left: 17px">Sought accelerators and joined Tongji University\'s Innovation Valley</li></ul>' +
   '<li>2024.9</li>' +
-  '<ul><li>Made reasonable phase forecasts and expectations</li>' +
-  '<li>Developed four major marketing strategies</li>' +
-  '<li>Established a strategy for sustained revenue growth</li></ul>' +
+  '<ul><li style="margin-left: 17px">Made reasonable phase forecasts and expectations</li>' +
+  '<li style="margin-left: 17px">Developed four major marketing strategies</li>' +
+  '<li style="margin-left: 17px">Established a strategy for sustained revenue growth</li></ul>' +
   '<li>2024.10</li>' +
-  '<ul><li>Envisioned the future</li></ul>'
+  '<ul><li style="margin-left: 17px">Envisioned the future</li></ul>'
 ])
 
 const initialImages: Image[] = [
@@ -977,6 +985,7 @@ function resetText() {
   font-family: 'Inter', sans-serif;
   user-select: none;
   transition: background-color 0.3s;
+  cursor: pointer;
 }
 
 .circle-1 {
@@ -992,6 +1001,7 @@ function resetText() {
   font-family: 'Inter', sans-serif;
   user-select: none;
   transition: background-color 0.3s;
+  cursor: pointer;
 }
 
 .circle1 {
@@ -1004,8 +1014,8 @@ function resetText() {
 
 .circle1-1 {
   background-color: #AACAF9;
-  top: 72px;
-  left: 570px;
+  top: 73px;
+  left: 571px;
 }
 
 .circle2 {
@@ -1017,8 +1027,8 @@ function resetText() {
 
 .circle2-1 {
   background-color: #FFE269;
-  top: 234px;
-  left: 308px;
+  top: 235px;
+  left: 304px;
 }
 
 .circle3 {
@@ -1030,8 +1040,8 @@ function resetText() {
 
 .circle3-1 {
   background-color: #FFB5A8;
-  top: 398px;
-  left: 570px;
+  top: 400px;
+  left: 571px;
 }
 
 .circle4 {
@@ -1043,8 +1053,8 @@ function resetText() {
 
 .circle4-1 {
   background-color: #84C8B1;
-  top: 562px;
-  left: 308px;
+  top: 563px;
+  left: 304px;
 }
 
 .circle1.active {
@@ -1092,28 +1102,28 @@ function resetText() {
   top: 0;
   right: 0;
   width: 270px;
-  height: 570px;
+  height: 630px;
 }
 
 .text-box-left-top {
   top: 0;
   left: 0;
   width: 270px;
-  height: 540px;
+  height: 606px;
 }
 
 .text-box-right-bottom {
   bottom: 0;
   right: 0;
   width: 270px;
-  height: 495px;
+  height: 582px;
 }
 
 .text-box-left-bottom {
   bottom: 0;
   left: 0;
   width: 270px;
-  height: 435px;
+  height: 462px;
 }
 
 .container {
@@ -1266,5 +1276,25 @@ img.img-table {
 
 img {
   width: 100%;
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 0.5s ease-in-out; /* 设置淡入淡出的过渡效果 */
+}
+
+.fade-enter {
+  opacity: 0; /* 元素进入时的初始状态，透明 */
+}
+
+.fade-enter-to {
+  opacity: 1; /* 进入完成后的最终状态 */
+}
+
+.fade-leave-active {
+  transition: opacity 0.5s ease-in-out; /* 淡出效果 */
+}
+
+.fade-leave-to {
+  opacity: 0; /* 离开时变为透明 */
 }
 </style>
