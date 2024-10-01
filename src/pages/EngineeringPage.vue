@@ -116,7 +116,7 @@
     <h3>Build</h3>
     <p>We use the <span class='bold'>NGL viewer</span> to visualize the 3D structure of proteins based on PDB files and
       have integrated interactive functionality for users. When a user clicks on a specific residue in the 3D model and
-      defines a radius around that residue, our software automatically captures the residue’s index and other relevant
+      defines a radius around that residue, our software automatically captures the residue's index and other relevant
       information. It then calculates the local CAD-score for the selected region, helping users make informed
       decisions.</p>
     <h3>Test</h3>
@@ -129,7 +129,7 @@
       repeated cycles of development, testing, and refinement, continuously adapting to user needs. In this iteration,
       unlike previous academic research, we focused more on addressing real user experience issues, marking a shift in
       our student mindset. The cycle of <span class='bold'>testing, feedback, adjustment, and re-testing</span> has
-      become a core part of our development process, significantly enhancing the software’s practicality and
+      become a core part of our development process, significantly enhancing the software's practicality and
       user-friendliness. We will continue to uphold this iterative mindset in future development.</p>
 
     <h1 id='CYCLE V'>CYCLE V</h1>
