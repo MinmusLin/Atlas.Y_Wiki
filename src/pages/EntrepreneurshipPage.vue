@@ -1279,22 +1279,22 @@ img {
 }
 
 .fade-enter-active, .fade-leave-active {
-  transition: opacity 0.5s ease-in-out; /* 设置淡入淡出的过渡效果 */
+  transition: opacity 0.2s ease-in-out;
 }
 
 .fade-enter {
-  opacity: 0; /* 元素进入时的初始状态，透明 */
+  opacity: 0;
 }
 
 .fade-enter-to {
-  opacity: 1; /* 进入完成后的最终状态 */
+  opacity: 1;
 }
 
-.fade-leave-active {
-  transition: opacity 0.5s ease-in-out; /* 淡出效果 */
+.fade-leave {
+  opacity: 1;
 }
 
 .fade-leave-to {
-  opacity: 0; /* 离开时变为透明 */
+  opacity: 0;
 }
 </style>
