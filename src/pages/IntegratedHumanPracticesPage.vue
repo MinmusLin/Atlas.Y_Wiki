@@ -23,8 +23,8 @@
     <p>After identifying the core issues, we designed and developed a prototype tool based on the collected information
       and requirements.</p>
     <ul>
-      <li>Established the foundational fusion protein design route, with some additional algorithms embedded</li>
-      <li>Successfully ran example processes to validate the basic technical implementation of the software</li>
+      <li>Established the foundational fusion protein design route, with some additional algorithms embedded.</li>
+      <li>Successfully ran example processes to validate the basic technical implementation of the software.</li>
     </ul>
     <img src='https://static.igem.wiki/teams/5503/accompanying-images/integratedhp3-1.webp' alt='IntegratedHP3'>
     <h2>3. Iterate</h2>
@@ -39,7 +39,7 @@
 
     <h1 id='Elicit'>Elicit</h1>
     <h2>Technical Preparation</h2>
-    <h3>literature support</h3>
+    <h3>literature Support</h3>
     <p>During the background research phase of our project, we systematically reviewed relevant literature to provide a
       solid scientific foundation. By analyzing and studying these sources, we ensured that the technical framework of
       our project is theoretically grounded and aligned with the latest research developments. The selected literature
@@ -97,7 +97,7 @@
     </div>
     <h2>Social considerations</h2>
     <h3>Social benefit considerations</h3>
-    <h4>Acts on production</h4>
+    <h4>Acts on Production</h4>
     <p class='bold'>Primary Direct Effect FOR Production</p>
     <img src='https://static.igem.wiki/teams/5503/accompanying-images/integratedhp13-1.webp' alt='IntegratedHP13'>
     <p class='bold'>a. Increase in Production Efficiency:</p>
@@ -138,7 +138,7 @@
         access essential therapeutic enzymes and medications.
       </li>
     </ul>
-    <h4>Acts on academia</h4>
+    <h4>Acts on Academia</h4>
     <img src='https://static.igem.wiki/teams/5503/accompanying-images/integratedhp15-1.webp' alt='IntegratedHP15'>
     <p class='bold'>a. Higher Subcellular Resolution: </p>
     <ul>
@@ -158,8 +158,8 @@
         support for the development of biotechnology.
       </li>
     </ul>
-    <h3>Social survey and public participation</h3>
-    <h4>Social survey and public acceptance</h4>
+    <h3>Social Survey and Public Participation</h3>
+    <h4>Social Survey and Public Acceptance</h4>
     <img src='https://static.igem.wiki/teams/5503/accompanying-images/integratedhp16-1.webp' alt='IntegratedHP16'>
     <p>We collected a total of 139 responses from participants across a variety of academic fields. The most prominent
       areas of study include Biology, Synthetic Biology, and Bioinformatics, highlighting the significant interest in
@@ -192,7 +192,7 @@
       Only 0.72% of respondents (1 person) see application potential in other fields.</p>
     <p>In summary, this technology shows broad application prospects in biomedicine, academic research, and industrial
       production, with its potential in the biomedicine field standing out the most.</p>
-    <h4>Public awareness and educational outreach</h4>
+    <h4>Public Awareness and Educational Outreach</h4>
     <p>Facing challenges in gathering initial questionnaires revealed that public knowledge of synthetic biology is
       quite limited, which underscored the need for educational outreach. In response, we initiated a half-year-long
       campaign to raise public awareness of synthetic biology and subcellular localization, using both educational and
@@ -229,7 +229,7 @@
     </div>
 
     <h1 id='Iterate'>Iterate</h1>
-    <h2>Follow-up with 139 initial survey respondents</h2>
+    <h2>Follow-up with 139 Initial Survey Respondents</h2>
     <p>After completing the project prototype design, we conducted follow-up interviews with the 139 individuals
       previously surveyed to gather their insights on the technology's strengths and weaknesses, helping us optimize the
       design in the iteration phase. </p>
@@ -252,8 +252,8 @@
       result in harmful by-products, affecting overall outcomes. Lastly, the high technical difficulty (56.83%, 79
       people) involved in precise localization requires complex technical measures, making large-scale applications of
       the technology more challenging.</p>
-    <h2>In-depth discussion with technical professionals</h2>
-    <h3>Professor of bioinformatics and AI</h3>
+    <h2>In-depth Discussion with Technical Professionals</h2>
+    <h3>Professor of Bioinformatics and AI</h3>
     <img src='https://static.igem.wiki/teams/5503/accompanying-images/integratedhp25-1.webp' alt='IntegratedHP25'>
     <p>On June 10, 2024, we had a discussion with <span class='bold'>Professor Wang Chenfei</span>, whose research
       focuses on bioinformatics and artificial intelligence. During the conversation, we broadened our understanding of
@@ -262,14 +262,14 @@
       for project validation, particularly recommending the use of dry lab validation alongside wet lab experiments.
       This discussion broadened the scientific foundation of our subcellular localization design and offered insights to
       further explore the potential of our project while improving our proof-of-concept mechanisms.</p>
-    <h2>Professor of biochemistry：Wet experiment validation</h2>
+    <h2>Professor of Biochemistry: Wet Experiment Validation</h2>
     <p>On July 31, 2024, we consulted <span class='bold'>Professor Guo Zhanyun</span> for advice on our wet lab
       experiment design. Given our limited time and experience in yeast cultivation, we sought guidance on how to obtain
       preliminary results as quickly as possible. During the conversation, Professor Guo helped us refine our experiment
       design and shared valuable insights and detailed experiences, particularly regarding the challenges of yeast
       cultivation. This discussion allowed us to enhance our approach to the wet lab experiments and better navigate the
       complexities of working with yeast.</p>
-    <h2>1st Northeast Region iGEM Team Meeting</h2>
+    <h2>2024 1st Northeast Region iGEM Team Meeting</h2>
     <img src='https://static.igem.wiki/teams/5503/accompanying-images/integratedhp26-1.webp' alt='IntegratedHP26'>
     <p>At the first Northeastern iGEM Team Remote Exchange Conference on August 12, 2024, after our remote presentation,
       we collected feedback and development suggestions from biology students through a survey. The feedback indicated
@@ -277,7 +277,7 @@
       comprehensive to help new users get started quickly. Based on these suggestions, we plan to optimize the user
       interface, improve the user manual, and expand software features in the next version to meet a broader range of
       research needs.</p>
-    <h2>Tongji-Westlake iGEM exchange meeting</h2>
+    <h2>Tongji-Westlake iGEM Exchange Meeting</h2>
     <img src='https://static.igem.wiki/teams/5503/accompanying-images/integratedhp27-1.webp' alt='IntegratedHP27'>
     <p>On August 28, 2024, we participated in the Tongji-Westlake iGEM cross-college exchange meeting. During the
       meeting, we engaged in discussions with the team responsible for the Model section from Westlake University. The
@@ -285,7 +285,7 @@
       and strategies for improving the modeling aspect of our own project. This collaboration helped refine our
       understanding of model integration and opened up possibilities for more effective implementation in future
       work.</p>
-    <h2>Tongji University igem exchange meeting</h2>
+    <h2>Tongji University iGEM Exchange Meeting</h2>
     <p>On September 14, 2024, we participated in a Tongji University iGEM exchange meeting with several professors from
       the School of Life Science and Technology. During the discussion, we realized that we needed to better elaborate
       on the biological background and market demand for our project. Additionally, it became clear that the software's
