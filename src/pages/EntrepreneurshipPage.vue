@@ -454,20 +454,28 @@
       <li><span class='bold'>Minimum Revenue vs. Minimum Cost</span>: Minimum revenue is €201,500, and minimum cost is
         €76,000.
       </li>
-      <p>Profit: €201,500 - €76,000 = <span class='bold'>€125,500</span></p>
-      <p>With minimum costs, the company can achieve a profit of €125,500.</p>
+      <ul>
+        <li>Profit: €201,500 - €76,000 = <span class='bold'>€125,500</span></li>
+        <li>With minimum costs, the company can achieve a profit of €125,500.</li>
+      </ul>
       <li><span class='bold'>Maximum Revenue vs. Maximum Cost</span>: Maximum revenue is €408,000, and maximum cost is
         €156,000.
       </li>
-      <p>Profit: €408,000 - €156,000 = <span class='bold'>€252,000</span></p>
-      <p>Under the highest revenue and cost conditions, the company can achieve a profit of €252,000.</p>
+      <ul>
+        <li>Profit: €408,000 - €156,000 = <span class='bold'>€252,000</span></li>
+        <li>Under the highest revenue and cost conditions, the company can achieve a profit of €252,000.</li>
+      </ul>
       <li><span class='bold'>Maximum Profit</span>: Maximum revenue of €408,000 and minimum cost of €76,000 result in
         the highest profit: €408,000 − €76,000 = <span class='bold'>€332,000</span></li>
-      <p>Under this scenario, the company's maximum profit would be €332,000, with a profit margin of 22.6%.</p>
+      <ul>
+        <li>Under this scenario, the company's maximum profit would be €332,000, with a profit margin of 22.6%.</li>
+      </ul>
       <li><span class='bold'>Minimum Profit</span>: Minimum revenue of €201,500 and maximum cost of €156,000 result in a
         minimum profit: €201,500 − €156,000 = <span class='bold'>€45,500</span></li>
-      <p>Even in the case of minimum revenue and maximum costs, the company would still achieve a profit of €45,500,
-        with a profit margin of 81.4%.</p>
+      <ul>
+        <li>Even in the case of minimum revenue and maximum costs, the company would still achieve a profit of €45,500,
+          with a profit margin of 81.4%.</li>
+      </ul>
     </ul>
     <p>Given the current revenue and cost structure, the company is already profitable, and with increased revenue and
       cost optimization, profit margins will further expand.</p>
