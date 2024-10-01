@@ -58,6 +58,14 @@
       generate multiple matches for the user, with the preliminary steps being the same as in the basic version.
       Finally, the system will output a design report tailored to the user's needs, providing detailed information on
       the recommended optogenetic pair and the complete sequence information of each component.</p>
+    <p>For further information on how to use Atlas.Y, please refer to the <span class='bold'>User Guide</span> below. It
+      provides detailed instructions on website pages, user journey, all core features, from signal peptide selection to
+      advanced localization design systems, as well as support and feedback channels to ensure a smooth user experience.
+    </p>
+    <iframe src='https://static.igem.wiki/teams/5503/userguide.pdf#view=FitH'
+            style='border: none'
+            width='905px'
+            height='905px'/>
 
     <h1 id='Proposed End Users'>Proposed End Users</h1>
     <ul>
