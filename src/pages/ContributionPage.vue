@@ -1,6 +1,6 @@
 <template>
   <TextContent title='CONTRIBUTION'
-               :title-list="['Data Collaboration', 'Open Access to Software', 'For Synthetic Biology', 'For iGEM Community', 'Reference']">
+               :title-list="['Data Collaboration', 'Open Access to Software', 'HP & Entrepreunership', 'For Synthetic Biology', 'For iGEM Community', 'Reference']">
     <h1 id='Data Collaboration'>Data Collaboration</h1>
     <p>Our iGEM project involves the development of two key databases: the Signal Database and the Linker Database.</p>
     <ol>
@@ -43,6 +43,18 @@
       <a href='https://gitlab.igem.org/2024/software-tools/tongji-software' target='_blank'>source code</a>, and our
       <a href='https://github.com/MinmusLin/Atlas.Y_Dataset' target='_blank'>open-source dataset</a>. We believe the
       platform will inspire innovation and support future iGEM teams in pushing the boundaries of synthetic biology.</p>
+
+    <h1 id='HP & Entrepreunership'>HP & Entrepreunership</h1>
+    <p>In the iHP and Entrepreneurship section, we employed the <span class='bold'>EPIC model</span> (Elicit, Prototype,
+      Iterate, Consolidate) as the guiding framework for our project. By first identifying key market challenges and
+      aligning our product with market demands during the Elicit phase, we laid a strong foundation for targeted
+      development. Through Prototyping, we refined our business design and pricing strategy, followed by iterative
+      improvements in the Iterate phase, where business calculations helped shape the final model. The Consolidate phase
+      allowed us to integrate and optimize all elements, establishing a comprehensive and scalable business plan.</p>
+    <p>This framework not only enhances our own project but also serves as a valuable reference for other iGEM teams
+      looking to systematically approach entrepreneurship. Its structured methodology supports efficient innovation and
+      practical business design, contributing to the broader iGEM community by promoting sustainable, iterative progress
+      in bio-entrepreneurship projects.</p>
 
     <h1 id='For Synthetic Biology'>For Synthetic Biology</h1>
     <p>Atlas.Y assists in designing proteins for precise subcellular localization in yeast, providing a powerful tool
