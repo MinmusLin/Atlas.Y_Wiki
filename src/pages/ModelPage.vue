@@ -1,6 +1,26 @@
 <template>
   <TextContent title='MODEL'
-               :title-list="['Structure Prediction Model', 'Function Assessment——CAD-score Model', 'Stability Assessment——Pyrosetta', 'Subcellular Localization Prediction Model', 'Protein Directed Evolution Model', 'References']">
+               :title-list="['Protein Design and Verification Process', 'Structure Prediction Model', 'Function Assessment——CAD-score Model', 'Stability Assessment——Pyrosetta', 'Subcellular Localization Prediction Model', 'Protein Directed Evolution Model', 'References']">
+    <h1 id='Protein Design and Verification Process'>Protein Design and Verification Process</h1>
+    <p>The goal of Atlas.Y is to generate fusion proteins and ensure their precise localization within yeast cells.
+      However, <span class='bold'>generating fusion proteins is only the first step</span>. To guarantee their
+      effectiveness in the new environment, we must also verify their functionality and stability. First, to ensure that
+      the fusion process does not compromise the biological function of the protein, we use the CAD scoring model to
+      assess functional consistency. After all, a protein that loses its function is useless, even if it localizes
+      correctly. Next, stability is crucial. If the protein is not stable in the target subcellular location, it may
+      misfold or degrade, losing its activity. To address this, we employ the Rosetta model to evaluate the structural
+      stability of the protein and select the most stable designs. Additionally, since different subcellular
+      environments have varying demands on proteins, we use the ProtLGN model, which applies deep learning to optimize
+      the adaptability and stability of proteins in their new microenvironment. Finally, we use the DeepLoc model to
+      verify the accuracy of protein localization, which is a critical step in the entire process.The accuracy of
+      localization directly determines whether the protein can perform its biological function in the correct cellular
+      environment.This step serves as the final confirmation of all previous optimization and design efforts, ensuring
+      that our fusion proteins work in harmony in terms of functionality, stability, and localization, fully meeting
+      user requirements.</p>
+    <p>We have designed the entire workflow of the Atlas.Y model based on specific requirements, as shown in the
+      following flowchart:</p>
+    <img src='https://static.igem.wiki/teams/5503/accompanying-images/model0-1.webp' alt='Model0'>
+
     <h1 id='Structure Prediction Model'>Structure Prediction Model</h1>
     <p>In our project, a protein structure prediction model is essential for accurately generating fusion proteins' pdb
       files for subsequent stability and functional evaluations. After comparing various options, we selected
@@ -127,7 +147,8 @@
     <p>The global CAD score is used to evaluate the overall structural integrity of the protein model. It measures the
       overall similarity between the predicted structure and the reference structure by calculating the contact area
       differences for all residue pairs. The formula for this calculation is:</p>
-    <LatexRenderer formula='CAD\text{-}score = 1 - \frac{\sum_{(i,j) \in G} CAD_{bounded}(i,j)}{\sum_{(i,j) \in G} T(i,j)}'/>
+    <LatexRenderer
+      formula='CAD\text{-}score = 1 - \frac{\sum_{(i,j) \in G} CAD_{bounded}(i,j)}{\sum_{(i,j) \in G} T(i,j)}'/>
     <p><span class='italic'>G</span> represents the set of all residue pairs. A CAD-score close to <span class='bold'>
       1</span> indicates high <span class='bold'>similarity</span> between the predicted model and the reference
       structure, suggesting that the protein's structure and functionality have been well preserved after fusion. A

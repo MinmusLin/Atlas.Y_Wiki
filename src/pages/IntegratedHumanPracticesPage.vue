@@ -39,7 +39,7 @@
 
     <h1 id='2 Elicit'>2 Elicit</h1>
     <h2>2.1 Technical Preparation</h2>
-    <h3>2.1.1 literature Support</h3>
+    <h3>2.1.1 Literature Support</h3>
     <p>During the background research phase of our project, we systematically reviewed relevant literature to provide a
       solid scientific foundation. By analyzing and studying these sources, we ensured that the technical framework of
       our project is theoretically grounded and aligned with the latest research developments. The selected literature
@@ -96,8 +96,8 @@
       <img src='https://static.igem.wiki/teams/5503/accompanying-images/integratedhp11-1.webp' alt='IntegratedHP11'>
       <img src='https://static.igem.wiki/teams/5503/accompanying-images/integratedhp12-1.webp' alt='IntegratedHP12'>
     </div>
-    <h2>2.3 Social considerations</h2>
-    <h3>2.3.1 Social benefit considerations</h3>
+    <h2>2.3 Social Considerations</h2>
+    <h3>2.3.1 Social Benefit Considerations</h3>
     <p>Considering social benefits ensures the sustainability of the project and aligns with its core objectives. In a
       technology-driven bioinformatics project, optimizing production efficiency, reducing resource consumption, and
       lowering environmental impacts are direct goals that also have positive indirect effects on environmental
