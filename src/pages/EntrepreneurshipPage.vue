@@ -86,7 +86,7 @@
     </ul>
 
     <h1 id='2 Business Model Canvas'>2 Business Model Canvas</h1>
-    <img src='https://static.igem.wiki/teams/5503/accompanying-images/entrepreneurship1-3.webp' alt='Entrepreneurship1'>
+    <img src='https://static.igem.wiki/teams/5503/accompanying-images/entrepreneurship1-4.webp' alt='Entrepreneurship1'>
 
     <h1 id='3 Market'>3 Market</h1>
     <h2>3.1 Target User Profile</h2>
