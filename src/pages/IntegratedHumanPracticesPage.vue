@@ -106,7 +106,73 @@
       Practices with technological applications, ensuring the project not only meets research and market needs but also
       drives green industrial transition and fosters academic research and public engagement, laying the groundwork for
       future scientific advancements and public education.</p>
-    <h4>2.3.1.1 Acts on Production</h4>
+    <h3>2.3.2 Social Benefit Evaluation Method</h3>
+    <p>This standardized process consists of three steps: identifying direct impacts, assessing indirect impacts, and
+      analyzing academic impacts. Each step uses quantitative tools and data collection methods to ensure scientific
+      rigor and reproducibility. This method applies to similar technology projects for consistent, standardized
+      results.</p>
+    <h4>2.3.2.1 Step 1: Identify Direct Impacts</h4>
+    <ol>
+      <li><p class='bold'>Data Collection:</p></li>
+      <ul>
+        <li><span class='bold'>Lab and Factory Visits</span>: Gather production time, output, and efficiency data
+          through
+          interviews and production logs or automated systems.
+        </li>
+        <li><span class='bold'>Interviews</span>: Collect key resource consumption data (raw materials, energy).</li>
+      </ul>
+      <li><p class='bold'>Estimate Changes:</p></li>
+      <ul>
+        <li><span class='bold'>Production Efficiency</span>: Compare potential improvements after software application
+          with
+          existing production logs to estimate reduced production time and increased output.
+        </li>
+        <li><span class='bold'>Resource Consumption</span>: Record current resource usage and estimate reduction using
+          optimization models, quantifying savings in percentages or absolute values.
+        </li>
+      </ul>
+    </ol>
+    <h4>2.3.2.2 Step 2: Assess Indirect Social Impacts</h4>
+    <ol>
+      <li><p class='bold'>Environmental Impact:</p></li>
+      <ul>
+        <li><span class='bold'>Tools</span>: Apply Life Cycle Assessment (LCA) to estimate reductions in chemical use,
+          energy consumption, and waste generation post-optimization.
+        </li>
+        <li><span class='bold'>Comparative Analysis</span>: Use estimated data to quantify reductions in chemical usage
+          and greenhouse gas emissions, showcasing environmental benefits.
+        </li>
+      </ul>
+      <li><p class='bold'>Public Health Impact:</p></li>
+      <ul>
+        <li><span class='bold'>Simulation Tools</span>: Use market data to model reductions in drug production costs and
+          drug price decreases.
+        </li>
+        <li><span class='bold'>Health Benefit Evaluation</span>: Predict the impact on patient treatment costs and drug
+          accessibility using estimated and industry data.
+        </li>
+      </ul>
+    </ol>
+    <h4>2.3.2.3 Step 3: Analyze Academic Impacts</h4>
+    <ol>
+      <li><span class='bold'>Quantifying Contributions:</span></li>
+      <ul>
+        <li><span class='bold'>Research Metrics</span>: Define key academic contributions such as enhanced subcellular
+          resolution and applications in protein-organelle interaction studies.
+        </li>
+        <li><span class='bold'>Tools and Data</span>: Analyze the technology's impact on academic research using
+          experimental data and literature, tracking changes in the quality of research results.
+        </li>
+      </ul>
+      <li><span class='bold'>Promoting Research Outcomes:</span></li>
+      <ul>
+        <li><span class='bold'>Academic Value</span>: Examine how the technology enhances research outcomes and supports
+          academic advancements with practical tools.
+        </li>
+      </ul>
+    </ol>
+    <h3>2.3.3 Social Benefit Analysis Results</h3>
+    <h4>2.3.3.1 Acts on Production</h4>
     <p class='bold'>Primary Direct Effect FOR Production</p>
     <img src='https://static.igem.wiki/teams/5503/accompanying-images/integratedhp13-1.webp' alt='IntegratedHP13'>
     <p class='bold'>a. Increase in Production Efficiency:</p>
@@ -147,7 +213,7 @@
         access essential therapeutic enzymes and medications.
       </li>
     </ul>
-    <h4>2.3.1.2 Acts on Academia</h4>
+    <h4>2.3.3.2 Acts on Academia</h4>
     <img src='https://static.igem.wiki/teams/5503/accompanying-images/integratedhp15-1.webp' alt='IntegratedHP15'>
     <p class='bold'>a. Higher Subcellular Resolution: </p>
     <ul>
@@ -167,8 +233,21 @@
         support for the development of biotechnology.
       </li>
     </ul>
-    <h3>2.3.2 Social Survey and Public Participation</h3>
-    <h4>2.3.2.1 Social Survey and Public Acceptance</h4>
+    <h3>2.3.4 Integrating Social Benefit Analysis into Design</h3>
+    <p>Social benefit analysis informs design by clarifying the project's societal impact. Key applications include:</p>
+    <ul>
+      <li><span class='bold'>Academic Discount Programs</span>: Based on academic impact findings, academic discount
+        programs are incorporated into pricing strategies to promote research adoption, enhance scientific progress, and
+        expand market reach. These programs also provide researchers and students with essential tools at reduced costs.
+      </li>
+      <li><span class='bold'>Public Engagement Initiatives</span>: Public health and environmental insights guide the
+        development of outreach and educational activities. These initiatives raise awareness of green industries,
+        sustainable production, and synthetic biology, enhancing public understanding while reinforcing the project's
+        social responsibility.
+      </li>
+    </ul>
+    <h3>2.3.5 Social Survey and Public Participation</h3>
+    <h4>2.3.5.1 Social Survey and Public Acceptance</h4>
     <img src='https://static.igem.wiki/teams/5503/accompanying-images/integratedhp16-1.webp' alt='IntegratedHP16'>
     <p>We collected a total of 139 responses from participants across a variety of academic fields. The most prominent
       areas of study include Biology, Synthetic Biology, and Bioinformatics, highlighting the significant interest in
@@ -201,7 +280,7 @@
       Only 0.72% of respondents (1 person) see application potential in other fields.</p>
     <p>In summary, this technology shows broad application prospects in biomedicine, academic research, and industrial
       production, with its potential in the biomedicine field standing out the most.</p>
-    <h4>2.3.2.2 Public Awareness and Educational Outreach</h4>
+    <h4>2.3.5.2 Public Awareness and Educational Outreach</h4>
     <p>Facing challenges in gathering initial questionnaires revealed that public knowledge of synthetic biology is
       quite limited, which underscored the need for educational outreach. In response, we initiated a half-year-long
       campaign to raise public awareness of synthetic biology and subcellular localization, using both educational and
