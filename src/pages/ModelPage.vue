@@ -17,6 +17,11 @@
       environment.This step serves as the final confirmation of all previous optimization and design efforts, ensuring
       that our fusion proteins work in harmony in terms of functionality, stability, and localization, fully meeting
       user requirements.</p>
+    <p>Since the results we generated were fusion proteins, we could not obtain a broad spectrum of real dataset to
+      verify the performance, so we used <span class='bold'>a combination of wet and dry experiments</span> to validate
+      the model effect, and the modeling process we used achieved better results in the validation phase, see
+      <a href='https://2024.igem.wiki/tongji-software/proof-of-concept' target='_blank'>Proof of Concept</a> for more
+      details.</p>
     <p>We have designed the entire workflow of the Atlas.Y model based on specific requirements, as shown in the
       following flowchart:</p>
     <img src='https://static.igem.wiki/teams/5503/accompanying-images/model0-1.webp' alt='Model0'>
