@@ -81,7 +81,8 @@
       becomes more precise and efficient in addressing diverse user requirements. Additionally, we will refine the
       software's design and functionality to address specific scenarios and challenges raised by users, enhancing its
       adaptability and flexibility under different experimental conditions.</p>
-    <p>We plan to commercialize Atlas.Y (see <a @click="router.push('/entrepreneurship')" style='cursor: pointer'>
+    <p>We plan to commercialize Atlas.Y (see
+      <a href='https://2024.igem.wiki/tongji-software/entrepreneurship' target='_blank' style='cursor: pointer'>
       Entrepreneurship</a> for details) and establish a corresponding experimental platform. Atlas.Y will serve as our
       <span class='bold'>initial core product</span>, providing a stable revenue stream by addressing the market demand
       for protein subcellular localization. Building on this foundation, we will gradually expand our business scope,

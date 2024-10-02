@@ -68,8 +68,9 @@
     <h3>Self</h3>
     <p>In the early stages, the student leaders engaged in in-depth discussions with the instructor to preliminarily
       establish the team structure, clarify division of labor requirements, and assemble a multidisciplinary team with
-      clearly defined roles (see <a @click="router.push('/team')" style='cursor: pointer'>Roster</a>). The team was
-      formed based on the needs, with clear division of labor.</p>
+      clearly defined roles (see
+      <a href='https://2024.igem.wiki/tongji-software/team' target='_blank' style='cursor: pointer'>Roster</a>). The
+      team was formed based on the needs, with clear division of labor.</p>
     <h3>Support</h3>
     <p>In May 2024, we participated in an iGEM experience-sharing session with previous participants. During this
       session, we received valuable advice on team formation and management, including strategies for effectively
@@ -198,7 +199,9 @@
       campaign to raise public awareness of synthetic biology and subcellular localization, using both educational and
       interactive methods. For interactive courses design, we incorporated abundant games into the curriculum, such as
       "Gene Magician and Recipes", "Bio Repairmen", and "Molecular Postman", to enhance student engagement and
-      understanding. (See more in <a @click="router.push('/education')" style='cursor: pointer'>Education</a>)</p>
+      understanding. (See more in
+      <a href='https://2024.igem.wiki/tongji-software/education' target='_blank' style='cursor: pointer'>Education</a>)
+    </p>
     <p>In addition to on-site science popularization activities, we have also promoted our project online through the
       social media platform Tiktok. Approximately 10,000 people have already watched our promotional video!For more
       details about the video, please see <a href="https://www.douyin.com/video/7417375727126924578" target='_blank'>here</a>.
@@ -315,7 +318,7 @@
     </ul>
     <h2>Learning Business Models</h2>
     <img src='https://static.igem.wiki/teams/5503/accompanying-images/integratedhp29-1.webp' alt='IntegratedHP29'>
-    <p>To strengthen our project's commercial viability, we engaged in insightful discussions with YanIn, a high-tech
+    <p>To strengthen our project's commercial viability, we engaged in insightful discussions with Yanyin, a high-tech
       company focused on providing digital platforms for the biopharmaceutical field, to learn from their extensive
       business experience. This exchange provided us with valuable knowledge on how to effectively transition from
       research to marketable products, covering key areas such as commercialization strategies, market positioning, and

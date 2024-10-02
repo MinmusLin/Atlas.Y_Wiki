@@ -92,7 +92,8 @@
       </li>
     </ul>
     <img src='https://static.igem.wiki/teams/5503/accompanying-images/implementation11-1.webp' alt='Implementation11'>
-    <p style='text-align: center'>(see <a @click="router.push('/entrepreneurship')" style='cursor: pointer'>
+    <p style='text-align: center'>(See
+      <a href='https://2024.igem.wiki/tongji-software/entrepreneurship' target='_blank' style='cursor: pointer'>
       Entrepreneurship</a> for more detailed information of users' profiles)</p>
   </TextContent>
 </template>

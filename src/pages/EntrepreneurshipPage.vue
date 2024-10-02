@@ -144,7 +144,7 @@
     <img src='https://static.igem.wiki/teams/5503/accompanying-images/entrepreneurship5-1.webp'
          alt='Entrepreneurship5'
          style='width: 700px'>
-    <p class='tip' style='text-align: center'>YanIn Technology is a high-tech company focused on providing digital
+    <p class='tip' style='text-align: center'>Yanyin Technology is a high-tech company focused on providing digital
       platforms for the biopharmaceutical field, offering comprehensive digital solutions related to genomics,
       proteomics, and synthetic biology. The company is dedicated to enhancing the efficiency and accuracy of
       biopharmaceutical research through advanced algorithms, artificial intelligence, and big data processing, helping
@@ -153,7 +153,7 @@
       application prospects, revenue model, and promotion strategies for Atlas.Y. Based on our project situation, we
       developed a corresponding commercialization plan.
     </p>
-    <h5>Table. Interview Transcripts with YanIn</h5>
+    <h5>Table. Interview Transcripts with Yanyin</h5>
     <img src='https://static.igem.wiki/teams/5503/accompanying-images/entrepreneurship6-1.webp'
          class='img-table'
          alt='Entrepreneurship6'>
@@ -717,7 +717,7 @@ const textContents = ref<string[]>([
   '<ul><li style="margin-left: 17px">Collected market prices of competing products</li>' +
   '<li style="margin-left: 17px">Conducted SWOT analysis</li></ul>' +
   '<li>2024.8.10</li>' +
-  '<ul><li style="margin-left: 17px">Consulted YanYin Technology</li>' +
+  '<ul><li style="margin-left: 17px">Consulted Yanyin Technology</li>' +
   '<li style="margin-left: 17px">Extracted 6 keys of design strategies</li></ul>',
 
   '<h3 style="margin-bottom: 10px; margin-left: -18px">Prototype</h3>' +
