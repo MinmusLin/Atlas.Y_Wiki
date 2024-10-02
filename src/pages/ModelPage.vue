@@ -5,8 +5,9 @@
     <p>In our project, a protein structure prediction model is essential for accurately generating fusion proteins' pdb
       files for subsequent stability and functional evaluations. After comparing various options, we selected
       <span class='bold'>ESMFold</span> for its exceptional speed, moderate computational resource requirements, and
-      ability to handle large sequences without MSAs. These advantages make ESMFold the most efficient choice for our
-      workflow, ensuring fast and reliable structural predictions.</p>
+      ability to handle large sequences without <span class='bold'>multiple sequence alignments (MSAs)</span>. These
+      advantages make ESMFold the most efficient choice for our workflow, ensuring fast and reliable structural
+      predictions.</p>
     <h5>Table. Comparison of protein structure prediction tools</h5>
     <table>
       <thead>
@@ -55,8 +56,8 @@
       folding module processes sequence features extracted from the language model using multi-head self-attention and
       other transformations. These features are then passed to the structure module, which applies invariant point
       attention mechanisms to predict 3D atomic coordinates of proteins. Unlike AlphaFold, ESMFold does
-      <span class='bold'>not rely on multiple sequence alignments (MSAs)</span>, which significantly speeds up its
-      prediction process, making it faster without sacrificing accuracy, especially for shorter sequences.</p>
+      <span class='bold'>not rely on MSAs</span>, which significantly speeds up its prediction process, making it faster
+      without sacrificing accuracy, especially for shorter sequences.</p>
     <img src='https://static.igem.wiki/teams/5503/accompanying-images/model1-1.webp' alt='Model1'>
     <h5>Figure. ESMFold model architecture</h5>
     <p>The <span class='bold'>training data</span> comes from two main sources: <span class='bold'>experimentally

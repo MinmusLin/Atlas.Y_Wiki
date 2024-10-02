@@ -104,7 +104,9 @@ const items = [
   },
   {
     title: '13 April 2024',
-    algorithm: [],
+    algorithm: [
+      'Conduct a seminar on topic selection and give preliminary consideration to a program in the direction of optogenetics.'
+    ],
     software: [],
     design: [],
     hp: [
