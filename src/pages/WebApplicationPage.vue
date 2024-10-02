@@ -11,6 +11,17 @@
         <TitleBox title='WEB APPLICATION'/>
       </div>
       <p class='welcome'>Welcome to Atlas.Y!</p>
+      <iframe style='border: none; margin-top: 47px; margin-bottom: 44px; z-index: 2'
+              title='Tongji-Software: Atlas.Y: An Advanced Targeting and Localization Assistance Syst... (2024) - Project Promotion [English]'
+              width='1202'
+              height='676'
+              src='https://video.igem.org/videos/embed/bd8a4fa2-aef2-4e08-b860-7c6eeeb8bd1a'
+              :allowfullscreen='true'
+              sandbox='allow-same-origin allow-scripts allow-popups allow-forms'/>
+      <p class='promote'>Due to geographic distance, network latency, and computational resource limitations, you may
+        experience longer wait times on the calculation page. However, please rest assured that the results will be
+        provided if you wait patiently. We also recommend watching our tutorial video, which uses real data and
+        calculations to help you quickly familiarize yourself with the software.</p>
       <div class='button-area'>
         <button class='btn how-to-use'
                 @click="router.push('/implementation')">
@@ -51,10 +62,22 @@ function goToLink(link: string) {
 .welcome {
   font-family: 'Futura Md BT Medium', sans-serif;
   text-align: center;
-  font-size: 36px;
+  font-size: 60px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 10px;
+  z-index: 1;
+  width: 50%;
+}
+
+.promote {
+  font-family: 'Futura Md BT Medium', sans-serif;
+  text-align: center;
+  font-size: 30px;
   color: white;
   margin-bottom: 40px;
   z-index: 1;
+  width: 1202px;
 }
 
 .button-area {
@@ -63,7 +86,7 @@ function goToLink(link: string) {
   justify-content: center;
   align-items: center;
   gap: 75px;
-  margin-bottom: 75px;
+  margin-bottom: 60px;
   z-index: 1;
 }
 
@@ -83,6 +106,7 @@ function goToLink(link: string) {
 .how-to-use {
   background-color: white;
   color: #5182F8;
+  margin-top: 42px;
 }
 
 .try-it {
