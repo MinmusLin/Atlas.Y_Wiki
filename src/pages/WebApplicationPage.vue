@@ -12,10 +12,10 @@
       </div>
       <p class='welcome'>Welcome to Atlas.Y!</p>
       <iframe style='border: none; margin-top: 47px; margin-bottom: 44px; z-index: 2'
-              title='Tongji-Software: Atlas.Y: An Advanced Targeting and Localization Assistance Syst... (2024) - Project Promotion [English]'
-              width='1202'
-              height='676'
-              src='https://video.igem.org/videos/embed/bd8a4fa2-aef2-4e08-b860-7c6eeeb8bd1a'
+              title='Atlas.Y --- example video'
+              width='1332'
+              height='749'
+              src='https://video.igem.org/videos/embed/dd4635b1-17b7-473f-afed-075406950304'
               :allowfullscreen='true'
               sandbox='allow-same-origin allow-scripts allow-popups allow-forms'/>
       <p class='promote'>Due to geographic distance, network latency, and computational resource limitations, you may
