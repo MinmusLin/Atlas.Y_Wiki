@@ -35,7 +35,7 @@
     <img src='https://static.igem.wiki/teams/5503/accompanying-images/proofofconcept1-2.webp'
          alt='ProofOfConcept1'
          style='width: 100%'>
-    <h5>Figure. Multiplying Factor Distribution for Different Subcellular Localization</h5>
+    <h5>Figure. Multiplying factor distribution for different subcellular localization</h5>
     <p>Our findings provide strong evidence that the proposed methodology <span class='bold'>significantly improves
       </span> the likelihood of protein localization to designated target regions. The observed increase in localization
       efficiency, which exceeded expectations, aligns closely with our initial hypothesis. This substantial improvement
@@ -75,7 +75,7 @@
       design.</p>
     <p>Our plasmid design procedure is as follows:</p>
     <img src='https://static.igem.wiki/teams/5503/accompanying-images/proofofconcept3-1.webp' alt='ProofOfConcept3'>
-    <h5>Figure. Plasmid Design Procedure</h5>
+    <h5>Figure. Plasmid design procedure</h5>
   </TextContent>
 </template>
 

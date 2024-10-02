@@ -153,7 +153,7 @@
       application prospects, revenue model, and promotion strategies for Atlas.Y. Based on our project situation, we
       developed a corresponding commercialization plan.
     </p>
-    <h5>Table. Interview Transcripts with Yanyin</h5>
+    <h5>Table. Interview transcripts with Yanyin</h5>
     <img src='https://static.igem.wiki/teams/5503/accompanying-images/entrepreneurship6-1.webp'
          class='img-table'
          alt='Entrepreneurship6'>
@@ -297,7 +297,7 @@
 
     <h1 id='5 Competitor Analysis and Product Pricing'>5 Competitor Analysis and Product Pricing</h1>
     <h2>5.1 Market Bioinformatics Tool Price</h2>
-    <h5>Table. Bioinformatics Tools Market Price</h5>
+    <h5>Table. Bioinformatics tools market price</h5>
     <img src='https://static.igem.wiki/teams/5503/accompanying-images/entrepreneurship8-1.webp'
          class='img-table'
          alt='Entrepreneurship8'>
@@ -321,7 +321,7 @@
          alt='Entrepreneurship10'>
     <h2>5.3 Atlas.Y Pricing</h2>
     <h4>5.3.1 Overview</h4>
-    <h5>Table. Atlas.Y Pricing</h5>
+    <h5>Table. Atlas.Y pricing</h5>
     <img src='https://static.igem.wiki/teams/5503/accompanying-images/entrepreneurship11-1.webp'
          class='img-table'
          alt='Entrepreneurship11'>
