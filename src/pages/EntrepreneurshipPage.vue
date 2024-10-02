@@ -1,8 +1,8 @@
 <!--suppress HtmlUnknownTag-->
 <template>
   <TextContent title='ENTREPRENEURSHIP'
-               :title-list="['Overview', 'Business Model Canvas', 'Market', 'Profit Model Design', 'Competitor Analysis and Product Pricing', 'Financial Planning', 'Future Development', 'Business Plan']">
-    <h1 id='Overview'>Overview</h1>
+               :title-list="['1 Overview', '2 Business Model Canvas', '3 Market', '4 Profit Model Design', '5 Competitor Analysis and Product Pricing', '6 Financial Planning', '7 Future Development', '8 Business Plan']">
+    <h1 id='1 Overview'>1 Overview</h1>
     <p>In the Entrepreneurship section, we once again chose the <span class='bold'>EPIC model (Elicit, Prototype,
       Iterate, Consolidate)</span> as the overall framework for the project. Starting from background guidance, initial
       business design and testing, through repeated iterations and improvements, we ultimately aim for integration and
@@ -85,11 +85,11 @@
       </li>
     </ul>
 
-    <h1 id='Business Model Canvas'>Business Model Canvas</h1>
+    <h1 id='2 Business Model Canvas'>2 Business Model Canvas</h1>
     <img src='https://static.igem.wiki/teams/5503/accompanying-images/entrepreneurship1-3.webp' alt='Entrepreneurship1'>
 
-    <h1 id='Market'>Market</h1>
-    <h2>Target User Profile</h2>
+    <h1 id='3 Market'>3 Market</h1>
+    <h2>3.1 Target User Profile</h2>
     <div class='container'>
       <div class='user-image' @mouseleave='onMouseLeave'>
         <TransitionGroup name='list'>
@@ -129,18 +129,18 @@
            :class="{'center-text': canSwap}"/>
       </div>
     </div>
-    <h2>Timing of Demand</h2>
-    <h4>Project Planning and Experimental Design Phase</h4>
+    <h2>3.2 Timing of Demand</h2>
+    <h4>3.2.1 Project Planning and Experimental Design Phase</h4>
     <p>During the planning and design phase of a research project, researchers need to determine the subcellular
       localization of enzymes to optimize yeast metabolic pathways. Therefore, they require molecular tagging design
       tools in the early stages.</p>
-    <h4>Experimental Optimization and Result Analysis Phase</h4>
+    <h4>3.2.2 Experimental Optimization and Result Analysis Phase</h4>
     <p>During the analysis of experimental results, if metabolic pathways or protein localization do not perform as
       expected, researchers will use the tool to redesign the subcellular localization in yeast for optimization.</p>
-    <h4>Commercial Production Phase</h4>
+    <h4>3.2.3 Commercial Production Phase</h4>
     <p>In biopharmaceutical or industrial fermentation processes, companies optimize production processes before scaling
       up. At this stage, it is crucial to ensure that the subcellular localization of key enzymes is optimal.</p>
-    <h2>Business Model Exchange and Learning</h2>
+    <h2>3.3 Business Model Exchange and Learning</h2>
     <img src='https://static.igem.wiki/teams/5503/accompanying-images/entrepreneurship5-1.webp'
          alt='Entrepreneurship5'
          style='width: 700px'>
@@ -163,8 +163,8 @@
       market, enhance product features, and ensure the project's sustainable development through flexible profit models
       and marketing strategies.</p>
 
-    <h1 id='Profit Model Design'>Profit Model Design</h1>
-    <h2>Membership-based Profitability</h2>
+    <h1 id='4 Profit Model Design'>4 Profit Model Design</h1>
+    <h2>4.1 Membership-based Profitability</h2>
     <p>During the market analysis and assessment of Atlas.Y, we gained a deep understanding of the needs and
       expectations of users at various levels, particularly the impact of the SHEEL framework on different users.</p>
     <p>Based on this research, we developed a flexible and attractive membership system that will better meet the
@@ -178,11 +178,11 @@
     <img src='https://static.igem.wiki/teams/5503/accompanying-images/entrepreneurship7-2.webp'
          class='img-table'
          alt='Entrepreneurship7'>
-    <h2>Algorithm Store</h2>
+    <h2>4.2 Algorithm Store</h2>
     <p>The algorithms offered in the <span class='bold'>algorithm store</span> can be purchased on demand by users to
       meet specific or infrequent research needs. Such in-app purchases provide flexibility for users while generating
       an additional source of income for the software.</p>
-    <h4>Product List</h4>
+    <h4>4.2.1 Product List</h4>
     <ol>
       <li><span class='bold'>Site-Specific CAD Scoring System</span></li>
       <p>The CAD scoring algorithm provides a quantitative evaluation of the structural similarity between a protein's
@@ -207,7 +207,7 @@
         the design of novel proteins, enhances experimental efficiency, and improves protein design for specific
         cellular applications.</p>
     </ol>
-    <h4>Subscription</h4>
+    <h4>4.2.2 Subscription</h4>
     <p>To cater to different user needs and encourage frequent use, we have designed algorithm packages that provide
       both cost savings and flexibility in usage. By offering bundled packages, users who need regular access to
       multiple algorithms can benefit from reduced costs, compared to purchasing each algorithm separately. This
@@ -218,7 +218,7 @@
       can purchase a multi-use package to reduce costs over time. Additionally, users who need access to all available
       algorithms can benefit from the "all-in-one" package, further enhancing flexibility and encouraging long-term
       commitment through longer validity periods.</p>
-    <h2>Advertising Revenue</h2>
+    <h2>4.3 Advertising Revenue</h2>
     <p>In our free software version, we will embed advertisements related to the biotechnology field, allowing users to
       click on ads based on their interests to learn more. This approach not only provides users with valuable content
       relevant to their research but also generates additional income for us. We will adopt the following revenue
@@ -235,8 +235,8 @@
     </ul>
     <p>This advertising revenue strategy will help us generate income from our free user base and offer advertisers an
       efficient channel to directly reach relevant researchers, research teams, and other target user groups.</p>
-    <h2>Academic Discounts</h2>
-    <h4>Purpose and Alignment with Human Practices</h4>
+    <h2>4.4 Academic Discounts</h2>
+    <h4>4.4.1 Purpose and Alignment with Human Practices</h4>
     <p>The <span class='bold'>academic discount</span> initiative aims to make advanced bioinformatics tools accessible
       to researchers and educational institutions that may face budget constraints. By offering significant discounts,
       the Atlas.Y platform not only promotes research but also aligns with core values of <span class='bold'>social
@@ -248,7 +248,7 @@
       institutions that work for the betterment of society. By enabling more research on issues such as sustainability,
       global health, and environmental protection, the Atlas.Y platform contributes to long-term societal benefits.</p>
 
-    <h4>Academic Discount and Technology Transfer</h4>
+    <h4>4.4.2 Academic Discount and Technology Transfer</h4>
     <p>The <span class='bold'>academic discount</span> is structured to provide up to <span class='bold'>50% off</span>
       for educational institutions, ensuring that financial limitations do not impede scientific progress. By offering
       different pricing tiers (Basic, Professional, and Enterprise), the platform caters to both small and large
@@ -271,7 +271,7 @@
         for public benefit, while exclusive licenses allow for targeted commercial applications.
       </li>
     </ul>
-    <h4>Social Care and Sustainability</h4>
+    <h4>4.4.3 Social Care and Sustainability</h4>
     <p>By offering academic discounts and focusing on technology transfer, the Atlas.Y platform embodies a commitment to
       <span class='bold'>social responsibility</span>. This approach ensures that advancements in technology are not
       just commercialized but are also shared with the broader academic community, which often drives research for
@@ -283,7 +283,7 @@
         empowering researchers to bring innovative, sustainable solutions to life.
       </li>
     </ul>
-    <h4>Measurable Impact</h4>
+    <h4>4.4.4 Measurable Impact</h4>
     <ul>
       <li><span class='bold'>Long-term Societal Benefits</span>: Supporting research through affordable tools
         accelerates <span class='bold'>scientific discoveries</span> that can address societal challenges such as
@@ -295,8 +295,8 @@
       </li>
     </ul>
 
-    <h1 id='Competitor Analysis and Product Pricing'>Competitor Analysis and Product Pricing</h1>
-    <h2>Market Bioinformatics Tool Price</h2>
+    <h1 id='5 Competitor Analysis and Product Pricing'>5 Competitor Analysis and Product Pricing</h1>
+    <h2>5.1 Market Bioinformatics Tool Price</h2>
     <h5>Table. Bioinformatics Tools Market Price</h5>
     <img src='https://static.igem.wiki/teams/5503/accompanying-images/entrepreneurship8-1.webp'
          class='img-table'
@@ -315,17 +315,17 @@
       subscription) to €500 (e.g., Schrödinger Enterprise edition). Different colors distinguish the products, visually
       demonstrating their market positioning and pricing strategy variations. This information serves as a valuable
       reference for formulating competitive pricing strategies and lays the groundwork for capturing market share.</p>
-    <h2>SWOT Analysis</h2>
+    <h2>5.2 SWOT Analysis</h2>
     <img src='https://static.igem.wiki/teams/5503/accompanying-images/entrepreneurship10-2.webp'
          class='img-table'
          alt='Entrepreneurship10'>
-    <h2>Atlas.Y Pricing</h2>
-    <h4>Overview</h4>
+    <h2>5.3 Atlas.Y Pricing</h2>
+    <h4>5.3.1 Overview</h4>
     <h5>Table. Atlas.Y Pricing</h5>
     <img src='https://static.igem.wiki/teams/5503/accompanying-images/entrepreneurship11-1.webp'
          class='img-table'
          alt='Entrepreneurship11'>
-    <h4>Pricing Strategy</h4>
+    <h4>5.3.2 Pricing Strategy</h4>
     <p>The chart illustrates a comparison between individual purchase prices and bundled package prices for algorithm
       tools.</p>
     <img src='https://static.igem.wiki/teams/5503/accompanying-images/entrepreneurship12-1.webp'
@@ -362,8 +362,8 @@
       the <strong>potential savings of opting for annual subscriptions over monthly ones</strong>.
     </p>
 
-    <h1 id='Financial Planning'>Financial Planning</h1>
-    <h2>Market Trend Forecast</h2>
+    <h1 id='6 Financial Planning'>6 Financial Planning</h1>
+    <h2>6.1 Market Trend Forecast</h2>
     <img src='https://static.igem.wiki/teams/5503/accompanying-images/entrepreneurship15-1.webp'
          alt='Entrepreneurship15'
          style='width: 700px'>
@@ -374,7 +374,7 @@
       and pay-per-use models are expanding faster and hold larger market shares, with continued growth expected.
       Although individual subscriptions have a significant market share, their growth is more stable. Overall, the
       market shows strong growth potential, particularly in enterprise subscriptions and pay-per-use models.</p>
-    <h2>Market Size Forecast</h2>
+    <h2>6.2 Market Size Forecast</h2>
     <p>Given the niche nature of our software, the global target user base is relatively limited. We focus on
       researchers and companies engaged in <span class='bold'>yeast metabolic engineering, protein production, and
       biopharmaceuticals</span> worldwide.</p>
@@ -387,7 +387,7 @@
     <p>Considering our highly specialized product targeting a specific field, a <span class='bold'>1% conversion rate
       </span> seems reasonable, particularly in the early market stages. This means, assuming 20,000-40,000 potential
       users, the projected number of actual paying users could be 200-400.</p>
-    <h2>Revenue Forecast</h2>
+    <h2>6.3 Revenue Forecast</h2>
     <img src='https://static.igem.wiki/teams/5503/accompanying-images/entrepreneurship16-1.webp'
          alt='Entrepreneurship16'
          style='width: 700px'>
@@ -428,7 +428,7 @@
       enterprise subscriptions</span> being the main revenue driver. Professional subscriptions also provide a
       relatively stable cash flow, while pay-per-use and advertising revenues, though smaller in proportion, add
       flexibility and diversity to the overall income.</p>
-    <h2>Cost Estimation</h2>
+    <h2>6.4 Cost Estimation</h2>
     <p><span class='bold'>The total annual cost for the first year</span> is estimated to range between
       <span class='bold'>¥595,000 and ¥1,219,000 (€76,000 to €156,000)</span>.</p>
     <img src='https://static.igem.wiki/teams/5503/accompanying-images/entrepreneurship17-1.webp'
@@ -439,14 +439,14 @@
     <img src='https://static.igem.wiki/teams/5503/accompanying-images/entrepreneurship18-1.webp'
          class='img-table'
          alt='Entrepreneurship18'>
-    <h2>Break-even Analysis</h2>
+    <h2>6.5 Break-even Analysis</h2>
     <p>We estimated the annual revenue from the global market in euros, with a projected range of <span class='bold'>
       €201,500 to €408,000</span>. Considering the company operates in China, costs are calculated in RMB, with a total
       annual cost range of <span class='bold'>€76,000 to €156,000 (converted to euros)</span>. The revenue vs. cost
       comparison chart illustrates the company's financial structure, showing that even in the most conservative
       scenario, revenues exceed costs, demonstrating profitability. We also expect the first year's costs to be the
       highest in recent years.</p>
-    <h3>Break-even Analysis</h3>
+    <h3>6.5.1 Break-even Analysis</h3>
     <img src='https://static.igem.wiki/teams/5503/accompanying-images/entrepreneurship19-1.webp'
          alt='Entrepreneurship19'
          style='width: 700px'>
@@ -480,11 +480,11 @@
     </ul>
     <p>Given the current revenue and cost structure, the company is already profitable, and with increased revenue and
       cost optimization, profit margins will further expand.</p>
-    <h3>LTV to CAC</h3>
+    <h3>6.5.2 LTV to CAC</h3>
     <img src='https://static.igem.wiki/teams/5503/accompanying-images/entrepreneurship20-1.webp'
          alt='Entrepreneurship20'
          style='width: 700px'>
-    <h4>Customer Acquisition Cost (CAC)</h4>
+    <h4>6.5.2.1 Customer Acquisition Cost (CAC)</h4>
     <p>Assumptions:</p>
     <ul>
       <li>Total Sales and Marketing Expenses: 80,000 RMB</li>
@@ -496,7 +496,7 @@
     <p>CAC = 266.67 RMB / 7.8 = 34.19 EUR</p>
     <p>The Customer Acquisition Cost (CAC) is €34.19.</p>
     <p>This represents the amount you spend on average to acquire one customer.</p>
-    <h4>Customer Lifetime Value (LTV)</h4>
+    <h4>6.5.2.2 Customer Lifetime Value (LTV)</h4>
     <p>Assumptions:</p>
     <ul>
       <li>Average Annual Revenue per Customer: 500 RMB</li>
@@ -510,7 +510,7 @@
       EUR</p>
     <p>The Customer Lifetime Value (LTV) is €179.48.</p>
     <p>This represents the total revenue generated from a customer over their lifetime minus the maintenance cost.</p>
-    <h4>LTV to CAC Ratio</h4>
+    <h4>6.5.3.3 LTV to CAC Ratio</h4>
     <p>The LTV/CAC ratio is an important metric that helps determine the efficiency of customer acquisition:</p>
     <p>LTV/CAC = LTV / CAC = 179.48 / 34.19 = 5.25</p>
     <ul>
@@ -526,8 +526,8 @@
       more customers, as the cost of acquisition is significantly lower than the value each customer brings over their
       lifetime.</p>
 
-    <h1 id='Future Development'>Future Development</h1>
-    <h2>Accelerator</h2>
+    <h1 id='7 Future Development'>7 Future Development</h1>
+    <h2>7.1 Accelerator</h2>
     <img src='https://static.igem.wiki/teams/5503/accompanying-images/entrepreneurship21-1.webp'
          alt='Entrepreneurship21'
          style='width: 700px'>
@@ -560,24 +560,24 @@
           towards higher levels of commercial success and social impact.</p>
       </div>
     </div>
-    <h2>Strategies for Sustained Revenue Growth</h2>
-    <h4>Membership Upgrade Strategy:</h4>
+    <h2>7.2 Strategies for Sustained Revenue Growth</h2>
+    <h4>7.2.1 Membership Upgrade Strategy:</h4>
     <p>Encourage users to transition from free or pay-per-use models to subscription plans by offering incentives. For
       example, users can receive discounts for upgrading, or access to additional services like premium features,
       priority support, or exclusive content. A tiered subscription model can also motivate users to upgrade by
       highlighting the benefits of higher-tier plans, such as increased usage limits or faster processing times.</p>
-    <h4>Value-Added Services:</h4>
+    <h4>7.2.2 Value-Added Services:</h4>
     <p>Introduce extra paid services or premium features to boost revenue. This could include offering advanced data
       analysis tools, personalized reports, or customization options tailored to specific customer needs. Technical
       support could be offered as a subscription service, or users could pay for specific consultations or expert
       advice. These add-ons will create new income streams while improving customer satisfaction.</p>
-    <h4>Cross-Selling and Bundling:</h4>
+    <h4>7.2.3 Cross-Selling and Bundling:</h4>
     <p>Develop bundle deals that combine your primary bioinformatics tools with complementary products, such as related
       databases or third-party software. Offering discounted packages for multiple tools or features can incentivize
       users to purchase more, increasing overall revenue. Cross-selling within your existing user base is an effective
       way to promote upgrades or additional products.</p>
-    <h2>Marketing Strategy</h2>
-    <h3>Brand Promotion in the Scientific Community</h3>
+    <h2>7.3 Marketing Strategy</h2>
+    <h3>7.3.1 Brand Promotion in the Scientific Community</h3>
     <ul>
       <li><span class='bold'>Collaboration with Research Institutions:</span></li>
       <p>Promote the product through partnerships with renowned global research institutions, universities, and
@@ -588,7 +588,7 @@
         as optimizing yeast metabolic pathways. This not only enhances brand credibility but also attracts high-end
         clients.</p>
     </ul>
-    <h3>Online and Offline Promotion</h3>
+    <h3>7.3.2 Online and Offline Promotion</h3>
     <li><span class='bold'>Targeted Advertising:</span></li>
     <p>Run targeted ads on platforms like Google Ads, LinkedIn, and ResearchGate, focusing on researchers and companies
       in the fields of metabolic engineering and biopharmaceuticals.</p>
@@ -603,14 +603,14 @@
     <li><span class='bold'>Collaborating with Key Opinion Leaders (KOLs):</span></li>
     <p>Work with influential scholars and researchers to endorse the product through social media or conference
       presentations, leveraging their authority to expand market penetration.</p>
-    <h3>Free Trial Program</h3>
+    <h3>7.3.3 Free Trial Program</h3>
     <li><span class='bold'>Limited-Time Free Use:</span></li>
     <p>Offer a one-month free trial, allowing potential customers to use the software in real projects and experience
       its advantages in optimizing yeast enzyme localization, encouraging conversions to paid users.</p>
     <li><span class='bold'>Premium Feature Previews:</span></li>
     <p>Allow free users to preview some premium features (e.g., automatic optimization in signal peptide design) to
       demonstrate their value and encourage upgrades to subscription plans.</p>
-    <h3>Academic Discounts</h3>
+    <h3>7.3.4 Academic Discounts</h3>
     <li><span class='bold'>Special Offers for Researchers:</span></li>
     <p>Provide academic discounts or subscription packages for researchers at universities and institutions, attracting
       customers from the academic community. Offer differentiated pricing for professional and enterprise subscriptions
@@ -618,7 +618,7 @@
     <li><span class='bold'>Bundled Sales:</span></li>
     <p>Partner with other bioinformatics tools or databases to offer subscription bundles, providing discounts for
       multiple tool or service combinations, thereby increasing overall purchase intent.</p>
-    <h2>Stage Forecast</h2>
+    <h2>7.4 Stage Forecast</h2>
     <p>Assuming that the number of customers and market share will gradually increase, while also considering that the
       costs are higher in the first year and will decrease over time, and the revenue will gradually grow. We made the
       following assumptions for the projection:</p>
@@ -639,10 +639,10 @@
     <p>Here is the 3-year, 5-year, and 10-year projection for revenue, cost, and profit, considering both minimum and
       maximum scenarios. The chart illustrates the steady growth in revenue, gradual reduction in costs, and subsequent
       increase in profits over time.</p>
-    <h2>Risk Consideration and Avoidance</h2>
+    <h2>7.5 Risk Consideration and Avoidance</h2>
     <img src='https://static.igem.wiki/teams/5503/accompanying-images/entrepreneurship23-1.webp' class='img-table'
          alt='Entrepreneurship23'>
-    <h2>Future</h2>
+    <h2>7.6 Future</h2>
     <p>The Atlas.Y software we have developed is a molecular tag design tool for optimizing subcellular localization of
       yeast enzymes, and it has already demonstrated immense potential in the fields of biotechnology and synthetic
       biology. Looking ahead, Atlas.Y will not only become an essential tool for researchers but also propel global
@@ -674,7 +674,7 @@
       helping more companies and research institutions achieve digital transformation in biotechnology, and advancing
       the development of global biopharmaceuticals and the green economy.</p>
 
-    <h1 id='Business Plan'>Business Plan</h1>
+    <h1 id='8 Business Plan'>8 Business Plan</h1>
     <p>To provide a comprehensive understanding of the practical applications and sustainability of our project, we have
       developed a detailed business plan. This section outlines our strategic vision for turning our innovative ideas
       into a viable solution, covering key aspects such as market analysis, revenue models, commercialization

@@ -1,7 +1,7 @@
 <template>
   <TextContent title='INTEGRATED HP'
-               :title-list="['LINE', 'Elicit', 'Prototype', 'Iterate', 'Consolidate']">
-    <h1 id='LINE'>LINE</h1>
+               :title-list="['1 LINE', '2 Elicit', '3 Prototype', '4 Iterate', '5 Consolidate']">
+    <h1 id='1 LINE'>1 LINE</h1>
     <p>We chose the <span class='bold'>EPIC</span> model (Elicit, Prototype, Iterate, Consolidate) as the overarching
       framework for our project. It provides a clear approach that guides us through the entire process, from
       identifying initial problems, designing and testing prototypes, to iterative improvements and final integration.
@@ -14,12 +14,12 @@
       key methodology connecting the entire project, driving the deep integration of technology and demand, and enabling
       the final functional integration and application.</p>
     <img src='https://static.igem.wiki/teams/5503/accompanying-images/integratedhp1-1.webp' alt='IntegratedHP1'>
-    <h2>1. Elicit</h2>
+    <h2>1.1 Elicit</h2>
     <p>At the early stages of the project, we first identified and outlined the key issues and challenges in current
       synthetic biology and yeast subcellular localization research through extensive literature review, expert
       interviews, and discussions with industry leaders in related fields.</p>
     <img src='https://static.igem.wiki/teams/5503/accompanying-images/integratedhp2-1.webp' alt='IntegratedHP2'>
-    <h2>2. Prototype</h2>
+    <h2>1.2 Prototype</h2>
     <p>After identifying the core issues, we designed and developed a prototype tool based on the collected information
       and requirements.</p>
     <ul>
@@ -27,19 +27,19 @@
       <li>Successfully ran example processes to validate the basic technical implementation of the software.</li>
     </ul>
     <img src='https://static.igem.wiki/teams/5503/accompanying-images/integratedhp3-1.webp' alt='IntegratedHP3'>
-    <h2>3. Iterate</h2>
+    <h2>1.3 Iterate</h2>
     <p>After developing the initial prototype, we engaged in further feedback discussions with target users and experts,
       and iteratively improved the tool based on their feedback.</p>
     <img src='https://static.igem.wiki/teams/5503/accompanying-images/integratedhp4-1.webp' alt='IntegratedHP4'>
-    <h2>4. Consolidate</h2>
+    <h2>1.4 Consolidate</h2>
     <p>After continuous iterative optimization, we integrated the tool to ensure it could run stably in practical
       applications and address user pain points. Ultimately, our project not only matured technically but also
       demonstrated strong market potential, laying a solid foundation for future expansion and application.</p>
     <img src='https://static.igem.wiki/teams/5503/accompanying-images/integratedhp5-1.webp' alt='IntegratedHP5'>
 
-    <h1 id='Elicit'>Elicit</h1>
-    <h2>Technical Preparation</h2>
-    <h3>literature Support</h3>
+    <h1 id='2 Elicit'>2 Elicit</h1>
+    <h2>2.1 Technical Preparation</h2>
+    <h3>2.1.1 literature Support</h3>
     <p>During the background research phase of our project, we systematically reviewed relevant literature to provide a
       solid scientific foundation. By analyzing and studying these sources, we ensured that the technical framework of
       our project is theoretically grounded and aligned with the latest research developments. The selected literature
@@ -50,28 +50,28 @@
     <img src='https://static.igem.wiki/teams/5503/accompanying-images/integratedhp6-1.webp'
          class='img-table'
          alt='IntegratedHP6'>
-    <h3>Technical Experts: Algorithm Feasibility</h3>
+    <h3>2.1.2 Technical Experts: Algorithm Feasibility</h3>
     <img src='https://static.igem.wiki/teams/5503/accompanying-images/integratedhp7-1.webp' alt='IntegratedHP7'>
     <p>In April 2024, we engaged in discussions with Guohui Chuai, whose research focuses on gene editing system
       optimization and bioinformatics algorithm development. During this conversation, we finalized the project's
       framework, evaluated and selected basic algorithms based on their feasibility, and discussed the rental of
       laboratory servers. These discussions provided essential guidance for structuring the project and ensuring the
       technical viability of our approaches.</p>
-    <h3>Laboratory Interview: Practical Needs</h3>
+    <h3>2.1.3 Laboratory Interview: Practical Needs</h3>
     <img src='https://static.igem.wiki/teams/5503/accompanying-images/integratedhp8-1.webp' alt='IntegratedHP8'>
     <p>In July 2024, we consulted Du Changsheng, whose research areas include molecular immunology and signal
       transduction, to assess the market demand and biological relevance of our project. Through this discussion, we
       analyzed the project's background, identifying its alignment with current market needs. This evaluation helped us
       better understand the potential demand and the practical necessity for the development of our project in the
       biotechnology industry.</p>
-    <h2>Team Construction</h2>
-    <h3>Self</h3>
+    <h2>2.2 Team Construction</h2>
+    <h3>2.2.1 Self</h3>
     <p>In the early stages, the student leaders engaged in in-depth discussions with the instructor to preliminarily
       establish the team structure, clarify division of labor requirements, and assemble a multidisciplinary team with
       clearly defined roles (see
       <a href='https://2024.igem.wiki/tongji-software/team' target='_blank' style='cursor: pointer'>Roster</a>). The
       team was formed based on the needs, with clear division of labor.</p>
-    <h3>Support</h3>
+    <h3>2.2.2 Support</h3>
     <p>In May 2024, we participated in an iGEM experience-sharing session with previous participants. During this
       session, we received valuable advice on team formation and management, including strategies for effectively
       organizing team members and maintaining smooth collaboration. We also discussed time management techniques to
@@ -79,15 +79,15 @@
       computational needs. This experience provided us with practical insights to optimize team dynamics, project
       timelines, and technical infrastructure.</p>
     <img src='https://static.igem.wiki/teams/5503/accompanying-images/integratedhp9-1.webp' alt='IntegratedHP9'>
-    <h3>Collaboration</h3>
-    <h4>Shanghai Area University Exchange</h4>
+    <h3>2.2.3 Collaboration</h3>
+    <h4>2.2.3.1 Shanghai Area University Exchange</h4>
     <p>On May 4, 2024, we participated in a Shanghai area university exchange, including Tongji University, Fudan
       University and ShanghaiTech University. The discussion focused on sharing project content, discussing Human
       Practices (HP) and Education (EDU) strategies, and exchanging ideas on team building. This interaction provided
       valuable insights into improving our project's impact and strengthened our approach to collaboration and team
       management.</p>
     <img src='https://static.igem.wiki/teams/5503/accompanying-images/integratedhp10-1.webp' alt='IntegratedHP10'>
-    <h4>Northwestern Polytechnical University</h4>
+    <h4>2.2.3.2 Northwestern Polytechnical University</h4>
     <p>On August 9, 2024, we engaged in a sharing and exchange session with Northwestern Polytechnical University during
       the 3rd Synbio Synthetic Biology Competition. Through this exchange, we received valuable advice on team division
       of labor, which helped us refine our approach to task allocation and team collaboration within our project. This
@@ -96,9 +96,9 @@
       <img src='https://static.igem.wiki/teams/5503/accompanying-images/integratedhp11-1.webp' alt='IntegratedHP11'>
       <img src='https://static.igem.wiki/teams/5503/accompanying-images/integratedhp12-1.webp' alt='IntegratedHP12'>
     </div>
-    <h2>Social considerations</h2>
-    <h3>Social benefit considerations</h3>
-    <h4>Acts on Production</h4>
+    <h2>2.3 Social considerations</h2>
+    <h3>2.3.1 Social benefit considerations</h3>
+    <h4>2.3.1.1 Acts on Production</h4>
     <p class='bold'>Primary Direct Effect FOR Production</p>
     <img src='https://static.igem.wiki/teams/5503/accompanying-images/integratedhp13-1.webp' alt='IntegratedHP13'>
     <p class='bold'>a. Increase in Production Efficiency:</p>
@@ -139,7 +139,7 @@
         access essential therapeutic enzymes and medications.
       </li>
     </ul>
-    <h4>Acts on Academia</h4>
+    <h4>2.3.1.2 Acts on Academia</h4>
     <img src='https://static.igem.wiki/teams/5503/accompanying-images/integratedhp15-1.webp' alt='IntegratedHP15'>
     <p class='bold'>a. Higher Subcellular Resolution: </p>
     <ul>
@@ -159,8 +159,8 @@
         support for the development of biotechnology.
       </li>
     </ul>
-    <h3>Social Survey and Public Participation</h3>
-    <h4>Social Survey and Public Acceptance</h4>
+    <h3>2.3.2 Social Survey and Public Participation</h3>
+    <h4>2.3.2.1 Social Survey and Public Acceptance</h4>
     <img src='https://static.igem.wiki/teams/5503/accompanying-images/integratedhp16-1.webp' alt='IntegratedHP16'>
     <p>We collected a total of 139 responses from participants across a variety of academic fields. The most prominent
       areas of study include Biology, Synthetic Biology, and Bioinformatics, highlighting the significant interest in
@@ -175,7 +175,7 @@
       is technically feasible. The data shows that 97.12% of respondents (135 people) consider the technology feasible,
       while only 2.88% (4 people) disagree. Similarly, 95.68% of respondents (133 people) expressed willingness to use
       computational tools to help design protein subcellular localization tags, with only 4.32% (6 people) unwilling to
-      do so. From these two questions, it is evident that the public has a high level of acceptance of both the
+      do so. From these two questions, it is evident that the respondents have a high level of acceptance of both the
       scientific feasibility of molecular tag technology and the application of computational tools, indicating broad
       potential for the promotion and development of these technologies.</p>
     <div class='img-container'>
@@ -193,7 +193,7 @@
       Only 0.72% of respondents (1 person) see application potential in other fields.</p>
     <p>In summary, this technology shows broad application prospects in biomedicine, academic research, and industrial
       production, with its potential in the biomedicine field standing out the most.</p>
-    <h4>Public Awareness and Educational Outreach</h4>
+    <h4>2.3.2.2 Public Awareness and Educational Outreach</h4>
     <p>Facing challenges in gathering initial questionnaires revealed that public knowledge of synthetic biology is
       quite limited, which underscored the need for educational outreach. In response, we initiated a half-year-long
       campaign to raise public awareness of synthetic biology and subcellular localization, using both educational and
@@ -210,8 +210,8 @@
       students access to this cutting-edge field.</p>
     <img src='https://static.igem.wiki/teams/5503/accompanying-images/integratedhp20-1.webp' alt='IntegratedHP21'>
 
-    <h1 id='Prototype'>Prototype</h1>
-    <h2>Prototype and Project Progress</h2>
+    <h1 id='3 Prototype'>3 Prototype</h1>
+    <h2>3.1 Prototype and Project Progress</h2>
     <p>After establishing the initial project framework, we proceeded with extensive experimental adjustments over a
       longer period. Throughout this phase, we consulted Asst. Prof. Guohui Chuai multiple times for advice on
       environment setup, containers, and related technical issues. His lab also lent us a temporary server for
@@ -231,8 +231,8 @@
            class='img22'>
     </div>
 
-    <h1 id='Iterate'>Iterate</h1>
-    <h2>Follow-up with 139 Initial Survey Respondents</h2>
+    <h1 id='4 Iterate'>4 Iterate</h1>
+    <h3>4.1 Follow-up with 139 Initial Survey Respondents</h3>
     <p>After completing the project prototype design, we conducted follow-up interviews with the 139 individuals
       previously surveyed to gather their insights on the technology's strengths and weaknesses, helping us optimize the
       design in the iteration phase. </p>
@@ -255,8 +255,8 @@
       result in harmful by-products, affecting overall outcomes. Lastly, the high technical difficulty (56.83%, 79
       people) involved in precise localization requires complex technical measures, making large-scale applications of
       the technology more challenging.</p>
-    <h2>In-depth Discussion with Technical Professionals</h2>
-    <h3>Professor of Bioinformatics and AI</h3>
+    <h3>4.2 In-depth Discussion with Technical Professionals</h3>
+    <h4>4.2.1 Professor of Bioinformatics and AI</h4>
     <img src='https://static.igem.wiki/teams/5503/accompanying-images/integratedhp25-1.webp' alt='IntegratedHP25'>
     <p>On June 10, 2024, we had a discussion with <span class='bold'>Professor Wang Chenfei</span>, whose research
       focuses on bioinformatics and artificial intelligence. During the conversation, we broadened our understanding of
@@ -265,14 +265,14 @@
       for project validation, particularly recommending the use of dry lab validation alongside wet lab experiments.
       This discussion broadened the scientific foundation of our subcellular localization design and offered insights to
       further explore the potential of our project while improving our proof-of-concept mechanisms.</p>
-    <h2>Professor of Biochemistry: Wet Experiment Validation</h2>
+    <h3>4.3 Professor of Biochemistry: Wet Experiment Validation</h3>
     <p>On July 31, 2024, we consulted <span class='bold'>Professor Guo Zhanyun</span> for advice on our wet lab
       experiment design. Given our limited time and experience in yeast cultivation, we sought guidance on how to obtain
       preliminary results as quickly as possible. During the conversation, Professor Guo helped us refine our experiment
       design and shared valuable insights and detailed experiences, particularly regarding the challenges of yeast
       cultivation. This discussion allowed us to enhance our approach to the wet lab experiments and better navigate the
       complexities of working with yeast.</p>
-    <h2>2024 1st Northeast Region iGEM Team Meeting</h2>
+    <h3>4.4 2024 1st Northeast Region iGEM Team Meeting</h3>
     <img src='https://static.igem.wiki/teams/5503/accompanying-images/integratedhp26-1.webp' alt='IntegratedHP26'>
     <p>At the first Northeastern iGEM Team Remote Exchange Conference on August 12, 2024, after our remote presentation,
       we collected feedback and development suggestions from biology students through a survey. The feedback indicated
@@ -280,7 +280,7 @@
       comprehensive to help new users get started quickly. Based on these suggestions, we plan to optimize the user
       interface, improve the user manual, and expand software features in the next version to meet a broader range of
       research needs.</p>
-    <h2>Tongji-Westlake iGEM Exchange Meeting</h2>
+    <h3>4.5 Tongji-Westlake iGEM Exchange Meeting</h3>
     <img src='https://static.igem.wiki/teams/5503/accompanying-images/integratedhp27-1.webp' alt='IntegratedHP27'>
     <p>On August 28, 2024, we participated in the Tongji-Westlake iGEM cross-college exchange meeting. During the
       meeting, we engaged in discussions with the team responsible for the Model section from Westlake University. The
@@ -288,15 +288,15 @@
       and strategies for improving the modeling aspect of our own project. This collaboration helped refine our
       understanding of model integration and opened up possibilities for more effective implementation in future
       work.</p>
-    <h2>Tongji University iGEM Exchange Meeting</h2>
+    <h3>4.6 Tongji University iGEM Exchange Meeting</h3>
     <p>On September 14, 2024, we participated in a Tongji University iGEM exchange meeting with several professors from
       the School of Life Science and Technology. During the discussion, we realized that we needed to better elaborate
       on the biological background and market demand for our project. Additionally, it became clear that the software's
       user-friendliness required improvement, with more user guidance needed within the interface to ensure a smoother
       experience for customers. This feedback provided valuable direction for refining our project.</p>
 
-    <h1 id='Consolidate'>Consolidate</h1>
-    <h2>Addressing Social Challenges and Risk Mitigation</h2>
+    <h1 id='5 Consolidate'>5 Consolidate</h1>
+    <h2>5.1 Addressing Social Challenges and Risk Mitigation</h2>
     <img src='https://static.igem.wiki/teams/5503/accompanying-images/integratedhp28-1.webp' alt='IntegratedHP28'>
     <p class='bold'>Addressing Technological Inequality:</p>
     <ul>
@@ -316,7 +316,7 @@
         predict changes in the job market and formulate corresponding adjustment strategies.
       </li>
     </ul>
-    <h2>Learning Business Models</h2>
+    <h2>5.2 Learning Business Models</h2>
     <img src='https://static.igem.wiki/teams/5503/accompanying-images/integratedhp29-1.webp' alt='IntegratedHP29'>
     <p>To strengthen our project's commercial viability, we engaged in insightful discussions with Yanyin, a high-tech
       company focused on providing digital platforms for the biopharmaceutical field, to learn from their extensive
@@ -327,7 +327,7 @@
     <img src='https://static.igem.wiki/teams/5503/accompanying-images/integratedhp30-1.webp'
          class='img-table'
          alt='IntegratedHP30'>
-    <h2>Accelarator</h2>
+    <h2>5.3 Accelarator</h2>
     <p>Support from an accelerator is vital for any startup, and we are fortunate to receive strong backing from Tongji
       University Entrepreneurship Valley. As a leading incubator, it offers us office space, entrepreneurial training,
       and access to investors, clients, and experts through its vast network. This has significantly advanced our
