@@ -831,7 +831,7 @@ const activeCircle = ref<number | null>(-1)
 const activeBox = ref<number | null>(null)
 const showTextBox = ref(false)
 const currentText = ref<ImageText | null>(null)
-const bottomText = ref<string[]>(['<strong>Userprofile</strong><br>———————————————————————————<br>User profile will be presented here.<br>Mouse over the corresponding image to view the details.'])
+const bottomText = ref<string[]>(['<strong>Userprofile</strong><br>———————————————————————————<br>User profile will be presented here.<br><strong style="color: #5182F8">Mouse over the corresponding image to view the details.</strong>'])
 const showBottomTextMask = ref(false)
 const images = reactive([...initialImages])
 let canSwap = ref(true)
@@ -873,7 +873,7 @@ function resetText() {
   images.push(...initialImages)
   currentText.value = null
   showTextBox.value = false
-  bottomText.value = ['<strong>Userprofile</strong><br>———————————————————————————<br>User profile will be presented here.<br>Mouse over the corresponding image to view the details.']
+  bottomText.value = ['<strong>Userprofile</strong><br>———————————————————————————<br>User profile will be presented here.<br><strong style="color: #5182F8">Mouse over the corresponding image to view the details.</strong>']
 }
 </script>
 
