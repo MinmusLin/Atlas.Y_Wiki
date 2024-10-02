@@ -435,9 +435,6 @@
 
 <script setup lang='ts'>
 import TextContent from '@/components/TextContent.vue'
-import {useRouter} from 'vue-router'
-
-const router = useRouter()
 </script>
 
 <style scoped>

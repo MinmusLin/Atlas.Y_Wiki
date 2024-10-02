@@ -24,7 +24,7 @@
         calculations to help you quickly familiarize yourself with the software.</p>
       <div class='button-area'>
         <button class='btn how-to-use'
-                @click="router.push('/implementation')">
+                @click="goToLink('https://2024.igem.wiki/tongji-software/implementation')">
           How to Use
         </button>
         <button class='btn try-it'
@@ -37,10 +37,7 @@
 </template>
 
 <script setup lang='ts'>
-import {useRouter} from 'vue-router'
 import TitleBox from '@/components/TitleBox.vue'
-
-const router = useRouter()
 
 function goToLink(link: string) {
   window.open(link, '_blank')

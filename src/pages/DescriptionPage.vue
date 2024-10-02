@@ -66,7 +66,7 @@
       <span class='bold'>time and space</span>.
     </p>
     <div class='btn-area'>
-      <button class='btn' @click="router.push('/software')">
+      <button class='btn' @click="goToLink('https://2024.igem.wiki/tongji-software/software')">
         Try
         <img src='https://static.igem.wiki/teams/5503/design-materials/defaultlogo.webp'
              alt='DefaultLogo'
@@ -120,10 +120,11 @@
 </template>
 
 <script setup lang='ts'>
-import {useRouter} from 'vue-router'
 import TextContent from '@/components/TextContent.vue'
 
-const router = useRouter()
+function goToLink(link: string) {
+  window.open(link, '_blank')
+}
 </script>
 
 <style scoped>

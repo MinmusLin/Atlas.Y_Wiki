@@ -100,10 +100,7 @@
 </template>
 
 <script setup lang='ts'>
-import {useRouter} from 'vue-router'
 import TextContent from '@/components/TextContent.vue'
-
-const router = useRouter()
 </script>
 
 <style scoped>
