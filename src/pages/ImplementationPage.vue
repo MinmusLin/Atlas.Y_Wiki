@@ -32,6 +32,7 @@
     <img src='https://static.igem.wiki/teams/5503/accompanying-images/implementation2-1.webp' alt='Implementation2'>
     <p>After initiating the query, the software will generate and match localization fusion proteins for the user,
       displaying them based on stability scores. Users can select specific entries according to their preferences.</p>
+    <img src='https://static.igem.wiki/teams/5503/accompanying-images/implementation3-1.webp' alt='Implementation3'>
     <p>On the details page of a specific entry, users can view detailed information about the original protein sequence,
       signal sequence, linker sequence, and fusion protein sequence. The left side of the page will display the 3D
       structure of the fusion protein, allowing users to drag and rotate it for viewing. Afterwards, users can click the

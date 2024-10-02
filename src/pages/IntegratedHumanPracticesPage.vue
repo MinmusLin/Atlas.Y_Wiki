@@ -98,6 +98,14 @@
     </div>
     <h2>2.3 Social considerations</h2>
     <h3>2.3.1 Social benefit considerations</h3>
+    <p>Considering social benefits ensures the sustainability of the project and aligns with its core objectives. In a
+      technology-driven bioinformatics project, optimizing production efficiency, reducing resource consumption, and
+      lowering environmental impacts are direct goals that also have positive indirect effects on environmental
+      protection and public health. Social benefit analysis allows us to evaluate the long-term societal impacts of the
+      technology, enhancing the project’s added value and competitiveness. Additionally, this analysis integrates Human
+      Practices with technological applications, ensuring the project not only meets research and market needs but also
+      drives green industrial transition and fosters academic research and public engagement, laying the groundwork for
+      future scientific advancements and public education.</p>
     <h4>2.3.1.1 Acts on Production</h4>
     <p class='bold'>Primary Direct Effect FOR Production</p>
     <img src='https://static.igem.wiki/teams/5503/accompanying-images/integratedhp13-1.webp' alt='IntegratedHP13'>
