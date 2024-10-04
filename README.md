@@ -14,7 +14,7 @@ Atlas.Y：用于优化酵母菌亚细胞定位的分子标签设计软件（[Ton
 
 Our Wiki provides a comprehensive overview of Atlas.Y toolkit's development, covering every link from the concept of topic selection, design principle, and algorithm implementation to the actual construction. Besides, the advocacy strategy and human practices are also documented in detail. By visiting the Wiki, you can gain insight into the entire development process, explore our technical details and the thinking behind our decisions, and access a wealth of background information and resource support.
 
-我们的 Wiki 全面介绍了Atlas.Y工具包的开发过程，涵盖了从选题概念、设计原则、算法实现到实际构建的每一个环节。此外，倡导策略和人类实践也有详细记录。通过访问 Wiki，您可以深入了解整个开发过程，探索我们的技术细节和决策背后的思考，并获取丰富的背景信息和资源支持。
+我们的 Wiki 全面介绍了 Atlas.Y 工具包的开发过程，涵盖了从选题概念、设计原则、算法实现到实际构建的每一个环节。此外，倡导策略和人类实践也有详细记录。通过访问 Wiki，您可以深入了解整个开发过程，探索我们的技术细节和决策背后的思考，并获取丰富的背景信息和资源支持。
 
 [Click here](https://2024.igem.wiki/tongji-software) to visit our Wiki!
 
