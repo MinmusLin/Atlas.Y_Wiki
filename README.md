@@ -22,7 +22,14 @@ Our Wiki provides a comprehensive overview of Atlas.Y toolkit's development, cov
 
 ## 软件演示视频
 
-https://raw.githubusercontent.com/MinmusLin/Atlas.Y_Wiki/blob/main/SoftwareDemonstrationVideo.mp4
+[](https://raw.githubusercontent.com/MinmusLin/Atlas.Y_Wiki/blob/main/SoftwareDemonstrationVideo.mp4)
+
+<video width="640" height="480" controls>
+  <source src="https://raw.githubusercontent.com/MinmusLin/Atlas.Y_Wiki/main/SoftwareDemonstrationVideo.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+[![观看视频](https://via.placeholder.com/150)](https://raw.githubusercontent.com/MinmusLin/Atlas.Y_Wiki/main/SoftwareDemonstrationVideo.mp4)
 
 ## 相关仓库
 
