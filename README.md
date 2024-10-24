@@ -20,6 +20,10 @@ Our Wiki provides a comprehensive overview of Atlas.Y toolkit's development, cov
 
 [点击这里](https://2024.igem.wiki/tongji-software)访问我们的 Wiki！
 
+## 软件演示视频
+
+![](SoftwareDemonstrationVideo.mp4)
+
 ## 相关仓库
 
 * [Atlas.Y UserInterface](https://github.com/MinmusLin/Atlas.Y_UserInterface)
@@ -37,4 +41,4 @@ Email: tongji_china2019@163.com
 
 ## 文档更新日期
 
-2024年10月4日
+2024年10月24日
