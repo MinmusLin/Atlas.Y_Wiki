@@ -22,7 +22,7 @@ Our Wiki provides a comprehensive overview of Atlas.Y toolkit's development, cov
 
 ## 软件演示视频
 
-https://github.com/MinmusLin/Atlas.Y_Wiki/raw/refs/heads/main/SoftwareDemonstrationVideo.mp4
+![](https://raw.githubusercontent.com/MinmusLin/Atlas.Y_Wiki/raw/refs/heads/main/SoftwareDemonstrationVideo.mp4)
 
 ## 相关仓库
 
