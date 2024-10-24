@@ -20,16 +20,9 @@ Our Wiki provides a comprehensive overview of Atlas.Y toolkit's development, cov
 
 [点击这里](https://2024.igem.wiki/tongji-software)访问我们的 Wiki！
 
-## 软件演示视频
+[Click here](https://github.com/MinmusLin/Atlas.Y_Wiki/raw/refs/heads/main/SoftwareDemonstrationVideo.mp4) to view our software demonstration video!
 
-[](https://raw.githubusercontent.com/MinmusLin/Atlas.Y_Wiki/blob/main/SoftwareDemonstrationVideo.mp4)
-
-<video width="640" height="480" controls>
-  <source src="https://raw.githubusercontent.com/MinmusLin/Atlas.Y_Wiki/main/SoftwareDemonstrationVideo.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
-
-[![观看视频](https://via.placeholder.com/150)](https://raw.githubusercontent.com/MinmusLin/Atlas.Y_Wiki/main/SoftwareDemonstrationVideo.mp4)
+[点击这里](https://github.com/MinmusLin/Atlas.Y_Wiki/raw/refs/heads/main/SoftwareDemonstrationVideo.mp4)查看我们的软件演示视频！
 
 ## 相关仓库
 
