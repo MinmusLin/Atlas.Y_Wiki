@@ -22,7 +22,10 @@ Our Wiki provides a comprehensive overview of Atlas.Y toolkit's development, cov
 
 ## 软件演示视频
 
-![](SoftwareDemonstrationVideo.mp4)
+<video width='600' controls>
+  <source src='SoftwareDemonstrationVideo.mp4' type='video/mp4'>
+  Software Demonstration Video
+</video>
 
 ## 相关仓库
 
