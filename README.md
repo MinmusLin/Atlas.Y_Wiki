@@ -7,19 +7,19 @@
 
 ## Project Description
 
-Atlas.Y: Advanced targeting and localization assistance system for yeast ([Tongji-Software 2024 iGEM Wiki](https://2024.igem.wiki/tongji-software)).
+Atlas.Y: Advanced targeting and localization assistance system for yeast (frontend application).
 
 ![](assets/Logo.png)
 
 ### Background
 
-Over thousands of years of exploration, humanity has gradually shifted its focus from the macroscopic to the microscopic. In biology, the goal has always been to unravel life's mysteries, from organisms to cells and molecules. In recent years, rapid technological advancements have given new momentum to this vision. Super-resolution microscopy has enabled scientists to surpass traditional microscope limits and observe intricate cellular details. Proteomics and bioinformatics tools offer fresh insights into decoding complex protein networks. These advances allow us to explore the subcellular world with remarkable clarity.
+Over thousands of years of exploration, humanity has gradually shifted its focus from the macroscopic to the microscopic. In biology, the goal has always been to unravel life's mysteries, from organisms to cells and molecules. In recent years, rapid technological advancements have given new momentum to this vision. Super-resolution microscopy<sup>[1]</sup> has enabled scientists to surpass traditional microscope limits and observe intricate cellular details. Proteomics<sup>[2]</sup> and bioinformatics tools<sup>[3]</sup> offer fresh insights into decoding complex protein networks. These advances allow us to explore the subcellular world with remarkable clarity.
 
 As research deepens, subcellular studies have come to the forefront, with subcellular localization becoming a key focus. Cells are highly organized systems where each molecule resides in specific subcellular regions to perform its function.
 
-If we can precisely control protein trafficking within cells, we unlock the ability to regulate cellular functions. This not only helps decode molecular networks but also enables targeted deployment of functional modules to different regions, allowing precise control of cell behavior. we could localize proteins to mitochondria to boost metabolism or direct enzymes to the endoplasmic reticulum for optimized synthesis. This control could create "factories" at various cellular sites, supporting parallel processes. Mastering this intracellular logistics could have profound implications not only for basic research but also for revolutionary advances in biomanufacturing, drug delivery, and disease treatment.
+If we can precisely control protein trafficking within cells, we unlock the ability to regulate cellular functions. This not only helps decode molecular networks but also enables targeted deployment of functional modules to different regions, allowing precise control of cell behavior. we could localize proteins to mitochondria to boost metabolism or direct enzymes to the endoplasmic reticulum for optimized synthesis. This control could create "factories" at various cellular sites, supporting parallel processes. Mastering this intracellular logistics could have profound implications not only for basic research but also for revolutionary advances in biomanufacturing, drug delivery, and disease treatment.<sup>[4][5]</sup>
 
-Targeting proteins to specific subcellular structures is complex, relying on multiple regulatory mechanisms. Signal sequences and signal patches act as "postal addresses" recognized by the cell's transport system, guiding proteins through secretion, transport, or membrane fusion to structures like the nucleus, mitochondria, endoplasmic reticulum, or lysosomes.
+Targeting proteins to specific subcellular structures is complex, relying on multiple regulatory mechanisms. Signal sequences and signal patches act as "postal addresses" recognized by the cell's transport system, guiding proteins through secretion, transport, or membrane fusion to structures like the nucleus, mitochondria, endoplasmic reticulum, or lysosomes.<sup>[6]</sup>
 
 Nevertheless, the design and functional execution of signal sequences and patches are far from straightforward. The intracellular environment is highly complex, and various signaling pathways and molecular interactions can interfere with proper protein transport and localization. Moreover, different subcellular structures have unique chemical properties and membrane characteristics. Ensuring that exogenous proteins remain stable and functional in these diverse environments continues to present significant challenges.
 
@@ -45,28 +45,23 @@ We plan to commercialize Atlas.Y (see [Entrepreneurship](https://2024.igem.wiki/
 
 ### References
 
-1. Zhang Y, Schroeder LK, Lessard MD, Kidd P, Chung J, Song Y, Benedetti L, Li Y, Ries J, Grimm JB, Lavis LD, De Camilli P, Rothman JE, Baddeley D, Bewersdorf J. Nanoscale subcellular architecture revealed by multicolor three-dimensional salvaged fluorescence imaging. Nat Methods. 2020 Feb;17(2):225-231.
+[1] Zhang Y, Schroeder LK, Lessard MD, Kidd P, Chung J, Song Y, Benedetti L, Li Y, Ries J, Grimm JB, Lavis LD, De Camilli P, Rothman JE, Baddeley D, Bewersdorf J. Nanoscale subcellular architecture revealed by multicolor three-dimensional salvaged fluorescence imaging. Nat Methods. 2020 Feb;17(2):225-231.
 
-2. Lundberg E, Borner GHH. Spatial proteomics: a powerful discovery tool for cell biology. Nat Rev Mol Cell Biol. 2019 May;20(5):285-302.
+[2] Lundberg E, Borner GHH. Spatial proteomics: a powerful discovery tool for cell biology. Nat Rev Mol Cell Biol. 2019 May;20(5):285-302.
 
-3. Gillani M, Pollastri G. Protein subcellular localization prediction tools. Comput Struct Biotechnol J. 2024 Apr 15;23:1796-1807.
+[3] Gillani M, Pollastri G. Protein subcellular localization prediction tools. Comput Struct Biotechnol J. 2024 Apr 15;23:1796-1807.
 
-4. Oladimeji O, Akinyelu J, Singh M. Nanomedicines for Subcellular Targeting: The Mitochondrial Perspective. Curr Med Chem. 2020;27(33):5480-5509.
+[4] Oladimeji O, Akinyelu J, Singh M. Nanomedicines for Subcellular Targeting: The Mitochondrial Perspective. Curr Med Chem. 2020;27(33):5480-5509.
 
-5. Li J, Zou Q, Yuan L. A review from biological mapping to computation-based subcellular localization. Mol Ther Nucleic Acids. 2023 Apr 20;32:507-521. doi: 10.1016/j.omtn.2023.04.015. PMID: 37215152; PMCID: PMC10192651.
+[5] Li J, Zou Q, Yuan L. A review from biological mapping to computation-based subcellular localization. Mol Ther Nucleic Acids. 2023 Apr 20;32:507-521. doi: 10.1016/j.omtn.2023.04.015. PMID: 37215152; PMCID: PMC10192651.
 
-6. Stroud RM, Walter P. Signal sequence recognition and protein targeting. Curr Opin Struct Biol. 1999 Dec;9(6):754-9.
+[6] Stroud RM, Walter P. Signal sequence recognition and protein targeting. Curr Opin Struct Biol. 1999 Dec;9(6):754-9.
 
 ## Relevant Repositories
 
-* [Atlas.Y UserInterface](https://github.com/MinmusLin/Atlas.Y_UserInterface)
-Atlas.Y: Frontend application
-
+* [Atlas.Y Wiki](https://github.com/MinmusLin/Atlas.Y_Wiki)
 * [Atlas.Y DatabaseWebAPI](https://github.com/MinmusLin/Atlas.Y_DatabaseWebAPI)
-Atlas.Y: Backend application
-
 * [Atlas.Y Dataset](https://github.com/MinmusLin/Atlas.Y_Dataset)
-Atlas.Y: Open-source dataset
 
 ## Contact Us
 
