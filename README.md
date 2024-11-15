@@ -5,6 +5,14 @@
 >
 > Visit our [Wiki](https://2024.igem.wiki/tongji-software) and view our [software demonstration video](https://github.com/MinmusLin/Atlas.Y_Wiki/raw/refs/heads/main/SoftwareDemonstrationVideo.mp4)!
 
+> [!NOTE]
+>
+> The iGEM Foundation certifies that the team **Tongji-Software** participated in the 2024 iGEM Competition, Undergrad Section.
+>
+> The team was awarded: **Gold Medal**
+>
+> View our [official certificate](https://github.com/MinmusLin/Atlas.Y_Wiki/raw/refs/heads/main/2024_iGEM_Competition_Official_Certificate.pdf)!
+
 ## Project Description
 
 Atlas.Y: Advanced targeting and localization assistance system for yeast (frontend application).
