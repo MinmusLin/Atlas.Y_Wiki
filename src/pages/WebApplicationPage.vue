@@ -11,13 +11,6 @@
         <TitleBox title='WEB APPLICATION'/>
       </div>
       <p class='welcome'>Welcome to Atlas.Y!</p>
-      <iframe style='border: none; margin-top: 47px; margin-bottom: 44px; z-index: 2'
-              title='Atlas.Y --- example video'
-              width='1332'
-              height='749'
-              src='https://video.igem.org/videos/embed/dd4635b1-17b7-473f-afed-075406950304'
-              :allowfullscreen='true'
-              sandbox='allow-same-origin allow-scripts allow-popups allow-forms'/>
       <p class='promote'>Due to geographic distance, network latency, and computational resource limitations, you may
         experience longer wait times on the calculation page. However, please rest assured that the results will be
         provided if you wait patiently. We also recommend watching our tutorial video, which uses real data and
@@ -62,7 +55,7 @@ function goToLink(link: string) {
   font-size: 60px;
   font-weight: bold;
   color: white;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
   z-index: 1;
   width: 50%;
 }

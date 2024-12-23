@@ -779,13 +779,13 @@ const initialImages: Image[] = [
     src: 'https://static.igem.wiki/teams/5503/accompanying-images/entrepreneurship3-1.webp',
     alt: 'YUAN',
     text: {
-      title1: 'User Persona: Business Individuals',
+      title1: 'User Persona: Academic Research',
       ul1: [
         '<strong>Research Focus</strong>: Subcellular resolution studies, enzyme localization mechanisms, and the interactions between proteins and organelles.',
         '<strong>Typical Scenario</strong>: Conducting yeast subcellular localization experiments in the lab, aiming to observe protein localization patterns using molecular tag technology (84.17%).',
         '<strong>Research Needs</strong>: Requires precise control of yeast protein subcellular localization for in-depth studies and to obtain higher resolution data.<br> Seeks computer-aided tools to simplify the molecular tag design process and improve research accuracy (95.68%).'
       ],
-      title2: 'User Insights: Business Individuals',
+      title2: 'User Insights: Academic Research',
       ul2: [
         '<strong>Pain Points</strong>: Difficulty in selecting molecular tags, which affects the efficiency of experiments and the precision of research (70.5%)..<br> Yeast stability issues introduce uncertainty into the experimental process, impacting repeatability and data reliability (66.91%).',
         '<strong>Existing Solutions</strong>: Basic molecular tag selection and localization tools are being used, but they lack flexibility and struggle to meet the demands of complex research.',
@@ -804,13 +804,13 @@ const initialImages: Image[] = [
     src: 'https://static.igem.wiki/teams/5503/accompanying-images/entrepreneurship4-1.webp',
     alt: 'Juzhen',
     text: {
-      title1: 'User Persona: Business Individuals',
+      title1: 'User Persona: Enterprise Production',
       ul1: [
         '<strong>Enterprise Field and Scale</strong>: Fields include industrial production and biomedicine (87.05%). A typical enterprise may have dozens to hundreds of employees, focusing on increasing yield and production efficiency through enzyme optimization technologies.',
         '<strong>Typical Scenario</strong>: In large-scale biomanufacturing, enterprises need to optimize the subcellular localization of enzymes through molecular tag technology to ensure efficient production.',
         '<strong>Production Actions</strong>: They rely on yeast and molecular tagging systems for enzyme production, optimizing localization to improve enzyme efficiency and increase the yield of target products (64.75%).'
       ],
-      title2: 'User Insights: Business Individuals',
+      title2: 'User Insights: Enterprise Production',
       ul2: [
         '<strong>Pain Points</strong>: High technical difficulty in large-scale applications (56.83%), particularly with challenges in precise localization and stability.<br> High production costs, primarily due to inaccurate localization and mispositioned enzymes causing resource waste (54.68%).',
         '<strong>Existing Solutions</strong>: The currently used technologies are insufficient to meet the demands of large-scale industrial production, still requiring manual regulation and constant adjustments to ensure stability.',
